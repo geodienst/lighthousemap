@@ -122,7 +122,6 @@
 
 			class Sequence {
 				constructor(seq) {
-					this.offset = Math.random();
 					this.setSequence(seq);
 				}
 
@@ -139,6 +138,8 @@
 					});
 
 					this.duration = this.steps.reduce((sum, step) => sum + step[1], 0);
+
+					this.offset = Math.random() * this.duration;
 				}
 
 				isValid() {
@@ -149,7 +150,7 @@
 					if (isNaN(this.duration))
 						return undefined;
 
-					let dt = this.offset + time % this.duration;
+					let dt = (this.offset + time) % this.duration;
 
 					for (let i = 0; i < this.steps.length; ++i) {
 						if (dt < this.steps[i][1])
