@@ -122,6 +122,7 @@
 
 			class Sequence {
 				constructor(seq) {
+					this.offset = Math.random();
 					this.setSequence(seq);
 				}
 
@@ -148,7 +149,7 @@
 					if (isNaN(this.duration))
 						return undefined;
 
-					let dt = time % this.duration;
+					let dt = this.offset + time % this.duration;
 
 					for (let i = 0; i < this.steps.length; ++i) {
 						if (dt < this.steps[i][1])
@@ -205,9 +206,7 @@
 
 				let update = function(t) {
 					draw(t / 1000);
-					setTimeout(function() {
-						requestAnimationFrame(update);
-					}, 50);
+					requestAnimationFrame(update);
 				};
 
 				update(0);
