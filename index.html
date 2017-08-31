@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Lights at sea</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+		integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+		crossorigin=""/>
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+			}
+
+			#seamap {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="seamap"></div>
+		<script id="seamap-query" type="text/x-overpass">
+			[out:json][timeout:25];
+			// gather results
+			(
+			  // query part for: “"seamark:light:sequence"=*”
+			  node["seamark:light:sequence"]({{bbox}});
+			  way["seamark:light:sequence"]({{bbox}});
+			  relation["seamark:light:sequence"]({{bbox}});
+			);
+			// print results
+			out body;
+			>;
+			out skel qt;
+		</script>
+		<script id="seamap-wikidata-query" type="text/x-sparql">
+			SELECT ?item ?itemLabel ?location ?height ?focalHeight ?sequence
+			WHERE 
+			{
+			  ?item wdt:P31 wd:Q39715.
+			  ?item wdt:P625 ?location.
+			  OPTIONAL {
+			    ?item wdt:P2048 ?height.
+			    ?item wdt:P2923 ?focalHeight.
+			    ?item wdt:P1030 ?sequence.
+			  }
+			  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+			}
+		</script>
+		<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+		  integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+		  crossorigin=""></script>
+		<script src="https://unpkg.com/osmtogeojson@3.0.0-beta.2/osmtogeojson.js"
+		  integrity="sha384-O1DMEF/gKYhLsICYtozkRWjEr9OfkZzVawUjyOPtevnKB2S1BegNJO0R251Pfuwz"
+		  crossorigin=""></script>
+		<script src="https://unpkg.com/@turf/turf@3.5.2/turf.min.js"></script>
+		<script>
+			let map = L.map('seamap').setView([54.2, 2.6], 6);
+			
+			L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+				detectRetina: true,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+			}).addTo(map);
+
+			let bounds = map.getBounds();
+
+			function bbox(bounds) {
+				let ne = bounds.getNorthEast();
+				let sw = bounds.getSouthWest();
+				return [sw.lat, sw.lng, ne.lat, ne.lng]
+			}
+
+			let Light = L.Icon.extend({
+				options: {
+					iconSize: [12, 12],
+					iconAnchor: [6, 6],
+					className: 'leaflet-canvas-icon',
+					sequence: []
+				},
+
+				createIcon: function(icon) {
+					if (!icon || icon.tagName != 'CANVAS')
+						icon = document.createElement('canvas');
+
+					icon.width = 2 * this.options.iconSize[0];
+					icon.height = 2 * this.options.iconSize[1];
+
+					this._canvas = icon;
+
+					this._setIconStyles(icon, 'icon');
+
+					return icon;
+				},
+
+				createShadow: function(icon) {
+					return null;
+				},
+
+				_setIconStyles: function(icon, type) {
+					L.Icon.prototype._setIconStyles.apply(this, arguments);
+				},
+
+				setState: function(state) {
+					if (this._state === state)
+						return;
+
+					if (!this._canvas)
+						return;
+
+					let radius = Math.min(this.options.iconSize[0], this.options.iconSize[1]);
+					let ctx = this._canvas.getContext('2d');
+					ctx.beginPath();
+					ctx.arc(this.options.iconSize[0], this.options.iconSize[1], radius, 0, 2 * Math.PI);
+					ctx.fillStyle = state ? '#ff0' : '#000';
+					ctx.fill();
+
+					this._state = state;
+				}
+			});
+
+			class Sequence {
+				constructor(seq) {
+					this.setSequence(seq);
+				}
+
+				setSequence(seq) {
+					this.text = seq;
+					
+					this.steps = seq.split('+').map(step => {
+						let state = true;
+						if (/^\(\d+(\.\d+)?\)$/.test(step)) {
+							state = false;
+							step = step.substring(1, step.length - 1);
+						}
+						return [state, parseFloat(step, 10)];
+					});
+
+					this.duration = this.steps.reduce((sum, step) => sum + step[1], 0);
+				}
+
+				isValid() {
+					return this.steps.every(step => !isNaN(step[1]));
+				}
+
+				state(time) {
+					if (isNaN(this.duration))
+						return undefined;
+
+					let dt = time % this.duration;
+
+					for (let i = 0; i < this.steps.length; ++i) {
+						if (dt < this.steps[i][1])
+							return this.steps[i][0];
+						else
+							dt -= this.steps[i][1];
+					}
+
+					throw new Error('Ran out of steps while still inside duration?');
+				}
+			}
+
+			let query = document.getElementById('seamap-query').textContent
+				.replace(/\{\{bbox\}\}/g, bbox(bounds).join(','));
+
+			let url = 'https://www.overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
+
+			url = 'data.json'; // For testing
+
+			let data = fetch(url)
+				.then(req => req.json())
+				.then(json => osmtogeojson(json))
+				.then(json => ({
+					type: json.type,
+					features: json.features.map(feature => {
+						return feature.geometry.type == 'Polygon'
+							? Object.assign({}, feature, {geometry: turf.centroid(feature).geometry})
+							: feature;
+					})
+				}));
+
+			let lights = data.then(geojson => {
+				return L.geoJSON(geojson, {
+					pointToLayer: function(feat, latlng) {
+						return L.marker(latlng, {
+							title: feat.properties.tags['name'],
+							icon: new Light(),
+							sequence: new Sequence(feat.properties.tags['seamark:light:sequence'])
+						});
+					}
+				}).addTo(map);
+			});
+
+			lights.then(layer => {
+				let draw = function(t) {
+					layer.eachLayer(marker => {
+						try {
+							marker.options.icon.setState(marker.options.sequence.state(t));
+						} catch (e) {
+							console.error(e, marker);
+						}
+					});
+				};
+
+				let update = function(t) {
+					draw(t / 1000);
+					setTimeout(function() {
+						requestAnimationFrame(update);
+					}, 50);
+				};
+
+				update(0);
+			})
+
+			lights.catch(e => console.error(e));
+
+		</script>
+	</body>
+</html>
