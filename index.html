@@ -17,6 +17,18 @@
 				width: 100%;
 				height: 100%;
 			}
+
+			#seamap .seamap-marker .light  {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				transition: background ease-in-out 50ms;
+				opacity: 0.9;
+			}
+
+			#seamap .seamap-marker .light.on {
+				background: yellow;
+			}
 		</style>
 	</head>
 	<body>
@@ -76,18 +88,16 @@
 				options: {
 					iconSize: [12, 12],
 					iconAnchor: [6, 6],
-					className: 'leaflet-canvas-icon',
+					className: 'seamap-marker',
 					sequence: []
 				},
 
 				createIcon: function(icon) {
-					if (!icon || icon.tagName != 'CANVAS')
-						icon = document.createElement('canvas');
+					icon = document.createElement('div');
 
-					icon.width = 2 * this.options.iconSize[0];
-					icon.height = 2 * this.options.iconSize[1];
-
-					this._canvas = icon;
+					this._canvas = document.createElement('div');
+					this._canvas.className = 'light';
+					icon.appendChild(this._canvas);
 
 					this._setIconStyles(icon, 'icon');
 
@@ -103,24 +113,7 @@
 				},
 
 				setState: function(state) {
-					if (this._state === state)
-						return;
-
-					if (!this._canvas)
-						return;
-
-					let ctx = this._canvas.getContext('2d');
-					ctx.clearRect(0, 0, this.options.iconSize[0] * 2, this.options.iconSize[1] * 2);
-
-					if (state) {
-						let radius = Math.min(this.options.iconSize[0], this.options.iconSize[1]);
-						ctx.beginPath();
-						ctx.arc(this.options.iconSize[0], this.options.iconSize[1], radius, 0, 2 * Math.PI);
-						ctx.fillStyle = '#ff0';
-						ctx.fill();
-					}
-
-					this._state = state;
+					this._canvas.classList.toggle('on', !!state);
 				}
 			});
 
@@ -190,6 +183,7 @@
 				return L.geoJSON(geojson, {
 					pointToLayer: function(feat, latlng) {
 						return L.marker(latlng, {
+							interactive: false,
 							title: feat.properties.tags['name'],
 							icon: new Light(),
 							sequence: new Sequence(feat.properties.tags['seamark:light:sequence'])
