@@ -17,18 +17,6 @@
 				width: 100%;
 				height: 100%;
 			}
-
-			#seamap .seamap-marker .light  {
-				width: 100%;
-				height: 100%;
-				border-radius: 50%;
-				transition: background ease-in-out 50ms;
-				opacity: 0.9;
-			}
-
-			#seamap .seamap-marker .light.on {
-				background: yellow;
-			}
 		</style>
 	</head>
 	<body>
@@ -54,20 +42,22 @@
 			  ?item wdt:P31 wd:Q39715.
 			  ?item wdt:P625 ?location.
 			  OPTIONAL {
-			    ?item wdt:P2048 ?height.
-			    ?item wdt:P2923 ?focalHeight.
-			    ?item wdt:P1030 ?sequence.
+				?item wdt:P2048 ?height.
+				?item wdt:P2923 ?focalHeight.
+				?item wdt:P1030 ?sequence.
 			  }
 			  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 			}
 		</script>
-		<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
-		  integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
-		  crossorigin=""></script>
+		<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet-src.js"></script>
 		<script src="https://unpkg.com/osmtogeojson@3.0.0-beta.2/osmtogeojson.js"
 		  integrity="sha384-O1DMEF/gKYhLsICYtozkRWjEr9OfkZzVawUjyOPtevnKB2S1BegNJO0R251Pfuwz"
 		  crossorigin=""></script>
+		<script src="https://unpkg.com/rbush@2.0.1/rbush.js"></script>
 		<script src="https://unpkg.com/@turf/turf@3.5.2/turf.min.js"></script>
+		<script src="leaflet.indexedfeaturelayer.js"></script>
+		<script src="leaflet.rangedmarker.js"></script>
+		<script src="leaflet.light.js"></script>
 		<script>
 			let map = L.map('seamap').setView([54.2, 2.6], 6);
 			
@@ -84,88 +74,12 @@
 				return [sw.lat, sw.lng, ne.lat, ne.lng]
 			}
 
-			let Light = L.Icon.extend({
-				options: {
-					iconSize: [12, 12],
-					iconAnchor: [6, 6],
-					className: 'seamap-marker',
-					sequence: []
-				},
-
-				createIcon: function(icon) {
-					icon = document.createElement('div');
-
-					this._canvas = document.createElement('div');
-					this._canvas.className = 'light';
-					icon.appendChild(this._canvas);
-
-					this._setIconStyles(icon, 'icon');
-
-					return icon;
-				},
-
-				createShadow: function(icon) {
-					return null;
-				},
-
-				_setIconStyles: function(icon, type) {
-					L.Icon.prototype._setIconStyles.apply(this, arguments);
-				},
-
-				setState: function(state) {
-					this._canvas.classList.toggle('on', !!state);
-				}
-			});
-
-			class Sequence {
-				constructor(seq) {
-					this.setSequence(seq);
-				}
-
-				setSequence(seq) {
-					this.text = seq;
-					
-					this.steps = seq.split('+').map(step => {
-						let state = true;
-						if (/^\(\d+(\.\d+)?\)$/.test(step)) {
-							state = false;
-							step = step.substring(1, step.length - 1);
-						}
-						return [state, parseFloat(step, 10)];
-					});
-
-					this.duration = this.steps.reduce((sum, step) => sum + step[1], 0);
-
-					this.offset = Math.random() * this.duration;
-				}
-
-				isValid() {
-					return this.steps.every(step => !isNaN(step[1]));
-				}
-
-				state(time) {
-					if (isNaN(this.duration))
-						return undefined;
-
-					let dt = (this.offset + time) % this.duration;
-
-					for (let i = 0; i < this.steps.length; ++i) {
-						if (dt < this.steps[i][1])
-							return this.steps[i][0];
-						else
-							dt -= this.steps[i][1];
-					}
-
-					throw new Error('Ran out of steps while still inside duration?');
-				}
-			}
-
 			let query = document.getElementById('seamap-query').textContent
 				.replace(/\{\{bbox\}\}/g, bbox(bounds).join(','));
 
 			let url = 'https://www.overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
 
-			url = 'data.json'; // For testing
+			url = 'data-full.json'; // For testing
 
 			let data = fetch(url)
 				.then(req => req.json())
@@ -180,23 +94,26 @@
 				}));
 
 			let lights = data.then(geojson => {
-				return L.geoJSON(geojson, {
+				return L.indexedGeoJSON(null, {
 					pointToLayer: function(feat, latlng) {
-						return L.marker(latlng, {
+						return new L.Light(latlng, {
 							interactive: false,
 							title: feat.properties.tags['name'],
-							icon: new Light(),
-							sequence: new Sequence(feat.properties.tags['seamark:light:sequence'])
+							radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || 1) * 1000,
+							sequence: new L.Light.Sequence(feat.properties.tags['seamark:light:sequence']),
+							stroke: false,
+							fillOpacity: 0.9,
+							fillColor: '#FF0'
 						});
 					}
-				}).addTo(map);
+				}).addTo(map).addData(geojson);
 			});
 
 			lights.then(layer => {
 				let draw = function(t) {
 					layer.eachLayer(marker => {
 						try {
-							marker.options.icon.setState(marker.options.sequence.state(t));
+							marker.setState(marker.options.sequence.state(t));
 						} catch (e) {
 							console.error(e, marker);
 						}
