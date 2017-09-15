@@ -111,7 +111,7 @@
 
 			lights.then(layer => {
 				let draw = function(t) {
-					layer.eachLayer(marker => {
+					layer.eachVisibleLayer(marker => {
 						try {
 							marker.setState(marker.options.sequence.state(t));
 						} catch (e) {

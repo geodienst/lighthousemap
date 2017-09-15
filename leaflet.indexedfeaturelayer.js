@@ -106,13 +106,16 @@ L.IndexedFeatureLayer = L.GeoJSON.extend({
 		this._visible.removeFrom(map);
 	},
 
+	eachVisibleLayer: function(callback) {
+		return this._visible.eachLayer(callback);
+	},
+
 	_getBounds: function() {
 		return getBoundsWithPadding(this._map, this.options.padding);
 	},
 
 	_redraw: function() {
 		const layers = this.search(this._getBounds());
-		console.log(layers.length, 'layers');
 		this._visible.updateLayers(layers);
 	},
 
