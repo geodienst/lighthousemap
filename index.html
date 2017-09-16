@@ -22,9 +22,23 @@
 			
 			#controls {
 				position: fixed;
-				bottom: 10px;
-				left: 10px;
+				bottom: 0;
+				left: 0;
 				z-index: 1000;
+			}
+			
+			#seamap .leaflet-control-attribution,
+			#controls {
+				margin: 10px;
+				font-size: 12px;
+				color: #ccc;
+				background: none;
+				text-shadow: 0px 0px 2px black;
+			}
+			
+			#seamap .leaflet-control-attribution a {
+				color: inherit;
+				text-decoration: underline;
 			}
 		</style>
 	</head>
