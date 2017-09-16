@@ -96,14 +96,28 @@
 			let lights = data.then(geojson => {
 				return L.indexedGeoJSON(null, {
 					pointToLayer: function(feat, latlng) {
+						let sequence;
+
+						try {
+							sequence = L.Light.sequence(feat.properties.tags, '#FF0');
+						} catch (e) {
+							console.error('Error parsing sequence: %s', e, feat.properties.tags);
+
+							// Fallback sequence
+							sequence = L.Light.sequence({
+								'seamark:light:sequence': '1+(1)'
+							});
+						}
+
 						return new L.Light(latlng, {
 							interactive: false,
 							title: feat.properties.tags['name'],
 							radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || 1) * 1000,
-							sequence: new L.Light.Sequence(feat.properties.tags['seamark:light:sequence']),
+							sequence: sequence,
 							stroke: false,
 							fillOpacity: 0.9,
-							fillColor: '#FF0'
+							fill: !!sequence.state(0),
+							fillColor: sequence.state(0)
 						});
 					}
 				}).addTo(map).addData(geojson);
@@ -112,11 +126,7 @@
 			lights.then(layer => {
 				let draw = function(t) {
 					layer.eachVisibleLayer(marker => {
-						try {
-							marker.setState(marker.options.sequence.state(t));
-						} catch (e) {
-							console.error(e, marker);
-						}
+						marker.setColor(marker.options.sequence.state(t));
 					});
 				};
 
@@ -126,7 +136,7 @@
 				};
 
 				update(0);
-			})
+			}).catch(e => console.error(e));
 
 			lights.catch(e => console.error(e));
 

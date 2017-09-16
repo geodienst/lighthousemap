@@ -1,0 +1,164 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API",
+  "osm3s": {
+    "timestamp_osm_base": "2017-08-31T18:02:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+{
+  "type": "node",
+  "id": 1191081664,
+  "lat": -41.1750000,
+  "lon": 146.4270000,
+  "tags": {
+    "seamark:information": "Occasional.",
+    "seamark:light:category": "aero",
+    "seamark:light:character": "Al.Fl",
+    "seamark:light:colour": "green;white",
+    "seamark:light:height": "23",
+    "seamark:light:period": "7.4",
+    "seamark:light:reference": "K 3563",
+    "seamark:light:sequence": "[W.]0.2+(3.5),[G.]0.2+(3.5)",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 111. 2010-09-02."
+  }
+},
+{
+  "type": "node",
+  "id": 1347582795,
+  "lat": 40.6590033,
+  "lon": 17.9417167,
+  "tags": {
+    "seamark:information": "Private light.",
+    "seamark:light:character": "Al.Fl",
+    "seamark:light:colour": "white;green",
+    "seamark:light:height": "18",
+    "seamark:light:period": "17",
+    "seamark:light:reference": "E 2208",
+    "seamark:light:sequence": "[W.]1+(3),[G.]1+(3),[W.]1+(8)",
+    "seamark:name": "Brindisi-Casale",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 113. 2010-10-22."
+  }
+},
+{
+  "type": "node",
+  "id": 1581589349,
+  "lat": 32.4032167,
+  "lon": 34.8670833,
+  "tags": {
+    "seamark:light:character": "Al.Fl",
+    "seamark:light:colour": "white;red",
+    "seamark:light:height": "14",
+    "seamark:light:period": "15",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "E 5956",
+    "seamark:light:sequence": "0.5+(4.5),0.5+(9.5)",
+    "seamark:name": "Mikhmoret",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 113. 2011-10-20."
+  }
+},
+{
+  "type": "node",
+  "id": 1581742946,
+  "lat": 34.2909833,
+  "lon": -6.6007500,
+  "tags": {
+    "seamark:information": "A F.R. light is shown from a radio tower, about 15.6 km. 194° .Occasional.",
+    "seamark:light:category": "aero",
+    "seamark:light:character": "Al.Fl",
+    "seamark:light:colour": "white;green",
+    "seamark:light:group": "2+1",
+    "seamark:light:height": "55",
+    "seamark:light:period": "10",
+    "seamark:light:reference": "D 2541",
+    "seamark:light:sequence": "1+(3.5)",
+    "seamark:name": "Kenitra",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 113. 2011-10-20."
+  }
+},
+{
+  "type": "node",
+  "id": 2153785316,
+  "lat": 58.7372741,
+  "lon": 17.1029072,
+  "tags": {
+    "seamark:light:character": "Al.Iso",
+    "seamark:light:colour": "white;red",
+    "seamark:light:sequence": "3",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 2153785362,
+  "lat": 58.7405845,
+  "lon": 17.0841161,
+  "tags": {
+    "seamark:light:character": "Iso",
+    "seamark:light:colour": "red",
+    "seamark:light:sequence": "3",
+    "seamark:name": "Linudden nedre",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 2300566678,
+  "lat": 50.9707556,
+  "lon": 1.8400850,
+  "tags": {
+    "seamark:fog_signal:category": "bell",
+    "seamark:fog_signal:period": "5",
+    "seamark:light:character": "Iso",
+    "seamark:light:colour": "green",
+    "seamark:light:group": "2",
+    "seamark:light:height": "11.90",
+    "seamark:light:period": "3",
+    "seamark:light:range": "9",
+    "seamark:light:reference": "A 1148",
+    "seamark:light:sequence": "1.5+(1.5)",
+    "seamark:name": "Jetée Ouest",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 114. 2011-04-02",
+    "source:website": "http://www.pharesdumonde.fr/details.php?l=FRA&n=654&z=1&li=2"
+  }
+},
+{
+  "type": "node",
+  "id": 3028106017,
+  "lat": 48.2790445,
+  "lon": -4.5885642,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:group": "2",
+    "seamark:light:height": "9",
+    "seamark:light:period": "6",
+    "seamark:light:range": "5",
+    "seamark:light:sequence": "1+(1),1+(3)",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 3041544410,
+  "lat": 46.1482397,
+  "lon": -1.1697761,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:group": "2",
+    "seamark:light:height": "9",
+    "seamark:light:period": "6",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "D 1254",
+    "seamark:light:sequence": "1+(1),1+(3)",
+    "seamark:type": "light_minor"
+  }
+}
+]
+}
