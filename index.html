@@ -158,7 +158,9 @@
 				}).addTo(map).addData(geojson);
 			});
 			
-			let useRealColors = false;
+			let useRealColors = true;
+
+			document.querySelector('input[name=real-colors]').checked = useRealColors;
 			
 			document.querySelector('input[name=real-colors]').addEventListener('change', function(e) {
 				useRealColors = this.checked;
