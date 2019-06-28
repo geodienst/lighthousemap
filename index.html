@@ -112,6 +112,14 @@
 			let query = document.getElementById('seamap-query').textContent
 				.replace(/\{\{bbox\}\}/g, bbox(bounds).join(','));
 
+			// // Query the entire world
+			// bounds = [-90, -180, 90, 180]
+
+			// let query = document.getElementById('seamap-query').textContent
+			// 	.replace(/\{\{bbox\}\}/g, bounds.join(','));
+
+			
+
 			let url = 'https://www.overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
 
 			url = 'data-full.json'; // For testing
@@ -169,8 +177,14 @@
 			lights.then(layer => {
 				let draw = function(t) {
 					layer.eachVisibleLayer(marker => {
-						let state = marker.options.sequence.state(t);
-						marker.setColor(state ? (useRealColors ? state : '#FF0') : false);
+						var state = false
+						try{
+							var state = marker.options.sequence.state(t);
+							marker.setColor(state ? (useRealColors ? state : '#FF0') : false);
+						} catch(e){
+							// console.error(e)
+						}
+						
 					});
 				};
 

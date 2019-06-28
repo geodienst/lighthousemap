@@ -158,7 +158,7 @@ L.Light.Sequence = class {
 				state = false;
 				step = step.substring(1, step.length - 1);
 			}
-			return [state, parseFloat(step, 10)];
+			return [state, parseFloat(step.replace(',', '.'), 10)];
 		});
 
 		this.duration = this.steps.reduce((sum, step) => sum + step[1], 0);
@@ -178,7 +178,6 @@ L.Light.Sequence = class {
 			else
 				dt -= this.steps[i][1];
 		}
-
 		throw new Error('Ran out of steps while still inside duration?');
 	}
 }
