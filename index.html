@@ -155,7 +155,7 @@
 						return new L.Light(latlng, {
 							interactive: false,
 							title: feat.properties.tags['name'],
-							radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || 1) * 1000,
+							radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || 1) * 1852,
 							sequence: sequence,
 							stroke: false,
 							fillOpacity: 0.9,
