@@ -92,7 +92,7 @@
 				.setView([54.2, 2.6], 6)
 				.addControl(L.control.attribution({
 					position: 'bottomright',
-					prefix: 'Made by <a href="https://www.geodienst.xyz/">Geodienst</a>'
+					prefix: 'Based on an original by <a href="https://www.geodienst.xyz/">Geodienst</a>'
 				}));
 			
 			L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
@@ -157,7 +157,7 @@
 							radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || 1) * 1000,
 							sequence: sequence,
 							stroke: false,
-							fillOpacity: 0.5,
+							fillOpacity: 0.7,
 							fill: !!sequence.state(0),
 							fillColor: sequence.state(0)
 						});
