@@ -19,14 +19,14 @@
 				width: 100%;
 				height: 100%;
 			}
-			
+
 			#controls {
 				position: fixed;
 				bottom: 0;
 				left: 0;
 				z-index: 1000;
 			}
-			
+
 			#seamap .leaflet-control-attribution,
 			#controls {
 				margin: 10px;
@@ -35,7 +35,7 @@
 				background: none;
 				text-shadow: 0px 0px 2px black;
 			}
-			
+
 			#seamap .leaflet-control-attribution a {
 				color: inherit;
 				text-decoration: underline;
@@ -52,13 +52,15 @@
 		</div>
 		<a href="https://github.com/geodienst/lighthousemap"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1000" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
 		<script id="seamap-query" type="text/x-overpass">
-			[out:json][timeout:25];
+			[out:json][timeout:300];
 			// gather results
 			(
 			  // query part for: “"seamark:light:sequence"=*”
 			  node["seamark:light:sequence"]({{bbox}});
+			  node["seamark:light:1:sequence"]({{bbox}});
 			  way["seamark:light:sequence"]({{bbox}});
-			  relation["seamark:light:sequence"]({{bbox}});
+			  way["seamark:light:1:sequence"]({{bbox}});
+			  // relation["seamark:light:sequence"]({{bbox}});
 			);
 			// print results
 			out body;
@@ -67,7 +69,7 @@
 		</script>
 		<script id="seamap-wikidata-query" type="text/x-sparql">
 			SELECT ?item ?itemLabel ?location ?height ?focalHeight ?sequence
-			WHERE 
+			WHERE
 			{
 			  ?item wdt:P31 wd:Q39715.
 			  ?item wdt:P625 ?location.
@@ -95,7 +97,7 @@
 					position: 'bottomright',
 					prefix: 'Made by <a href="https://www.geodienst.xyz/">Geodienst</a>'
 				}));
-			
+
 			L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
 				detectRetina: true,
 				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
@@ -118,7 +120,6 @@
 			// let query = document.getElementById('seamap-query').textContent
 			// 	.replace(/\{\{bbox\}\}/g, bounds.join(','));
 
-			
 
 			let url = 'https://www.overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
 
@@ -165,11 +166,11 @@
 					}
 				}).addTo(map).addData(geojson);
 			});
-			
+
 			let useRealColors = true;
 
 			document.querySelector('input[name=real-colors]').checked = useRealColors;
-			
+
 			document.querySelector('input[name=real-colors]').addEventListener('change', function(e) {
 				useRealColors = this.checked;
 			});
@@ -184,7 +185,7 @@
 						} catch(e){
 							// console.error(e)
 						}
-						
+
 					});
 				};
 
