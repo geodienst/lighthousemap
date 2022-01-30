@@ -8,12 +8,23 @@ L.Light = L.Circle.extend({
 });
 
 L.Light.sequence = function(tags, fallbackColor = '#FF0') {
-	let character = tags['seamark:light:character'] || 'Fl';
+
+/*	let character = tags['seamark:light:character'] || 'Fl';
 	
 	let colors = (tags['seamark:light:colour'] || fallbackColor).split(';');
 
 	let sequence = tags['seamark:light:sequence'];
 	
+*/
+	// PJ - if there are multiple lights, use the character, colours and sequence of the first one
+	let character = tags['seamark:light:character'] || tags['seamark:light:1:character'] || 'Fl';
+	
+	let colors = (tags['seamark:light:colour'] || tags['seamark:light:1:colour'] || fallbackColor).split(';');
+
+	let sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
+
+
+
 	if (character.match(/^Al\./)) {// Alternating color!
 		character = tags['seamark:light:character'].substring(3);
 
