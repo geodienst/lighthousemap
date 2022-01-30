@@ -1,9 +1,9 @@
 {
   "version": 0.6,
-  "generator": "Overpass API 0.7.57.1 74a55df1",
+  "generator": "Overpass API 0.7.57 93a4d346",
   "osm3s": {
-    "timestamp_osm_base": "2022-01-30T01:19:54Z",
-    "timestamp_areas_base": "2022-01-30T00:38:27Z",
+    "timestamp_osm_base": "2022-01-30T02:31:36Z",
+    "timestamp_areas_base": "2022-01-30T02:15:38Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1943,6 +1943,51 @@
         "seamark:light:reference": "A 2754",
         "seamark:name": "Blyth",
         "seamark:type": "landmark"
+      }
+    },
+    {
+      "type": "node",
+      "id": 826383904,
+      "lat": 50.18075,
+      "lon": -4.2656389,
+      "tags": {
+        "man_made": "lighthouse",
+        "name": "Eddystone Lighthouse",
+        "ref:admiralty": "A0098",
+        "ref:nga": "114-132",
+        "seamark:fog_signal:category": "horn",
+        "seamark:fog_signal:period": "30",
+        "seamark:fog_signal:sequence": "3.0+(27.0)",
+        "seamark:information": "Helicopter platform.",
+        "seamark:landmark:category": "tower",
+        "seamark:landmark:colour": "red;grey",
+        "seamark:landmark:colour_pattern": "horizontal",
+        "seamark:landmark:function": "light_support",
+        "seamark:landmark:height": "49",
+        "seamark:light:1:character": "Iso",
+        "seamark:light:1:colour": "red",
+        "seamark:light:1:height": "28",
+        "seamark:light:1:period": "10",
+        "seamark:light:1:sector_end": "133",
+        "seamark:light:1:sector_start": "110",
+        "seamark:light:2:character": "Fl",
+        "seamark:light:2:colour": "white",
+        "seamark:light:2:group": "2",
+        "seamark:light:2:height": "41",
+        "seamark:light:2:period": "10",
+        "seamark:light:2:range": "17",
+        "seamark:light:2:sequence": "0.1+(2.4)",
+        "seamark:name": "Eddystone",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "T",
+        "seamark:radar_transponder:period": "30",
+        "seamark:radar_transponder:range": "10",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992351125",
+        "seamark:type": "landmark",
+        "source": "OS OpenData StreetView",
+        "wikidata": "Q546122",
+        "wikipedia": "en:Eddystone Lighthouse"
       }
     },
     {
@@ -12380,6 +12425,54 @@
     },
     {
       "type": "way",
+      "id": 462386374,
+      "nodes": [
+        4577867583,
+        4577867584,
+        4577867585,
+        4577867586,
+        4577867568,
+        4577867569,
+        4577867570,
+        4577867571,
+        4577867576,
+        4577867577,
+        4577867578,
+        4577867579,
+        4577867580,
+        4577867572,
+        4577867573,
+        4577867574,
+        4577867575,
+        4577867581,
+        4577867582,
+        4577867583
+      ],
+      "tags": {
+        "aeroway": "helipad",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "Bishop Rock",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "2",
+        "seamark:light:height": "44",
+        "seamark:light:period": "15",
+        "seamark:light:range": "20",
+        "seamark:light:reference": "A 0002",
+        "seamark:light:sequence": "0.5+(2)+0.5+(12)",
+        "seamark:light:visibility": "part_obscured",
+        "seamark:name": "Bishop Rock",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "T",
+        "seamark:radar_transponder:range": "18",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992351137",
+        "seamark:type": "landmark"
+      }
+    },
+    {
+      "type": "way",
       "id": 477898770,
       "nodes": [
         4711881491,
@@ -13442,6 +13535,120 @@
         "wikidata": "Q26550904",
         "wikipedia": "en:Scarborough Pier Lighthouse"
       }
+    },
+    {
+      "type": "node",
+      "id": 4577867568,
+      "lat": 49.8728652,
+      "lon": -6.4456297
+    },
+    {
+      "type": "node",
+      "id": 4577867569,
+      "lat": 49.8728495,
+      "lon": -6.4456217
+    },
+    {
+      "type": "node",
+      "id": 4577867570,
+      "lat": 49.8728363,
+      "lon": -6.4456058
+    },
+    {
+      "type": "node",
+      "id": 4577867571,
+      "lat": 49.8728276,
+      "lon": -6.4455839
+    },
+    {
+      "type": "node",
+      "id": 4577867572,
+      "lat": 49.8728673,
+      "lon": -6.4454812
+    },
+    {
+      "type": "node",
+      "id": 4577867573,
+      "lat": 49.8728821,
+      "lon": -6.4454823
+    },
+    {
+      "type": "node",
+      "id": 4577867574,
+      "lat": 49.8728961,
+      "lon": -6.4454906
+    },
+    {
+      "type": "node",
+      "id": 4577867575,
+      "lat": 49.8729089,
+      "lon": -6.4455067
+    },
+    {
+      "type": "node",
+      "id": 4577867576,
+      "lat": 49.8728242,
+      "lon": -6.4455613
+    },
+    {
+      "type": "node",
+      "id": 4577867577,
+      "lat": 49.8728253,
+      "lon": -6.4455383
+    },
+    {
+      "type": "node",
+      "id": 4577867578,
+      "lat": 49.8728309,
+      "lon": -6.4455171
+    },
+    {
+      "type": "node",
+      "id": 4577867579,
+      "lat": 49.8728404,
+      "lon": -6.4454994
+    },
+    {
+      "type": "node",
+      "id": 4577867580,
+      "lat": 49.8728529,
+      "lon": -6.4454871
+    },
+    {
+      "type": "node",
+      "id": 4577867581,
+      "lat": 49.8729175,
+      "lon": -6.445529
+    },
+    {
+      "type": "node",
+      "id": 4577867582,
+      "lat": 49.8729205,
+      "lon": -6.4455544
+    },
+    {
+      "type": "node",
+      "id": 4577867583,
+      "lat": 49.8729179,
+      "lon": -6.4455799
+    },
+    {
+      "type": "node",
+      "id": 4577867584,
+      "lat": 49.8729099,
+      "lon": -6.4456026
+    },
+    {
+      "type": "node",
+      "id": 4577867585,
+      "lat": 49.8728974,
+      "lon": -6.4456196
+    },
+    {
+      "type": "node",
+      "id": 4577867586,
+      "lat": 49.8728819,
+      "lon": -6.4456291
     },
     {
       "type": "node",
