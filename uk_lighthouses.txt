@@ -1,0 +1,18 @@
+			[out:json][timeout:25];
+			// gather results
+				  // query part for: “"seamark:light:sequence"=*”
+(area[name="United Kingdom"];)->.a;
+(
+            // node[man_made="lighthouse"](46.800059446787316,-16.34765625,61.92861247439052,21.55517578125);
+            // way[man_made="lighthouse"](46.800059446787316,-16.34765625,61.92861247439052,21.55517578125);
+			 node[~"seamark:light:(1:)*sequence"~".+"](46.800059446787316,-16.34765625,61.92861247439052,21.55517578125)(area.a);
+			 way[~"seamark:light:(1:)*sequence"~".+"](46.800059446787316,-16.34765625,61.92861247439052,21.55517578125)(area.a);
+			// way[~"seamark:light:\([:digit:]:\)*sequence"~".+"](46.800059446787316,-16.34765625,61.92861247439052,21.55517578125);
+			 //node["seamark:light:sequence"](46.800059446787316,-16.34765625,61.92861247439052,21.55517578125);
+			 //way["seamark:light:sequence"](46.800059446787316,-16.34765625,61.92861247439052,21.55517578125);
+			 //relation["seamark:light:sequence"](46.800059446787316,-16.34765625,61.92861247439052,21.55517578125);
+);
+			// print results
+			out body;
+			>;
+			out skel qt;
