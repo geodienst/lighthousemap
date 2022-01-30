@@ -92,6 +92,7 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 		case 'Fl': // Flashing Light
 		case 'LFl': // Long Flash Light
 		case 'Q': // Quick Flashing Light
+		case 'VQ': // Very Quick Flashing Light
 		case 'Mo':
 			if (!sequence || sequence.match(/^\d+$/))
 				throw 'Unexpected sequence: ' + sequence;
