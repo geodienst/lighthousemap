@@ -1,0 +1,32 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.57 93a4d346",
+  "osm3s": {
+    "timestamp_osm_base": "2022-01-30T02:44:59Z",
+    "timestamp_areas_base": "2022-01-30T02:15:38Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 87885579,
+      "lat": 59.38966,
+      "lon": -2.3813879,
+      "tags": {
+        "man_made": "lighthouse",
+        "name": "North Ronaldsay (\"New\") Lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "43",
+        "seamark:light:period": "10",
+        "seamark:light:range": "24",
+        "seamark:light:reference": "A 3722",
+        "seamark:light:sequence": "0.3+(9.7)",
+        "seamark:name": "North Ronaldsay",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:type": "light_major",
+        "wikidata": "Q17826758"
+      }
+    }
+ ]
+}
