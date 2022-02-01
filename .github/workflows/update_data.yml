@@ -17,8 +17,8 @@ jobs:
           timeout_seconds: 10
           max_attempts: 5
           command: |
-            git config --global user.name 'Pierre Mesure (Github Actions)'
-            git config --global user.email 'pierre@mesu.re'
+            git config --global user.name 'Geodienst (Github Actions)'
+            git config --global user.email 'geodienst-accounts@rug.nl'
             git add data-full.json
-            git commit -am "Updating the data"
+            git commit -am "Updating the data via Github action"
             git push
