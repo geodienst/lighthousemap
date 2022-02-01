@@ -8,12 +8,36 @@ L.Light = L.Circle.extend({
 });
 
 L.Light.sequence = function(tags, fallbackColor = '#FF0') {
+	renameProperty = function(tags, property) {
+		console.log('test')
+		old_key = 'seamark:light:1:' + property
+		new_key = 'seamark:light:' + property
+
+		if (!(new_key in tags) && old_key in tags) {
+			tags[new_key] = tags[old_key]
+		}
+
+		return tags
+	}
+
+	tags = renameProperty(tags, 'character')
+	tags = renameProperty(tags, 'colour')
+	tags = renameProperty(tags, 'group')
+	tags = renameProperty(tags, 'height')
+	tags = renameProperty(tags, 'period')
+	tags = renameProperty(tags, 'range')
+	tags = renameProperty(tags, 'sector_end')
+	tags = renameProperty(tags, 'sector_start')
+	tags = renameProperty(tags, 'sequence')
+
+
+
 	let character = tags['seamark:light:character'] || 'Fl';
-	
+
 	let colors = (tags['seamark:light:colour'] || fallbackColor).split(';');
 
 	let sequence = tags['seamark:light:sequence'];
-	
+
 	if (character.match(/^Al\./)) {// Alternating color!
 		character = tags['seamark:light:character'].substring(3);
 
@@ -49,7 +73,7 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 		const flash = 0.2;
 		const longflash = 1.0;
 		const remainder = period - (short * 2 * flash + longflash)
-		
+
 		if (remainder < 0)
 			throw 'Could not convert Q+LFL to Fl: negative remainder';
 
@@ -103,7 +127,7 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 				console.warn('There are fewer sequences than colors', {character, sequence, colors}, tags);
 
 			return new L.Light.CombinedSequence(sequences);
-	 
+
 	 	default:
 			throw 'Unknown character: ' + character
 	}
