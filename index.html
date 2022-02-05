@@ -85,9 +85,10 @@
 		<script src="https://unpkg.com/rbush@2.0.1/rbush.js"></script>
 		<script src="https://unpkg.com/@turf/turf@3.5.2/turf.min.js"></script>
 		<script src="leaflet.indexedfeaturelayer.js"></script>
-		<script src="leaflet.rangedmarker.js"></script>
-		<script src="leaflet.light.js"></script>
+<!-- 		<script src="leaflet.rangedmarker.js"></script>
+ -->		<script src="leaflet.light.js"></script>
 		<script>
+			// map
 			let map = L.map('seamap', {attributionControl: false})
 				.setView([55.7, -3.7], 6)
 				.addControl(L.control.attribution({
@@ -95,10 +96,18 @@
 					prefix: 'PJ, based on an original by <a href="https://www.geodienst.xyz/">Geodienst</a>'
 				}));
 
+			// background layer
 
-			L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
-				maxZoom: 20,
-				attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+			// nice layer
+			// L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+			// 	maxZoom: 20,
+			// 	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+			// }).addTo(map);
+
+			// simple layer
+			L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+				detectRetina: true,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 			}).addTo(map);
 
 			let bounds = map.getBounds();
@@ -109,6 +118,7 @@
 				return [sw.lat, sw.lng, ne.lat, ne.lng]
 			}
 
+			// query to get lighthouse data from OSM. Not used - just reads from a local json file instead
 			let query = document.getElementById('seamap-query').textContent
 				.replace(/\{\{bbox\}\}/g, bbox(bounds).join(','));
 
@@ -118,11 +128,10 @@
 			// let query = document.getElementById('seamap-query').textContent
 			// 	.replace(/\{\{bbox\}\}/g, bounds.join(','));
 
-			
-
 			let url = 'https://www.overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
 
-			url = 'data_pj_recent.json'; // For testing
+			//url = 'data_just2.json'; // For testing
+			url = 'data_Pj_recent.json'; // For testing
 
 			let data = fetch(url)
 				.then(req => req.json())
@@ -130,13 +139,16 @@
 				.then(json => ({
 					type: json.type,
 					features: json.features.map(feature => {
+						//console.log(feature);
 						return feature.geometry.type == 'Polygon'
 							? Object.assign({}, feature, {geometry: turf.centroid(feature).geometry})
 							: feature;
 					})
 				}));
 
-			let lights = data.then(geojson => {
+			console.log(data);
+
+			let flashing_lights = data.then(geojson => {
 				return L.indexedGeoJSON(null, {
 					pointToLayer: function(feat, latlng) {
 						let sequence;
@@ -167,22 +179,26 @@
 					}
 				}).addTo(map).addData(geojson);
 			});
+
+			//console.log(lights);
 			
 			let useRealColors = true;
 
 			document.querySelector('input[name=real-colors]').checked = useRealColors;
-			
 			document.querySelector('input[name=real-colors]').addEventListener('change', function(e) {
 				useRealColors = this.checked;
 			});
 
-			lights.then(layer => {
+			flashing_lights.then(layer => {
 				let draw = function(t) {
 					layer.eachVisibleLayer(marker => {
 						var state = false
 						try{
 							var state = marker.options.sequence.state(t);
+							//console.log(marker, t, state);
+							//debugger;
 							marker.setColor(state ? (useRealColors ? state : '#FF0') : false);
+							//console.log(marker.fillColor);
 						} catch(e){
 							// console.error(e)
 						}
@@ -198,7 +214,7 @@
 				update(0);
 			}).catch(e => console.error(e));
 
-			lights.catch(e => console.error(e));
+			flashing_lights.catch(e => console.error(e));
 
 		</script>
 	</body>
