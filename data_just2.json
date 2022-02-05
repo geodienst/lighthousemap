@@ -6,8 +6,7 @@
     "timestamp_areas_base": "2022-01-30T02:15:38Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
-  "elements": [
-    {
+  "elements": [{
       "type": "node",
       "id": 87885579,
       "lat": 59.38966,
@@ -115,5 +114,5 @@
         "wikidata": "Q28465910"
       }
     }
- ]
+  ]
 }
