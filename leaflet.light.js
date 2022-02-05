@@ -23,7 +23,7 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 
 	let sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
 
-	console.log(tags['name'] || tags['seamark:name'], character, colors, sequence);
+	//console.log(tags['name'] || tags['seamark:name'], character, colors, sequence);
 
 	if (character.match(/^Al\./)) {// Alternating color!
 		character = tags['seamark:light:character'].substring(3);
@@ -34,7 +34,7 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 
 	if (character == 'Iso' && !sequence && ('seamark:light:period' in tags || 'seamark:light:1:period' in tags)) {
 		const period = parseFloat(tags['seamark:light:period'] || tags['seamark:light:1:period'], 10);
-		console.log(period);
+		//console.log(period);
 		sequence = (period / 2) + '+(' + (period / 2) + ')';
 	}
 
@@ -80,7 +80,7 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 	// Remove the 'second' suffix
 	sequence = sequence.replace(/s$/, '');
 
-	console.log(character, colors, sequence);
+	//console.log(character, colors, sequence);
 
 	switch (character) {
 		case 'F': // Fixed Light
