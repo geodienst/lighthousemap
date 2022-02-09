@@ -79,6 +79,7 @@ L.IndexedFeatureLayer = L.GeoJSON.extend({
 
 		// Necessary for circle markers I use here
 		layer._map = this._map;
+		layer.beforeAdd(layer._map); // need to explicitly call this to set the renderer for the layer else _project will fail.
 		layer._project();
 		
 		const xy = layer.getBounds().toMinMax();
