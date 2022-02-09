@@ -98,7 +98,7 @@
 
 			// background layer
 
-			// nice layer
+//			nice layer
 			// L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
 			// 	maxZoom: 20,
 			// 	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
@@ -139,14 +139,11 @@
 				.then(json => ({
 					type: json.type,
 					features: json.features.map(feature => {
-						//console.log(feature);
 						return feature.geometry.type == 'Polygon'
 							? Object.assign({}, feature, {geometry: turf.centroid(feature).geometry})
 							: feature;
 					})
 				}));
-
-			//console.log(data);
 
 			let flashing_lights = data.then(geojson => {
 				return L.indexedGeoJSON(null, {
@@ -180,8 +177,7 @@
 				}).addTo(map).addData(geojson);
 			});
 
-			//console.log(lights);
-			
+		
 			let useRealColors = true;
 
 			document.querySelector('input[name=real-colors]').checked = useRealColors;
@@ -195,12 +191,9 @@
 						var state = false
 						try{
 							var state = marker.options.sequence.state(t);
-							//console.log(marker, t, state);
-							//debugger;
 							marker.setColor(state ? (useRealColors ? state : '#FF0') : false);
-							//console.log(marker.fillColor);
 						} catch(e){
-							// console.error(e)
+							console.error(e)
 						}
 						
 					});
