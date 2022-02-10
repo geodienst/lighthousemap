@@ -177,9 +177,25 @@
 				}).addTo(map).addData(geojson);
 			});
 
-		
-			let useRealColors = true;
 
+			//add a sample SVG layer to the map
+			// first, build the SVG
+			var svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+			svgElement.setAttribute('xmlns', "http://www.w3.org/2000/svg");
+			svgElement.setAttribute('viewBox', "0 0 200 200");
+
+			svgPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+			// set the path to draw a white heart
+			svgPath.setAttribute('d', 'M 10,30 A 20,20 0,0,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z');
+			svgPath.setAttribute('id', 'heart');
+			svgPath.setAttribute('style', "fill:white");
+			svgElement.appendChild(svgPath);
+
+			var svgElementBounds = [ [ 53, -3 ], [ 52, -1 ] ];
+			// add it to the map
+			L.svgOverlay(svgElement, svgElementBounds).addTo(map);
+
+			let useRealColors = true;
 			document.querySelector('input[name=real-colors]').checked = useRealColors;
 			document.querySelector('input[name=real-colors]').addEventListener('change', function(e) {
 				useRealColors = this.checked;
