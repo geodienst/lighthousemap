@@ -91,7 +91,7 @@ Your browser does not support the HTML canvas tag.</canvas>
 
     // if this didn't result in anything, the lighthouse only has one light.
     if (!light_data.length) {
-        // we are just looking for tags looking like seamark:light:<something>
+        // now we are just looking for tags looking like seamark:light:<something>
         //console.log('pj', 'only one light!')
         let re2 = new RegExp("seamark:light:(.+)$");
         // get the key-value pairs
@@ -104,7 +104,7 @@ Your browser does not support the HTML canvas tag.</canvas>
                 one_light_data[new_key[1]] = entry[1];
         });
 
-        // no start or end angles, so need to provide these: 0, 360
+        // no start or end angles, so need to provide these to draw a circle: 0, 360
         one_light_data.start = '0';
         one_light_data.end = '360';
         //console.log('pj', 'single light data', one_light_data);

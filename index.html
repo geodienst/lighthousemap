@@ -183,7 +183,6 @@
 			var svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 			svgElement.setAttribute('xmlns', "http://www.w3.org/2000/svg");
 			svgElement.setAttribute('viewBox', "0 0 200 200");
-
 			svgPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
 			// set the path to draw a white heart
 			svgPath.setAttribute('d', 'M 10,30 A 20,20 0,0,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z');
@@ -195,12 +194,82 @@
 			// add it to the map
 			L.svgOverlay(svgElement, svgElementBounds).addTo(map);
 
+			// add a sample Canvas layer to the map
+			// (code pinched from lights_example.html)
+			let lighthouse_data = {
+				'name': 'test lighthouse',
+				'type': 'lighthouse',
+				'xpos': 200,
+				'ypos': 200,
+				'sectors': [
+					{'start': 1, 'end': 30, "colour": "green", "range": 20},
+					{'start': 30, 'end': 220, "colour": "white", "range": 30},
+					{'start': 220, 'end': 280, "colour": "red", "range": 20}
+				]
+			};
+
+		    let draw_light = function(lighthouse) {
+
+		        var origin_x = lighthouse.xpos;
+		        var origin_y = lighthouse.ypos;
+
+		        // draw a light sector between start and end bearings, with radius = range and specified colour
+		        let draw_sector = function (light_to_draw) {
+		            //console.log(light_to_draw.start, light_to_draw.end, light_to_draw.range, light_to_draw.colour, origin_x, origin_y);
+		            
+		            // start and end are bearings TO the light. We need bearing FROM the light = 180+start % 360.
+		            // SVG arc angles are measured from the y=0 line i.e. 0deg = right. So need to subtract 90deg to get direction from north
+
+		            // is it a circle?
+		            var start_from_deg;
+		            var end_from_deg;
+		            
+		            if (light_to_draw.start == '0' && light_to_draw.end == '360') {
+		                start_from_deg = 0;
+		                end_from_deg = 360;
+		            }
+		            else {            
+		                start_from_deg = (90 + parseInt(light_to_draw.start)) % 360;
+		                end_from_deg = (90 + parseInt(light_to_draw.end)) % 360;
+		            }
+		           //console.log('pj','angles', light_to_draw.start, light_to_draw.end, start_from_deg, end_from_deg);
+
+		            var angle_s = start_from_deg / 180 * Math.PI;
+		            var angle_e = end_from_deg / 180 * Math.PI;
+		            var radius = light_to_draw.range * 8;
+
+		            ctx.beginPath();
+		            ctx.moveTo(origin_x, origin_y);
+		            ctx.arc(origin_x,origin_y,radius,angle_s,angle_e);
+		            ctx.lineTo(origin_x, origin_y);
+		            ctx.closePath;
+		            
+		            ctx.fillStyle = (light_to_draw.colour == 'white' ? 'white' : light_to_draw.colour);
+		            ctx.fill();
+		        };
+		        
+		        lighthouse.sectors.forEach(draw_sector);
+
+		        // put a dot where the lighthouse is
+		        ctx.beginPath();
+		        ctx.arc(origin_x, origin_y, 5, 0, 2 * Math.PI);
+		        ctx.closePath;
+		        ctx.fillStyle = "orange";
+		        ctx.fill();
+		    };
+
+
+
+
+
+		    // get the user input
 			let useRealColors = true;
 			document.querySelector('input[name=real-colors]').checked = useRealColors;
 			document.querySelector('input[name=real-colors]').addEventListener('change', function(e) {
 				useRealColors = this.checked;
 			});
 
+			// flash the lights
 			flashing_lights.then(layer => {
 				let draw = function(t) {
 					layer.eachVisibleLayer(marker => {
@@ -219,7 +288,6 @@
 					draw(t / 1000);
 					requestAnimationFrame(update);
 				};
-
 				update(0);
 			}).catch(e => console.error(e));
 
