@@ -3,7 +3,7 @@
 <body>
     <canvas id="myCanvas" width="400" height="400" style="border:1px solid #d3d3d3;">
     Your browser does not support the HTML canvas tag.</canvas>
-
+<script src="chroma/chroma.min.js"></script>
 <script>
     // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
     var tags = {
@@ -122,7 +122,7 @@
     // get a canvas element and fill it sort of dark grey
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    ctx.fillStyle = "rgba(100,100,100,1)";
+    ctx.fillStyle = "darkgray";
     ctx.fillRect(0, 0, c.width, c.height);
 
     // draw a lighthouse
@@ -130,7 +130,7 @@
 
         var origin_x = lighthouse.xpos;
         var origin_y = lighthouse.ypos;
-        var background = context.fillStyle;
+        //var background = context.fillStyle;
 
         context.save(); // keep the context so we can unpick the clipping path at the end
 
@@ -168,11 +168,13 @@
             // do a gradient fill that fades from the centre to the range of the light
             // first colour is the specified colour; the second is that same, but transparent
             var start_colour = (light_to_draw.colour == 'white' ? 'yellow' : light_to_draw.colour);
-            var end_colour = background;
+            var end_colour = chroma(start_colour).alpha(0.0);
+            console.log('pj', 'mapped colours', start_colour, end_colour);
+
 
             var grd = context.createRadialGradient(origin_x, origin_y, 0, origin_x, origin_y, radius);
             grd.addColorStop(0, start_colour);
-            grd.addColorStop(1, background);
+            grd.addColorStop(1, end_colour);
             context.fillStyle = (grd);
             context.fill();
         };
@@ -193,7 +195,7 @@
         // this generates a clipping path sector on top of which we draw the sectors
 
         var clipping_sectors = [[0, 360 * the_sequence.steps[0][1] / the_sequence.duration ]];
-        var rotation_angle = 400; // <- this will be updated by animation, delta = t/1000 / duration * 360 % 360
+        var rotation_angle = 270; // <- this will be updated by animation, delta = t/1000 / duration * 360 % 360
         var clip_radius = 200;  // <- this should be at least the max of the radii of the sectors
 
         // calculate the angles
