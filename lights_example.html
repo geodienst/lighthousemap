@@ -117,12 +117,12 @@
    the_lighthouse.sectors = light_data;
    the_lighthouse.xpos = 200;
    the_lighthouse.ypos = 200;
-   console.log('pj', 'the_lighthouse', the_lighthouse);
+   //console.log('pj', 'the_lighthouse', the_lighthouse);
 
     // get a canvas element and fill it sort of dark grey
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    ctx.fillStyle = "darkgray";
+    ctx.fillStyle = "#303030";
     ctx.fillRect(0, 0, c.width, c.height);
 
     // draw a lighthouse
@@ -163,13 +163,13 @@
             context.moveTo(origin_x, origin_y);
             context.arc(origin_x,origin_y,radius,angle_s,angle_e);
             context.lineTo(origin_x, origin_y);
-            context.closePath;
+            context.closePath();
 
             // do a gradient fill that fades from the centre to the range of the light
             // first colour is the specified colour; the second is that same, but transparent
             var start_colour = (light_to_draw.colour == 'white' ? 'yellow' : light_to_draw.colour);
             var end_colour = chroma(start_colour).alpha(0.0);
-            console.log('pj', 'mapped colours', start_colour, end_colour);
+            //console.log('pj', 'mapped colours', start_colour, end_colour);
 
 
             var grd = context.createRadialGradient(origin_x, origin_y, 0, origin_x, origin_y, radius);
@@ -193,21 +193,21 @@
         // for the rotating light, we ignore the colour (that's set by the underlying sector) 
         // and just use the durations of the segments where it's false
         // this generates a clipping path sector on top of which we draw the sectors
+        var rotation_angle = 300; // <- this will be updated by animation, delta = t/1000 / duration * 360 % 360
 
         var clipping_sectors = [[0, 360 * the_sequence.steps[0][1] / the_sequence.duration ]];
-        var rotation_angle = 270; // <- this will be updated by animation, delta = t/1000 / duration * 360 % 360
-        var clip_radius = 200;  // <- this should be at least the max of the radii of the sectors
+        var clip_radius = 128;  // <- this should be at least the max of the radii of the sectors
 
         // calculate the angles
-        console.log('pj', 'clip sectors', clipping_sectors);
+        //console.log('pj', 'clip sectors', clipping_sectors);
 
         var clip_angle_s = (rotation_angle + clipping_sectors[0][0]) % 360;
         var clip_angle_e = (rotation_angle + clipping_sectors[0][1]) % 360;
 
-        console.log('pj', 'clip angles', clip_angle_s, clip_angle_e);
+        //console.log('pj', 'clip angles', clip_angle_s, clip_angle_e);
 
         // draw the clipping path
-        context.beginPath;
+        context.beginPath();
         context.moveTo(origin_x, origin_y);
         context.arc(origin_x,origin_y,clip_radius,clip_angle_s / 180 * Math.PI,clip_angle_e / 180 * Math.PI);
         context.lineTo(origin_x, origin_y);
@@ -217,8 +217,7 @@
         // draw the lighthouse sectors on top of clipping path to limit where they shine
         lighthouse.sectors.forEach(draw_sector);
 
-        // put a dot where the lighthouse is
-
+        // put a dot where the lighthouse is. Do restore() to clear the clip path so we get the whole dot.
         context.restore();
         context.beginPath();
         context.arc(origin_x, origin_y, 4, 0, 2 * Math.PI);
