@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<canvas id="myCanvas" width="400" height="400" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML canvas tag.</canvas>
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
 
 <script>
-
     // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
     var tags = {
                 "name": "Carraig Fhada Lighthouse",
@@ -54,27 +52,26 @@ Your browser does not support the HTML canvas tag.</canvas>
         // create regexp using light_seq
         let re = new RegExp("seamark:light:" + light_seq.toString() + ':(.+)$');
 
-        // get the key-value pairs
+        // get the key-value pairs which match the regex - of the form "period", "3"
         the_entries = Object.entries(tags).filter((the_entry) => re.test(the_entry[0]));
 
         // process these entries into an object
         let one_light_data = {};
         the_entries.forEach(entry => {
-                let new_key = entry[0].match(re);
-                // change the names of a couple of them to match the expected naming
-                switch(new_key[1]) {
-                    case 'sector_start':
-                        key = 'start';
-                        break;
-                    case 'sector_end':
-                        key = 'end';
-                        break;
-                    default:
-                        key = new_key[1];
-                } 
-                one_light_data[key] = entry[1];
+            let new_key = entry[0].match(re);
+            // change the names of a couple of them to match the expected naming
+            switch(new_key[1]) {
+                case 'sector_start':
+                    key = 'start';
+                    break;
+                case 'sector_end':
+                    key = 'end';
+                    break;
+                default:
+                    key = new_key[1];
+            } 
+            one_light_data[key] = entry[1];
         });
-        //console.log('pj', 'one_light_data', one_light_data)
         return one_light_data;
     };
 
@@ -92,7 +89,6 @@ Your browser does not support the HTML canvas tag.</canvas>
     // if this didn't result in anything, the lighthouse only has one light.
     if (!light_data.length) {
         // now we are just looking for tags looking like seamark:light:<something>
-        //console.log('pj', 'only one light!')
         let re2 = new RegExp("seamark:light:(.+)$");
         // get the key-value pairs
         the_entries = Object.entries(tags).filter((the_entry) => re2.test(the_entry[0]));
@@ -123,18 +119,20 @@ Your browser does not support the HTML canvas tag.</canvas>
    the_lighthouse.ypos = 200;
    console.log('pj', 'the_lighthouse', the_lighthouse);
 
-    // this draws a pie slice using the arc option
-    // (much easier than I thought it would be)
+    // get a canvas element and fill it sort of dark grey
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    ctx.fillStyle = "#3f3e47";
+    ctx.fillStyle = "rgba(100,100,100,1)";
     ctx.fillRect(0, 0, c.width, c.height);
 
     // draw a lighthouse
-    let draw_light = function(lighthouse) {
+    let draw_light = function(lighthouse, context) {
 
         var origin_x = lighthouse.xpos;
         var origin_y = lighthouse.ypos;
+        var background = context.fillStyle;
+
+        context.save(); // keep the context so we can unpick the clipping path at the end
 
         // draw a light sector between start and end bearings, with radius = range and specified colour
         let draw_sector = function (light_to_draw) {
@@ -159,29 +157,78 @@ Your browser does not support the HTML canvas tag.</canvas>
 
             var angle_s = start_from_deg / 180 * Math.PI;
             var angle_e = end_from_deg / 180 * Math.PI;
-            var radius = light_to_draw.range * 8;
+            var radius = light_to_draw.range * 16;
 
-            ctx.beginPath();
-            ctx.moveTo(origin_x, origin_y);
-            ctx.arc(origin_x,origin_y,radius,angle_s,angle_e);
-            ctx.lineTo(origin_x, origin_y);
-            ctx.closePath;
-            
-            ctx.fillStyle = (light_to_draw.colour == 'white' ? 'white' : light_to_draw.colour);
-            ctx.fill();
+            context.beginPath();
+            context.moveTo(origin_x, origin_y);
+            context.arc(origin_x,origin_y,radius,angle_s,angle_e);
+            context.lineTo(origin_x, origin_y);
+            context.closePath;
+
+            // do a gradient fill that fades from the centre to the range of the light
+            // first colour is the specified colour; the second is that same, but transparent
+            var start_colour = (light_to_draw.colour == 'white' ? 'yellow' : light_to_draw.colour);
+            var end_colour = background;
+
+            var grd = context.createRadialGradient(origin_x, origin_y, 0, origin_x, origin_y, radius);
+            grd.addColorStop(0, start_colour);
+            grd.addColorStop(1, background);
+            context.fillStyle = (grd);
+            context.fill();
         };
+
+       // simulate the rotating light by clipping to just the moving sector where the light shines through
+        // this is rotated by an angle dependent on the time, to simulate the light rotating
+        //the sequence is of the form 
+        the_sequence = {
+            duration: 3,
+            offset: 0, // set to a random number when the light is drawn
+            steps: [
+                ['white', 0.3],
+                [false, 2.7]
+            ]
+        };
+        // for the rotating light, we ignore the colour (that's set by the underlying sector) 
+        // and just use the durations of the segments where it's false
+        // this generates a clipping path sector on top of which we draw the sectors
+
+        var clipping_sectors = [[0, 360 * the_sequence.steps[0][1] / the_sequence.duration ]];
+        var rotation_angle = 400; // <- this will be updated by animation, delta = t/1000 / duration * 360 % 360
+        var clip_radius = 200;  // <- this should be at least the max of the radii of the sectors
+
+        // calculate the angles
+        console.log('pj', 'clip sectors', clipping_sectors);
+
+        var clip_angle_s = (rotation_angle + clipping_sectors[0][0]) % 360;
+        var clip_angle_e = (rotation_angle + clipping_sectors[0][1]) % 360;
+
+        console.log('pj', 'clip angles', clip_angle_s, clip_angle_e);
+
+        // draw the clipping path
+        context.beginPath;
+        context.moveTo(origin_x, origin_y);
+        context.arc(origin_x,origin_y,clip_radius,clip_angle_s / 180 * Math.PI,clip_angle_e / 180 * Math.PI);
+        context.lineTo(origin_x, origin_y);
+        //context.closePath();
+        context.clip();
         
+        // draw the lighthouse sectors on top of clipping path to limit where they shine
         lighthouse.sectors.forEach(draw_sector);
 
         // put a dot where the lighthouse is
-        ctx.beginPath();
-        ctx.arc(origin_x, origin_y, 5, 0, 2 * Math.PI);
-        ctx.closePath;
-        ctx.fillStyle = "orange";
-        ctx.fill();
+
+        context.restore();
+        context.beginPath();
+        context.arc(origin_x, origin_y, 4, 0, 2 * Math.PI);
+        context.closePath();
+        context.fillStyle = "white";
+        context.fill();
     };
 
-    draw_light(the_lighthouse);
+    draw_light(the_lighthouse, ctx);
+
+    // animate baby!
+
     
 </script> 
 
