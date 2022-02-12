@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <canvas id="myCanvas" width="400" height="400" style="border:1px solid #d3d3d3;">
+    <canvas id="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3;">
     Your browser does not support the HTML canvas tag.</canvas>
 <script src="chroma/chroma.min.js"></script>
 <script>
@@ -115,8 +115,8 @@
    the_lighthouse.name = tags['seamark:name'] || tags['name'];
    the_lighthouse.type = tags['seamark:type'];
    the_lighthouse.sectors = light_data;
-   the_lighthouse.xpos = 200;
-   the_lighthouse.ypos = 200;
+   the_lighthouse.xpos = 300;
+   the_lighthouse.ypos = 300;
    //console.log('pj', 'the_lighthouse', the_lighthouse);
 
     // get a canvas element and fill it sort of dark grey
@@ -167,7 +167,7 @@
 
             // do a gradient fill that fades from the centre to the range of the light
             // first colour is the specified colour; the second is that same, but transparent
-            var start_colour = (light_to_draw.colour == 'white' ? 'yellow' : light_to_draw.colour);
+            var start_colour = chroma(light_to_draw.colour == 'white' ? 'white' : light_to_draw.colour).alpha(0.7);
             var end_colour = chroma(start_colour).alpha(0.0);
             //console.log('pj', 'mapped colours', start_colour, end_colour);
 
@@ -183,17 +183,17 @@
         // this is rotated by an angle dependent on the time, to simulate the light rotating
         //the sequence is of the form 
         the_sequence = {
-            duration: 3,
+            duration: 1,
             offset: 0, // set to a random number when the light is drawn
             steps: [
-                ['white', 0.3],
-                [false, 2.7]
+                ['white', 0.9],
+                [false, 0.1]
             ]
         };
         // for the rotating light, we ignore the colour (that's set by the underlying sector) 
         // and just use the durations of the segments where it's false
         // this generates a clipping path sector on top of which we draw the sectors
-        var rotation_angle = 300; // <- this will be updated by animation, delta = t/1000 / duration * 360 % 360
+        var rotation_angle = 0; // <- this will be updated by animation, delta = t/1000 / duration * 360 % 360
 
         var clipping_sectors = [[0, 360 * the_sequence.steps[0][1] / the_sequence.duration ]];
         var clip_radius = 128;  // <- this should be at least the max of the radii of the sectors
