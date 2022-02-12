@@ -130,8 +130,8 @@
 
 			let url = 'https://www.overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
 
-			//url = 'data_just2.json'; // For testing
-			url = 'data_pj_recent.json'; // For testing
+			url = 'data_just2.json'; // For testing
+			//url = 'data_pj_recent.json'; // For testing
 
 			let data = fetch(url)
 				.then(req => req.json())
@@ -155,7 +155,7 @@
 						} catch (e) {
 							console.error('Error parsing sequence: %s', e, feat.properties.tags);
 
-							// Fallback sequence
+							// Fallback sequence flashing 1s on, 1s off
 							sequence = L.Light.sequence({
 								'seamark:light:sequence': '1+(1)'
 							});
@@ -165,6 +165,8 @@
 							interactive: false,
 							title: feat.properties.tags['name'],
 							// PJ: use light:1 if multiple lights
+							// assumes range is in km. Is this right?
+							// no - it's nautical miles - see https://wiki.openstreetmap.org/wiki/Seamarks/Lights
 							// radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || 1) * 1000,
 							radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || parseFloat(feat.properties.tags['seamark:light:1:range'], 10) || 1) * 1000,
 							sequence: sequence,
@@ -208,7 +210,12 @@
 				]
 			};
 
-		    let draw_light = function(lighthouse) {
+			// get the canvas on which to draw
+
+
+
+		    // function to draw a lighthouse
+		    let draw_light = function(lighthouse, context) {
 
 		        var origin_x = lighthouse.xpos;
 		        var origin_y = lighthouse.ypos;
@@ -220,7 +227,7 @@
 		            // start and end are bearings TO the light. We need bearing FROM the light = 180+start % 360.
 		            // SVG arc angles are measured from the y=0 line i.e. 0deg = right. So need to subtract 90deg to get direction from north
 
-		            // is it a circle?
+		            // is it a circle
 		            var start_from_deg;
 		            var end_from_deg;
 		            
@@ -238,29 +245,25 @@
 		            var angle_e = end_from_deg / 180 * Math.PI;
 		            var radius = light_to_draw.range * 8;
 
-		            ctx.beginPath();
-		            ctx.moveTo(origin_x, origin_y);
-		            ctx.arc(origin_x,origin_y,radius,angle_s,angle_e);
-		            ctx.lineTo(origin_x, origin_y);
-		            ctx.closePath;
+		            context.beginPath();
+		            context.moveTo(origin_x, origin_y);
+		            context.arc(origin_x,origin_y,radius,angle_s,angle_e);
+		            context.lineTo(origin_x, origin_y);
+		            context.closePath;
 		            
-		            ctx.fillStyle = (light_to_draw.colour == 'white' ? 'white' : light_to_draw.colour);
-		            ctx.fill();
+		            context.fillStyle = (light_to_draw.colour == 'white' ? 'white' : light_to_draw.colour);
+		            context.fill();
 		        };
 		        
 		        lighthouse.sectors.forEach(draw_sector);
 
 		        // put a dot where the lighthouse is
-		        ctx.beginPath();
-		        ctx.arc(origin_x, origin_y, 5, 0, 2 * Math.PI);
-		        ctx.closePath;
-		        ctx.fillStyle = "orange";
-		        ctx.fill();
+		        context.beginPath();
+		        context.arc(origin_x, origin_y, 5, 0, 2 * Math.PI);
+		        context.closePath;
+		        context.fillStyle = "orange";
+		        context.fill();
 		    };
-
-
-
-
 
 		    // get the user input
 			let useRealColors = true;
