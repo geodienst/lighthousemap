@@ -126,7 +126,7 @@
     ctx.fillRect(0, 0, c.width, c.height);
 
     // draw a lighthouse
-    let draw_light = function(lighthouse, context) {
+    let draw_light = function(the_time, lighthouse, context) {
 
         var origin_x = lighthouse.xpos;
         var origin_y = lighthouse.ypos;
@@ -183,17 +183,24 @@
         // this is rotated by an angle dependent on the time, to simulate the light rotating
         //the sequence is of the form 
         the_sequence = {
-            duration: 1,
+            duration: 10,
             offset: 0, // set to a random number when the light is drawn
             steps: [
-                ['white', 0.9],
-                [false, 0.1]
+                ['white', 0.5],
+                [false, 9.5]
             ]
         };
         // for the rotating light, we ignore the colour (that's set by the underlying sector) 
         // and just use the durations of the segments where it's false
         // this generates a clipping path sector on top of which we draw the sectors
-        var rotation_angle = 0; // <- this will be updated by animation, delta = t/1000 / duration * 360 % 360
+
+        // first up, clear what's already been drawn
+        context.fillStyle = "#303030";
+        context.fillRect(0, 0, c.width, c.height);
+
+
+        var rotation_angle = (the_time / the_sequence.duration * 360) % 360;
+        //console.log('pj', 'time / angle', the_time, rotation_angle);
 
         var clipping_sectors = [[0, 360 * the_sequence.steps[0][1] / the_sequence.duration ]];
         var clip_radius = 128;  // <- this should be at least the max of the radii of the sectors
@@ -205,6 +212,7 @@
         var clip_angle_e = (rotation_angle + clipping_sectors[0][1]) % 360;
 
         //console.log('pj', 'clip angles', clip_angle_s, clip_angle_e);
+
 
         // draw the clipping path
         context.beginPath();
@@ -226,10 +234,19 @@
         context.fill();
     };
 
-    draw_light(the_lighthouse, ctx);
+    //draw_light(1, the_lighthouse, ctx);
 
     // animate baby!
+    // call the draw_light function repeatedly using requestAnimationFrame(draw_light)
+    // This needs to redraw, with the angle of the lighthouse rotor rotation_angle recalculated
+    // based on the time
 
+    let update_the_light = function(t){
+        draw_light(t/1000, the_lighthouse, ctx);
+        requestAnimationFrame(update_the_light);
+    };
+
+    update_the_light(0);
     
 </script> 
 
