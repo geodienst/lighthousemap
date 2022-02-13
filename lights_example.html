@@ -8,8 +8,11 @@
     // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
     // It's very ramshackle and plenty of room for tidying and improvement.
 
-    // copy in here the properties section of a lighthouse from lights_geojson.json 
-    var tags = {
+    // copy in here the geojson for a lighthouse from lights_geojson.json 
+    var geojson = {
+            "type": "Feature",
+            "id": "node/427582786",
+            "properties": {
                 "man_made": "lighthouse",
                 "name": "Southwold Lighthouse",
                 "seamark:landmark:height": "31",
@@ -47,6 +50,14 @@
                 "seamark:type": "landmark",
                 "wikidata": "Q7571483",
                 "id": "node/427582786"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.6813393,
+                    52.3272264
+                ]
+            }
     };
 
     // get the entries where tags match "seamark:light:i:<something>" and create an object of {<something>: value ...} entries
@@ -80,9 +91,10 @@
      // iterate through all the lights to build a light_data object
     var light_data = [];
 
+    var tags = geojson.properties;
+
     for (let light_seq = 1; light_seq < 9; light_seq++){
         let this_light = light_entry(tags, light_seq);
-        //console.log('pj','this light', light_seq, this_light);
         if (Object.keys(this_light).length > 0)
             {light_data.push(this_light);}
         else {break;}
@@ -105,7 +117,6 @@
         // no start or end angles, so need to provide these to draw a circle: 0, 360
         one_light_data.start = '0';
         one_light_data.end = '360';
-        //console.log('pj', 'single light data', one_light_data);
 
         light_data.push(one_light_data);
     }
@@ -251,19 +262,37 @@
         // put a dot where the lighthouse is. Do restore() to clear the clip path so we get the whole dot.
         context.restore();
         context.beginPath();
-        context.arc(origin_x, origin_y, 4, 0, 2 * Math.PI);
+        context.arc(origin_x, origin_y, 20, 0, 2 * Math.PI);
         context.closePath();
         context.fillStyle = "white";
         context.fill();
     };
 
-    // animate baby!
+
+    // now see if we can use a context provided by Leaflet to draw the lighthouse on a map
+    // 
+
+
+
+
+
+
+
+
+
+
+
+
+    // animate the lighthouse
     // call the draw_light function repeatedly using requestAnimationFrame
     let update_the_light = function(t){
         draw_light(t/1000, the_lighthouse, ctx);
         requestAnimationFrame(update_the_light);
     };
+    ctx.scale(0.2, 0.2);
     update_the_light(0);
+
+
 </script> 
 </body>
 </html>
