@@ -95,8 +95,8 @@
         // process these entries into an object
         let one_light_data = {};
         the_entries.forEach(entry => {
-                let new_key = entry[0].match(re2);
-                one_light_data[new_key[1]] = entry[1];
+            let new_key = entry[0].match(re2);
+            one_light_data[new_key[1]] = entry[1];
         });
 
         // no start or end angles, so need to provide these to draw a circle: 0, 360
@@ -116,6 +116,7 @@
    the_lighthouse.sectors = light_data;
    the_lighthouse.xpos = 300;
    the_lighthouse.ypos = 300;
+   the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
    //console.log('pj', 'the_lighthouse', the_lighthouse);
 
     // get a canvas element and fill it sort of dark grey
@@ -181,36 +182,56 @@
        // simulate the rotating light by clipping to just the moving sector where the light shines through
         // this is rotated by an angle dependent on the time, to simulate the light rotating
         //the sequence is of the form 
-        the_sequence = {
-            duration: 20,
-            offset: 0, // set to a random number when the light is drawn
-            steps: [
-                ['white', 0.5],
-                [false, 1],
-                ['white', 0.5],
-                [false, 1],
-                ['white', 0.5],
-                [false, 1],
-                ['white', 0.5],
-                [false, 15]
-            ]
+        // var the_sequence = {
+        //     duration: 20,
+        //     offset: 0, // set to a random number when the light is drawn
+        //     steps: [
+        //         ['white', 0.5],
+        //         [false, 1],
+        //         ['white', 0.5],
+        //         [false, 1],
+        //         ['white', 0.5],
+        //         [false, 1],
+        //         ['white', 0.5],
+        //         [false, 15]
+        //     ]
+        // };
+
+        // build the sequence array from the light sequence string
+        // it's series of plus-separated tokens comprising numbers
+        // which are in brackets if dark, not if light
+        // split the sequence
+        var seq_split = the_lighthouse.sequence.replace(/,/g,'+').split('+');
+        //console.log('pj', 'seq_split', seq_split);
+        // extract the numbers using a regex, identifying whether there's a bracket or not
+        var seq_steps = seq_split.map(element => {
+            if(element.substring(0, 1) == '('){
+                return [false, Number(element.substring(1, element.length-1))];
+            }
+            else {
+                return ['yes', Number(element)];
+            }
+        });
+
+        // the sequence object is a duration and the array of steps
+        var the_sequence = {
+            duration: seq_steps.reduce((total, step) => total+step[1], 0),
+            steps: seq_steps
         };
+
         // for the rotating light, we ignore the colour (that's set by the underlying sector) 
         // and just use the durations of the segments where it's false
-        // this generates a clipping path sector on top of which we draw the sectors
+        // this generates a set of clipping path sectors on top of which we draw the sectors
 
         // first up, clear what's already been drawn
         context.fillStyle = "#303030";
         context.fillRect(0, 0, c.width, c.height);
 
         // clip radius = max of the sector ranges
-        var clip_radius = 0;
-        clip_radius = 16 * lighthouse.sectors.reduce((prev, sector) => Math.max(prev, sector.range),clip_radius);
-        //console.log(clip_radius);
+        var clip_radius = 16 * lighthouse.sectors.reduce((prev, sector) => Math.max(prev, sector.range),0);
 
         // rotation angle based on time
         var rotation_angle = (the_time / the_sequence.duration * 360) % 360;
-        //var rotation_angle = 0;
 
         // build the clipping path based on the light sequence steps
         var start_angle = 0;
@@ -218,8 +239,8 @@
         for (let step = 0; step < the_sequence.steps.length; step++) {
             var clip_angle_s = (rotation_angle + start_angle) % 360;
             var clip_angle_e = (rotation_angle + start_angle + the_sequence.steps[step][1] * 360 / the_sequence.duration) % 360;
-            //console.log('pj', 'clip slice', !!the_sequence.steps[step][0], clip_angle_s, clip_angle_e);
 
+            // draw a sector for each illuminated bit
             if (the_sequence.steps[step][0]) {
                 context.moveTo(origin_x, origin_y);
                 context.arc(origin_x,origin_y,clip_radius,clip_angle_s / 180 * Math.PI,clip_angle_e / 180 * Math.PI);
@@ -229,7 +250,6 @@
         };
         context.clip();
 
-    
         // draw the lighthouse sectors on top of clipping path to limit where they shine
         lighthouse.sectors.forEach(draw_sector);
 
@@ -242,22 +262,14 @@
         context.fill();
     };
 
-    //draw_light(1, the_lighthouse, ctx);
-
     // animate baby!
     // call the draw_light function repeatedly using requestAnimationFrame(draw_light)
-    // This needs to redraw, with the angle of the lighthouse rotor rotation_angle recalculated
-    // based on the time
-
     let update_the_light = function(t){
         draw_light(t/1000, the_lighthouse, ctx);
         requestAnimationFrame(update_the_light);
     };
-
     update_the_light(0);
-    
 </script> 
-
 </body>
 </html>
 
