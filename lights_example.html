@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <canvas id="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3;">
-    Your browser does not support the HTML canvas tag.</canvas>
-<script src="chroma/chroma.min.js"></script>
-<script>
-    // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
-    // It's very ramshackle and plenty of room for tidying and improvement.
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font: 12px/16px sans-serif;
+            color: white;
+        }
 
-    // copy in here the properties section of a lighthouse from lights_geojson.json 
-    var tags = {
+        #canvasmap {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #controls {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        #seamap .leaflet-control-attribution,
+        #controls {
+            margin: 10px;
+            font-size: 12px;
+            color: #ccc;
+            background: none;
+            text-shadow: 0px 0px 2px black;
+        }
+        
+        #seamap .leaflet-control-attribution a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvasmap"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+       crossorigin=""></script>
+    <script src="chroma/chroma.min.js"></script>
+
+    // add the map
+    <script>
+        // map
+        var map = L.map('canvasmap', {
+          maxZoom: 18,
+          preferCanvas: true
+        }).setView([51.505, -0.09], 7);
+
+        // background layer
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+            detectRetina: true,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+        }).addTo(map);
+
+        // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
+        // It's very ramshackle and plenty of room for tidying and improvement.
+
+        // copy in here the geojson for a light from lights_geojson.json 
+        var the_geojson = {
+            "type": "Feature",
+            "id": "node/427582786",
+            "properties": {
                 "man_made": "lighthouse",
                 "name": "Southwold Lighthouse",
                 "seamark:landmark:height": "31",
@@ -47,224 +106,293 @@
                 "seamark:type": "landmark",
                 "wikidata": "Q7571483",
                 "id": "node/427582786"
-    };
-
-    // get the entries where tags match "seamark:light:i:<something>" and create an object of {<something>: value ...} entries
-    let light_entry = function (tags, light_seq) {
-        // create regexp using light_seq
-        let re = new RegExp("seamark:light:" + light_seq.toString() + ':(.+)$');
-
-        // get the key-value pairs which match the regex - of the form "period", "3"
-        the_entries = Object.entries(tags).filter((the_entry) => re.test(the_entry[0]));
-
-        // process these entries into an object
-        let one_light_data = {};
-        the_entries.forEach(entry => {
-            let new_key = entry[0].match(re);
-            // change the names of a couple of them to match the expected naming
-            switch(new_key[1]) {
-                case 'sector_start':
-                    key = 'start';
-                    break;
-                case 'sector_end':
-                    key = 'end';
-                    break;
-                default:
-                    key = new_key[1];
-            } 
-            one_light_data[key] = entry[1];
-        });
-        return one_light_data;
-    };
-
-     // iterate through all the lights to build a light_data object
-    var light_data = [];
-
-    for (let light_seq = 1; light_seq < 9; light_seq++){
-        let this_light = light_entry(tags, light_seq);
-        //console.log('pj','this light', light_seq, this_light);
-        if (Object.keys(this_light).length > 0)
-            {light_data.push(this_light);}
-        else {break;}
-    }
-
-    // if this didn't result in anything, the lighthouse only has one light.
-    if (!light_data.length) {
-        // now we are just looking for tags looking like seamark:light:<something>
-        let re2 = new RegExp("seamark:light:(.+)$");
-        // get the key-value pairs
-        the_entries = Object.entries(tags).filter((the_entry) => re2.test(the_entry[0]));
-
-        // process these entries into an object
-        let one_light_data = {};
-        the_entries.forEach(entry => {
-            let new_key = entry[0].match(re2);
-            one_light_data[new_key[1]] = entry[1];
-        });
-
-        // no start or end angles, so need to provide these to draw a circle: 0, 360
-        one_light_data.start = '0';
-        one_light_data.end = '360';
-        //console.log('pj', 'single light data', one_light_data);
-
-        light_data.push(one_light_data);
-    }
-
-    //console.log('pj', 'light_data 2', light_data);
-
-    // populate some other tags of the lighthouse
-    var the_lighthouse = {};
-    the_lighthouse.name = tags['seamark:name'] || tags['name'];
-    the_lighthouse.type = tags['seamark:type'];
-    the_lighthouse.sectors = light_data;
-    the_lighthouse.xpos = 300;
-    the_lighthouse.ypos = 300;
-    the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
-    //console.log('pj', 'the_lighthouse', the_lighthouse);
-
-    // build a sequence array from the light sequence string
-    // it's series of comma- or plus-separated tokens comprising numbers
-    // which are in brackets if dark, not if light
-    // split the sequence
-    var seq_split = the_lighthouse.sequence.replace(/,/g,'+').split('+');
-    //console.log('pj', 'seq_split', seq_split);
-    // extract the numbers using a regex, identifying whether there's a bracket or not
-    var seq_steps = seq_split.map(element => {
-        if(element.substring(0, 1) == '('){
-            return [false, Number(element.substring(1, element.length-1))];
-        }
-        else {
-            return ['yes', Number(element)];
-        }
-    });
-
-    // the sequence object is a duration and the array of steps
-    var the_duration = seq_steps.reduce((total, step) => total+step[1], 0);
-    var the_sequence = {
-        duration: the_duration,
-        offset: Math.random() * the_duration,
-        steps: seq_steps
-    };
-    the_lighthouse.sequence_data = the_sequence;
-    //console.log(the_sequence);
-
-
-    // Now, draw the lighthouse on a canvas
-    // get a canvas element and fill it sort of dark grey
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-    ctx.canvas.width = window.innerWidth;
-    ctx.canvas.height = window.innerHeight;
-    ctx.fillStyle = "#303030";
-    ctx.fillRect(0, 0, c.width, c.height);
-
-    // draw a lighthouse
-    let draw_light = function(the_time, lighthouse, context) {
-
-        var origin_x = lighthouse.xpos;
-        var origin_y = lighthouse.ypos;
-        //var background = context.fillStyle;
-
-        context.save(); // keep the context so we can unpick the clipping path at the end
-
-        // draw a light sector between start and end bearings, with radius = range and specified colour
-        let draw_sector = function (light_to_draw) {
-            //console.log(light_to_draw.start, light_to_draw.end, light_to_draw.range, light_to_draw.colour, origin_x, origin_y);
-            
-            // start and end are bearings TO the light. We need bearing FROM the light = 180+start % 360.
-            // SVG arc angles are measured from the y=0 line i.e. 0deg = right. So need to subtract 90deg to get direction from north
-
-            // is it a circle
-            var start_from_deg;
-            var end_from_deg;
-            
-            if (light_to_draw.start == '0' && light_to_draw.end == '360') {
-                start_from_deg = 0;
-                end_from_deg = 360;
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.6813393,
+                    52.3272264
+                ]
             }
-            else {            
-                start_from_deg = (90 + parseInt(light_to_draw.start)) % 360;
-                end_from_deg = (90 + parseInt(light_to_draw.end)) % 360;
+        };
+
+        // just put the lighthouse on the map for now
+        L.geoJSON(the_geojson).addTo(map);
+
+
+
+        // Now, draw the lighthouse on a canvas
+        // get a canvas element and fill it sort of dark grey
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.canvas.width = window.innerWidth;
+        ctx.canvas.height = window.innerHeight;
+        ctx.fillStyle = "#303030";
+        ctx.fillRect(0, 0, c.width, c.height);
+
+        // set up the lighthouse data from geojson
+        let define_light = function(geojson) {
+
+            // get the entries where tags match "seamark:light:i:<something>" and create an object of {<something>: value ...} entries
+            let tags = geojson.properties;
+            let light_entry = function (tags, light_seq) {
+                // create regexp using light_seq
+                let re = new RegExp("seamark:light:" + light_seq.toString() + ':(.+)$');
+
+                // get the key-value pairs which match the regex - of the form "period", "3"
+                the_entries = Object.entries(tags).filter((the_entry) => re.test(the_entry[0]));
+
+                // process these entries into an object
+                let one_light_data = {};
+                the_entries.forEach(entry => {
+                    let new_key = entry[0].match(re);
+                    // change the names of a couple of them to match the expected naming
+                    switch(new_key[1]) {
+                        case 'sector_start':
+                            key = 'start';
+                            break;
+                        case 'sector_end':
+                            key = 'end';
+                            break;
+                        default:
+                            key = new_key[1];
+                    } 
+                    one_light_data[key] = entry[1];
+                });
+                return one_light_data;
+            };
+
+             // iterate through all the lights to build a light_data object
+            var light_data = [];
+
+            for (let light_seq = 1; light_seq < 9; light_seq++){
+                let this_light = light_entry(tags, light_seq);
+                //console.log('pj','this light', light_seq, this_light);
+                if (Object.keys(this_light).length > 0)
+                    {light_data.push(this_light);}
+                else {break;}
             }
-           //console.log('pj','angles', light_to_draw.start, light_to_draw.end, start_from_deg, end_from_deg);
 
-            var angle_s = start_from_deg / 180 * Math.PI;
-            var angle_e = end_from_deg / 180 * Math.PI;
-            var radius = light_to_draw.range * 16;
+            // if this didn't result in anything, the lighthouse only has one light.
+            if (!light_data.length) {
+                // now we are just looking for tags looking like seamark:light:<something>
+                let re2 = new RegExp("seamark:light:(.+)$");
+                // get the key-value pairs
+                the_entries = Object.entries(tags).filter((the_entry) => re2.test(the_entry[0]));
 
+                // process these entries into an object
+                let one_light_data = {};
+                the_entries.forEach(entry => {
+                    let new_key = entry[0].match(re2);
+                    one_light_data[new_key[1]] = entry[1];
+                });
+
+                // no start or end angles, so need to provide these to draw a circle: 0, 360
+                one_light_data.start = '0';
+                one_light_data.end = '360';
+                //console.log('pj', 'single light data', one_light_data);
+
+                light_data.push(one_light_data);
+            }
+
+            //console.log('pj', 'light_data 2', light_data);
+
+            // populate some other tags of the lighthouse
+            var the_lighthouse = {};
+            the_lighthouse.geometry = the_geojson.geometry;  // long / lat
+            the_lighthouse.name = tags['seamark:name'] || tags['name'];
+            the_lighthouse.type = tags['seamark:type'];
+            the_lighthouse.sectors = light_data;
+            //the_lighthouse.xpos = 300;
+            //the_lighthouse.ypos = 300;
+            the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
+     
+            // build a sequence array from the light sequence string
+            // it's series of comma- or plus-separated tokens comprising numbers
+            // which are in brackets if dark, not if light
+            // split the sequence
+            var seq_split = the_lighthouse.sequence.replace(/,/g,'+').split('+');
+            //console.log('pj', 'seq_split', seq_split);
+            // extract the numbers using a regex, identifying whether there's a bracket or not
+            var seq_steps = seq_split.map(element => {
+                if(element.substring(0, 1) == '('){
+                    return [false, Number(element.substring(1, element.length-1))];
+                }
+                else {
+                    return ['yes', Number(element)];
+                }
+            });
+
+            // the sequence object is a duration and the array of steps
+            var the_duration = seq_steps.reduce((total, step) => total+step[1], 0);
+            var the_sequence = {
+                duration: the_duration,
+                offset: Math.random() * the_duration,
+                steps: seq_steps
+            };
+            the_lighthouse.sequence_data = the_sequence;
+            console.log('pj', 'the_lighthouse', the_lighthouse);
+
+            return the_lighthouse;
+        };
+
+
+        // update a lighthouse
+        let update_lighthouse = function(the_time, the_lighthouse) {
+            // for the rotating light, we ignore the colour (that's set by the underlying sector) 
+            // and just use the durations of the segments where it's false
+            // this generates a set of clipping path sectors on top of which we draw the sectors
+
+            // first up, clear what's already been drawn
+            context.fillStyle = "#303030";
+            context.fillRect(0, 0, c.width, c.height);
+
+
+            // now, draw the lighthouse sectors and store
+            // draw the lighthouse sectors on top of clipping path to limit where they shine
+
+
+            // clip radius = max of the sector ranges
+            var clip_radius = 16 * lighthouse.sectors.reduce((prev, sector) => Math.max(prev, sector.range),0);
+
+            var the_sequence = lighthouse.sequence_data;
+
+            // rotation angle based on time
+            var rotation_angle = ((the_time + the_sequence.offset) / the_sequence.duration * 360) % 360;
+
+            // build the clipping path based on the light sequence steps
+            var start_angle = 0;
             context.beginPath();
-            context.moveTo(origin_x, origin_y);
-            context.arc(origin_x,origin_y,radius,angle_s,angle_e);
-            context.lineTo(origin_x, origin_y);
+            for (let step = 0; step < the_sequence.steps.length; step++) {
+                var clip_angle_s = (rotation_angle + start_angle) % 360;
+                var clip_angle_e = (rotation_angle + start_angle + the_sequence.steps[step][1] * 360 / the_sequence.duration) % 360;
+
+                // draw a sector for each illuminated bit
+                if (the_sequence.steps[step][0]) {
+                    context.moveTo(origin_x, origin_y);
+                    context.arc(origin_x,origin_y,clip_radius,clip_angle_s / 180 * Math.PI,clip_angle_e / 180 * Math.PI);
+                    context.lineTo(origin_x, origin_y);
+                }
+                start_angle = start_angle + the_sequence.steps[step][1] * 360 / the_sequence.duration;
+            };
+            context.clip();
+            context.drawImage(the_lighthouse., 0, 0);
+
+
+
+
+
+        };
+
+        // draw a lighthouse
+        let draw_light = function(the_time, lighthouse, context) {
+
+            var origin_x = lighthouse.xpos;
+            var origin_y = lighthouse.ypos;
+            //var background = context.fillStyle;
+
+            context.save(); // keep the context so we can unpick the clipping path at the end
+
+            // draw a light sector between start and end bearings, with radius = range and specified colour
+            let draw_sector = function (light_to_draw) {
+                //console.log(light_to_draw.start, light_to_draw.end, light_to_draw.range, light_to_draw.colour, origin_x, origin_y);
+                
+                // start and end are bearings TO the light. We need bearing FROM the light = 180+start % 360.
+                // SVG arc angles are measured from the y=0 line i.e. 0deg = right. So need to subtract 90deg to get direction from north
+
+                // is it a circle
+                var start_from_deg;
+                var end_from_deg;
+                
+                if (light_to_draw.start == '0' && light_to_draw.end == '360') {
+                    start_from_deg = 0;
+                    end_from_deg = 360;
+                }
+                else {            
+                    start_from_deg = (90 + parseInt(light_to_draw.start)) % 360;
+                    end_from_deg = (90 + parseInt(light_to_draw.end)) % 360;
+                }
+               //console.log('pj','angles', light_to_draw.start, light_to_draw.end, start_from_deg, end_from_deg);
+
+                var angle_s = start_from_deg / 180 * Math.PI;
+                var angle_e = end_from_deg / 180 * Math.PI;
+                var radius = light_to_draw.range * 16;
+
+                context.beginPath();
+                context.moveTo(origin_x, origin_y);
+                context.arc(origin_x,origin_y,radius,angle_s,angle_e);
+                context.lineTo(origin_x, origin_y);
+                context.closePath();
+
+                // do a gradient fill that fades from the centre to the range of the light
+                // first colour is the specified colour; the second is that same, but transparent
+                var start_colour = chroma(light_to_draw.colour == 'white' ? 'white' : light_to_draw.colour).alpha(0.7);
+                var end_colour = chroma(start_colour).alpha(0.0);
+                //console.log('pj', 'mapped colours', start_colour, end_colour);
+
+
+                var grd = context.createRadialGradient(origin_x, origin_y, 0, origin_x, origin_y, radius);
+                grd.addColorStop(0, start_colour);
+                grd.addColorStop(1, end_colour);
+                context.fillStyle = (grd);
+                context.fill();
+            };
+
+            // put a dot where the lighthouse is. Do restore() to clear the clip path so we get the whole dot.
+            context.restore();
+            context.beginPath();
+            context.arc(origin_x, origin_y, 4, 0, 2 * Math.PI);
             context.closePath();
-
-            // do a gradient fill that fades from the centre to the range of the light
-            // first colour is the specified colour; the second is that same, but transparent
-            var start_colour = chroma(light_to_draw.colour == 'white' ? 'white' : light_to_draw.colour).alpha(0.7);
-            var end_colour = chroma(start_colour).alpha(0.0);
-            //console.log('pj', 'mapped colours', start_colour, end_colour);
-
-
-            var grd = context.createRadialGradient(origin_x, origin_y, 0, origin_x, origin_y, radius);
-            grd.addColorStop(0, start_colour);
-            grd.addColorStop(1, end_colour);
-            context.fillStyle = (grd);
+            context.fillStyle = "white";
             context.fill();
         };
 
-        // for the rotating light, we ignore the colour (that's set by the underlying sector) 
-        // and just use the durations of the segments where it's false
-        // this generates a set of clipping path sectors on top of which we draw the sectors
+        // lets see if we can draw it in the right place on the map
+        // Need to let Leaflet know how to handle a lighthouse
+        // It's an extension of a circle - it has a location and a radius
+        // but we draw it a different way
 
-        // first up, clear what's already been drawn
-        context.fillStyle = "#303030";
-        context.fillRect(0, 0, c.width, c.height);
 
-        // clip radius = max of the sector ranges
-        var clip_radius = 16 * lighthouse.sectors.reduce((prev, sector) => Math.max(prev, sector.range),0);
+        L.Canvas.include({
+            _updateLighthouse: function(layer) {
+                if (!this._drawing || layer._empty()) {
+                  return;
+                }
 
-        var the_sequence = lighthouse.sequence_data;
+                var p = layer._point,
+                  ctx = this._ctx,
+                  r = layer._radius;
+                
 
-        // rotation angle based on time
-        var rotation_angle = ((the_time + the_sequence.offset) / the_sequence.duration * 360) % 360;
 
-        // build the clipping path based on the light sequence steps
-        var start_angle = 0;
-        context.beginPath();
-        for (let step = 0; step < the_sequence.steps.length; step++) {
-            var clip_angle_s = (rotation_angle + start_angle) % 360;
-            var clip_angle_e = (rotation_angle + start_angle + the_sequence.steps[step][1] * 360 / the_sequence.duration) % 360;
+                //draw_light()        
 
-            // draw a sector for each illuminated bit
-            if (the_sequence.steps[step][0]) {
-                context.moveTo(origin_x, origin_y);
-                context.arc(origin_x,origin_y,clip_radius,clip_angle_s / 180 * Math.PI,clip_angle_e / 180 * Math.PI);
-                context.lineTo(origin_x, origin_y);
             }
-            start_angle = start_angle + the_sequence.steps[step][1] * 360 / the_sequence.duration;
+        });
+
+        L.LightHouse = L.Circle.extend({
+            _updatePath: function() {
+                this._renderer._updateLighthouse(this);
+            },
+
+            //initialize: function(){
+
+
+
+
+        });
+
+        var the_light = define_light(the_geojson);
+        var the_lighthouse = draw_light(the_light,)
+
+        // animate baby!
+        // call the draw_light function repeatedly using requestAnimationFrame
+        let update_the_light = function(t){
+            draw_light(t/1000, the_lighthouse, ctx);
+            requestAnimationFrame(update_the_light);
         };
-        context.clip();
-
-        // draw the lighthouse sectors on top of clipping path to limit where they shine
-        lighthouse.sectors.forEach(draw_sector);
-
-        // put a dot where the lighthouse is. Do restore() to clear the clip path so we get the whole dot.
-        context.restore();
-        context.beginPath();
-        context.arc(origin_x, origin_y, 4, 0, 2 * Math.PI);
-        context.closePath();
-        context.fillStyle = "white";
-        context.fill();
-    };
-
-    // animate baby!
-    // call the draw_light function repeatedly using requestAnimationFrame
-    let update_the_light = function(t){
-        draw_light(t/1000, the_lighthouse, ctx);
-        requestAnimationFrame(update_the_light);
-    };
-    update_the_light(0);
-</script> 
+        update_the_light(0);
+    </script> 
 </body>
 </html>
 

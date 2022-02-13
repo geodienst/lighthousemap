@@ -87,6 +87,8 @@
 		<script src="leaflet.indexedfeaturelayer.js"></script>
 		<script src="leaflet.light.js"></script>
 		<script>
+
+			const NAUTICALMILEINMETRES = 500;
 			// map
 			let map = L.map('seamap', {attributionControl: false})
 				.setView([55.7, -3.7], 6)
@@ -129,8 +131,8 @@
 
 			let url = 'https://www.overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
 
-			url = 'data_just2.json'; // For testing
-			//url = 'data_pj_recent.json'; // For testing
+			//url = 'data_just2.json'; // For testing
+			url = 'data_pj_recent.json'; // For testing
 
 			let data = fetch(url)
 				.then(req => req.json())
@@ -167,7 +169,7 @@
 							// assumes range is in km. Is this right?
 							// no - it's nautical miles - see https://wiki.openstreetmap.org/wiki/Seamarks/Lights
 							// radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || 1) * 1000,
-							radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || parseFloat(feat.properties.tags['seamark:light:1:range'], 10) || 1) * 1000,
+							radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || parseFloat(feat.properties.tags['seamark:light:1:range'], 10) || 1) * NAUTICALMILEINMETRES,
 							sequence: sequence,
 							stroke: false,
 							fillOpacity: 0.7,
@@ -195,76 +197,7 @@
 			// add it to the map
 			L.svgOverlay(svgElement, svgElementBounds).addTo(map);
 
-			// add a sample Canvas layer to the map
-			// (code pinched from lights_example.html)
-			let lighthouse_data = {
-				'name': 'test lighthouse',
-				'type': 'lighthouse',
-				'xpos': 200,
-				'ypos': 200,
-				'sectors': [
-					{'start': 1, 'end': 30, "colour": "green", "range": 20},
-					{'start': 30, 'end': 220, "colour": "white", "range": 30},
-					{'start': 220, 'end': 280, "colour": "red", "range": 20}
-				]
-			};
-
-			// get the canvas on which to draw
-
-
-
-		    // function to draw a lighthouse
-		    let draw_light = function(lighthouse, context) {
-
-		        var origin_x = lighthouse.xpos;
-		        var origin_y = lighthouse.ypos;
-
-		        // draw a light sector between start and end bearings, with radius = range and specified colour
-		        let draw_sector = function (light_to_draw) {
-		            //console.log(light_to_draw.start, light_to_draw.end, light_to_draw.range, light_to_draw.colour, origin_x, origin_y);
-		            
-		            // start and end are bearings TO the light. We need bearing FROM the light = 180+start % 360.
-		            // SVG arc angles are measured from the y=0 line i.e. 0deg = right. So need to subtract 90deg to get direction from north
-
-		            // is it a circle
-		            var start_from_deg;
-		            var end_from_deg;
-		            
-		            if (light_to_draw.start == '0' && light_to_draw.end == '360') {
-		                start_from_deg = 0;
-		                end_from_deg = 360;
-		            }
-		            else {            
-		                start_from_deg = (90 + parseInt(light_to_draw.start)) % 360;
-		                end_from_deg = (90 + parseInt(light_to_draw.end)) % 360;
-		            }
-		           //console.log('pj','angles', light_to_draw.start, light_to_draw.end, start_from_deg, end_from_deg);
-
-		            var angle_s = start_from_deg / 180 * Math.PI;
-		            var angle_e = end_from_deg / 180 * Math.PI;
-		            var radius = light_to_draw.range * 8;
-
-		            context.beginPath();
-		            context.moveTo(origin_x, origin_y);
-		            context.arc(origin_x,origin_y,radius,angle_s,angle_e);
-		            context.lineTo(origin_x, origin_y);
-		            context.closePath;
-		            
-		            context.fillStyle = (light_to_draw.colour == 'white' ? 'white' : light_to_draw.colour);
-		            context.fill();
-		        };
-		        
-		        lighthouse.sectors.forEach(draw_sector);
-
-		        // put a dot where the lighthouse is
-		        context.beginPath();
-		        context.arc(origin_x, origin_y, 5, 0, 2 * Math.PI);
-		        context.closePath;
-		        context.fillStyle = "orange";
-		        context.fill();
-		    };
-
-		    // get the user input
+			    // get the user input
 			let useRealColors = true;
 			document.querySelector('input[name=real-colors]').checked = useRealColors;
 			document.querySelector('input[name=real-colors]').addEventListener('change', function(e) {
