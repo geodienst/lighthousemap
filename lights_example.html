@@ -6,6 +6,9 @@
 <script src="chroma/chroma.min.js"></script>
 <script>
     // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
+    // It's very ramshackle and plenty of room for tidying and improvement.
+
+    // copy in here the properties section of a lighthouse from lights_geojson.json 
     var tags = {
                 "man_made": "lighthouse",
                 "name": "Southwold Lighthouse",
@@ -107,21 +110,51 @@
         light_data.push(one_light_data);
     }
 
-   //console.log('pj', 'light_data 2', light_data);
+    //console.log('pj', 'light_data 2', light_data);
 
-   // populate some other tags of the lighthouse
-   var the_lighthouse = {};
-   the_lighthouse.name = tags['seamark:name'] || tags['name'];
-   the_lighthouse.type = tags['seamark:type'];
-   the_lighthouse.sectors = light_data;
-   the_lighthouse.xpos = 300;
-   the_lighthouse.ypos = 300;
-   the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
-   //console.log('pj', 'the_lighthouse', the_lighthouse);
+    // populate some other tags of the lighthouse
+    var the_lighthouse = {};
+    the_lighthouse.name = tags['seamark:name'] || tags['name'];
+    the_lighthouse.type = tags['seamark:type'];
+    the_lighthouse.sectors = light_data;
+    the_lighthouse.xpos = 300;
+    the_lighthouse.ypos = 300;
+    the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
+    //console.log('pj', 'the_lighthouse', the_lighthouse);
 
+    // build a sequence array from the light sequence string
+    // it's series of comma- or plus-separated tokens comprising numbers
+    // which are in brackets if dark, not if light
+    // split the sequence
+    var seq_split = the_lighthouse.sequence.replace(/,/g,'+').split('+');
+    //console.log('pj', 'seq_split', seq_split);
+    // extract the numbers using a regex, identifying whether there's a bracket or not
+    var seq_steps = seq_split.map(element => {
+        if(element.substring(0, 1) == '('){
+            return [false, Number(element.substring(1, element.length-1))];
+        }
+        else {
+            return ['yes', Number(element)];
+        }
+    });
+
+    // the sequence object is a duration and the array of steps
+    var the_duration = seq_steps.reduce((total, step) => total+step[1], 0);
+    var the_sequence = {
+        duration: the_duration,
+        offset: Math.random() * the_duration,
+        steps: seq_steps
+    };
+    the_lighthouse.sequence_data = the_sequence;
+    //console.log(the_sequence);
+
+
+    // Now, draw the lighthouse on a canvas
     // get a canvas element and fill it sort of dark grey
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
+    ctx.canvas.width = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
     ctx.fillStyle = "#303030";
     ctx.fillRect(0, 0, c.width, c.height);
 
@@ -179,46 +212,6 @@
             context.fill();
         };
 
-       // simulate the rotating light by clipping to just the moving sector where the light shines through
-        // this is rotated by an angle dependent on the time, to simulate the light rotating
-        //the sequence is of the form 
-        // var the_sequence = {
-        //     duration: 20,
-        //     offset: 0, // set to a random number when the light is drawn
-        //     steps: [
-        //         ['white', 0.5],
-        //         [false, 1],
-        //         ['white', 0.5],
-        //         [false, 1],
-        //         ['white', 0.5],
-        //         [false, 1],
-        //         ['white', 0.5],
-        //         [false, 15]
-        //     ]
-        // };
-
-        // build the sequence array from the light sequence string
-        // it's series of plus-separated tokens comprising numbers
-        // which are in brackets if dark, not if light
-        // split the sequence
-        var seq_split = the_lighthouse.sequence.replace(/,/g,'+').split('+');
-        //console.log('pj', 'seq_split', seq_split);
-        // extract the numbers using a regex, identifying whether there's a bracket or not
-        var seq_steps = seq_split.map(element => {
-            if(element.substring(0, 1) == '('){
-                return [false, Number(element.substring(1, element.length-1))];
-            }
-            else {
-                return ['yes', Number(element)];
-            }
-        });
-
-        // the sequence object is a duration and the array of steps
-        var the_sequence = {
-            duration: seq_steps.reduce((total, step) => total+step[1], 0),
-            steps: seq_steps
-        };
-
         // for the rotating light, we ignore the colour (that's set by the underlying sector) 
         // and just use the durations of the segments where it's false
         // this generates a set of clipping path sectors on top of which we draw the sectors
@@ -230,8 +223,10 @@
         // clip radius = max of the sector ranges
         var clip_radius = 16 * lighthouse.sectors.reduce((prev, sector) => Math.max(prev, sector.range),0);
 
+        var the_sequence = lighthouse.sequence_data;
+
         // rotation angle based on time
-        var rotation_angle = (the_time / the_sequence.duration * 360) % 360;
+        var rotation_angle = ((the_time + the_sequence.offset) / the_sequence.duration * 360) % 360;
 
         // build the clipping path based on the light sequence steps
         var start_angle = 0;
@@ -263,7 +258,7 @@
     };
 
     // animate baby!
-    // call the draw_light function repeatedly using requestAnimationFrame(draw_light)
+    // call the draw_light function repeatedly using requestAnimationFrame
     let update_the_light = function(t){
         draw_light(t/1000, the_lighthouse, ctx);
         requestAnimationFrame(update_the_light);
