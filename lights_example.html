@@ -1,15 +1,135 @@
 <!DOCTYPE html>
 <html>
+<head>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>   
+    <script src="https://unpkg.com/@turf/turf@3.5.2/turf.min.js"></script>
+    <script src="chroma/chroma.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font: 12px/16px sans-serif;
+            color: white;
+        }
+
+        #mapdiv {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+        
+        #controls {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        #seamap .leaflet-control-attribution,
+        #controls {
+            margin: 10px;
+            font-size: 12px;
+            color: #ccc;
+            background: none;
+            text-shadow: 0px 0px 2px black;
+        }
+        
+        #seamap .leaflet-control-attribution a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-    <canvas id="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3;">
-    Your browser does not support the HTML canvas tag.</canvas>
-<script src="chroma/chroma.min.js"></script>
+    <div id="mapcontainer">
+        <div id="mapdiv"></div>
+        <canvas id="drawcanvas"></canvas>
+    </div>
 <script>
     // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
     // It's very ramshackle and plenty of room for tidying and improvement.
 
+    const NM_IN_METRES = 1852;
+
     // copy in here the geojson for a lighthouse from lights_geojson.json 
     var geojson = {
+            // "type": "Feature",
+            // "id": "way/426352856",
+            // "properties": {
+            //     "building": "yes",
+            //     "man_made": "lighthouse",
+            //     "name": "Carraig Fhada Lighthouse",
+            //     "seamark:light:1:character": "Fl",
+            //     "seamark:light:1:colour": "white",
+            //     "seamark:light:1:height": "20",
+            //     "seamark:light:1:period": "3",
+            //     "seamark:light:1:range": "8",
+            //     "seamark:light:1:sector_end": "248",
+            //     "seamark:light:1:sector_start": "150",
+            //     "seamark:light:1:sequence": "0.3+(2.7)",
+            //     "seamark:light:2:character": "Fl",
+            //     "seamark:light:2:colour": "green",
+            //     "seamark:light:2:height": "20",
+            //     "seamark:light:2:period": "3",
+            //     "seamark:light:2:range": "6",
+            //     "seamark:light:2:sector_end": "311",
+            //     "seamark:light:2:sector_start": "248",
+            //     "seamark:light:2:sequence": "0.3+(2.7)",
+            //     "seamark:light:3:character": "Fl",
+            //     "seamark:light:3:colour": "white",
+            //     "seamark:light:3:height": "20",
+            //     "seamark:light:3:period": "3",
+            //     "seamark:light:3:range": "8",
+            //     "seamark:light:3:sector_end": "340",
+            //     "seamark:light:3:sector_start": "311",
+            //     "seamark:light:3:sequence": "0.3+(2.7)",
+            //     "seamark:light:4:character": "Fl",
+            //     "seamark:light:4:colour": "red",
+            //     "seamark:light:4:height": "20",
+            //     "seamark:light:4:period": "3",
+            //     "seamark:light:4:range": "6",
+            //     "seamark:light:4:sector_end": "50",
+            //     "seamark:light:4:sector_start": "340",
+            //     "seamark:light:4:sequence": "0.3+(2.7)",
+            //     "seamark:light:reference": "A 4248",
+            //     "seamark:name": "Carraig Fhada",
+            //     "seamark:type": "light_minor",
+            //     "wikidata": "Q1368154",
+            //     "id": "way/426352856"
+            // },
+            // "geometry": {
+            //     "type": "Polygon",
+            //     "coordinates": [
+            //         [
+            //             [
+            //                 -6.2116972,
+            //                 55.6202867
+            //             ],
+            //             [
+            //                 -6.2116567,
+            //                 55.6202345
+            //             ],
+            //             [
+            //                 -6.2115656,
+            //                 55.620257
+            //             ],
+            //             [
+            //                 -6.2116061,
+            //                 55.6203092
+            //             ],
+            //             [
+            //                 -6.2116972,
+            //                 55.6202867
+            //             ]
+            //         ]
+            //     ]
+            // }
             "type": "Feature",
             "id": "node/427582786",
             "properties": {
@@ -128,6 +248,7 @@
     the_lighthouse.name = tags['seamark:name'] || tags['name'];
     the_lighthouse.type = tags['seamark:type'];
     the_lighthouse.sectors = light_data;
+    the_lighthouse.range_nm = light_data.reduce((prev, sector) => Math.max(prev, sector.range),0);
     the_lighthouse.xpos = 300;
     the_lighthouse.ypos = 300;
     the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
@@ -162,10 +283,10 @@
 
     // Now, draw the lighthouse on a canvas
     // get a canvas element and fill it sort of dark grey
-    var c = document.getElementById("myCanvas");
+    var c = document.getElementById("drawcanvas");
     var ctx = c.getContext("2d");
-    ctx.canvas.width = window.innerWidth;
-    ctx.canvas.height = window.innerHeight;
+    //ctx.canvas.width = window.innerWidth;
+    //ctx.canvas.height = window.innerHeight;
     ctx.fillStyle = "#303030";
     ctx.fillRect(0, 0, c.width, c.height);
 
@@ -231,8 +352,8 @@
         context.fillStyle = "#303030";
         context.fillRect(0, 0, c.width, c.height);
 
-        // clip radius = max of the sector ranges
-        var clip_radius = 16 * lighthouse.sectors.reduce((prev, sector) => Math.max(prev, sector.range),0);
+        // clip radius = max of the sector ranges (scaled to make it visible)
+        var clip_radius = 16 * lighthouse.range_nm;
 
         var the_sequence = lighthouse.sequence_data;
 
@@ -270,17 +391,54 @@
 
 
     // now see if we can use a context provided by Leaflet to draw the lighthouse on a map
-    // 
+    var map = L.map('mapdiv', {
+      maxZoom: 18,
+      preferCanvas: true
+    }).setView([55.7, -3.7], 6);
+
+    //background layer
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+        detectRetina: true,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+    }).addTo(map);
+
+    // get a single point to draw the lighthouse at, even if it's a polygon in the geojson
+    var geometry = (geojson.geometry.type == "Polygon" ? turf.centroid(geojson.geometry).geometry : geojson.geometry);
+
+    latlong = L.GeoJSON.coordsToLatLng(geometry.coordinates); 
+
+
+   // debugger;
+
+    // add a circle to the map to represent the lighthouse
+    new L.Circle(
+        latlong,
+        {
+            radius: the_lighthouse.range_nm * NM_IN_METRES, 
+            fillColor: "white",
+            fillOpacity: 0.3,
+            stroke: false,
+            interactive: false
+        }
+    ).addTo(map);
+    // add a marker and a popup for the lighthouse exact position
+    new L.CircleMarker(
+        latlong,
+        {radius: 3,
+         fillColor: "white",
+         stroke: false,
+         fillOpacity: 0.9,
+         color: false}
+    ).addTo(map).bindPopup(the_lighthouse.name + ", range " + the_lighthouse.range_nm + " nautical miles");
+
+
+    // define a lighthouse as a kind of circle (which is sort of is)
+    L.Lighthouse = L.Circle.extend({
 
 
 
 
-
-
-
-
-
-
+    });
 
 
     // animate the lighthouse
@@ -291,7 +449,6 @@
     };
     ctx.scale(0.2, 0.2);
     update_the_light(0);
-
 
 </script> 
 </body>
