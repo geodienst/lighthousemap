@@ -24,6 +24,12 @@
             position: fixed;
         }
         
+/*        #drawcanvas {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+*/        
         #controls {
             position: fixed;
             bottom: 0;
@@ -47,138 +53,138 @@
     </style>
 </head>
 <body>
-    <div id="mapcontainer">
+<!--     <div id="mapcontainer"> -->
         <div id="mapdiv"></div>
-        <canvas id="drawcanvas"></canvas>
-    </div>
-<script>
+       <!--  <canvas id="drawcanvas" width="400" height="400"></canvas> -->
+ <!--    </div>
+ --><script>
     // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
     // It's very ramshackle and plenty of room for tidying and improvement.
 
-    const NM_IN_METRES = 1852;
+    const NM_IN_METRES = 1852; // https://en.wikipedia.org/wiki/Nautical_mile
 
     // copy in here the geojson for a lighthouse from lights_geojson.json 
     var geojson = {
-            // "type": "Feature",
-            // "id": "way/426352856",
-            // "properties": {
-            //     "building": "yes",
-            //     "man_made": "lighthouse",
-            //     "name": "Carraig Fhada Lighthouse",
-            //     "seamark:light:1:character": "Fl",
-            //     "seamark:light:1:colour": "white",
-            //     "seamark:light:1:height": "20",
-            //     "seamark:light:1:period": "3",
-            //     "seamark:light:1:range": "8",
-            //     "seamark:light:1:sector_end": "248",
-            //     "seamark:light:1:sector_start": "150",
-            //     "seamark:light:1:sequence": "0.3+(2.7)",
-            //     "seamark:light:2:character": "Fl",
-            //     "seamark:light:2:colour": "green",
-            //     "seamark:light:2:height": "20",
-            //     "seamark:light:2:period": "3",
-            //     "seamark:light:2:range": "6",
-            //     "seamark:light:2:sector_end": "311",
-            //     "seamark:light:2:sector_start": "248",
-            //     "seamark:light:2:sequence": "0.3+(2.7)",
-            //     "seamark:light:3:character": "Fl",
-            //     "seamark:light:3:colour": "white",
-            //     "seamark:light:3:height": "20",
-            //     "seamark:light:3:period": "3",
-            //     "seamark:light:3:range": "8",
-            //     "seamark:light:3:sector_end": "340",
-            //     "seamark:light:3:sector_start": "311",
-            //     "seamark:light:3:sequence": "0.3+(2.7)",
-            //     "seamark:light:4:character": "Fl",
-            //     "seamark:light:4:colour": "red",
-            //     "seamark:light:4:height": "20",
-            //     "seamark:light:4:period": "3",
-            //     "seamark:light:4:range": "6",
-            //     "seamark:light:4:sector_end": "50",
-            //     "seamark:light:4:sector_start": "340",
-            //     "seamark:light:4:sequence": "0.3+(2.7)",
-            //     "seamark:light:reference": "A 4248",
-            //     "seamark:name": "Carraig Fhada",
-            //     "seamark:type": "light_minor",
-            //     "wikidata": "Q1368154",
-            //     "id": "way/426352856"
-            // },
-            // "geometry": {
-            //     "type": "Polygon",
-            //     "coordinates": [
-            //         [
-            //             [
-            //                 -6.2116972,
-            //                 55.6202867
-            //             ],
-            //             [
-            //                 -6.2116567,
-            //                 55.6202345
-            //             ],
-            //             [
-            //                 -6.2115656,
-            //                 55.620257
-            //             ],
-            //             [
-            //                 -6.2116061,
-            //                 55.6203092
-            //             ],
-            //             [
-            //                 -6.2116972,
-            //                 55.6202867
-            //             ]
-            //         ]
-            //     ]
-            // }
             "type": "Feature",
-            "id": "node/427582786",
+            "id": "way/426352856",
             "properties": {
+                "building": "yes",
                 "man_made": "lighthouse",
-                "name": "Southwold Lighthouse",
-                "seamark:landmark:height": "31",
+                "name": "Carraig Fhada Lighthouse",
                 "seamark:light:1:character": "Fl",
                 "seamark:light:1:colour": "white",
-                "seamark:light:1:group": "4",
-                "seamark:light:1:height": "37",
-                "seamark:light:1:period": "20",
-                "seamark:light:1:range": "16",
-                "seamark:light:1:sector_end": "1.0",
-                "seamark:light:1:sector_start": "215.0",
-                "seamark:light:1:sequence": "0.5+(1)+0.5+(1)+0.5+(1)+0.5+(15)",
+                "seamark:light:1:height": "20",
+                "seamark:light:1:period": "3",
+                "seamark:light:1:range": "8",
+                "seamark:light:1:sector_end": "248",
+                "seamark:light:1:sector_start": "150",
+                "seamark:light:1:sequence": "0.3+(2.7)",
                 "seamark:light:2:character": "Fl",
-                "seamark:light:2:colour": "red",
-                "seamark:light:2:group": "4",
-                "seamark:light:2:height": "37",
-                "seamark:light:2:period": "20",
-                "seamark:light:2:range": "12",
-                "seamark:light:2:sector_end": "215.0",
-                "seamark:light:2:sector_start": "204.0",
-                "seamark:light:2:sequence": "0.5+(1)+0.5+(1)+0.5+(1)+0.5+(15)",
+                "seamark:light:2:colour": "green",
+                "seamark:light:2:height": "20",
+                "seamark:light:2:period": "3",
+                "seamark:light:2:range": "6",
+                "seamark:light:2:sector_end": "311",
+                "seamark:light:2:sector_start": "248",
+                "seamark:light:2:sequence": "0.3+(2.7)",
                 "seamark:light:3:character": "Fl",
-                "seamark:light:3:colour": "red",
-                "seamark:light:3:group": "4",
-                "seamark:light:3:height": "37",
-                "seamark:light:3:period": "20",
-                "seamark:light:3:range": "12",
-                "seamark:light:3:sector_end": "32.5",
-                "seamark:light:3:sector_start": "1.0",
-                "seamark:light:3:sequence": "0.5+(1)+0.5+(1)+0.5+(1)+0.5+(15)",
-                "seamark:light:reference": "A 2272",
-                "seamark:name": "Southwold",
-                "seamark:radio_station:category": "ais",
-                "seamark:radio_station:mmsi": "992351019",
-                "seamark:type": "landmark",
-                "wikidata": "Q7571483",
-                "id": "node/427582786"
+                "seamark:light:3:colour": "white",
+                "seamark:light:3:height": "20",
+                "seamark:light:3:period": "3",
+                "seamark:light:3:range": "8",
+                "seamark:light:3:sector_end": "340",
+                "seamark:light:3:sector_start": "311",
+                "seamark:light:3:sequence": "0.3+(2.7)",
+                "seamark:light:4:character": "Fl",
+                "seamark:light:4:colour": "red",
+                "seamark:light:4:height": "20",
+                "seamark:light:4:period": "3",
+                "seamark:light:4:range": "6",
+                "seamark:light:4:sector_end": "50",
+                "seamark:light:4:sector_start": "340",
+                "seamark:light:4:sequence": "0.3+(2.7)",
+                "seamark:light:reference": "A 4248",
+                "seamark:name": "Carraig Fhada",
+                "seamark:type": "light_minor",
+                "wikidata": "Q1368154",
+                "id": "way/426352856"
             },
             "geometry": {
-                "type": "Point",
+                "type": "Polygon",
                 "coordinates": [
-                    1.6813393,
-                    52.3272264
+                    [
+                        [
+                            -6.2116972,
+                            55.6202867
+                        ],
+                        [
+                            -6.2116567,
+                            55.6202345
+                        ],
+                        [
+                            -6.2115656,
+                            55.620257
+                        ],
+                        [
+                            -6.2116061,
+                            55.6203092
+                        ],
+                        [
+                            -6.2116972,
+                            55.6202867
+                        ]
+                    ]
                 ]
             }
-    };
+            // "type": "Feature",
+            // "id": "node/427582786",
+            // "properties": {
+            //     "man_made": "lighthouse",
+            //     "name": "Southwold Lighthouse",
+            //     "seamark:landmark:height": "31",
+            //     "seamark:light:1:character": "Fl",
+            //     "seamark:light:1:colour": "white",
+            //     "seamark:light:1:group": "4",
+            //     "seamark:light:1:height": "37",
+            //     "seamark:light:1:period": "20",
+            //     "seamark:light:1:range": "16",
+            //     "seamark:light:1:sector_end": "1.0",
+            //     "seamark:light:1:sector_start": "215.0",
+            //     "seamark:light:1:sequence": "0.5+(1)+0.5+(1)+0.5+(1)+0.5+(15)",
+            //     "seamark:light:2:character": "Fl",
+            //     "seamark:light:2:colour": "red",
+            //     "seamark:light:2:group": "4",
+            //     "seamark:light:2:height": "37",
+            //     "seamark:light:2:period": "20",
+            //     "seamark:light:2:range": "12",
+            //     "seamark:light:2:sector_end": "215.0",
+            //     "seamark:light:2:sector_start": "204.0",
+            //     "seamark:light:2:sequence": "0.5+(1)+0.5+(1)+0.5+(1)+0.5+(15)",
+            //     "seamark:light:3:character": "Fl",
+            //     "seamark:light:3:colour": "red",
+            //     "seamark:light:3:group": "4",
+            //     "seamark:light:3:height": "37",
+            //     "seamark:light:3:period": "20",
+            //     "seamark:light:3:range": "12",
+            //     "seamark:light:3:sector_end": "32.5",
+            //     "seamark:light:3:sector_start": "1.0",
+            //     "seamark:light:3:sequence": "0.5+(1)+0.5+(1)+0.5+(1)+0.5+(15)",
+            //     "seamark:light:reference": "A 2272",
+            //     "seamark:name": "Southwold",
+            //     "seamark:radio_station:category": "ais",
+            //     "seamark:radio_station:mmsi": "992351019",
+            //     "seamark:type": "landmark",
+            //     "wikidata": "Q7571483",
+            //     "id": "node/427582786"
+            // },
+            // "geometry": {
+            //     "type": "Point",
+            //     "coordinates": [
+            //         1.6813393,
+            //         52.3272264
+            //     ]
+            // }
+     };
 
     // get the entries where tags match "seamark:light:i:<something>" and create an object of {<something>: value ...} entries
     let light_entry = function (tags, light_seq) {
@@ -208,96 +214,100 @@
         return one_light_data;
     };
 
-     // iterate through all the lights to build a light_data object
-    var light_data = [];
+    let lighthouse_data = function (geojson) {
 
-    var tags = geojson.properties;
+         // iterate through all the lights to build a light_data object
+        var light_data = [];
 
-    for (let light_seq = 1; light_seq < 9; light_seq++){
-        let this_light = light_entry(tags, light_seq);
-        if (Object.keys(this_light).length > 0)
-            {light_data.push(this_light);}
-        else {break;}
-    }
+        var tags = geojson.properties;
 
-    // if this didn't result in anything, the lighthouse only has one light.
-    if (!light_data.length) {
-        // now we are just looking for tags looking like seamark:light:<something>
-        let re2 = new RegExp("seamark:light:(.+)$");
-        // get the key-value pairs
-        the_entries = Object.entries(tags).filter((the_entry) => re2.test(the_entry[0]));
+        for (let light_seq = 1; light_seq < 9; light_seq++){
+            let this_light = light_entry(tags, light_seq);
+            if (Object.keys(this_light).length > 0)
+                {light_data.push(this_light);}
+            else {break;}
+        }
 
-        // process these entries into an object
-        let one_light_data = {};
-        the_entries.forEach(entry => {
-            let new_key = entry[0].match(re2);
-            one_light_data[new_key[1]] = entry[1];
+        // if this didn't result in anything, the lighthouse only has one light.
+        if (!light_data.length) {
+            // now we are just looking for tags looking like seamark:light:<something>
+            let re2 = new RegExp("seamark:light:(.+)$");
+            // get the key-value pairs
+            the_entries = Object.entries(tags).filter((the_entry) => re2.test(the_entry[0]));
+
+            // process these entries into an object
+            let one_light_data = {};
+            the_entries.forEach(entry => {
+                let new_key = entry[0].match(re2);
+                one_light_data[new_key[1]] = entry[1];
+            });
+
+            // no start or end angles, so need to provide these to draw a circle: 0, 360
+            one_light_data.start = '0';
+            one_light_data.end = '360';
+
+            light_data.push(one_light_data);
+        }
+
+        // get the location of the lighthouse as a latlong
+        var latlong = L.GeoJSON.coordsToLatLng(
+            geojson.geometry.type == "Polygon" 
+            ? turf.centroid(geojson.geometry).geometry.coordinates
+            : geojson.geometry.coordinates
+            );
+
+        // populate some other tags of the lighthouse
+        var the_lighthouse = {};
+        the_lighthouse.name = tags['seamark:name'] || tags['name'];
+        the_lighthouse.type = tags['seamark:type'];
+        the_lighthouse.latlong = latlong; 
+        the_lighthouse.sectors = light_data;
+        the_lighthouse.range_nm = light_data.reduce((prev, sector) => Math.max(prev, sector.range),0);  // max of the sector ranges
+        the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
+        //console.log('pj', 'the_lighthouse', the_lighthouse);
+
+        // build a sequence array from the light sequence string
+        // it's series of comma- or plus-separated tokens comprising numbers
+        // which are in brackets if dark, not if light
+        // split the sequence
+        var seq_split = the_lighthouse.sequence.replace(/,/g,'+').split('+');
+        //console.log('pj', 'seq_split', seq_split);
+        // extract the numbers using a regex, identifying whether there's a bracket or not
+        var seq_steps = seq_split.map(element => {
+            if(element.substring(0, 1) == '('){
+                return [false, Number(element.substring(1, element.length-1))];
+            }
+            else {
+                return ['yes', Number(element)];
+            }
         });
 
-        // no start or end angles, so need to provide these to draw a circle: 0, 360
-        one_light_data.start = '0';
-        one_light_data.end = '360';
+        // the sequence object is a duration and the array of steps
+        var the_duration = seq_steps.reduce((total, step) => total+step[1], 0);
+        var the_sequence = {
+            duration: the_duration,
+            offset: Math.random() * the_duration,
+            steps: seq_steps
+        };
+        the_lighthouse.sequence_data = the_sequence;
 
-        light_data.push(one_light_data);
-    }
-
-    //console.log('pj', 'light_data 2', light_data);
-
-    // populate some other tags of the lighthouse
-    var the_lighthouse = {};
-    the_lighthouse.name = tags['seamark:name'] || tags['name'];
-    the_lighthouse.type = tags['seamark:type'];
-    the_lighthouse.sectors = light_data;
-    the_lighthouse.range_nm = light_data.reduce((prev, sector) => Math.max(prev, sector.range),0);
-    the_lighthouse.xpos = 300;
-    the_lighthouse.ypos = 300;
-    the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
-    //console.log('pj', 'the_lighthouse', the_lighthouse);
-
-    // build a sequence array from the light sequence string
-    // it's series of comma- or plus-separated tokens comprising numbers
-    // which are in brackets if dark, not if light
-    // split the sequence
-    var seq_split = the_lighthouse.sequence.replace(/,/g,'+').split('+');
-    //console.log('pj', 'seq_split', seq_split);
-    // extract the numbers using a regex, identifying whether there's a bracket or not
-    var seq_steps = seq_split.map(element => {
-        if(element.substring(0, 1) == '('){
-            return [false, Number(element.substring(1, element.length-1))];
-        }
-        else {
-            return ['yes', Number(element)];
-        }
-    });
-
-    // the sequence object is a duration and the array of steps
-    var the_duration = seq_steps.reduce((total, step) => total+step[1], 0);
-    var the_sequence = {
-        duration: the_duration,
-        offset: Math.random() * the_duration,
-        steps: seq_steps
+        return the_lighthouse;
     };
-    the_lighthouse.sequence_data = the_sequence;
-    //console.log(the_sequence);
-
-
-    // Now, draw the lighthouse on a canvas
-    // get a canvas element and fill it sort of dark grey
-    var c = document.getElementById("drawcanvas");
-    var ctx = c.getContext("2d");
-    //ctx.canvas.width = window.innerWidth;
-    //ctx.canvas.height = window.innerHeight;
-    ctx.fillStyle = "#303030";
-    ctx.fillRect(0, 0, c.width, c.height);
 
     // draw a lighthouse
-    let draw_light = function(the_time, lighthouse, context) {
+    let draw_light = function(the_time, lighthouse, ctx) {
 
-        var origin_x = lighthouse.xpos;
-        var origin_y = lighthouse.ypos;
-        //var background = context.fillStyle;
+        // draw the light in the middle of the canvas (which should be where we want it to go)
 
-        context.save(); // keep the context so we can unpick the clipping path at the end
+
+        var origin_x = ctx.canvas.width / 2;
+        var origin_y = ctx.canvas.height / 2;
+        var max_radius = Math.min(origin_x, origin_y);  // in pixels
+        var max_range = lighthouse.range_nm;
+
+        //debugger;
+
+        ctx.save(); // keep the ctx.so we can unpick the clipping path at the end
 
         // draw a light sector between start and end bearings, with radius = range and specified colour
         let draw_sector = function (light_to_draw) {
@@ -305,6 +315,7 @@
             
             // start and end are bearings TO the light. We need bearing FROM the light = 180+start % 360.
             // SVG arc angles are measured from the y=0 line i.e. 0deg = right. So need to subtract 90deg to get direction from north
+            //console.log('pj','sector', light_to_draw, max_radius, max_range);
 
             // is it a circle
             var start_from_deg;
@@ -322,13 +333,15 @@
 
             var angle_s = start_from_deg / 180 * Math.PI;
             var angle_e = end_from_deg / 180 * Math.PI;
-            var radius = light_to_draw.range * 16;
+            var radius = light_to_draw.range * max_radius / max_range; // in proportion to longest range sector
 
-            context.beginPath();
-            context.moveTo(origin_x, origin_y);
-            context.arc(origin_x,origin_y,radius,angle_s,angle_e);
-            context.lineTo(origin_x, origin_y);
-            context.closePath();
+            //console.log('pj', 'sector radius', radius);
+
+            ctx.beginPath();
+            ctx.moveTo(origin_x, origin_y);
+            ctx.arc(origin_x,origin_y,radius,angle_s,angle_e);
+            ctx.lineTo(origin_x, origin_y);
+            ctx.closePath();
 
             // do a gradient fill that fades from the centre to the range of the light
             // first colour is the specified colour; the second is that same, but transparent
@@ -337,11 +350,12 @@
             //console.log('pj', 'mapped colours', start_colour, end_colour);
 
 
-            var grd = context.createRadialGradient(origin_x, origin_y, 0, origin_x, origin_y, radius);
+            var grd = ctx.createRadialGradient(origin_x, origin_y, 0, origin_x, origin_y, radius);
             grd.addColorStop(0, start_colour);
             grd.addColorStop(1, end_colour);
-            context.fillStyle = (grd);
-            context.fill();
+            ctx.fillStyle = (grd);
+//            ctx.fillStyle = (start_colour);
+            ctx.fill();
         };
 
         // for the rotating light, we ignore the colour (that's set by the underlying sector) 
@@ -349,11 +363,8 @@
         // this generates a set of clipping path sectors on top of which we draw the sectors
 
         // first up, clear what's already been drawn
-        context.fillStyle = "#303030";
-        context.fillRect(0, 0, c.width, c.height);
-
-        // clip radius = max of the sector ranges (scaled to make it visible)
-        var clip_radius = 16 * lighthouse.range_nm;
+        ctx.fillStyle = "#303030";
+        ctx.fillRect(0, 0, c.width, c.height);
 
         var the_sequence = lighthouse.sequence_data;
 
@@ -362,35 +373,40 @@
 
         // build the clipping path based on the light sequence steps
         var start_angle = 0;
-        context.beginPath();
+        ctx.beginPath();
         for (let step = 0; step < the_sequence.steps.length; step++) {
             var clip_angle_s = (rotation_angle + start_angle) % 360;
             var clip_angle_e = (rotation_angle + start_angle + the_sequence.steps[step][1] * 360 / the_sequence.duration) % 360;
 
             // draw a sector for each illuminated bit
             if (the_sequence.steps[step][0]) {
-                context.moveTo(origin_x, origin_y);
-                context.arc(origin_x,origin_y,clip_radius,clip_angle_s / 180 * Math.PI,clip_angle_e / 180 * Math.PI);
-                context.lineTo(origin_x, origin_y);
+                ctx.moveTo(origin_x, origin_y);
+                ctx.arc(origin_x,origin_y, max_radius, clip_angle_s / 180 * Math.PI, clip_angle_e / 180 * Math.PI);
+                ctx.lineTo(origin_x, origin_y);
             }
             start_angle = start_angle + the_sequence.steps[step][1] * 360 / the_sequence.duration;
         };
-        context.clip();
+        ctx.clip();
 
         // draw the lighthouse sectors on top of clipping path to limit where they shine
+        //console.log('pj', 'sectors', max_radius, lighthouse.range_nm);
         lighthouse.sectors.forEach(draw_sector);
 
         // put a dot where the lighthouse is. Do restore() to clear the clip path so we get the whole dot.
-        context.restore();
-        context.beginPath();
-        context.arc(origin_x, origin_y, 20, 0, 2 * Math.PI);
-        context.closePath();
-        context.fillStyle = "white";
-        context.fill();
+        ctx.restore();
+        // ctx.beginPath();
+        // ctx.arc(origin_x, origin_y, 5, 0, 2 * Math.PI);
+        // ctx.closePath();
+        // ctx.fillStyle = "white";
+        // ctx.fill();
     };
 
+    // get the lighthouse from the data
+    var my_lighthouse = lighthouse_data(geojson);
 
-    // now see if we can use a context provided by Leaflet to draw the lighthouse on a map
+
+
+    // now see if we can use a ctx.provided by Leaflet to draw the lighthouse on a map
     var map = L.map('mapdiv', {
       maxZoom: 18,
       preferCanvas: true
@@ -402,54 +418,159 @@
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
     }).addTo(map);
 
-    // get a single point to draw the lighthouse at, even if it's a polygon in the geojson
-    var geometry = (geojson.geometry.type == "Polygon" ? turf.centroid(geojson.geometry).geometry : geojson.geometry);
 
-    latlong = L.GeoJSON.coordsToLatLng(geometry.coordinates); 
-
-
-   // debugger;
-
+    //console.log('pj', 'my_lighthouse', my_lighthouse);
+/*
     // add a circle to the map to represent the lighthouse
     new L.Circle(
-        latlong,
+        my_lighthouse.latlong,
         {
-            radius: the_lighthouse.range_nm * NM_IN_METRES, 
+            radius: my_lighthouse.range_nm * NM_IN_METRES, 
             fillColor: "white",
             fillOpacity: 0.3,
             stroke: false,
             interactive: false
         }
     ).addTo(map);
+
     // add a marker and a popup for the lighthouse exact position
     new L.CircleMarker(
-        latlong,
-        {radius: 3,
-         fillColor: "white",
-         stroke: false,
-         fillOpacity: 0.9,
-         color: false}
-    ).addTo(map).bindPopup(the_lighthouse.name + ", range " + the_lighthouse.range_nm + " nautical miles");
+        my_lighthouse.latlong,
+        {
+            radius: 3,
+            fillColor: "white",
+            stroke: false,
+            fillOpacity: 0.9,
+            color: false
+        }
+    ).addTo(map).bindPopup(my_lighthouse.name + ", range " + my_lighthouse.range_nm + " nautical miles");
+*/
+
+ 
+    // update the Canvas to handle how to draw a lighthouse
+    L.Canvas.include({
+       _updateLighthouse: function(layer) {
+         if (!this._drawing || layer._empty()) {
+          return;
+        }
+
+        var p = layer._point,
+          ctx = this._ctx,
+          r = layer._radius;
+
+        //var the_lighthouse = layer.options.lighthouse;
+        var max_range = layer.options.range_nm;
+        var max_radius = r;
+        var origin_x = p.x;
+        var origin_y = p.y;
+
+        //debugger;
+        // temp while we get this working
+
+ 
+        let draw_light_sector = function (light_to_draw) {
+            //console.log(light_to_draw.start, light_to_draw.end, light_to_draw.range, light_to_draw.colour, origin_x, origin_y);
+            
+            // start and end are bearings TO the light. We need bearing FROM the light = 180+start % 360.
+            // SVG arc angles are measured from the y=0 line i.e. 0deg = right. So need to subtract 90deg to get direction from north
+            //console.log('pj','sector', light_to_draw, max_radius, max_range);
+
+            // is it a circle
+            var start_from_deg;
+            var end_from_deg;
+            
+            if (light_to_draw.start == '0' && light_to_draw.end == '360') {
+                start_from_deg = 0;
+                end_from_deg = 360;
+            }
+            else {            
+                start_from_deg = (90 + parseInt(light_to_draw.start)) % 360;
+                end_from_deg = (90 + parseInt(light_to_draw.end)) % 360;
+            }
+           //console.log('pj','angles', light_to_draw.start, light_to_draw.end, start_from_deg, end_from_deg);
+
+            var angle_s = start_from_deg / 180 * Math.PI;
+            var angle_e = end_from_deg / 180 * Math.PI;
+            var radius = light_to_draw.range * max_radius / max_range; // in proportion to longest range sector
+
+            //console.log('pj', 'sector radius', radius);
+
+            ctx.beginPath();
+            ctx.moveTo(origin_x, origin_y);
+            ctx.arc(origin_x,origin_y,radius,angle_s,angle_e);
+            ctx.lineTo(origin_x, origin_y);
+            ctx.closePath();
+
+            // do a gradient fill that fades from the centre to the range of the light
+            // first colour is the specified colour; the second is that same, but transparent
+            var start_colour = chroma(light_to_draw.colour == 'white' ? 'white' : light_to_draw.colour).alpha(0.7);
+            var end_colour = chroma(start_colour).alpha(0.0);
+            //console.log('pj', 'mapped colours', start_colour, end_colour);
 
 
-    // define a lighthouse as a kind of circle (which is sort of is)
-    L.Lighthouse = L.Circle.extend({
+            var grd = ctx.createRadialGradient(origin_x, origin_y, 0, origin_x, origin_y, radius);
+            grd.addColorStop(0, start_colour);
+            grd.addColorStop(1, end_colour);
+            ctx.fillStyle = (grd);
+//            ctx.fillStyle = (start_colour);
+            ctx.fill();
+        };
 
+        // draw the first sector of the lighthouse  
+        layer.options.sectors.forEach(draw_light_sector);
 
+      }
 
 
     });
 
 
+
+    // define a lighthouse as a kind of circle (which it sort of is)
+    // We need to populate its radius in metres and pass the lighthouse data as options
+    L.Lighthouse = L.Circle.extend({
+        initialize: function(latlng, options) {
+            //var _options = options;
+            // define the radius in metres
+            options.radius = options.range_nm * NM_IN_METRES;
+            //L.setOptions(this, options);
+            //debugger;
+
+            // and call the circle initialiser
+            L.Circle.prototype.initialize.call(this, latlng, options, {});
+        },
+
+        _updatePath: function() {
+            this._renderer._updateLighthouse(this);
+        }
+
+      });
+
+
+    // draw the lighthouse on the map
+    new L.Lighthouse(my_lighthouse.latlong, my_lighthouse).addTo(map);
+
+
+
+
+
+/*    // get a canvas element and fill it sort of dark grey
+    var c = document.getElementById("drawcanvas");
+    //console.log(c.height, c.width);
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#303030";
+    ctx.fillRect(0, 0, c.width, c.height);
+
+
     // animate the lighthouse
     // call the draw_light function repeatedly using requestAnimationFrame
     let update_the_light = function(t){
-        draw_light(t/1000, the_lighthouse, ctx);
+        draw_light(t/1000, my_lighthouse, ctx);
         requestAnimationFrame(update_the_light);
     };
-    ctx.scale(0.2, 0.2);
+    //ctx.scale(0.2, 0.2);
     update_the_light(0);
-
+*/
 </script> 
 </body>
 </html>
