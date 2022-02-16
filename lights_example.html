@@ -183,6 +183,13 @@
       preferCanvas: true
     }).setView([55.7, -3.7], 6);
 
+    // add a new pane for the lighthouses. We'll use it to render them
+    map.createPane("lighthouse");
+    var lighthouseRenderer = L.canvas({
+        pane: "lighthouse"
+    });
+
+
     //background layer
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
         detectRetina: true,
@@ -194,7 +201,7 @@
 
        _updateLighthouse: function(layer, t) {
 
-        console.log('updating', layer.options.name);
+        //console.log('updating', layer.options.name);
         //debugger;
 
         // if (!this._drawing || layer._empty()) {
@@ -293,6 +300,7 @@
 
     L.Lighthouse = L.Circle.extend({
         initialize: function(latlng, options) {
+            options.renderer = lighthouseRenderer;
             options.radius = options.range_nm * NM_IN_METRES;
             options.sequence_data.time_offset = Math.random() * options.sequence_data.duration;
             options.interactive = false;
@@ -337,19 +345,31 @@
                 maplights.push(new L.Lighthouse(light.latlong, light).addTo(map));
             });
 
-             console.log(maplights);
+             //console.log(maplights);
              return maplights;
             });
 
     // animate the lighthouses
-    // let update_the_lights = function(t) {
-    //     the_lights.forEach(light => {light._updatePath(t / 1000);
-    //     requestAnimationframe(update_the_lights);
-    // };
 
+    the_lights.then(lights => {
 
-    update_the_lights(0);
+        let draw = function(t) {
 
+            var ctxx = lights[0]._renderer._ctx;
+            var canv = ctxx.canvas;
+            ctxx.clearRect(0,  0, canv.width, canv.height);
+            debugger;
+            lights.forEach(light => {
+                light._updatePath(t);
+            })
+         };
+
+        let update = function(t) {
+            draw( t / 1000);
+            requestAnimationFrame(update);
+        };
+        update(0);
+    });
 
 
 
