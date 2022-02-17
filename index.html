@@ -176,13 +176,21 @@
     var map = L.map('mapdiv', {
       maxZoom: 18,
       preferCanvas: true
-    }).setView([55.7, -3.7], 7);
+    }).addControl(L.control.attribution({
+                    position: 'bottomright',
+                    prefix: '@pedrojuk, idea from @neilcfd1, using an original by <a href="https://www.geodienst.xyz/">Geodienst</a>, plotting OpenStreetMap data'}))
+        .setView([55.7, -3.7], 7);
 
     // add a new pane for the lighthouses. We'll use it to render them
     map.createPane("lighthouse");
     var lighthouseRenderer = L.canvas({
         pane: "lighthouse"
     });
+    map.createPane("lh-markers");
+    // set the z-orders
+    map.getPane("lighthouse").style.zIndex = 650;
+    map.getPane("lh-markers").style.zIndex = 690; // markers appear on top
+    
 
     //background layer
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
@@ -320,20 +328,23 @@
 
             lights.forEach(light => {   
 
-                maplights.push(new L.Lighthouse(light.latlong, light).addTo(map));
-
                 // also add a marker on to which we can put the popup
                 markers.push(new L.Circle(light.latlong,{
-                    color: "rgb(153, 0, 0)", 
-                    fillColor: "rgb(153, 0, 0)", 
-                    radius: 50,
+                    color: "rgb(127, 0, 0)", 
+                    fillColor: "rgb(127, 0, 0)", 
+                    radius: 200,
                     weight: 3, 
                     opacity: 0.6,
                     stroke: true, 
-                    interactive: true, 
+                    interactive: true,
+                    pane: 'lh-markers', // to bring to the top
                     fillOpacity: 0.6
-                }).bringToFront().bindPopup("lighthouse " + light.name).addTo(map));
+                }).bindPopup("<b>"+light.name+"</b>").addTo(map));
+
+                maplights.push(new L.Lighthouse(light.latlong, light).addTo(map));
             });
+
+
             return maplights;
             });
 
