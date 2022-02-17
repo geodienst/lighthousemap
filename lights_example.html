@@ -169,11 +169,16 @@
 
         // the sequence object is a duration and the array of steps
         var the_duration = seq_steps.reduce((total, step) => total+step[1], 0);
+        var lit_duration = seq_steps.reduce((total, step) => total+(step[0] == 'yes' ? step[1] : 0), 0);
+        //console.log(the_duration, lit_duration, seq_steps);
+        //debugger;
         var the_sequence = {
             duration: the_duration,
+            lit_proportion: lit_duration / the_duration,
             steps: seq_steps
         };
         the_lighthouse.sequence_data = the_sequence;
+        //console.log(the_lighthouse);
 
         return the_lighthouse;
     };
@@ -218,11 +223,15 @@
         var edge_opacity = layer.options.edge_opacity;
         var max_range = layer.options.range_nm;
         var offset = layer.options.time_offset;
+        var lit_proportion =layer.options.sequence_data.lit_proportion;
+
+        //console.log(layer);
   
         let draw_light_sector = function (light_to_draw) {
             // is it a circle?
             var start_from_deg;
             var end_from_deg;
+
             
             if (light_to_draw.start == '0' && light_to_draw.end == '360') {
                 start_from_deg = 0;
@@ -244,8 +253,20 @@
             ctx.closePath();
 
             // do a gradient fill
+
+            // set the opacity depending on the proportion of the time the light is lit
+            // - this is so the ones with long periods don't look too bright
+            var _centre_opacity = 
+                lit_proportion < .05 ? 0.9
+                : lit_proportion < .1 ? 0.4
+                : lit_proportion < .2 ? 0.2
+                : lit_proportion < .5 ? 0.1
+                : lit_proportion >= .5 ? 0.05
+                : 1;
+
+            //console.log(lit_proportion, _centre_opacity);    
             var grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, radius);
-            grad.addColorStop(0, chroma(light_to_draw.colour).alpha(centre_opacity));
+            grad.addColorStop(0, chroma(light_to_draw.colour).alpha(_centre_opacity));
             grad.addColorStop(1, chroma(light_to_draw.colour).alpha(edge_opacity));
             ctx.fillStyle = (grad);
             ctx.fill();
