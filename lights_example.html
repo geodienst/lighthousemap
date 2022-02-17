@@ -53,11 +53,8 @@
     </style>
 </head>
 <body>
-<!--     <div id="mapcontainer"> -->
-        <div id="mapdiv"></div>
-       <!--  <canvas id="drawcanvas" width="400" height="400"></canvas> -->
- <!--    </div>
- --><script>
+    <div id="mapdiv"></div>
+<script>
     // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
     // It's very ramshackle and plenty of room for tidying and improvement.
 
@@ -103,7 +100,6 @@
             if (Object.keys(this_light).length > 0)
                 {
                     this_light.range = !this_light.range ? 5.0 : this_light.range;
-
                     light_data.push(this_light);}
             else {break;}
         }
@@ -149,9 +145,6 @@
         the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
         // default if no sequence found
         the_lighthouse.sequence = !the_lighthouse.sequence ? "1+(1)" : the_lighthouse.sequence;
-
-        // if it's an Iso light, the sequence is missing but should be period/2+(period/2)
-
  
         // build a sequence array from the light sequence string
         // it's series of comma- or plus-separated tokens comprising numbers
@@ -170,15 +163,12 @@
         // the sequence object is a duration and the array of steps
         var the_duration = seq_steps.reduce((total, step) => total+step[1], 0);
         var lit_duration = seq_steps.reduce((total, step) => total+(step[0] == 'yes' ? step[1] : 0), 0);
-        //console.log(the_duration, lit_duration, seq_steps);
-        //debugger;
         var the_sequence = {
             duration: the_duration,
             lit_proportion: lit_duration / the_duration,
             steps: seq_steps
         };
         the_lighthouse.sequence_data = the_sequence;
-        //console.log(the_lighthouse);
 
         return the_lighthouse;
     };
@@ -186,14 +176,13 @@
     var map = L.map('mapdiv', {
       maxZoom: 18,
       preferCanvas: true
-    }).setView([55.7, -3.7], 6);
+    }).setView([55.7, -3.7], 8);
 
     // add a new pane for the lighthouses. We'll use it to render them
     map.createPane("lighthouse");
     var lighthouseRenderer = L.canvas({
         pane: "lighthouse"
     });
-
 
     //background layer
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
@@ -206,14 +195,6 @@
 
        _updateLighthouse: function(layer, t) {
 
-        //console.log('updating', layer.options.name);
-        //debugger;
-
-        // if (!this._drawing || layer._empty()) {
-        //     console.log('not drawing');
-        //   return;
-        // }
-
         var p = layer._point,
           ctx = this._ctx,
           r = layer._radius;
@@ -223,15 +204,12 @@
         var edge_opacity = layer.options.edge_opacity;
         var max_range = layer.options.range_nm;
         var offset = layer.options.time_offset;
-        var lit_proportion =layer.options.sequence_data.lit_proportion;
+        var lit_proportion = layer.options.sequence_data.lit_proportion;
 
-        //console.log(layer);
-  
         let draw_light_sector = function (light_to_draw) {
             // is it a circle?
             var start_from_deg;
             var end_from_deg;
-
             
             if (light_to_draw.start == '0' && light_to_draw.end == '360') {
                 start_from_deg = 0;
@@ -252,9 +230,7 @@
             ctx.lineTo(p.x, p.y);
             ctx.closePath();
 
-            // do a gradient fill
-
-            // set the opacity depending on the proportion of the time the light is lit
+            // do a gradient fill. Set the opacity depending on the proportion of the time the light is lit
             // - this is so the ones with long periods don't look too bright
             var _centre_opacity = 
                 lit_proportion < .05 ? 0.9
@@ -262,9 +238,8 @@
                 : lit_proportion < .2 ? 0.2
                 : lit_proportion < .5 ? 0.1
                 : lit_proportion >= .5 ? 0.05
-                : 1;
+                : 0.3;
 
-            //console.log(lit_proportion, _centre_opacity);    
             var grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, radius);
             grad.addColorStop(0, chroma(light_to_draw.colour).alpha(_centre_opacity));
             grad.addColorStop(1, chroma(light_to_draw.colour).alpha(edge_opacity));
@@ -277,14 +252,8 @@
 
             var the_time = t ? t : 0;
 
-
-            // first up, clear what's already been drawn
-            //ctx.setTransform(1, 0, 0, 1, 0, 0);
-            //ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-
             // rotation angle in degrees based on time and duration
             var rotation_angle = ((the_time + sequence.time_offset) / sequence.duration * 360) % 360;
-            //console.log('time', the_time, rotation_angle);
 
             // build the clipping path based on the light sequence steps
             var start_angle = 0;
@@ -310,13 +279,7 @@
         // draw the sectors of the lighthouse  
         layer.options.sectors.forEach(draw_light_sector);
         ctx.restore(); // to clear the clip path
-
-        // draw a dot where the lighthouse is
-
-
       }
-
-
     });
 
     L.Lighthouse = L.Circle.extend({
@@ -333,7 +296,6 @@
         },
 
         _updatePath: function(t) {
-            //console.log('in update');
             this._renderer._updateLighthouse(this, t);
         }
 
@@ -346,62 +308,57 @@
     let the_lights = fetch(url)
         .then(req => req.json())
         .then(geojson => {
-            //console.log('features', geojson.features);
-
             var lights = [];
 
             geojson.features.forEach(feature => {
-
-                // console.log('feature', feature);
                 lights.push(lighthouse_data(feature));});
-
-            //console.log('lights', lights);
             return lights;
         })
         .then(lights => {
             var maplights = [];
+            var markers = [];
 
-            lights.forEach(light => {
-                //console.log('light', light.name);
+            lights.forEach(light => {   
+
+//                light.options.pane = "lighthouse";
                 maplights.push(new L.Lighthouse(light.latlong, light).addTo(map));
-            });
 
-             //console.log(maplights);
-             return maplights;
+                // also add a marker on to which we can put the popup
+                markers.push(new L.Circle(light.latlong,{
+                    color: "red", 
+                    fillColor: "red", 
+                    radius: 200,
+                    weight: 3, 
+                    stroke: true, 
+                    interactive: true, 
+                    fillOpacity: 0.4
+                }).bringToFront().bindPopup("lighthouse " + light.name).addTo(map));
+            });
+            return maplights;
             });
 
     // animate the lighthouses
-
     the_lights.then(lights => {
 
         let draw = function(t) {
-
             var ctxx = lights[0]._renderer._ctx;
             var canv = ctxx.canvas;
-            ctxx.clearRect(0,  0, canv.width, canv.height);
-            debugger;
+
+            ctxx.save();
+            ctxx.setTransform(1, 0, 0, 1, 0, 0);
+            ctxx.clearRect(0, 0, canv.width, canv.height);
+            ctxx.restore();
             lights.forEach(light => {
                 light._updatePath(t);
             })
          };
 
         let update = function(t) {
-            draw( t / 1000);
+            draw( t / 1200);
             requestAnimationFrame(update);
         };
         update(0);
     });
-
-
-
-    // call the draw_light function repeatedly using requestAnimationFrame
-/*    let update_the_light = function(t){
-       
-        the_light._updatePath(t / 1000);
-        requestAnimationFrame(update_the_light);
-    };
-    update_the_light(0);
-*/
 </script> 
 </body>
 </html>
