@@ -176,7 +176,7 @@
     var map = L.map('mapdiv', {
       maxZoom: 18,
       preferCanvas: true
-    }).setView([55.7, -3.7], 8);
+    }).setView([55.7, -3.7], 7);
 
     // add a new pane for the lighthouses. We'll use it to render them
     map.createPane("lighthouse");
@@ -320,18 +320,18 @@
 
             lights.forEach(light => {   
 
-//                light.options.pane = "lighthouse";
                 maplights.push(new L.Lighthouse(light.latlong, light).addTo(map));
 
                 // also add a marker on to which we can put the popup
                 markers.push(new L.Circle(light.latlong,{
-                    color: "red", 
-                    fillColor: "red", 
-                    radius: 200,
+                    color: "rgb(153, 0, 0)", 
+                    fillColor: "rgb(153, 0, 0)", 
+                    radius: 50,
                     weight: 3, 
+                    opacity: 0.6,
                     stroke: true, 
                     interactive: true, 
-                    fillOpacity: 0.4
+                    fillOpacity: 0.6
                 }).bringToFront().bindPopup("lighthouse " + light.name).addTo(map));
             });
             return maplights;
@@ -354,7 +354,7 @@
          };
 
         let update = function(t) {
-            draw( t / 1200);
+            draw( t / 1000);
             requestAnimationFrame(update);
         };
         update(0);
