@@ -1,0 +1,81 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": "way/40555139",
+            "properties": {
+                "man_made": "lighthouse",
+                "name": "Fidra Lighthouse",
+                "seamark:light:character": "Fl",
+                "seamark:light:colour": "white",
+                "seamark:light:group": "4",
+                "seamark:light:height": "34",
+                "seamark:light:period": "30",
+                "seamark:light:range": "24",
+                "seamark:light:reference": "A 2868",
+                "seamark:light:sequence": "0.7+(2)+0.7+(2)+0.7+(2)+0.7+(21.2)",
+                "seamark:name": "Fidra",
+                "seamark:type": "light_major",
+                "wikidata": "Q12034940",
+                "url": "https://canmore.org.uk/site/79779/fidra-lighthouse",
+                "id": "way/40555139"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -2.7851639,
+                            56.0732205
+                        ],
+                        [
+                            -2.785159,
+                            56.0732026
+                        ],
+                        [
+                            -2.7851376,
+                            56.073189
+                        ],
+                        [
+                            -2.7851063,
+                            56.073184
+                        ],
+                        [
+                            -2.7850753,
+                            56.0731893
+                        ],
+                        [
+                            -2.7850542,
+                            56.0732031
+                        ],
+                        [
+                            -2.7850498,
+                            56.073221
+                        ],
+                        [
+                            -2.7850635,
+                            56.0732375
+                        ],
+                        [
+                            -2.785091,
+                            56.0732471
+                        ],
+                        [
+                            -2.7851234,
+                            56.073247
+                        ],
+                        [
+                            -2.7851506,
+                            56.0732371
+                        ],
+                        [
+                            -2.7851639,
+                            56.0732205
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}

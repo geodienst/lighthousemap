@@ -24,12 +24,6 @@
             position: fixed;
         }
         
-/*        #drawcanvas {
-            width: 100%;
-            height: 100%;
-            position: fixed;
-        }
-*/        
         #controls {
             position: fixed;
             bottom: 0;
@@ -50,6 +44,32 @@
             color: inherit;
             text-decoration: underline;
         }
+
+
+        /*popup overrides*/
+
+        
+
+        /*lighthouse popups*/
+
+        .lh-popup {
+            font-size: 10pt;
+            color: "blue";
+        }
+
+        .lh-popup-head {
+            font-weight: bold;
+        }
+
+        .lh-popup-title {
+            font-weight: bold;
+        }
+
+        .lh-popup-text {
+        	font-style: italic;
+        }
+
+
     </style>
 </head>
 <body>
@@ -59,6 +79,7 @@
     // It's very ramshackle and plenty of room for tidying and improvement.
 
     const NM_IN_METRES = 1852; // https://en.wikipedia.org/wiki/Nautical_mile
+    const MARKER_RADIUS = 100; // circle and marker radius in metres
 
     // get the entries where tags match "seamark:light:i:<something>" and create an object of {<something>: value ...} entries
     let light_entry = function (tags, light_seq) {
@@ -99,8 +120,9 @@
             let this_light = light_entry(tags, light_seq);
             if (Object.keys(this_light).length > 0)
                 {
-                    this_light.range = !this_light.range ? 5.0 : this_light.range;
-                    light_data.push(this_light);}
+                	this_light.range = !this_light.range ? 5.0 : this_light.range;
+                    light_data.push(this_light);
+                }
             else {break;}
         }
 
@@ -135,12 +157,14 @@
             : geojson.geometry.coordinates
             );
 
-        // populate some other tags of the lighthouse
+        // populate other attributes of the lighthouse
         var the_lighthouse = {};
-        the_lighthouse.name = tags['seamark:name'] || tags['name'];
+        the_lighthouse.name = tags['seamark:name'] || tags['name'] || "unnamed";
         the_lighthouse.type = tags['seamark:type'];
+        the_lighthouse.height = tags['seamark:light:height'] || tags['seamark:light:1:height'];
         the_lighthouse.latlong = latlong; 
         the_lighthouse.sectors = light_data;
+        the_lighthouse.url = tags['url'];
         the_lighthouse.range_nm = light_data.reduce((prev, sector) => Math.max(prev, sector.range),0);  // max of the sector ranges
         the_lighthouse.sequence = tags['seamark:light:sequence'] || tags['seamark:light:1:sequence'];
         // default if no sequence found
@@ -179,7 +203,7 @@
     }).addControl(L.control.attribution({
                     position: 'bottomright',
                     prefix: '@pedrojuk, idea from @neilcfd1, using an original by <a href="https://www.geodienst.xyz/">Geodienst</a>, plotting OpenStreetMap data'}))
-        .setView([55.7, -3.7], 7);
+        .setView([56.0, -2.5], 9);
 
     // add a new pane for the lighthouses. We'll use it to render them
     map.createPane("lighthouse");
@@ -201,11 +225,12 @@
     // update the Canvas to handle how to draw a lighthouse
     L.Canvas.include({
 
-       _updateLighthouse: function(layer, t) {
+    _updateLighthouse: function(layer, t) {
 
+        var max_range = layer.options.range_nm;
         var p = layer._point,
           ctx = this._ctx,
-          r = layer._radius;
+          r = layer._radius * NM_IN_METRES / MARKER_RADIUS * max_range;
           width = this.width;
           height = this.height;
         var centre_opacity = layer.options.centre_opacity;
@@ -213,6 +238,7 @@
         var max_range = layer.options.range_nm;
         var offset = layer.options.time_offset;
         var lit_proportion = layer.options.sequence_data.lit_proportion;
+
 
         let draw_light_sector = function (light_to_draw) {
             // is it a circle?
@@ -293,7 +319,8 @@
     L.Lighthouse = L.Circle.extend({
         initialize: function(latlng, options) {
             options.renderer = lighthouseRenderer;
-            options.radius = options.range_nm * NM_IN_METRES;
+            options.radius = MARKER_RADIUS;  // fake radius so it's drawn in the right place
+            options.radius_mm = options.range_nm * NM_IN_METRES;
             options.sequence_data.time_offset = Math.random() * options.sequence_data.duration;
             options.interactive = false;
             options.centre_opacity = 0.6;
@@ -309,8 +336,32 @@
 
       });
 
+    let lh_popup = function(the_light) {
+        // text for lighthouse information popup
+
+        const ROUND_PLACES = 4;
+        const llFormat = new Intl.NumberFormat('en-GB', {style: 'decimal', usegrouping: false, maximumFractionDigits: ROUND_PLACES}); 
+
+        let name = the_light.name;
+        let lat = llFormat.format(the_light.latlong.lat);
+        let long = llFormat.format(the_light.latlong.lng);
+        let height = the_light.height;
+        let url = the_light.url;
+
+        let template = `<div class="lh-popup">
+            <div class="lh-popup-head">${name}</div>
+            <p><span class="lh-popup-title">Location: </span><span class="lh-popup-text">${lat}, ${long}</span></p>
+            <p><span class="lh-popup-title">Height: </span><span class="lh-popup-text">${height}m</span></p>
+            </div>`;
+        if (url) {
+            template += `<p><span class="lh-popup-title">URL: </span><span class="lh-popup-text"><a href="${url}" target="_blank">${name}</a></span></p>`
+        };
+        return template;
+    };
+
+
     // draw a whole bunch of lighthouses
-    //url = 'lights_geojson_small.json'; // For testing
+    //url = 'lights_geojson_just1.json'; // For testing
     url = 'lights_geojson.json'; // For testing
 
     let the_lights = fetch(url)
@@ -328,22 +379,21 @@
 
             lights.forEach(light => {   
 
-                // also add a marker on to which we can put the popup
+                // marker on to which we can put the popup
                 markers.push(new L.Circle(light.latlong,{
                     color: "rgb(127, 0, 0)", 
                     fillColor: "rgb(127, 0, 0)", 
-                    radius: 200,
-                    weight: 3, 
+                    radius: MARKER_RADIUS,
+                    weight: 6, 
                     opacity: 0.6,
                     stroke: true, 
                     interactive: true,
                     pane: 'lh-markers', // to bring to the top
                     fillOpacity: 0.6
-                }).bindPopup("<b>"+light.name+"</b>").addTo(map));
+                }).bindPopup(lh_popup(light)).addTo(map));
 
                 maplights.push(new L.Lighthouse(light.latlong, light).addTo(map));
             });
-
 
             return maplights;
             });
