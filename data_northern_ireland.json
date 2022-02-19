@@ -1,0 +1,1071 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.57.1 74a55df1",
+  "osm3s": {
+    "timestamp_osm_base": "2022-02-19T00:23:53Z",
+    "timestamp_areas_base": "2022-02-19T00:03:25Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 322520627,
+      "lat": 54.9291337,
+      "lon": -5.7278176,
+      "tags": {
+        "man_made": "lighthouse",
+        "name": "Maidens Lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:exhibition": "24h",
+        "seamark:light:group": "3",
+        "seamark:light:height": "29",
+        "seamark:light:period": "15",
+        "seamark:light:range": "23",
+        "seamark:light:reference": "A 6042",
+        "seamark:light:sequence": "0.1+(2.5)+0.1+(2.5)+0.1+(9.7)",
+        "seamark:name": "East Maiden",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "M",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992351110",
+        "seamark:type": "light_major",
+        "source": "Commissioners of Irish Lights",
+        "wikidata": "Q15636247",
+        "wikipedia": "en:The Maidens lighthouses"
+      }
+    },
+    {
+      "type": "node",
+      "id": 322520628,
+      "lat": 54.029983,
+      "lon": -6.09055,
+      "tags": {
+        "man_made": "lighthouse",
+        "name": "Vidal Bank Leading Light",
+        "seamark:light:1:category": "lower",
+        "seamark:light:1:character": "Oc",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "7",
+        "seamark:light:1:period": "3",
+        "seamark:light:1:range": "11",
+        "seamark:light:1:sector_end": "324",
+        "seamark:light:1:sector_start": "296",
+        "seamark:light:1:sequence": "2.3+(0.7)",
+        "seamark:light:reference": "A 5932",
+        "seamark:name": "Vidal Bank",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992501237",
+        "seamark:type": "light_minor",
+        "source": "Commissioners of Irish Lights"
+      }
+    },
+    {
+      "type": "node",
+      "id": 322520629,
+      "lat": 55.3015803,
+      "lon": -6.1711214,
+      "tags": {
+        "man_made": "lighthouse",
+        "name": "Rathlin East (Altacarry Head) Lighthouse",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:group": "4",
+        "seamark:light:1:height": "74",
+        "seamark:light:1:period": "20",
+        "seamark:light:1:range": "26",
+        "seamark:light:1:sector_end": "6",
+        "seamark:light:1:sector_start": "110",
+        "seamark:light:1:sequence": "0.2+(2.3),0.2+(2.3),0.2+(2.3),0.2+(12.3)",
+        "seamark:light:2:character": "Fl",
+        "seamark:light:2:colour": "white",
+        "seamark:light:2:group": "4",
+        "seamark:light:2:height": "74",
+        "seamark:light:2:period": "20",
+        "seamark:light:2:range": "26",
+        "seamark:light:2:sector_end": "58",
+        "seamark:light:2:sector_start": "36",
+        "seamark:light:2:sequence": "0.2+(2.3),0.2+(2.3),0.2+(2.3),0.2+(12.3)",
+        "seamark:light:reference": "A 6062",
+        "seamark:name": "Rathlin East",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "G",
+        "seamark:radar_transponder:sector_end": "3",
+        "seamark:radar_transponder:sector_start": "89",
+        "seamark:type": "light_major",
+        "source": "Commissioners of Irish Lights",
+        "wikidata": "Q28465954"
+      }
+    },
+    {
+      "type": "node",
+      "id": 322520675,
+      "lat": 54.03265,
+      "lon": -6.0959,
+      "tags": {
+        "man_made": "lighthouse",
+        "name": "Green Island Leading Light",
+        "seamark:light:1:category": "upper",
+        "seamark:light:1:character": "Oc",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "12",
+        "seamark:light:1:period": "3",
+        "seamark:light:1:range": "11",
+        "seamark:light:1:sector_end": "324",
+        "seamark:light:1:sector_start": "296",
+        "seamark:light:1:sequence": "2.3+(0.7)",
+        "seamark:light:reference": "A 5934",
+        "seamark:name": "Green Island",
+        "seamark:type": "light_minor",
+        "source": "Commissioners of Irish Lights",
+        "wikidata": "Q3739784"
+      }
+    },
+    {
+      "type": "node",
+      "id": 322520682,
+      "lat": 55.300867,
+      "lon": -6.28025,
+      "tags": {
+        "man_made": "survey_point",
+        "name": "Rathlin West Lighthouse & RSPB Sea Bird Centre",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "red",
+        "seamark:light:1:height": "62",
+        "seamark:light:1:period": "5",
+        "seamark:light:1:range": "22",
+        "seamark:light:1:sector_end": "225",
+        "seamark:light:1:sector_start": "15",
+        "seamark:light:1:sequence": "0.4+(4.6)",
+        "seamark:light:reference": "A 6064",
+        "seamark:name": "Rathlin West",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992351000",
+        "seamark:source": "https://map.openseamap.org/ (ais)",
+        "seamark:type": "light_major",
+        "source": "Commissioners of Irish Lights + visit"
+      }
+    },
+    {
+      "type": "node",
+      "id": 322520691,
+      "lat": 54.019932,
+      "lon": -6.079,
+      "tags": {
+        "man_made": "lighthouse",
+        "name": "Haulbowline Lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "3",
+        "seamark:light:height": "32",
+        "seamark:light:period": "10",
+        "seamark:light:range": "17",
+        "seamark:light:reference": "A 5928",
+        "seamark:light:sequence": "0.2+(1.5)+0.2+(1.5)+0.2+(6.4)",
+        "seamark:name": "Haulbowline",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992501235",
+        "seamark:type": "light_major",
+        "source": "Commissioners of Irish Lights",
+        "wikidata": "Q17861631",
+        "wikipedia": "en:Haulbowline Lighthouse"
+      }
+    },
+    {
+      "type": "node",
+      "id": 322520730,
+      "lat": 55.258883,
+      "lon": -6.191233,
+      "tags": {
+        "man_made": "lighthouse",
+        "name": "Rue Point Lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "2",
+        "seamark:light:height": "16",
+        "seamark:light:period": "5",
+        "seamark:light:range": "14",
+        "seamark:light:reference": "A 6060",
+        "seamark:light:sequence": "0.5+(1)+0.5+(3)",
+        "seamark:name": "Rue Point",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992351131",
+        "seamark:source": "https://map.openseamap.org/ (ais)",
+        "seamark:type": "light_major",
+        "source": "Commissioners of Irish Lights",
+        "wikidata": "Q28496367"
+      }
+    },
+    {
+      "type": "node",
+      "id": 530980938,
+      "lat": 55.2750595,
+      "lon": -5.5830757,
+      "tags": {
+        "man_made": "lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "50",
+        "seamark:light:period": "10",
+        "seamark:light:range": "15",
+        "seamark:light:reference": "A 4274",
+        "seamark:light:sequence": "0.3+(9.7)",
+        "seamark:name": "Sanda",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992351116",
+        "seamark:type": "light_major",
+        "wikidata": "Q26132872"
+      }
+    },
+    {
+      "type": "node",
+      "id": 530980963,
+      "lat": 55.4280692,
+      "lon": -5.5404629,
+      "tags": {
+        "man_made": "lighthouse",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:group": "2",
+        "seamark:light:1:height": "37",
+        "seamark:light:1:period": "10",
+        "seamark:light:1:range": "23",
+        "seamark:light:1:sector_end": "330",
+        "seamark:light:1:sector_start": "73",
+        "seamark:light:1:sequence": "0.3+(1.7),0.3+(7.7)",
+        "seamark:light:reference": "A 4276",
+        "seamark:name": "Davaar",
+        "seamark:type": "light_major",
+        "source": "os7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1352863234,
+      "lat": 54.2263063,
+      "lon": -5.659298,
+      "tags": {
+        "man_made": "lighthouse",
+        "name": "Saint John's Point (Co. Down) Lighthouse",
+        "seamark:fog_signal:category": "horn",
+        "seamark:light:character": "Q",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "2",
+        "seamark:light:height": "37",
+        "seamark:light:period": "7.5",
+        "seamark:light:range": "25",
+        "seamark:light:reference": "A 5958",
+        "seamark:light:sequence": "0.2+(1)+0.2+(6.1)",
+        "seamark:name": "St. John's Point",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992351005",
+        "seamark:type": "light_major",
+        "wikidata": "Q1291134"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561070430,
+      "lat": 55.0681667,
+      "lon": -7.2331667,
+      "tags": {
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "6",
+        "seamark:light:period": "2",
+        "seamark:light:range": "3",
+        "seamark:light:reference": "A 6124",
+        "seamark:light:sequence": "0.2+(1.8)",
+        "seamark:name": "Kilderry",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561070984,
+      "lat": 55.18865,
+      "lon": -6.7209333,
+      "tags": {
+        "seamark:light:1:character": "Oc",
+        "seamark:light:1:colour": "red",
+        "seamark:light:1:height": "21",
+        "seamark:light:1:period": "10",
+        "seamark:light:1:range": "5",
+        "seamark:light:1:sector_end": "220",
+        "seamark:light:1:sector_start": "40",
+        "seamark:light:1:sequence": "7+(3)",
+        "seamark:light:reference": "A 6073",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561071099,
+      "lat": 55.0656,
+      "lon": -6.0529667,
+      "tags": {
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "10",
+        "seamark:light:period": "3",
+        "seamark:light:range": "5",
+        "seamark:light:reference": "A 6044",
+        "seamark:light:sequence": "0.5+(2.5)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561071175,
+      "lat": 54.993364,
+      "lon": -5.9881912,
+      "tags": {
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "6",
+        "seamark:light:period": "3",
+        "seamark:light:range": "5",
+        "seamark:light:reference": "A 6043.2",
+        "seamark:light:sequence": "0.5+(2.5)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561071596,
+      "lat": 54.9934867,
+      "lon": -5.987942,
+      "tags": {
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "4",
+        "seamark:light:period": "3",
+        "seamark:light:range": "5",
+        "seamark:light:reference": "A 6043",
+        "seamark:light:sequence": "0.5+(2.5)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561071665,
+      "lat": 54.8211833,
+      "lon": -5.7974333,
+      "tags": {
+        "seamark:information": "Visible 179° - 189°. Synchronized with front",
+        "seamark:light:category": "upper",
+        "seamark:light:character": "Oc",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "14",
+        "seamark:light:period": "4",
+        "seamark:light:range": "12",
+        "seamark:light:reference": "A 6033.1",
+        "seamark:light:sequence": "3+(1)",
+        "seamark:light:visibility": "part_obscured",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561071768,
+      "lat": 54.8266333,
+      "lon": -5.7966701,
+      "tags": {
+        "seamark:information": "Visible 179° - 189°",
+        "seamark:light:category": "lower",
+        "seamark:light:character": "Oc",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "6",
+        "seamark:light:period": "4",
+        "seamark:light:range": "12",
+        "seamark:light:reference": "A 6033",
+        "seamark:light:sequence": "3+(1)",
+        "seamark:light:visibility": "part_obscured",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561072927,
+      "lat": 54.8509667,
+      "lon": -5.79225,
+      "tags": {
+        "seamark:beacon_lateral:category": "port",
+        "seamark:beacon_lateral:colour": "red",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "4",
+        "seamark:light:period": "3",
+        "seamark:light:range": "4",
+        "seamark:light:reference": "A 6033.4",
+        "seamark:light:sequence": "0.6+(2.4)",
+        "seamark:name": "No.2",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561073037,
+      "lat": 54.6205235,
+      "lon": -5.907376,
+      "tags": {
+        "seamark:beacon_lateral:category": "starboard",
+        "seamark:beacon_lateral:colour": "green",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "2",
+        "seamark:light:reference": "A 6024",
+        "seamark:light:sequence": "0.5+(1.5)",
+        "seamark:name": "H5",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561073038,
+      "lat": 54.6207333,
+      "lon": -5.9037167,
+      "tags": {
+        "seamark:beacon_lateral:category": "port",
+        "seamark:beacon_lateral:colour": "red",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:period": "4",
+        "seamark:light:reference": "A 6023",
+        "seamark:light:sequence": "1.5+(2.5)",
+        "seamark:name": "H4",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561073634,
+      "lat": 54.6225833,
+      "lon": -5.8985167,
+      "tags": {
+        "seamark:beacon_lateral:category": "port",
+        "seamark:beacon_lateral:colour": "red",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Oc",
+        "seamark:light:colour": "red",
+        "seamark:light:period": "4",
+        "seamark:light:reference": "A 6022.2",
+        "seamark:light:sequence": "3.5+(0.5)",
+        "seamark:name": "H2",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561073685,
+      "lat": 54.6240207,
+      "lon": -5.8981385,
+      "tags": {
+        "seamark:beacon_lateral:category": "starboard",
+        "seamark:beacon_lateral:colour": "green",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Oc",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "4",
+        "seamark:light:reference": "A 6022.4",
+        "seamark:light:sequence": "3.5+(0.5)",
+        "seamark:name": "H3",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561073697,
+      "lat": 54.6261055,
+      "lon": -5.8938048,
+      "tags": {
+        "seamark:beacon_lateral:category": "starboard",
+        "seamark:beacon_lateral:colour": "green",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "2.5",
+        "seamark:light:reference": "A 6022",
+        "seamark:light:sequence": "0.5+(2)",
+        "seamark:name": "H1",
+        "seamark:radar_reflector": "yes",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561073716,
+      "lat": 54.6109333,
+      "lon": -5.9093333,
+      "tags": {
+        "seamark:beacon_lateral:category": "port",
+        "seamark:beacon_lateral:colour": "red",
+        "seamark:beacon_lateral:height": "5",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "7",
+        "seamark:light:period": "5",
+        "seamark:light:range": "2",
+        "seamark:light:reference": "A 6021.6",
+        "seamark:light:sequence": "0.5+(4.5)",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561073848,
+      "lat": 54.6164,
+      "lon": -5.9007167,
+      "tags": {
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "8",
+        "seamark:light:period": "1.5",
+        "seamark:light:range": "1",
+        "seamark:light:reference": "A 6020.6",
+        "seamark:light:sequence": "0.4+(1.1)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561073850,
+      "lat": 54.6225833,
+      "lon": -5.89575,
+      "tags": {
+        "seamark:beacon_lateral:category": "starboard",
+        "seamark:beacon_lateral:colour": "green",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "10",
+        "seamark:light:period": "4",
+        "seamark:light:range": "2",
+        "seamark:light:reference": "A 6020",
+        "seamark:light:sequence": "1.5+(2.5)",
+        "seamark:name": "West Twin",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561073861,
+      "lat": 54.6178667,
+      "lon": -5.88935,
+      "tags": {
+        "seamark:beacon_lateral:category": "starboard",
+        "seamark:beacon_lateral:colour": "green",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "2",
+        "seamark:light:period": "4",
+        "seamark:light:range": "2",
+        "seamark:light:reference": "A 6019.3",
+        "seamark:light:sequence": "1.5+(2.5)",
+        "seamark:name": "M3",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561075422,
+      "lat": 54.6241167,
+      "lon": -5.88725,
+      "tags": {
+        "seamark:beacon_lateral:category": "port",
+        "seamark:beacon_lateral:colour": "red",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:category": "lower",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:period": "5",
+        "seamark:light:reference": "A 6015",
+        "seamark:light:sequence": "0.5+(4.5)",
+        "seamark:name": "Daisy",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561076054,
+      "lat": 54.6364,
+      "lon": -5.8734833,
+      "tags": {
+        "seamark:beacon_lateral:category": "port",
+        "seamark:beacon_lateral:colour": "red",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:group": "2",
+        "seamark:light:period": "6",
+        "seamark:light:range": "8",
+        "seamark:light:reference": "A 6007",
+        "seamark:light:sequence": "0.4+(1)+0.4+(4.2)",
+        "seamark:name": "No.16",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561076136,
+      "lat": 54.64945,
+      "lon": -5.857,
+      "tags": {
+        "seamark:beacon_lateral:category": "port",
+        "seamark:beacon_lateral:colour": "red",
+        "seamark:beacon_lateral:shape": "pile",
+        "seamark:beacon_lateral:system": "iala-a",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:group": "2",
+        "seamark:light:period": "6",
+        "seamark:light:range": "7",
+        "seamark:light:reference": "A 6003",
+        "seamark:light:sequence": "0.4+(1)+0.4+(4.2)",
+        "seamark:name": "No.12",
+        "seamark:type": "beacon_lateral",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561076492,
+      "lat": 54.7103149,
+      "lon": -5.8068059,
+      "tags": {
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "5",
+        "seamark:light:period": "7.5",
+        "seamark:light:range": "4",
+        "seamark:light:reference": "A 5993",
+        "seamark:light:sequence": "0.7+(6.8)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561076688,
+      "lat": 54.7104574,
+      "lon": -5.8063506,
+      "tags": {
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "5",
+        "seamark:light:period": "7.5",
+        "seamark:light:range": "4",
+        "seamark:light:reference": "A 5992",
+        "seamark:light:sequence": "0.7+(6.8)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561076689,
+      "lat": 54.7352055,
+      "lon": -5.7078269,
+      "tags": {
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "3",
+        "seamark:light:range": "2",
+        "seamark:light:reference": "A 5986.4",
+        "seamark:light:sequence": "1+(2)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561076690,
+      "lat": 54.7378376,
+      "lon": -5.7048429,
+      "tags": {
+        "seamark:fog_signal:category": "horn",
+        "seamark:fog_signal:group": "1",
+        "seamark:fog_signal:period": "15",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "3",
+        "seamark:light:range": "2",
+        "seamark:light:reference": "A 5986",
+        "seamark:light:sequence": "1+(2)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561076693,
+      "lat": 54.7242548,
+      "lon": -5.742974,
+      "tags": {
+        "seamark:light:character": "Oc",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "6",
+        "seamark:light:period": "10",
+        "seamark:light:range": "9",
+        "seamark:light:reference": "A 5988",
+        "seamark:light:sequence": "8+(2)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561076750,
+      "lat": 54.5446833,
+      "lon": -5.4806,
+      "tags": {
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "green",
+        "seamark:light:1:height": "5",
+        "seamark:light:1:period": "1.5",
+        "seamark:light:1:range": "9",
+        "seamark:light:1:sector_end": "267",
+        "seamark:light:1:sector_start": "240",
+        "seamark:light:1:sequence": "0.5+(1)",
+        "seamark:light:2:character": "Fl",
+        "seamark:light:2:colour": "white",
+        "seamark:light:2:height": "5",
+        "seamark:light:2:period": "1.5",
+        "seamark:light:2:range": "9",
+        "seamark:light:2:sector_end": "277",
+        "seamark:light:2:sector_start": "267",
+        "seamark:light:2:sequence": "0.5+(1)",
+        "seamark:light:3:character": "Fl",
+        "seamark:light:3:colour": "red",
+        "seamark:light:3:height": "5",
+        "seamark:light:3:period": "1.5",
+        "seamark:light:3:range": "9",
+        "seamark:light:3:sector_end": "314",
+        "seamark:light:3:sector_start": "277",
+        "seamark:light:3:sequence": "0.5+(1)",
+        "seamark:light:reference": "A 5973",
+        "seamark:name": "Ballywalter",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561077074,
+      "lat": 54.1086,
+      "lon": -5.89495,
+      "tags": {
+        "seamark:light:1:character": "Oc",
+        "seamark:light:1:colour": "green",
+        "seamark:light:1:height": "8",
+        "seamark:light:1:period": "5",
+        "seamark:light:1:range": "9",
+        "seamark:light:1:sector_end": "249",
+        "seamark:light:1:sector_start": "204",
+        "seamark:light:1:sequence": "4+(1)",
+        "seamark:light:2:character": "Oc",
+        "seamark:light:2:colour": "white",
+        "seamark:light:2:height": "8",
+        "seamark:light:2:period": "5",
+        "seamark:light:2:range": "9",
+        "seamark:light:2:sector_end": "309",
+        "seamark:light:2:sector_start": "249",
+        "seamark:light:2:sequence": "4+(1)",
+        "seamark:light:3:character": "Oc",
+        "seamark:light:3:colour": "red",
+        "seamark:light:3:height": "8",
+        "seamark:light:3:period": "5",
+        "seamark:light:3:range": "9",
+        "seamark:light:3:sector_end": "24",
+        "seamark:light:3:sector_start": "309",
+        "seamark:light:3:sequence": "4+(1)",
+        "seamark:light:reference": "A 5953",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561077075,
+      "lat": 54.0576333,
+      "lon": -5.9882333,
+      "tags": {
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "red",
+        "seamark:light:1:height": "8",
+        "seamark:light:1:period": "2",
+        "seamark:light:1:range": "8",
+        "seamark:light:1:sector_end": "313",
+        "seamark:light:1:sector_start": "296",
+        "seamark:light:1:sequence": "0.5+(1.5)",
+        "seamark:light:2:character": "Fl",
+        "seamark:light:2:colour": "white",
+        "seamark:light:2:height": "8",
+        "seamark:light:2:period": "2",
+        "seamark:light:2:range": "8",
+        "seamark:light:2:sector_end": "17",
+        "seamark:light:2:sector_start": "313",
+        "seamark:light:reference": "A 5952",
+        "seamark:light:sequence": "0.5+(1.5)",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992356010",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1561077217,
+      "lat": 54.0993,
+      "lon": -6.2587333,
+      "tags": {
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "5",
+        "seamark:light:period": "5",
+        "seamark:light:range": "3",
+        "seamark:light:reference": "A 5949",
+        "seamark:light:sequence": "0.5+(4.5)",
+        "seamark:type": "light_minor",
+        "source": "US NGA Pub. 114. 2011-05-26."
+      }
+    },
+    {
+      "type": "way",
+      "id": 477898770,
+      "nodes": [
+        4711881491,
+        4711881492,
+        4711881493,
+        4711881494,
+        4711881491
+      ],
+      "tags": {
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "Rathlin West Lighthouse",
+        "seamark:landmark:colour": "red",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "red",
+        "seamark:light:1:group": "1",
+        "seamark:light:1:period": "5",
+        "seamark:light:1:range": "22",
+        "seamark:light:1:sector_end": "225",
+        "seamark:light:1:sector_start": "015",
+        "seamark:light:sequence": "1+(4)",
+        "seamark:type": "landmark",
+        "wikidata": "Q15873242"
+      }
+    },
+    {
+      "type": "way",
+      "id": 557364146,
+      "nodes": [
+        5375475863,
+        5375475843,
+        5375475875,
+        5375475873,
+        5375475860,
+        5375475874,
+        5375475848,
+        5375475876,
+        5375475852,
+        5375475868,
+        5375475847,
+        5375475879,
+        5375475883,
+        5375475871,
+        5375475882,
+        5375475829,
+        5375475884,
+        5375475877,
+        5375475863
+      ],
+      "tags": {
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "Blackhead Co. Antrim Lighthouse",
+        "operator": "Commissioners of Irish Lights",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "45",
+        "seamark:light:period": "3",
+        "seamark:light:range": "27",
+        "seamark:light:reference": "A 6028",
+        "seamark:light:sequence": "0.2+(2.8)",
+        "seamark:name": "Black Head",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992351002",
+        "seamark:type": "light_major",
+        "source": "Bing;Commissioners of Irish Lights",
+        "website": "https://www.irishlights.ie/tourism/our-lighthouses/black-head-(antrim).aspx"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5375475829,
+      "lat": 54.7669822,
+      "lon": -5.6889928
+    },
+    {
+      "type": "node",
+      "id": 5375475843,
+      "lat": 54.7669928,
+      "lon": -5.688937
+    },
+    {
+      "type": "node",
+      "id": 5375475847,
+      "lat": 54.7669406,
+      "lon": -5.6889662
+    },
+    {
+      "type": "node",
+      "id": 5375475848,
+      "lat": 54.766955,
+      "lon": -5.6889104
+    },
+    {
+      "type": "node",
+      "id": 5375475852,
+      "lat": 54.7669419,
+      "lon": -5.6889338
+    },
+    {
+      "type": "node",
+      "id": 5375475860,
+      "lat": 54.7669717,
+      "lon": -5.6889064
+    },
+    {
+      "type": "node",
+      "id": 5375475863,
+      "lat": 54.7669944,
+      "lon": -5.6889532
+    },
+    {
+      "type": "node",
+      "id": 5375475868,
+      "lat": 54.7669396,
+      "lon": -5.6889498
+    },
+    {
+      "type": "node",
+      "id": 5375475871,
+      "lat": 54.766964,
+      "lon": -5.6890005
+    },
+    {
+      "type": "node",
+      "id": 5375475873,
+      "lat": 54.7669807,
+      "lon": -5.688912
+    },
+    {
+      "type": "node",
+      "id": 5375475874,
+      "lat": 54.7669622,
+      "lon": -5.6889064
+    },
+    {
+      "type": "node",
+      "id": 5375475875,
+      "lat": 54.766988,
+      "lon": -5.6889227
+    },
+    {
+      "type": "node",
+      "id": 5375475876,
+      "lat": 54.7669473,
+      "lon": -5.6889201
+    },
+    {
+      "type": "node",
+      "id": 5375475877,
+      "lat": 54.7669933,
+      "lon": -5.6889666
+    },
+    {
+      "type": "node",
+      "id": 5375475879,
+      "lat": 54.7669471,
+      "lon": -5.6889861
+    },
+    {
+      "type": "node",
+      "id": 5375475882,
+      "lat": 54.7669735,
+      "lon": -5.6889994
+    },
+    {
+      "type": "node",
+      "id": 5375475883,
+      "lat": 54.7669548,
+      "lon": -5.6889959
+    },
+    {
+      "type": "node",
+      "id": 5375475884,
+      "lat": 54.7669891,
+      "lon": -5.6889814
+    },
+    {
+      "type": "node",
+      "id": 4711881491,
+      "lat": 55.3008759,
+      "lon": -6.2800999
+    },
+    {
+      "type": "node",
+      "id": 4711881492,
+      "lat": 55.3008221,
+      "lon": -6.2801623
+    },
+    {
+      "type": "node",
+      "id": 4711881493,
+      "lat": 55.3007905,
+      "lon": -6.2800782
+    },
+    {
+      "type": "node",
+      "id": 4711881494,
+      "lat": 55.3008443,
+      "lon": -6.2800159
+    }
+  ]
+}
