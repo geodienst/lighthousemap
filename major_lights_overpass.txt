@@ -1,0 +1,48 @@
+[out:json][timeout:60];
+// gather results
+// query part for: “"seamark:light:sequence"=*”
+(
+  // all the territories in the British Isles
+  area[name="United Kingdom"];
+  area[name="Ireland"];
+  area[name="Isle of Man"];
+  area[name="Jersey"];
+  area[name="Guernsey"];
+  area[name="County Donegal"];
+  area[name="County Galway"];
+  area[name="County Cork"];
+  area[name="County Wexford"];
+  area[name="County Mayo"];
+  area[name="Munster"];
+  area[name="Connaught"];
+  area[name="Leinster"];
+  
+)->.a;
+(
+	// these work for most lights, ignore those without a sequence
+    //node[~"seamark:light:([0-9]:)*sequence"~".+"](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+  	//way[~"seamark:light:([0-9]:)*sequence"~".+"](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+
+  	// gets all seamarks with lights. This picks up a lot of buoys as well
+    //node[~"seamark:light.+"~"."](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+  	//way[~"seamark:light.+"~"."](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+
+  	// gets all major or minor lights that have light data
+    node["seamark:type"="light_major"][~"seamark:light.+"~"."](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+  	way["seamark:type"="light_major"][~"seamark:light.+"~"."](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+    //node["seamark:type"="light_minor"][~"seamark:light.+"~"."](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+  	//way["seamark:type"="light_minor"][~"seamark:light.+"~"."](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+    //node["seamark:type"="light_minor"][manmade="lighthouse"](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+  	//way["seamark:type"="light_minor"][manmade="lighthouse"](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+
+	// investigation - lights with sequences shown as landmarks rather than lights
+    //node[~"seamark:light:([0-9]:)*sequence"~".+"]["seamark:type"="landmark"](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+  	//way[~"seamark:light:([0-9]:)*sequence"~".+"]["seamark:type"="landmark"](48.37084770238366,-13.5791015625,60.511343283202464,10.4150390625)(area.a);
+
+
+
+);
+// print results
+out body;
+>;
+out skel qt;
