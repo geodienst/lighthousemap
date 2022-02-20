@@ -122,7 +122,8 @@
             if (Object.keys(this_light).length > 0)
                 {
                 	this_light.range = !this_light.range ? 5.0 : this_light.range;
-                    light_data.push(this_light);
+					this_light.colour = !this_light.colour ? 'white' : this_light.colour;
+					light_data.push(this_light);
                 }
             else {break;}
         }
@@ -143,6 +144,9 @@
 
             //check for missing range and default
             one_light_data.range = !one_light_data.range ? 5.0 : one_light_data.range;
+
+            // check for missing colour and default to white
+            one_light_data.colour = !one_light_data.colour ? 'white' : one_light_data.colour;
 
             // no start or end angles, so need to provide these to draw a circle: 0, 360
             one_light_data.start = '0';
@@ -175,6 +179,8 @@
         // it's series of comma- or plus-separated tokens comprising numbers
         // which are in brackets if dark, not if light
         // split the sequence
+
+        // TODO - make this handle alternating coloured lights like "white;red". This means keep the beam colour.
         var seq_split = the_lighthouse.sequence.replace(/,/g,'+').split('+');
         var seq_steps = seq_split.map(element => {
             if(element.substring(0, 1) == '('){
@@ -184,6 +190,12 @@
                 return ['yes', Number(element)];
             }
         });
+
+        // some short-period lights will come from a slowly-rotating light with multiple beams
+        // as the light can't rotate that fast.
+        // (could be up to 6). This could be true of single or double flashes.
+        // in these cases, multiply up our period so it's within a sensible range
+        // and replicate the steps that many times. The light will appear with multiple beams
 
         // the sequence object is a duration and the array of steps
         var the_duration = seq_steps.reduce((total, step) => total+step[1], 0);
@@ -247,7 +259,7 @@
         var lit_proportion = layer.options.sequence_data.lit_proportion;
 
 
-        let draw_light_sector = function (light_to_draw) {
+        let draw_light_sector = function (light_to_draw, i) {
             // is it a circle?
             var start_from_deg;
             var end_from_deg;
@@ -263,6 +275,10 @@
             var angle_s = start_from_deg / 180 * Math.PI;
             var angle_e = end_from_deg / 180 * Math.PI;
             var radius = light_to_draw.range * r / max_range; // in proportion to longest range sector
+
+            // what colour is the sector?
+            var colours = light_to_draw.colour.split(';');
+            var this_colour = colours[i % colours.length];
 
             // draw the sector
             ctx.beginPath();
@@ -282,8 +298,8 @@
                 : 0.3;
 
             var grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, radius);
-            grad.addColorStop(0, chroma(light_to_draw.colour).alpha(_centre_opacity));
-            grad.addColorStop(1, chroma(light_to_draw.colour).alpha(edge_opacity));
+            grad.addColorStop(0, chroma(this_colour).alpha(_centre_opacity));
+            grad.addColorStop(1, chroma(this_colour).alpha(edge_opacity));
             ctx.fillStyle = (grad);
             ctx.fill();
         };
@@ -302,8 +318,6 @@
             for (let step = 0; step < sequence.steps.length; step++) {
                 var clip_angle_s = (rotation_angle + start_angle) % 360;
                 var clip_angle_e = (rotation_angle + start_angle + sequence.steps[step][1] * 360 / sequence.duration) % 360;
-                //console.log(clip_angle_s, clip_angle_e, step);
-                // draw a sector for each illuminated bit
                 if (sequence.steps[step][0]) {
                     ctx.moveTo(p.x, p.y);
                     ctx.arc(p.x, p.y, r, clip_angle_s / 180 * Math.PI, clip_angle_e / 180 * Math.PI);
@@ -328,7 +342,7 @@
             options.renderer = lighthouseRenderer;
             options.radius = MARKER_RADIUS;  // fake radius so it's drawn in the right place
             options.radius_mm = options.range_nm * NM_IN_METRES;
-            options.sequence_data.time_offset = Math.random() * options.sequence_data.duration;
+            options.sequence_data.time_offset = Math.random() * options.sequence_data.duration; // random so they don't all linke up
             options.interactive = false;
             options.centre_opacity = 0.6;
             options.edge_opacity = 0.0;
@@ -355,21 +369,22 @@
         let height = the_light.height;
         let url = the_light.url;
 
-        let template = `<div class="lh-popup">
+        let popup = `<div class="lh-popup">
             <div class="lh-popup-head">${name}</div>
             <p><span class="lh-popup-title">Location: </span><span class="lh-popup-text">${lat}, ${long}</span></p>
             <p><span class="lh-popup-title">Height: </span><span class="lh-popup-text">${height}m</span></p>
             </div>`;
         if (url) {
-            template += `<p><span class="lh-popup-title">URL: </span><span class="lh-popup-text"><a href="${url}" target="_blank">${name}</a></span></p>`
+            popup += `<p><span class="lh-popup-title">URL: </span><span class="lh-popup-text"><a href="${url}" target="_blank">${name}</a></span></p>`
         };
-        return template;
+        return popup;
     };
 
 
     // draw a whole bunch of lighthouses
     //url = 'lights_geojson_just1.json'; // For testing
-    url = 'lights_geojson.json'; // For testing
+    //url = 'lights_geojson.json'; // For testing
+    url = 'british_isles_download.geojson'; // For testing
 
     let the_lights = fetch(url)
         .then(req => req.json())
@@ -409,6 +424,8 @@
     the_lights.then(lights => {
 
         let draw = function(t) {
+
+        	// clear the previous drawing
             var ctxx = lights[0]._renderer._ctx;
             var canv = ctxx.canvas;
 
@@ -416,6 +433,8 @@
             ctxx.setTransform(1, 0, 0, 1, 0, 0);
             ctxx.clearRect(0, 0, canv.width, canv.height);
             ctxx.restore();
+
+            // redraw the lights in new orientation based on time t
             lights.forEach(light => {
                 light._updatePath(t);
             })
