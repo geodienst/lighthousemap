@@ -1,5 +1,5 @@
 /*
-    lighthouse.js
+    lighthouses.js
 
     code to create and display lighthouses
 
@@ -8,23 +8,24 @@
 */
 
     
-    // this mangles a set of tags from OSM data into an array of objects that looks like light_data below.
+    // this mangles a set of tags from OSM data into an array of light_data objects
     // It's very ramshackle and plenty of room for tidying and improvement.
 
-    const NM_IN_METRES = 1852; // https://en.wikipedia.org/wiki/Nautical_mile
-    const MARKER_RADIUS = 200; // circle and marker radius in metres
+    export const NM_IN_METRES = 1852; // https://en.wikipedia.org/wiki/Nautical_mile
+    export const MARKER_RADIUS = 200; // circle and marker radius in metres
 
     // get the entries where tags match "seamark:light:i:<something>" and create an object of {<something>: value ...} entries
-    let light_entry = function (tags, light_seq) {
-        // create regexp using light_seq
+   export let light_entry = function (tags, light_seq) {
+        // create regexp using light_seq (values 1 through 9)
         let re = new RegExp("seamark:light:" + light_seq.toString() + ':(.+)$');
 
         // get the key-value pairs which match the regex - of the form "period", "3"
-        the_entries = Object.entries(tags).filter((the_entry) => re.test(the_entry[0]));
+        let the_entries = Object.entries(tags).filter((the_entry) => re.test(the_entry[0]));
 
         // process these entries into an object
         let one_light_data = {};
         the_entries.forEach(entry => {
+            let key;
             let new_key = entry[0].match(re);
             // change the names of a couple of them to match the expected naming
             switch(new_key[1]) {
@@ -42,7 +43,9 @@
         return one_light_data;
     };
 
-    let lighthouse_data = function (geojson) {
+
+    // creates a lighthouse data object from a geojson representation where the OpenStreetMap tags are properties
+    export function lighthouse_data (geojson) {
 
          // iterate through all the lights to build a light_data object
         var light_data = [];
@@ -65,7 +68,7 @@
             // now we are just looking for tags looking like seamark:light:<something>
             let re2 = new RegExp("seamark:light:(.+)$");
             // get the key-value pairs
-            the_entries = Object.entries(tags).filter((the_entry) => re2.test(the_entry[0]));
+            let the_entries = Object.entries(tags).filter((the_entry) => re2.test(the_entry[0]));
 
             // process these entries into an object
             let one_light_data = {};
@@ -142,7 +145,9 @@
         return the_lighthouse;
     };
 
-//    var date_fmt = new Date().toISOString().slice(0,10);
+
+
+    // inclusion into Leaflet Canvas - should it be here?
 
     // update the Canvas to handle how to draw a lighthouse
     L.Canvas.include({
@@ -152,8 +157,8 @@
         var max_range = layer.options.range_nm;
         var p = layer._point,
           ctx = this._ctx,
-          r = layer._radius * NM_IN_METRES / MARKER_RADIUS * max_range;
-          width = this.width;
+          r = layer._radius * NM_IN_METRES / MARKER_RADIUS * max_range,
+          width = this.width,
           height = this.height;
         var centre_opacity = layer.options.centre_opacity;
         var edge_opacity = layer.options.edge_opacity;
@@ -163,6 +168,10 @@
 
 
         let draw_light_sector = function (light_to_draw, i) {
+
+
+            // calculate angles and radius of sector
+
             // is it a circle?
             var start_from_deg;
             var end_from_deg;
@@ -183,14 +192,8 @@
             var colours = light_to_draw.colour.split(';');
             var this_colour = colours[i % colours.length];
 
-            // draw the sector
-            ctx.beginPath();
-            ctx.moveTo(p.x, p.y);
-            ctx.arc(p.x, p.y, radius, angle_s, angle_e);
-            ctx.lineTo(p.x, p.y);
-            ctx.closePath();
 
-            // do a gradient fill. Set the opacity depending on the proportion of the time the light is lit
+            // Set the opacity depending on the proportion of the time the light is lit
             // - this is so the ones with long periods don't look too bright
             var _centre_opacity = 
                 lit_proportion < .05 ? 0.9
@@ -199,6 +202,13 @@
                 : lit_proportion < .5 ? 0.1
                 : lit_proportion >= .5 ? 0.05
                 : 0.3;
+
+            // draw the sector
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.arc(p.x, p.y, radius, angle_s, angle_e);
+            ctx.lineTo(p.x, p.y);
+            ctx.closePath();
 
             var grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, radius);
             grad.addColorStop(0, chroma(this_colour).alpha(_centre_opacity));
@@ -240,9 +250,12 @@
       }
     });
 
+
+
+    // extension to Leaflet - should it go in a different file?
     L.Lighthouse = L.Circle.extend({
-        initialize: function(latlng, options) {
-            options.renderer = lighthouseRenderer;
+        initialize: function(latlng, options, renderer) {
+            options.renderer = renderer;
             options.radius = MARKER_RADIUS;  // fake radius so it's drawn in the right place
             options.radius_mm = options.range_nm * NM_IN_METRES;
             options.sequence_data.time_offset = Math.random() * options.sequence_data.duration; // random so they don't all linke up
@@ -258,10 +271,12 @@
             this._renderer._updateLighthouse(this, t);
         }
 
-      });
+    });
 
-    let lh_popup = function(the_light) {
-        // text for lighthouse information popup
+
+    // boring popup creator - 
+    export let lh_popup = function(the_light) {
+        // text for lighthouse information popup - uses lighthouse data object
 
         const ROUND_PLACES = 4;
         const llFormat = new Intl.NumberFormat('en-GB', {style: 'decimal', usegrouping: false, maximumFractionDigits: ROUND_PLACES}); 

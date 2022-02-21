@@ -9,7 +9,7 @@
    crossorigin=""></script>   
     <script src="https://unpkg.com/@turf/turf@3.5.2/turf.min.js"></script>
     <script src="chroma/chroma.min.js"></script>
-    <script src='lighthouses.js'></script>
+    <script type="module" src='lighthouses.js'></script>
     <style>
         html, body {
             margin: 0;
@@ -75,7 +75,9 @@
 </head>
 <body>
     <div id="mapdiv"></div>
-<script>
+<script type="module">
+
+    import {lighthouse_data, MARKER_RADIUS, lh_popup} from './lighthouses.js';
     var date_fmt = '2022-02-18';
 
     var map = L.map('mapdiv', {
@@ -107,7 +109,7 @@
 
     // draw a whole bunch of lighthouses - load from file in geojson format.
     // lights extracted from OpenStreetMap using Overpass API query in major_lights_overpass.txt
-    url = 'british_isles_download.geojson';
+    let url = 'british_isles_download.geojson';
 
     let the_lights = fetch(url)
         .then(req => req.json())
@@ -140,7 +142,7 @@
                 }).bindPopup(lh_popup(light)).addTo(map));
 
                 // lighthouse beams
-                maplights.push(new L.Lighthouse(light.latlong, light).addTo(map));
+                maplights.push(new L.Lighthouse(light.latlong, light, lighthouseRenderer).addTo(map));
             });
 
             return maplights;
