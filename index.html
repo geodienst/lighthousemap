@@ -112,6 +112,7 @@
     let the_lights = fetch(url)
         .then(req => req.json())
         .then(geojson => {
+        	// extract and process geojson lighthouse data to an array of lighthouse objects
             var lights = [];
 
             geojson.features.forEach(feature => {
@@ -119,6 +120,7 @@
             return lights;
         })
         .then(lights => {
+        	// draw the lighthouses as a marker dot and the actual beams
             var maplights = [];
             var markers = [];
 
@@ -144,7 +146,7 @@
             return maplights;
             });
 
-    // animate the lighthouses
+    // rotate the lighthouse beams
     the_lights.then(lights => {
 
         let draw_light = function(t) {
