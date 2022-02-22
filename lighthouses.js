@@ -8,14 +8,14 @@
 */
 
     
-    // this mangles a set of tags from OSM data into an array of light_data objects
-    // It's very ramshackle and plenty of room for tidying and improvement.
-
-    export const NM_IN_METRES = 1852; // https://en.wikipedia.org/wiki/Nautical_mile
+    const NM_IN_METRES = 1852; // https://en.wikipedia.org/wiki/Nautical_mile
     export const MARKER_RADIUS = 200; // circle and marker radius in metres
 
+    // this mangles a set of tags from OSM data, in geojson format, into an array of light_data objects
+    // It's very ramshackle and plenty of room for tidying and improvement.
+
     // get the entries where tags match "seamark:light:i:<something>" and create an object of {<something>: value ...} entries
-   export let light_entry = function (tags, light_seq) {
+    export let light_entry = function (tags, light_seq) {
         // create regexp using light_seq (values 1 through 9)
         let re = new RegExp("seamark:light:" + light_seq.toString() + ':(.+)$');
 
@@ -286,11 +286,17 @@
         let long = llFormat.format(the_light.latlong.lng);
         let height = the_light.height;
         let url = the_light.url;
+        let range = the_light.range_nm;
+        let period = the_light.sequence_data.duration;
+        let sequence = the_light.sequence;
 
         let popup = `<div class="lh-popup">
             <div class="lh-popup-head">${name}</div>
             <p><span class="lh-popup-title">Location: </span><span class="lh-popup-text">${lat}, ${long}</span></p>
             <p><span class="lh-popup-title">Height: </span><span class="lh-popup-text">${height}m</span></p>
+            <p><span class="lh-popup-title">Range: </span><span class="lh-popup-text">${range} nautical miles</span></p>
+            <p><span class="lh-popup-title">Period: </span><span class="lh-popup-text">${period}s</span></p>
+            <p><span class="lh-popup-title">Sequence: </span><span class="lh-popup-text">${sequence}</span></p>
             </div>`;
         if (url) {
             popup += `<p><span class="lh-popup-title">URL: </span><span class="lh-popup-text"><a href="${url}" target="_blank">${name}</a></span></p>`
