@@ -5472,8 +5472,10 @@
         "seamark:light:colour": "white",
         "seamark:light:height": "28",
         "seamark:light:period": "5",
+        "seamark:light:sequence": "0.3+(4.7)",
         "seamark:light:range": "18",
         "seamark:light:reference": "A 3108",
+
         "seamark:name": "Bell Rock",
         "seamark:radar_transponder:category": "racon",
         "seamark:radar_transponder:group": "M",
