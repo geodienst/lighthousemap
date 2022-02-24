@@ -17,10 +17,12 @@ describe('lighthouse data parsing', function () {
 			chai.expect(single_light_entry({"seamark:light:character": "Fl"}))
 				.to.be.an('object', 'not returning an object');
 			});
+
 		it('should set bearing for start to 0 degrees', function () {
 			chai.expect(single_light_entry({"seamark:light:character": "Fl"}))
 				.to.have.property("start", "0")
 			});
+
 		it('should set bearing for end to 360 degrees', function () {
 			chai.expect(single_light_entry({"seamark:light:character": "Fl"}))
 				.to.include({"end": "360"})
@@ -43,12 +45,12 @@ describe('lighthouse data parsing', function () {
 				.to.eql({"character": "Oc"});
 			});
 
-		it('should change sector_start to start', function () {
+		it('should change sector_start key to "start"', function () {
 			chai.expect(multi_light_entry({"seamark:light:1:sector_start": "100"}, 1))
 				.to.eql({"start": "100"});
 			});
 
-		it('should change sector_end to end', function () {
+		it('should change sector_end key to "end"', function () {
 			chai.expect(multi_light_entry({"seamark:light:1:sector_end": "100"}, 1))
 				.to.eql({"end": "100"});
 			});
@@ -56,7 +58,10 @@ describe('lighthouse data parsing', function () {
 
 	describe('filling in light defaults', function () {
 		it('should default range to 5 miles if no range specified', function() {
-			}); 
+			chai.expect(multi_light_entry({"seamark:1:colour": "white"}, 1))
+				.to.have.property("range", "5")
+		});
+			
 		it('should default colour to white if no colour specified');
 		it('should default period to 30s if no period specified');
 	});
