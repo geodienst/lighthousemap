@@ -15,7 +15,7 @@
     // It's very ramshackle and plenty of room for tidying and improvement.
 
     // get the entries where tags match "seamark:light:i:<something>" and create an object of {<something>: value ...} entries
-    export let light_entry = function (tags, light_seq) {
+    export let multi_light_entry = function (tags, light_seq) {
         // create regexp using light_seq (values 1 through 9)
         let re = new RegExp("seamark:light:" + light_seq.toString() + ':(.+)$');
 
@@ -43,6 +43,38 @@
         return one_light_data;
     };
 
+    export let single_light_entry = function (tags) {
+        // tags looking like seamark:light:<something>
+        let re2 = new RegExp("seamark:light:(.+)$");
+        // get the key-value pairs
+        let the_entries = Object.entries(tags).filter((the_entry) => re2.test(the_entry[0]));
+
+        // process these entries into an object
+        let one_light_data = {};
+        the_entries.forEach(entry => {
+            let new_key = entry[0].match(re2);
+            one_light_data[new_key[1]] = entry[1];
+        });
+
+        // single light has no start or end angles, so need to provide these to draw a circle: 0, 360
+        one_light_data.start = '0';
+        one_light_data.end = '360';
+
+        return one_light_data;
+    };
+
+
+    let set_light_defaults = function(the_light) {
+
+        // fill in any missing light-related data items with sensible defaults
+        let def_light = Object.assign({}, the_light);
+
+
+
+    };
+
+
+
 
     // creates a lighthouse data object from a geojson representation where the OpenStreetMap tags are properties
     export function lighthouse_data (geojson) {
@@ -53,7 +85,7 @@
         var tags = geojson.properties;
 
         for (let light_seq = 1; light_seq < 9; light_seq++){
-            let this_light = light_entry(tags, light_seq);
+            let this_light = multi_light_entry(tags, light_seq);
             if (Object.keys(this_light).length > 0)
                 {
                 	this_light.range = !this_light.range ? 5.0 : this_light.range;
@@ -65,27 +97,14 @@
 
         // if this didn't result in anything, the lighthouse only has one light.
         if (!light_data.length) {
-            // now we are just looking for tags looking like seamark:light:<something>
-            let re2 = new RegExp("seamark:light:(.+)$");
-            // get the key-value pairs
-            let the_entries = Object.entries(tags).filter((the_entry) => re2.test(the_entry[0]));
 
-            // process these entries into an object
-            let one_light_data = {};
-            the_entries.forEach(entry => {
-                let new_key = entry[0].match(re2);
-                one_light_data[new_key[1]] = entry[1];
-            });
+            let one_light_data = single_light_entry(tags);
 
             //check for missing range and default
             one_light_data.range = !one_light_data.range ? 5.0 : one_light_data.range;
 
             // check for missing colour and default to white
             one_light_data.colour = !one_light_data.colour ? 'white' : one_light_data.colour;
-
-            // no start or end angles, so need to provide these to draw a circle: 0, 360
-            one_light_data.start = '0';
-            one_light_data.end = '360';
 
             light_data.push(one_light_data);
         }
