@@ -40,6 +40,7 @@
             } 
             one_light_data[key] = entry[1];
         });
+
         return one_light_data;
     };
 
@@ -64,13 +65,20 @@
     };
 
 
-    let set_light_defaults = function(the_light) {
+    export let set_light_defaults = function(the_light) {
 
         // fill in any missing light-related data items with sensible defaults
         let def_light = Object.assign({}, the_light);
 
+        //check for missing range and default
+        def_light.range = !def_light.range ? "5" : def_light.range;
 
+        // check for missing colour and default to white
+        def_light.colour = !def_light.colour ? 'white' : def_light.colour;
 
+        // check for missing period and default to to 30s
+        def_light.period = !def_light.period ? '30' : def_light.period;
+        return def_light;
     };
 
 
@@ -88,8 +96,7 @@
             let this_light = multi_light_entry(tags, light_seq);
             if (Object.keys(this_light).length > 0)
                 {
-                	this_light.range = !this_light.range ? 5.0 : this_light.range;
-					this_light.colour = !this_light.colour ? 'white' : this_light.colour;
+                    this_light = set_light_defaults(this_light);
 					light_data.push(this_light);
                 }
             else {break;}
@@ -97,15 +104,8 @@
 
         // if this didn't result in anything, the lighthouse only has one light.
         if (!light_data.length) {
-
             let one_light_data = single_light_entry(tags);
-
-            //check for missing range and default
-            one_light_data.range = !one_light_data.range ? 5.0 : one_light_data.range;
-
-            // check for missing colour and default to white
-            one_light_data.colour = !one_light_data.colour ? 'white' : one_light_data.colour;
-
+            one_light_data = set_light_defaults(one_light_data);
             light_data.push(one_light_data);
         }
 
