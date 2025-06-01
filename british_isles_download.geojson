@@ -1,14 +1,15 @@
 {
   "type": "FeatureCollection",
-  "generator": "overpass-ide",
+  "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2022-02-20T16:32:08Z",
+  "timestamp": "2025-06-01T13:52:23Z",
   "features": [
     {
       "type": "Feature",
       "properties": {
         "@id": "way/27301930",
         "building": "yes",
+        "building:colour": "white",
         "man_made": "lighthouse",
         "name": "Berry Head Lighthouse",
         "seamark:light:1:character": "Fl",
@@ -16,13 +17,14 @@
         "seamark:light:1:group": "2",
         "seamark:light:1:height": "58",
         "seamark:light:1:period": "15",
-        "seamark:light:1:range": "19",
+        "seamark:light:1:range": "18",
         "seamark:light:1:sector_end": "23",
         "seamark:light:1:sector_start": "100",
+        "seamark:light:1:sequence": "0.2+(2.6),0.2+(12.0)",
         "seamark:light:reference": "A 0244",
         "seamark:name": "Berry Head",
         "seamark:type": "light_major",
-        "source": "survey; Bing",
+        "source": "survey;Bing",
         "wikidata": "Q10581063"
       },
       "geometry": {
@@ -190,9 +192,11 @@
       "properties": {
         "@id": "way/87606863",
         "building": "yes",
+        "height": "0",
         "man_made": "lighthouse",
         "name": "Hook Head Lighthouse",
-        "seamark:fog_signal:category": "horn",
+        "operator": "Commissioners of Irish Lights",
+        "ref:IE:niah": "15705414",
         "seamark:landmark:height": "35",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
@@ -250,8 +254,8 @@
               52.1237143
             ],
             [
-              -6.9293828,
-              52.1237276
+              -6.9293847,
+              52.123727
             ],
             [
               -6.9293684,
@@ -413,6 +417,234 @@
         ]
       },
       "id": "way/95677318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/114131683",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "Brough of Birsay Lighthouse",
+        "ref": "A3700",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "3",
+        "seamark:light:height": "52",
+        "seamark:light:period": "25",
+        "seamark:light:range": "18",
+        "seamark:light:reference": "A 3700",
+        "seamark:light:sequence": "0.2+(4)+0.2+(4)+0.2+(16.4)",
+        "seamark:name": "Brough of Birsay",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992351101",
+        "seamark:type": "light_major",
+        "source": "visual survey; OS_OpenData_StreetView, bing",
+        "url": "https://www.nlb.org.uk/lighthouses/brough-of-birsay/",
+        "wikidata": "Q15205148",
+        "wikipedia": "en:Brough of Birsay Lighthouse"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.3391346,
+              59.1369022
+            ],
+            [
+              -3.3391745,
+              59.1368631
+            ],
+            [
+              -3.3391988,
+              59.1368365
+            ],
+            [
+              -3.3389663,
+              59.1367767
+            ],
+            [
+              -3.3389022,
+              59.1368424
+            ],
+            [
+              -3.3391346,
+              59.1369022
+            ]
+          ]
+        ]
+      },
+      "id": "way/114131683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/114146065",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "Hoxa Head Lighthouse",
+        "ref": "A3610",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "15",
+        "seamark:light:1:period": "3",
+        "seamark:light:1:range": "9",
+        "seamark:light:1:sector_end": "163",
+        "seamark:light:1:sector_start": "26",
+        "seamark:light:1:sequence": "0.3+(2.7)",
+        "seamark:light:2:character": "Fl",
+        "seamark:light:2:colour": "red",
+        "seamark:light:2:height": "15",
+        "seamark:light:2:period": "3",
+        "seamark:light:2:range": "6",
+        "seamark:light:2:sector_end": "201",
+        "seamark:light:2:sector_start": "163",
+        "seamark:light:2:sequence": "0.3+(2.7)",
+        "seamark:light:3:character": "Fl",
+        "seamark:light:3:colour": "white",
+        "seamark:light:3:height": "15",
+        "seamark:light:3:period": "3",
+        "seamark:light:3:range": "9",
+        "seamark:light:3:sector_end": "215",
+        "seamark:light:3:sector_start": "201",
+        "seamark:light:3:sequence": "0.3+(2.7)",
+        "seamark:light:reference": "A 3610",
+        "seamark:name": "Hoxa Head",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 114. 2011-05-26.",
+        "wikidata": "Q26161442"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.0347131,
+              58.8218804
+            ],
+            [
+              -3.0347291,
+              58.8218557
+            ],
+            [
+              -3.0346765,
+              58.8218466
+            ],
+            [
+              -3.0346605,
+              58.8218713
+            ],
+            [
+              -3.0347131,
+              58.8218804
+            ]
+          ]
+        ]
+      },
+      "id": "way/114146065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/138650440",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "Flat Holm Lighthouse",
+        "seamark:landmark:height": "30",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "red",
+        "seamark:light:1:group": "3",
+        "seamark:light:1:height": "50",
+        "seamark:light:1:period": "10",
+        "seamark:light:1:range": "12",
+        "seamark:light:1:sector_end": "140",
+        "seamark:light:1:sector_start": "106",
+        "seamark:light:1:sequence": "0.4+(1.6)+0.4+(1.6)+0.4+(5.6)",
+        "seamark:light:2:character": "Fl",
+        "seamark:light:2:colour": "white",
+        "seamark:light:2:group": "3",
+        "seamark:light:2:height": "50",
+        "seamark:light:2:period": "10",
+        "seamark:light:2:range": "15",
+        "seamark:light:2:sector_end": "151",
+        "seamark:light:2:sector_start": "140",
+        "seamark:light:3:character": "Fl",
+        "seamark:light:3:colour": "red",
+        "seamark:light:3:group": "3",
+        "seamark:light:3:height": "50",
+        "seamark:light:3:period": "10",
+        "seamark:light:3:range": "12",
+        "seamark:light:3:sector_end": "203",
+        "seamark:light:3:sector_start": "151",
+        "seamark:light:4:character": "Fl",
+        "seamark:light:4:colour": "white",
+        "seamark:light:4:group": "3",
+        "seamark:light:4:height": "50",
+        "seamark:light:4:period": "10",
+        "seamark:light:4:range": "15",
+        "seamark:light:4:sector_end": "106",
+        "seamark:light:4:sector_start": "203",
+        "seamark:light:reference": "A 5426",
+        "seamark:name": "Flatholm",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 114. 2011-05-26.",
+        "website": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/flatholm-lighthouse",
+        "wikidata": "Q3739781",
+        "wikipedia": "en:Flat Holm Lighthouse",
+        "year_of_construction": "1737"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.1187509,
+              51.3755825
+            ],
+            [
+              -3.118673,
+              51.3756233
+            ],
+            [
+              -3.1185563,
+              51.3756843
+            ],
+            [
+              -3.118632,
+              51.3757407
+            ],
+            [
+              -3.1187172,
+              51.3756962
+            ],
+            [
+              -3.1187597,
+              51.3757278
+            ],
+            [
+              -3.1187915,
+              51.3757113
+            ],
+            [
+              -3.11875,
+              51.3756804
+            ],
+            [
+              -3.1188317,
+              51.3756376
+            ],
+            [
+              -3.118755,
+              51.3755804
+            ],
+            [
+              -3.1187509,
+              51.3755825
+            ]
+          ]
+        ]
+      },
+      "id": "way/138650440"
     },
     {
       "type": "Feature",
@@ -581,6 +813,7 @@
         "building": "yes",
         "man_made": "lighthouse",
         "name": "Lundy South Lighthouse",
+        "ref:GB:uprn": "10013838001",
         "seamark:fog_signal:category": "horn",
         "seamark:fog_signal:group": "1",
         "seamark:fog_signal:period": "25",
@@ -682,11 +915,11 @@
       "properties": {
         "@id": "way/194067383",
         "building": "yes",
-        "building:roof:shape": "flat",
         "height": "31",
         "man_made": "lighthouse",
         "name": "The Needles Lighthouse",
         "name:da": "The Needles",
+        "roof:shape": "flat",
         "seamark:fog_signal:category": "horn",
         "seamark:fog_signal:group": "2",
         "seamark:fog_signal:period": "30",
@@ -736,7 +969,7 @@
         "seamark:type": "light_major",
         "source": "OS OpenData StreetView",
         "wikidata": "Q5856530",
-        "wikipedia": "en:The Needles"
+        "wikipedia": "en:Needles Lighthouse"
       },
       "geometry": {
         "type": "Polygon",
@@ -818,227 +1051,241 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/202731229",
+        "@id": "way/202754652",
         "building": "yes",
         "man_made": "lighthouse",
-        "name": "Muckle Flugga Lighthouse",
-        "seamark:landmark:height": "20",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:group": "2",
-        "seamark:light:height": "66",
-        "seamark:light:period": "20",
-        "seamark:light:range": "22",
-        "seamark:light:reference": "A 3832",
-        "seamark:light:sequence": "0.5+(3.5)+0.5+(15.5)",
-        "seamark:name": "Muckle Flugga",
+        "seamark:light:1:character": "Oc",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "9",
+        "seamark:light:1:period": "8",
+        "seamark:light:1:range": "15",
+        "seamark:light:1:sector_end": "194",
+        "seamark:light:1:sector_start": "189",
+        "seamark:light:1:sequence": "6+(2)",
+        "seamark:light:2:character": "Oc",
+        "seamark:light:2:colour": "green",
+        "seamark:light:2:height": "9",
+        "seamark:light:2:period": "8",
+        "seamark:light:2:range": "10",
+        "seamark:light:2:sector_end": "257",
+        "seamark:light:2:sector_start": "194",
+        "seamark:light:2:sequence": "6+(2)",
+        "seamark:light:3:character": "Oc",
+        "seamark:light:3:colour": "white",
+        "seamark:light:3:height": "9",
+        "seamark:light:3:period": "8",
+        "seamark:light:3:range": "15",
+        "seamark:light:3:sector_end": "261",
+        "seamark:light:3:sector_start": "257",
+        "seamark:light:3:sequence": "6+(2)",
+        "seamark:light:4:character": "Oc",
+        "seamark:light:4:colour": "red",
+        "seamark:light:4:height": "9",
+        "seamark:light:4:period": "8",
+        "seamark:light:4:range": "10",
+        "seamark:light:4:sector_end": "339",
+        "seamark:light:4:sector_start": "261",
+        "seamark:light:4:sequence": "6+(2)",
+        "seamark:light:5:character": "Oc",
+        "seamark:light:5:colour": "white",
+        "seamark:light:5:height": "9",
+        "seamark:light:5:period": "8",
+        "seamark:light:5:range": "15",
+        "seamark:light:5:sector_end": "66",
+        "seamark:light:5:sector_start": "339",
+        "seamark:light:5:sequence": "6+(2)",
+        "seamark:light:reference": "A 3812",
         "seamark:type": "light_major",
-        "url": "https://www.nlb.org.uk/lighthouses/muckle-flugga-2/",
-        "wikidata": "Q2205850",
-        "wikipedia": "en:Muckle Flugga Lighthouse"
+        "source": "US NGA Pub. 114. 2011-05-26.",
+        "wikidata": "Q105820746"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -0.8855729,
-              60.8553788
+              -1.1769599,
+              60.4537388
             ],
             [
-              -0.8855856,
-              60.8553799
+              -1.1769639,
+              60.4537436
             ],
             [
-              -0.8855984,
-              60.8553793
+              -1.1769706,
+              60.4537475
             ],
             [
-              -0.8856105,
-              60.8553771
+              -1.1769795,
+              60.4537502
             ],
             [
-              -0.8856208,
-              60.8553733
+              -1.1769896,
+              60.4537514
             ],
             [
-              -0.8856285,
-              60.8553683
+              -1.177,
+              60.453751
             ],
             [
-              -0.8856332,
-              60.8553624
+              -1.1770106,
+              60.4537488
             ],
             [
-              -0.8856345,
-              60.8553562
+              -1.1770191,
+              60.453745
             ],
             [
-              -0.8856311,
-              60.8553486
+              -1.1770244,
+              60.4537399
             ],
             [
-              -0.8856232,
-              60.8553422
+              -1.1770259,
+              60.4537342
             ],
             [
-              -0.8856151,
-              60.8553386
+              -1.1770234,
+              60.4537287
             ],
             [
-              -0.8856057,
-              60.8553361
+              -1.1770172,
+              60.4537239
             ],
             [
-              -0.8855935,
-              60.8553345
+              -1.1770081,
+              60.4537204
             ],
             [
-              -0.885581,
-              60.8553345
+              -1.1769971,
+              60.4537186
             ],
             [
-              -0.8855693,
-              60.8553361
+              -1.1769855,
+              60.4537188
             ],
             [
-              -0.8855589,
-              60.8553391
+              -1.1769748,
+              60.453721
             ],
             [
-              -0.8855504,
-              60.8553433
+              -1.1769669,
+              60.4537243
             ],
             [
-              -0.8855444,
-              60.8553484
+              -1.1769615,
+              60.4537287
             ],
             [
-              -0.8855412,
-              60.8553543
+              -1.1769591,
+              60.4537337
             ],
             [
-              -0.8855413,
-              60.8553604
-            ],
-            [
-              -0.885545,
-              60.8553665
-            ],
-            [
-              -0.8855518,
-              60.8553718
-            ],
-            [
-              -0.8855614,
-              60.855376
-            ],
-            [
-              -0.8855729,
-              60.8553788
+              -1.1769599,
+              60.4537388
             ]
           ]
         ]
       },
-      "id": "way/202731229"
+      "id": "way/202754652"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/202751410",
+        "@id": "way/204252647",
         "building": "yes",
         "man_made": "lighthouse",
-        "name": "Fethaland Lighthouse",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "red",
-        "seamark:light:1:group": "3",
-        "seamark:light:1:height": "65",
-        "seamark:light:1:period": "15",
-        "seamark:light:1:range": "20",
-        "seamark:light:1:sector_end": "103",
-        "seamark:light:1:sector_start": "80",
-        "seamark:light:2:character": "Fl",
-        "seamark:light:2:colour": "white",
-        "seamark:light:2:group": "3",
-        "seamark:light:2:height": "65",
-        "seamark:light:2:period": "15",
-        "seamark:light:2:range": "24",
-        "seamark:light:2:sector_end": "160",
-        "seamark:light:2:sector_start": "103",
-        "seamark:light:3:character": "Fl",
-        "seamark:light:3:colour": "red",
-        "seamark:light:3:group": "3",
-        "seamark:light:3:height": "65",
-        "seamark:light:3:period": "15",
-        "seamark:light:3:range": "20",
-        "seamark:light:3:sector_end": "206",
-        "seamark:light:3:sector_start": "160",
-        "seamark:light:4:character": "Fl",
-        "seamark:light:4:colour": "white",
-        "seamark:light:4:group": "3",
-        "seamark:light:4:height": "65",
-        "seamark:light:4:period": "15",
-        "seamark:light:4:range": "24",
-        "seamark:light:4:sector_end": "340",
-        "seamark:light:4:sector_start": "206",
-        "seamark:light:reference": "A 3817.5",
-        "seamark:name": "Point of Fethaland",
+        "name": "Auskerry Lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "34",
+        "seamark:light:period": "20",
+        "seamark:light:range": "18",
+        "seamark:light:reference": "A 3680",
+        "seamark:light:sequence": "0.5+(19.5)",
+        "seamark:name": "Auskerry",
         "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26.",
-        "wikidata": "Q28453675"
+        "wikidata": "Q3378153"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -1.3114801,
-              60.6342265
+              -2.5726483,
+              59.0259108
             ],
             [
-              -1.3115029,
-              60.6342183
+              -2.57263,
+              59.0258788
             ],
             [
-              -1.3115114,
-              60.634205
+              -2.5725169,
+              59.0258939
             ],
             [
-              -1.3115025,
-              60.6341919
+              -2.5724804,
+              59.025845
             ],
             [
-              -1.3114794,
-              60.6341838
+              -2.5722979,
+              59.0258788
             ],
             [
-              -1.3114511,
-              60.6341839
+              -2.5722833,
+              59.0258582
             ],
             [
-              -1.3114283,
-              60.6341921
+              -2.5722961,
+              59.0258337
             ],
             [
-              -1.3114198,
-              60.6342054
+              -2.5722723,
+              59.0258159
             ],
             [
-              -1.3114287,
-              60.6342185
+              -2.5722395,
+              59.0258103
             ],
             [
-              -1.3114518,
-              60.6342266
+              -2.5722066,
+              59.0258197
             ],
             [
-              -1.3114801,
-              60.6342265
+              -2.5721866,
+              59.0258328
+            ],
+            [
+              -2.572192,
+              59.0258488
+            ],
+            [
+              -2.5722158,
+              59.0258647
+            ],
+            [
+              -2.572245,
+              59.0258666
+            ],
+            [
+              -2.5722559,
+              59.0258845
+            ],
+            [
+              -2.5721008,
+              59.0259108
+            ],
+            [
+              -2.5721574,
+              59.0259934
+            ],
+            [
+              -2.5726483,
+              59.0259108
             ]
           ]
         ]
       },
-      "id": "way/202751410"
+      "id": "way/204252647"
     },
     {
       "type": "Feature",
@@ -1140,48 +1387,48 @@
         "coordinates": [
           [
             [
-              -3.3099842,
-              58.940404
+              -3.3100475,
+              58.9404188
             ],
             [
-              -3.3100219,
-              58.9404023
+              -3.3100852,
+              58.9404171
             ],
             [
-              -3.3100506,
-              58.9403896
+              -3.3101139,
+              58.9404044
             ],
             [
-              -3.3100592,
-              58.9403706
+              -3.3101225,
+              58.9403854
             ],
             [
-              -3.3100445,
-              58.9403526
+              -3.3101078,
+              58.9403674
             ],
             [
-              -3.3100122,
-              58.9403425
+              -3.3100755,
+              58.9403573
             ],
             [
-              -3.3099744,
-              58.9403441
+              -3.3100377,
+              58.9403589
             ],
             [
-              -3.3099458,
-              58.9403568
+              -3.3100091,
+              58.9403716
             ],
             [
-              -3.3099372,
-              58.9403759
+              -3.3100005,
+              58.9403907
             ],
             [
-              -3.3099518,
-              58.9403939
+              -3.3100151,
+              58.9404087
             ],
             [
-              -3.3099842,
-              58.940404
+              -3.3100475,
+              58.9404188
             ]
           ]
         ]
@@ -1194,9 +1441,12 @@
         "@id": "way/205823796",
         "active": "yes",
         "building": "yes",
+        "building:material": "brick",
+        "height": "37",
         "man_made": "lighthouse",
         "name": "Taigh-solais Rubha Robhanais",
         "name:en": "Butt of Lewis Lighthouse",
+        "name:gd": "Taigh-solais Rubha Robhanais",
         "operator": "Northern Lighthouse Board.",
         "seamark:light:1:character": "FI",
         "seamark:light:1:colour": "white",
@@ -1245,6 +1495,10 @@
               58.5155573
             ],
             [
+              -6.2609309,
+              58.515555
+            ],
+            [
               -6.2609132,
               58.5155532
             ],
@@ -1277,6 +1531,7 @@
         "man_made": "lighthouse",
         "name": "Taigh-solais an Ceann Bharraigh",
         "name:en": "Barra Head Lighthouse",
+        "name:gd": "Taigh-solais an Ceann Bharraigh",
         "seamark:information": "Obscured by islands NE.",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
@@ -1491,56 +1746,84 @@
         "coordinates": [
           [
             [
-              -7.1135458,
-              56.3232314
+              -7.113614,
+              56.3231805
+            ],
+            [
+              -7.113592,
+              56.3231649
+            ],
+            [
+              -7.1135618,
+              56.3231543
+            ],
+            [
+              -7.1135268,
+              56.3231502
+            ],
+            [
+              -7.1134914,
+              56.3231529
+            ],
+            [
+              -7.1134598,
+              56.3231622
+            ],
+            [
+              -7.1134358,
+              56.3231769
+            ],
+            [
+              -7.1134232,
+              56.3231933
+            ],
+            [
+              -7.1134203,
+              56.3232111
+            ],
+            [
+              -7.1134275,
+              56.3232285
+            ],
+            [
+              -7.113444,
+              56.3232439
+            ],
+            [
+              -7.1134683,
+              56.3232556
+            ],
+            [
+              -7.1134979,
+              56.3232626
+            ],
+            [
+              -7.11353,
+              56.3232642
             ],
             [
               -7.1135614,
-              56.3232031
+              56.3232602
             ],
             [
-              -7.1135495,
-              56.3231743
+              -7.1135891,
+              56.323251
             ],
             [
-              -7.1135132,
-              56.3231527
+              -7.1136102,
+              56.3232376
             ],
             [
-              -7.1134623,
-              56.323144
+              -7.1136237,
+              56.3232192
             ],
             [
-              -7.1134103,
-              56.3231506
+              -7.113625,
+              56.3231994
             ],
             [
-              -7.1133713,
-              56.3231707
-            ],
-            [
-              -7.1133556,
-              56.323199
-            ],
-            [
-              -7.1133676,
-              56.3232278
-            ],
-            [
-              -7.1134039,
-              56.3232494
-            ],
-            [
-              -7.1134548,
-              56.3232581
-            ],
-            [
-              -7.1135068,
-              56.3232515
-            ],
-            [
-              -7.1135458,
-              56.3232314
+              -7.113614,
+              56.3231805
             ]
           ]
         ]
@@ -1630,6 +1913,7 @@
       "properties": {
         "@id": "way/212790843",
         "building": "yes",
+        "height": "45",
         "man_made": "lighthouse",
         "name": "Happisburgh Lighthouse",
         "old_name": "Happisburgh High Lighthouse",
@@ -1842,10 +2126,12 @@
       "properties": {
         "@id": "way/241934527",
         "building": "yes",
+        "check_date:opening_hours": "2024-03-08",
         "man_made": "lighthouse",
         "name": "Ardnamurchan Point Lighthouse",
         "name:de": "Ardnamurchan-Leuchtturm",
         "name:gd": "Taigh Solais Aird nam Murchan",
+        "opening_hours": "Mo-Su 11:00-16:00",
         "seamark:light:1:character": "Fl",
         "seamark:light:1:colour": "white",
         "seamark:light:1:group": "2",
@@ -1860,6 +2146,7 @@
         "seamark:type": "light_major",
         "steps": "152",
         "tourism": "attraction",
+        "website": "https://www.ardnamurchanlighthouse.com/",
         "wikidata": "Q639663",
         "wikipedia": "en:Ardnamurchan Lighthouse"
       },
@@ -1868,211 +2155,97 @@
         "coordinates": [
           [
             [
-              -6.2259609,
-              56.7270941
+              -6.2258843,
+              56.7271102
             ],
             [
-              -6.2259677,
-              56.7271031
+              -6.2258957,
+              56.7271203
             ],
             [
-              -6.2259792,
-              56.7271104
+              -6.225912,
+              56.7271282
             ],
             [
-              -6.2259942,
-              56.7271155
+              -6.2259316,
+              56.7271332
             ],
             [
-              -6.2260114,
-              56.7271177
+              -6.2259531,
+              56.7271349
             ],
             [
-              -6.226029,
-              56.7271169
+              -6.2259745,
+              56.7271332
             ],
             [
-              -6.2260453,
-              56.7271132
+              -6.2259941,
+              56.7271281
             ],
             [
-              -6.2260588,
-              56.7271069
+              -6.2260103,
+              56.7271202
             ],
             [
-              -6.226068,
+              -6.2260216,
+              56.7271101
+            ],
+            [
+              -6.2260271,
               56.7270986
             ],
             [
-              -6.2260721,
-              56.7270892
+              -6.2260264,
+              56.7270867
             ],
             [
-              -6.2260707,
-              56.7270796
+              -6.2260179,
+              56.7270737
             ],
             [
-              -6.2260639,
-              56.7270706
+              -6.2260021,
+              56.7270631
             ],
             [
-              -6.2260524,
-              56.7270632
-            ],
-            [
-              -6.2260373,
-              56.7270582
-            ],
-            [
-              -6.2260201,
+              -6.2259807,
               56.7270559
             ],
             [
-              -6.2260025,
-              56.7270567
+              -6.2259562,
+              56.727053
             ],
             [
-              -6.2259862,
-              56.7270604
+              -6.2259313,
+              56.7270547
             ],
             [
-              -6.2259728,
-              56.7270667
+              -6.2259088,
+              56.7270608
             ],
             [
-              -6.2259636,
-              56.727075
+              -6.2258913,
+              56.7270707
             ],
             [
-              -6.2259595,
-              56.7270844
+              -6.2258808,
+              56.7270832
             ],
             [
-              -6.2259609,
-              56.7270941
+              -6.2258784,
+              56.7270969
+            ],
+            [
+              -6.2258814,
+              56.7271037
+            ],
+            [
+              -6.2258843,
+              56.7271102
             ]
           ]
         ]
       },
       "id": "way/241934527"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/244371670",
-        "building": "lighthouse",
-        "man_made": "lighthouse",
-        "name": "Baily Lighthouse",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:height": "41",
-        "seamark:light:period": "15",
-        "seamark:light:range": "26",
-        "seamark:light:reference": "A 5898",
-        "seamark:light:sequence": "0.8+(14.2)",
-        "seamark:name": "Baily",
-        "seamark:radio_station:category": "ais",
-        "seamark:radio_station:mmsi": "992501010",
-        "seamark:type": "light_major",
-        "source": "Commissioners of Irish Lights",
-        "wikidata": "Q4848496"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -6.0525163,
-              53.3615832
-            ],
-            [
-              -6.0525258,
-              53.3615605
-            ],
-            [
-              -6.0525231,
-              53.3615395
-            ],
-            [
-              -6.0525082,
-              53.36152
-            ],
-            [
-              -6.0524824,
-              53.3614998
-            ],
-            [
-              -6.0524187,
-              53.3614901
-            ],
-            [
-              -6.052397,
-              53.3614861
-            ],
-            [
-              -6.0523834,
-              53.3614658
-            ],
-            [
-              -6.052359,
-              53.3614496
-            ],
-            [
-              -6.0523251,
-              53.3614504
-            ],
-            [
-              -6.0522885,
-              53.3614602
-            ],
-            [
-              -6.0522749,
-              53.3614788
-            ],
-            [
-              -6.0523061,
-              53.3615192
-            ],
-            [
-              -6.0522966,
-              53.3615338
-            ],
-            [
-              -6.0522912,
-              53.3615581
-            ],
-            [
-              -6.0523034,
-              53.3615864
-            ],
-            [
-              -6.0523319,
-              53.3616115
-            ],
-            [
-              -6.0523753,
-              53.3616285
-            ],
-            [
-              -6.0524214,
-              53.3616285
-            ],
-            [
-              -6.0524621,
-              53.3616196
-            ],
-            [
-              -6.0524892,
-              53.3616058
-            ],
-            [
-              -6.0525163,
-              53.3615832
-            ]
-          ]
-        ]
-      },
-      "id": "way/244371670"
     },
     {
       "type": "Feature",
@@ -2250,13 +2423,13 @@
         "man_made": "lighthouse",
         "name": "Neist Point Lighthouse",
         "operator": "Northern Lighthouse Board.",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:height": "43",
-        "seamark:light:period": "5",
-        "seamark:light:range": "16",
-        "seamark:light:reference": "A 4064",
-        "seamark:light:sequence": "0.3+(4.7)",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "43",
+        "seamark:light:1:period": "5",
+        "seamark:light:1:range": "16",
+        "seamark:light:1:reference": "A 4064",
+        "seamark:light:1:sequence": "0.3+(4.7)",
         "seamark:name": "Neist Point",
         "seamark:radio_station:category": "ais",
         "seamark:radio_station:mmsi": "992320187",
@@ -2270,84 +2443,84 @@
         "coordinates": [
           [
             [
-              -6.7884605,
-              57.4234003
+              -6.788266,
+              57.4233992
             ],
             [
-              -6.7884665,
-              57.4233942
+              -6.788272,
+              57.4233931
             ],
             [
-              -6.7884683,
-              57.4233874
+              -6.7882738,
+              57.4233863
             ],
             [
-              -6.7884657,
-              57.4233807
+              -6.7882712,
+              57.4233796
             ],
             [
-              -6.788459,
-              57.4233748
-            ],
-            [
-              -6.788449,
-              57.4233705
-            ],
-            [
-              -6.788438,
-              57.4233684
-            ],
-            [
-              -6.7884264,
-              57.4233683
-            ],
-            [
-              -6.7884153,
-              57.4233701
-            ],
-            [
-              -6.7884057,
+              -6.7882645,
               57.4233737
             ],
             [
-              -6.7883987,
-              57.4233786
+              -6.7882545,
+              57.4233694
             ],
             [
-              -6.7883949,
-              57.4233846
+              -6.7882435,
+              57.4233673
             ],
             [
-              -6.7883947,
-              57.4233908
+              -6.7882319,
+              57.4233672
             ],
             [
-              -6.7883982,
-              57.4233968
+              -6.7882208,
+              57.423369
             ],
             [
-              -6.7884049,
-              57.4234019
+              -6.7882112,
+              57.4233726
             ],
             [
-              -6.7884142,
-              57.4234057
+              -6.7882042,
+              57.4233775
             ],
             [
-              -6.7884264,
-              57.4234077
+              -6.7882004,
+              57.4233835
             ],
             [
-              -6.7884392,
-              57.4234075
+              -6.7882002,
+              57.4233897
             ],
             [
-              -6.788451,
-              57.4234049
+              -6.7882037,
+              57.4233957
             ],
             [
-              -6.7884605,
-              57.4234003
+              -6.7882104,
+              57.4234008
+            ],
+            [
+              -6.7882197,
+              57.4234046
+            ],
+            [
+              -6.7882319,
+              57.4234066
+            ],
+            [
+              -6.7882447,
+              57.4234064
+            ],
+            [
+              -6.7882565,
+              57.4234038
+            ],
+            [
+              -6.788266,
+              57.4233992
             ]
           ]
         ]
@@ -2380,68 +2553,100 @@
         "coordinates": [
           [
             [
-              -1.9598867,
-              50.5918416
+              -1.9599992,
+              50.5918695
             ],
             [
-              -1.959869,
-              50.5918453
+              -1.9599805,
+              50.5918653
             ],
             [
-              -1.9598548,
-              50.591853
+              -1.9599607,
+              50.5918651
             ],
             [
-              -1.9598464,
-              50.5918636
+              -1.9599418,
+              50.5918692
             ],
             [
-              -1.9598451,
-              50.5918754
+              -1.9599261,
+              50.5918769
             ],
             [
-              -1.9598509,
-              50.5918867
+              -1.9599156,
+              50.5918869
             ],
             [
-              -1.9598631,
-              50.5918956
+              -1.9599106,
+              50.5918985
             ],
             [
-              -1.9598798,
-              50.591901
+              -1.9599116,
+              50.5919106
             ],
             [
-              -1.9598984,
-              50.5919018
+              -1.9599185,
+              50.5919218
             ],
             [
-              -1.9599184,
-              50.5918972
+              -1.9599307,
+              50.5919311
             ],
             [
-              -1.9599333,
-              50.5918876
+              -1.9599467,
+              50.5919375
             ],
             [
-              -1.9599401,
-              50.5918748
+              -1.9599652,
+              50.5919403
             ],
             [
-              -1.9599375,
-              50.5918614
+              -1.9599747,
+              50.5919403
             ],
             [
-              -1.959926,
-              50.59185
+              -1.9599839,
+              50.5919394
             ],
             [
-              -1.9599079,
-              50.5918429
+              -1.9599939,
+              50.5919373
             ],
             [
-              -1.9598867,
-              50.5918416
+              -1.960003,
+              50.5919341
+            ],
+            [
+              -1.9600111,
+              50.59193
+            ],
+            [
+              -1.960018,
+              50.591925
+            ],
+            [
+              -1.9600235,
+              50.5919193
+            ],
+            [
+              -1.9600274,
+              50.5919129
+            ],
+            [
+              -1.9600296,
+              50.5919004
+            ],
+            [
+              -1.9600252,
+              50.5918881
+            ],
+            [
+              -1.9600146,
+              50.5918774
+            ],
+            [
+              -1.9599992,
+              50.5918695
             ]
           ]
         ]
@@ -2456,6 +2661,7 @@
         "building:levels": "5",
         "man_made": "lighthouse",
         "name": "Loop Head Lighthouse",
+        "roof:shape": "mansard",
         "seamark:light:1:character": "Fl",
         "seamark:light:1:colour": "white",
         "seamark:light:1:group": "4",
@@ -2570,6 +2776,7 @@
         "building": "yes",
         "man_made": "lighthouse",
         "name": "Rotten Island Lighthouse",
+        "ref:IE:niah": "40909715",
         "seamark:light:1:character": "Fl",
         "seamark:light:1:colour": "white",
         "seamark:light:1:height": "20",
@@ -2681,7 +2888,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/335159009",
-        "building": "yes",
+        "building": "lighthouse",
         "man_made": "lighthouse",
         "name": "St. Bees Lighthouse",
         "seamark:information": "Obscured shore-340°",
@@ -2877,6 +3084,10 @@
               53.3129419
             ],
             [
+              -4.0407048,
+              53.3129383
+            ],
+            [
               -4.0406998,
               53.3129334
             ],
@@ -2921,7 +3132,8 @@
         "seamark:radio_station:category": "ais",
         "seamark:radio_station:mmsi": "992501172",
         "seamark:type": "light_major",
-        "source": "Commissioners of Irish Lights"
+        "source": "Commissioners of Irish Lights",
+        "wikidata": "Q28333650"
       },
       "geometry": {
         "type": "Polygon",
@@ -3019,6 +3231,7 @@
         "building": "yes",
         "heritage": "2",
         "heritage:operator": "Historic England",
+        "image": "https://www.geograph.org.uk/photo/7288694",
         "listed_status": "Grade II",
         "man_made": "lighthouse",
         "name": "Tynemouth Lighthouse",
@@ -3032,7 +3245,8 @@
         "seamark:light:range": "26",
         "seamark:light:reference": "A 2700",
         "seamark:light:sequence": "0.2+(2)+0.2+(2)+0.2+(5.4)",
-        "seamark:type": "light_major"
+        "seamark:type": "light_major",
+        "wikidata": "Q28465875"
       },
       "geometry": {
         "type": "Polygon",
@@ -3270,8 +3484,16 @@
         "coordinates": [
           [
             [
+              -4.6773031,
+              51.2017008
+            ],
+            [
               -4.6772953,
               51.2016961
+            ],
+            [
+              -4.677286,
+              51.2016927
             ],
             [
               -4.6772757,
@@ -3279,71 +3501,103 @@
             ],
             [
               -4.6772744,
-              51.2016906
+              51.2016905
             ],
             [
-              -4.6772542,
-              51.201691
+              -4.6772589,
+              51.2016904
             ],
             [
-              -4.6772394,
-              51.2016958
+              -4.6772442,
+              51.2016934
             ],
             [
               -4.6772352,
               51.2016971
             ],
             [
+              -4.6772278,
+              51.2017021
+            ],
+            [
               -4.6772223,
               51.2017079
+            ],
+            [
+              -4.677219,
+              51.2017143
             ],
             [
               -4.6772181,
               51.2017211
             ],
             [
+              -4.6772196,
+              51.2017278
+            ],
+            [
               -4.6772234,
               51.2017341
+            ],
+            [
+              -4.6772294,
+              51.2017397
             ],
             [
               -4.6772373,
               51.2017444
             ],
             [
+              -4.6772466,
+              51.2017478
+            ],
+            [
               -4.6772569,
               51.2017499
             ],
             [
-              -4.6772597,
-              51.2017498
+              -4.6772676,
+              51.2017504
             ],
             [
               -4.6772783,
               51.2017495
             ],
             [
-              -4.6772945,
-              51.2017442
+              -4.6772884,
+              51.2017471
             ],
             [
               -4.6772974,
               51.2017433
             ],
             [
+              -4.6773048,
+              51.2017384
+            ],
+            [
               -4.6773103,
               51.2017326
+            ],
+            [
+              -4.6773136,
+              51.2017261
             ],
             [
               -4.6773145,
               51.2017194
             ],
             [
+              -4.677313,
+              51.2017127
+            ],
+            [
               -4.6773091,
               51.2017064
             ],
             [
-              -4.6772953,
-              51.2016961
+              -4.6773031,
+              51.2017008
             ]
           ]
         ]
@@ -3353,143 +3607,13 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/419536651",
-        "building": "yes",
-        "man_made": "lighthouse",
-        "name": "Skelligs Lighthouse",
-        "operator": "Commissioners of Irish Lights",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:group": "3",
-        "seamark:light:1:height": "53",
-        "seamark:light:1:period": "15",
-        "seamark:light:1:range": "12",
-        "seamark:light:1:sector_end": "115",
-        "seamark:light:1:sector_start": "262",
-        "seamark:light:1:sequence": "0.3+(2.3)+0.3+(2.3)+0.3+(9.5)",
-        "seamark:light:1:visibility": "part_obscured",
-        "seamark:name": "Skelligs Rock",
-        "seamark:radio_station:category": "ais",
-        "seamark:source": "https://map.openseamap.org/ (ais);US NGA Pub.114.(2020)",
-        "seamark:type": "light_major",
-        "year_of_construction": "1826"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -10.5415781,
-              51.7689427
-            ],
-            [
-              -10.5417626,
-              51.7687204
-            ],
-            [
-              -10.5417364,
-              51.7687121
-            ],
-            [
-              -10.5417514,
-              51.7686941
-            ],
-            [
-              -10.541754,
-              51.7686848
-            ],
-            [
-              -10.5417515,
-              51.7686756
-            ],
-            [
-              -10.5417446,
-              51.7686676
-            ],
-            [
-              -10.5417339,
-              51.7686615
-            ],
-            [
-              -10.5417206,
-              51.7686577
-            ],
-            [
-              -10.541706,
-              51.7686568
-            ],
-            [
-              -10.5416918,
-              51.7686588
-            ],
-            [
-              -10.5416837,
-              51.7686648
-            ],
-            [
-              -10.5416331,
-              51.7687258
-            ],
-            [
-              -10.5415936,
-              51.7687133
-            ],
-            [
-              -10.541584,
-              51.7687249
-            ],
-            [
-              -10.5415761,
-              51.7687344
-            ],
-            [
-              -10.5416181,
-              51.7687477
-            ],
-            [
-              -10.5415787,
-              51.7687953
-            ],
-            [
-              -10.541554,
-              51.7687874
-            ],
-            [
-              -10.5414585,
-              51.7689026
-            ],
-            [
-              -10.541499,
-              51.7689155
-            ],
-            [
-              -10.541483,
-              51.7689348
-            ],
-            [
-              -10.5415226,
-              51.7689474
-            ],
-            [
-              -10.5415373,
-              51.7689297
-            ],
-            [
-              -10.5415781,
-              51.7689427
-            ]
-          ]
-        ]
-      },
-      "id": "way/419536651"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "way/426352856",
         "building": "yes",
+        "building:colour": "white",
+        "height": "21",
         "man_made": "lighthouse",
         "name": "Carraig Fhada Lighthouse",
+        "roof:shape": "flat",
         "seamark:light:1:character": "Fl",
         "seamark:light:1:colour": "white",
         "seamark:light:1:height": "20",
@@ -3533,24 +3657,24 @@
         "coordinates": [
           [
             [
-              -6.2116972,
-              55.6202867
+              -6.211707,
+              55.6202605
             ],
             [
-              -6.2116567,
-              55.6202345
+              -6.2116656,
+              55.6202098
             ],
             [
-              -6.2115656,
-              55.620257
+              -6.2115767,
+              55.6202329
             ],
             [
-              -6.2116061,
-              55.6203092
+              -6.211618,
+              55.6202837
             ],
             [
-              -6.2116972,
-              55.6202867
+              -6.211707,
+              55.6202605
             ]
           ]
         ]
@@ -3580,7 +3704,9 @@
         "seamark:radio_station:category": "ais",
         "seamark:radio_station:mmsi": "992351137",
         "seamark:type": "light_major",
-        "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/bishop-rock-lighthouse"
+        "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/bishop-rock-lighthouse",
+        "wikidata": "Q866344",
+        "wikipedia": "en:Bishop Rock"
       },
       "geometry": {
         "type": "Polygon",
@@ -3772,55 +3898,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/477898770",
-        "building": "yes",
-        "man_made": "lighthouse",
-        "name": "Rathlin West Lighthouse",
-        "seamark:landmark:colour": "red",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "red",
-        "seamark:light:1:group": "1",
-        "seamark:light:1:period": "5",
-        "seamark:light:1:range": "22",
-        "seamark:light:1:sector_end": "225",
-        "seamark:light:1:sector_start": "015",
-        "seamark:light:sequence": "1+(4)",
-        "seamark:type": "light_major",
-        "url": "https://www.irishlights.ie/tourism/our-lighthouses/rathlin-west.aspx",
-        "wikidata": "Q15873242"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -6.2800999,
-              55.3008759
-            ],
-            [
-              -6.2801623,
-              55.3008221
-            ],
-            [
-              -6.2800782,
-              55.3007905
-            ],
-            [
-              -6.2800159,
-              55.3008443
-            ],
-            [
-              -6.2800999,
-              55.3008759
-            ]
-          ]
-        ]
-      },
-      "id": "way/477898770"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "way/480648031",
         "building": "yes",
         "building:levels": "4",
@@ -3935,147 +4012,6 @@
         ]
       },
       "id": "way/480648031"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/495457684",
-        "building": "tower",
-        "building:colour": "white",
-        "building:material": "concrete",
-        "ele": "59",
-        "height": "23",
-        "man_made": "lighthouse",
-        "name": "Inishtrahull Lighthouse",
-        "operator": "Commissioners of Irish Lights",
-        "roof:colour": "white",
-        "roof:material": "metal",
-        "roof:shape": "pyramidal",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:group": "3",
-        "seamark:light:height": "59",
-        "seamark:light:period": "15",
-        "seamark:light:range": "19",
-        "seamark:light:reference": "A 6164",
-        "seamark:light:sequence": "0.2+(2.3)+0.2+(2.3)+0.2+(9.8)",
-        "seamark:name": "Inishtrahull",
-        "seamark:radar_transponder:category": "racon",
-        "seamark:radar_transponder:group": "T",
-        "seamark:radio_station:category": "ais",
-        "seamark:radio_station:mmsi": "992501229",
-        "seamark:type": "light_major",
-        "start_date": "1958",
-        "wikidata": "Q15228693"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -7.24377,
-              55.431068
-            ],
-            [
-              -7.243771,
-              55.4310726
-            ],
-            [
-              -7.2437742,
-              55.431077
-            ],
-            [
-              -7.2437792,
-              55.4310807
-            ],
-            [
-              -7.2437858,
-              55.4310835
-            ],
-            [
-              -7.2437934,
-              55.4310853
-            ],
-            [
-              -7.2438016,
-              55.4310859
-            ],
-            [
-              -7.2438098,
-              55.4310853
-            ],
-            [
-              -7.2438175,
-              55.4310835
-            ],
-            [
-              -7.243824,
-              55.4310807
-            ],
-            [
-              -7.2438291,
-              55.431077
-            ],
-            [
-              -7.2438324,
-              55.4310719
-            ],
-            [
-              -7.2438333,
-              55.431068
-            ],
-            [
-              -7.2438322,
-              55.4310633
-            ],
-            [
-              -7.2438291,
-              55.431059
-            ],
-            [
-              -7.243824,
-              55.4310553
-            ],
-            [
-              -7.2438175,
-              55.4310524
-            ],
-            [
-              -7.2438098,
-              55.4310506
-            ],
-            [
-              -7.2438016,
-              55.43105
-            ],
-            [
-              -7.2437934,
-              55.4310506
-            ],
-            [
-              -7.2437858,
-              55.4310524
-            ],
-            [
-              -7.2437792,
-              55.4310553
-            ],
-            [
-              -7.2437742,
-              55.431059
-            ],
-            [
-              -7.243771,
-              55.4310633
-            ],
-            [
-              -7.24377,
-              55.431068
-            ]
-          ]
-        ]
-      },
-      "id": "way/495457684"
     },
     {
       "type": "Feature",
@@ -4197,6 +4133,7 @@
         "building": "yes",
         "man_made": "lighthouse",
         "name": "Blackhead Co. Antrim Lighthouse",
+        "name:ga": "An Cionn Dubh",
         "operator": "Commissioners of Irish Lights",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
@@ -4210,87 +4147,90 @@
         "seamark:radio_station:mmsi": "992351002",
         "seamark:type": "light_major",
         "source": "Bing;Commissioners of Irish Lights",
-        "website": "https://www.irishlights.ie/tourism/our-lighthouses/black-head-(antrim).aspx"
+        "source:name:ga": "https://admin.opendatani.gov.uk/dataset/osni-open-data-eire-thuaidh-irish-translated-map",
+        "website": "https://www.irishlights.ie/tourism/our-lighthouses/black-head-(antrim).aspx",
+        "wikidata": "Q28497234",
+        "wikipedia": "en:Blackhead Lighthouse"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -5.6889532,
-              54.7669944
+              -5.6890776,
+              54.7669543
             ],
             [
-              -5.6889666,
-              54.7669933
+              -5.689091,
+              54.7669532
             ],
             [
-              -5.6889814,
-              54.7669891
+              -5.6891058,
+              54.766949
             ],
             [
-              -5.6889928,
-              54.7669822
+              -5.6891172,
+              54.7669421
             ],
             [
-              -5.6889994,
-              54.7669735
+              -5.6891238,
+              54.7669334
             ],
             [
-              -5.6890005,
-              54.766964
+              -5.6891249,
+              54.7669239
             ],
             [
-              -5.6889959,
-              54.7669548
+              -5.6891203,
+              54.7669147
             ],
             [
-              -5.6889861,
-              54.7669471
+              -5.6891105,
+              54.766907
             ],
             [
-              -5.6889662,
+              -5.6890906,
+              54.7669005
+            ],
+            [
+              -5.6890742,
+              54.7668995
+            ],
+            [
+              -5.6890582,
+              54.7669018
+            ],
+            [
+              -5.6890445,
+              54.7669072
+            ],
+            [
+              -5.6890348,
+              54.7669149
+            ],
+            [
+              -5.6890308,
+              54.7669221
+            ],
+            [
+              -5.6890308,
+              54.7669316
+            ],
+            [
+              -5.6890364,
               54.7669406
             ],
             [
-              -5.6889498,
-              54.7669396
+              -5.6890471,
+              54.7669479
             ],
             [
-              -5.6889338,
-              54.7669419
+              -5.6890614,
+              54.7669527
             ],
             [
-              -5.6889201,
-              54.7669473
-            ],
-            [
-              -5.6889104,
-              54.766955
-            ],
-            [
-              -5.6889064,
-              54.7669622
-            ],
-            [
-              -5.6889064,
-              54.7669717
-            ],
-            [
-              -5.688912,
-              54.7669807
-            ],
-            [
-              -5.6889227,
-              54.766988
-            ],
-            [
-              -5.688937,
-              54.7669928
-            ],
-            [
-              -5.6889532,
-              54.7669944
+              -5.6890776,
+              54.7669543
             ]
           ]
         ]
@@ -4348,7 +4288,8 @@
         "seamark:radio_station:category": "ais;dgps",
         "seamark:radio_station:mmsi": "992351020",
         "seamark:type": "light_major",
-        "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/north-foreland-lighthouse"
+        "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/north-foreland-lighthouse",
+        "wikidata": "Q25803046"
       },
       "geometry": {
         "type": "Polygon",
@@ -4633,6 +4574,7 @@
       "properties": {
         "@id": "way/673125459",
         "building": "yes",
+        "historic": "building",
         "man_made": "lighthouse",
         "name": "Flamborough Head Lighthouse",
         "operator": "Trinity House",
@@ -4809,92 +4751,92 @@
         "coordinates": [
           [
             [
-              -2.456387,
-              50.5141807
+              -2.4563709,
+              50.5141628
             ],
             [
-              -2.4564115,
-              50.5141835
+              -2.4563954,
+              50.5141656
             ],
             [
-              -2.4564332,
-              50.5141813
+              -2.4564171,
+              50.5141634
             ],
             [
-              -2.4564519,
-              50.5141755
+              -2.4564358,
+              50.5141576
             ],
             [
-              -2.4564671,
-              50.5141664
+              -2.456451,
+              50.5141485
             ],
             [
-              -2.4564775,
-              50.5141549
+              -2.4564614,
+              50.514137
             ],
             [
-              -2.4564822,
-              50.514142
+              -2.4564661,
+              50.5141241
             ],
             [
-              -2.4564807,
-              50.5141288
+              -2.4564646,
+              50.5141109
             ],
             [
-              -2.4564733,
-              50.5141164
+              -2.4564572,
+              50.5140985
             ],
             [
-              -2.4564605,
-              50.514106
+              -2.4564444,
+              50.5140881
             ],
             [
-              -2.4564435,
-              50.5140984
+              -2.4564274,
+              50.5140805
             ],
             [
-              -2.4564237,
-              50.5140942
+              -2.4564076,
+              50.5140763
             ],
             [
-              -2.4564028,
-              50.5140939
+              -2.4563867,
+              50.514076
             ],
             [
-              -2.4563828,
-              50.5140975
+              -2.4563667,
+              50.5140796
             ],
             [
-              -2.4563652,
-              50.5141046
+              -2.4563491,
+              50.5140867
             ],
             [
-              -2.4563517,
-              50.5141147
+              -2.4563356,
+              50.5140968
             ],
             [
-              -2.4563434,
-              50.5141268
+              -2.4563273,
+              50.5141089
             ],
             [
-              -2.456341,
-              50.51414
+              -2.4563249,
+              50.5141221
             ],
             [
-              -2.4563447,
-              50.514153
+              -2.4563286,
+              50.5141351
             ],
             [
-              -2.4563542,
-              50.5141648
+              -2.4563381,
+              50.5141469
             ],
             [
-              -2.4563687,
-              50.5141743
+              -2.4563526,
+              50.5141564
             ],
             [
-              -2.456387,
-              50.5141807
+              -2.4563709,
+              50.5141628
             ]
           ]
         ]
@@ -4934,7 +4876,8 @@
         "seamark:light:reference": "A 0062",
         "seamark:name": "St. Anthony",
         "seamark:type": "light_major",
-        "wikidata": "Q2686634"
+        "wikidata": "Q2686634",
+        "wikipedia": "en:St Anthony's Lighthouse"
       },
       "geometry": {
         "type": "Polygon",
@@ -5010,7 +4953,8 @@
         "seamark:name": "Whitby High",
         "seamark:type": "light_major",
         "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/whitby-lighthouse",
-        "wikidata": "Q7994169"
+        "wikidata": "Q7994169",
+        "wikipedia": "en:Whitby Lighthouse"
       },
       "geometry": {
         "type": "Polygon",
@@ -5090,6 +5034,7 @@
         "man_made": "lighthouse",
         "name": "Taigh-solais Rubha Àirinis",
         "name:en": "Arnish Point Lighthouse",
+        "name:gd": "Taigh-solais Rubha Àirinis",
         "operator": "Northern Lighthouse Board.",
         "seamark:light:1:character": "Fl",
         "seamark:light:1:colour": "white",
@@ -5221,84 +5166,84 @@
         "coordinates": [
           [
             [
-              -8.5333992,
-              51.604637
+              -8.5334976,
+              51.6046156
             ],
             [
-              -8.5333906,
-              51.6046452
+              -8.533489,
+              51.6046238
             ],
             [
-              -8.5333866,
-              51.6046547
+              -8.533485,
+              51.6046333
             ],
             [
-              -8.5333879,
-              51.6046645
+              -8.5334863,
+              51.6046431
             ],
             [
-              -8.5333942,
-              51.6046734
+              -8.5334926,
+              51.604652
             ],
             [
-              -8.5334048,
-              51.6046807
+              -8.5335032,
+              51.6046593
             ],
             [
-              -8.5334187,
-              51.6046854
+              -8.5335171,
+              51.604664
             ],
             [
-              -8.5334342,
-              51.604687
+              -8.5335326,
+              51.6046656
             ],
             [
-              -8.5334498,
-              51.6046854
+              -8.5335482,
+              51.604664
             ],
             [
-              -8.5334637,
-              51.6046808
+              -8.5335621,
+              51.6046594
             ],
             [
-              -8.5334745,
-              51.6046736
+              -8.5335729,
+              51.6046522
             ],
             [
-              -8.5334808,
-              51.6046647
+              -8.5335792,
+              51.6046433
             ],
             [
-              -8.5334822,
-              51.6046549
+              -8.5335806,
+              51.6046335
             ],
             [
-              -8.5334784,
-              51.6046454
+              -8.5335768,
+              51.604624
             ],
             [
-              -8.5334698,
-              51.6046372
+              -8.5335682,
+              51.6046158
             ],
             [
-              -8.5334574,
-              51.6046311
+              -8.5335558,
+              51.6046097
             ],
             [
-              -8.5334425,
-              51.6046279
+              -8.5335409,
+              51.6046065
             ],
             [
-              -8.5334267,
-              51.6046279
+              -8.5335251,
+              51.6046065
             ],
             [
-              -8.5334117,
-              51.604631
+              -8.5335101,
+              51.6046096
             ],
             [
-              -8.5333992,
-              51.604637
+              -8.5334976,
+              51.6046156
             ]
           ]
         ]
@@ -5323,7 +5268,8 @@
         "seamark:name": "Lismore",
         "seamark:type": "light_major",
         "source": "US NGA Pub. 114. 2011-05-26.",
-        "wikidata": "Q1828006"
+        "wikidata": "Q1828006",
+        "wikimedia_commons": "File:Lismore Lighthouse seen from a boat 5.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -5401,7 +5347,8 @@
         "seamark:light:sequence": "0.4+(14.6)",
         "seamark:name": "Rhu Stoer",
         "seamark:type": "light_major",
-        "wikidata": "Q2251111"
+        "wikidata": "Q2251111",
+        "wikipedia": "en:Stoer Head Lighthouse"
       },
       "geometry": {
         "type": "Polygon",
@@ -5467,15 +5414,13 @@
         "natural": "coastline",
         "operator": "Northern Lighthouse Board",
         "operator:wikidata": "Q918253",
-        "operator:wikipedia": "en:Northern Lighthouse Board",
+        "ref:GB:uprn": "117100889",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:height": "28",
         "seamark:light:period": "5",
-        "seamark:light:sequence": "0.3+(4.7)",
         "seamark:light:range": "18",
         "seamark:light:reference": "A 3108",
-
         "seamark:name": "Bell Rock",
         "seamark:radar_transponder:category": "racon",
         "seamark:radar_transponder:group": "M",
@@ -5876,128 +5821,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/799418474",
-        "building": "yes",
-        "man_made": "lighthouse",
-        "name": "Broadhaven Lighthouse",
-        "seamark:light:1:character": "Iso",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:height": "27",
-        "seamark:light:1:period": "4",
-        "seamark:light:1:range": "17",
-        "seamark:light:1:sector_end": "355",
-        "seamark:light:1:sector_start": "133",
-        "seamark:light:2:character": "Iso",
-        "seamark:light:2:colour": "red",
-        "seamark:light:2:height": "27",
-        "seamark:light:2:period": "4",
-        "seamark:light:2:range": "12",
-        "seamark:light:2:sector_end": "21",
-        "seamark:light:2:sector_start": "355",
-        "seamark:light:3:character": "Iso",
-        "seamark:light:3:colour": "red",
-        "seamark:light:3:height": "27",
-        "seamark:light:3:period": "4",
-        "seamark:light:3:range": "12",
-        "seamark:light:3:sector_end": "133",
-        "seamark:light:3:sector_start": "110",
-        "seamark:light:reference": "A 6266",
-        "seamark:name": "Broadhaven",
-        "seamark:type": "light_major",
-        "source": "Commissioners of Irish Lights"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -9.8886296,
-              54.2676945
-            ],
-            [
-              -9.8886279,
-              54.2677046
-            ],
-            [
-              -9.8886321,
-              54.2677144
-            ],
-            [
-              -9.8886417,
-              54.2677229
-            ],
-            [
-              -9.8886556,
-              54.267729
-            ],
-            [
-              -9.8886723,
-              54.2677319
-            ],
-            [
-              -9.8886896,
-              54.2677314
-            ],
-            [
-              -9.8887045,
-              54.267728
-            ],
-            [
-              -9.8887168,
-              54.267722
-            ],
-            [
-              -9.8887254,
-              54.2677141
-            ],
-            [
-              -9.8887292,
-              54.267705
-            ],
-            [
-              -9.8887281,
-              54.2676957
-            ],
-            [
-              -9.888722,
-              54.267687
-            ],
-            [
-              -9.8887116,
-              54.2676799
-            ],
-            [
-              -9.888698,
-              54.267675
-            ],
-            [
-              -9.8886824,
-              54.2676728
-            ],
-            [
-              -9.8886651,
-              54.2676738
-            ],
-            [
-              -9.8886494,
-              54.2676782
-            ],
-            [
-              -9.8886371,
-              54.2676853
-            ],
-            [
-              -9.8886296,
-              54.2676945
-            ]
-          ]
-        ]
-      },
-      "id": "way/799418474"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "way/843945354",
         "building:part": "yes",
         "man_made": "lighthouse",
@@ -6093,6 +5916,103 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "way/849455425",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "St. Abbs Lighthouse",
+        "operator": "Northern Lighthouse Board",
+        "operator:wikidata": "Q918253",
+        "seamark:landmark:height": "9",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "68",
+        "seamark:light:period": "10",
+        "seamark:light:range": "26",
+        "seamark:light:reference": "A 2850",
+        "seamark:light:sequence": "0.3+(9.7)",
+        "seamark:name": "St. Abbs",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "T",
+        "seamark:type": "light_major",
+        "wikidata": "Q5856384",
+        "wikipedia": "en:St Abb's Head Lighthouse"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.1388243,
+              55.9161888
+            ],
+            [
+              -2.1387617,
+              55.9161582
+            ],
+            [
+              -2.1387003,
+              55.9161978
+            ],
+            [
+              -2.1387011,
+              55.9161982
+            ],
+            [
+              -2.1386889,
+              55.9162188
+            ],
+            [
+              -2.1386925,
+              55.9162348
+            ],
+            [
+              -2.1387064,
+              55.9162489
+            ],
+            [
+              -2.1387286,
+              55.916259
+            ],
+            [
+              -2.1387559,
+              55.9162639
+            ],
+            [
+              -2.1387873,
+              55.9162623
+            ],
+            [
+              -2.1388148,
+              55.9162538
+            ],
+            [
+              -2.1388338,
+              55.9162397
+            ],
+            [
+              -2.1388411,
+              55.9162226
+            ],
+            [
+              -2.1388321,
+              55.9162013
+            ],
+            [
+              -2.1388179,
+              55.9161929
+            ],
+            [
+              -2.1388243,
+              55.9161888
+            ]
+          ]
+        ]
+      },
+      "id": "way/849455425"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "way/850237626",
         "building": "yes",
         "man_made": "lighthouse",
@@ -6107,87 +6027,88 @@
         "seamark:light:1:sequence": "0.5+(19.5)",
         "seamark:light:reference": "A 4610",
         "seamark:name": "Mull of Galloway",
-        "seamark:type": "light_major"
+        "seamark:type": "light_major",
+        "wikidata": "Q17568569"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -4.8572187,
-              54.6349804
+              -4.8571363,
+              54.6349898
             ],
             [
-              -4.8572398,
-              54.6350045
+              -4.8571676,
+              54.6350156
             ],
             [
-              -4.8572648,
-              54.6349943
+              -4.8571896,
+              54.6350059
             ],
             [
-              -4.8572825,
-              54.6349799
+              -4.8572101,
+              54.6349893
             ],
             [
-              -4.8572909,
-              54.6349629
+              -4.8572198,
+              54.6349696
             ],
             [
-              -4.8572891,
-              54.6349452
+              -4.8572178,
+              54.6349491
             ],
             [
-              -4.8572773,
-              54.6349289
+              -4.8572041,
+              54.6349302
             ],
             [
-              -4.8572511,
-              54.6349133
+              -4.8571738,
+              54.6349122
             ],
             [
-              -4.8572163,
-              54.6349052
+              -4.8571335,
+              54.6349028
             ],
             [
-              -4.8571787,
-              54.6349059
+              -4.85709,
+              54.6349036
             ],
             [
-              -4.8571587,
-              54.6349115
+              -4.8570668,
+              54.6349101
             ],
             [
-              -4.8571768,
-              54.6349322
+              -4.8570878,
+              54.634934
             ],
             [
-              -4.8571666,
-              54.634935
+              -4.8570759,
+              54.6349373
             ],
             [
-              -4.8571524,
-              54.6349478
+              -4.8570595,
+              54.6349521
             ],
             [
-              -4.857152,
-              54.634963
+              -4.857059,
+              54.6349697
             ],
             [
-              -4.8571623,
-              54.6349741
+              -4.857071,
+              54.6349825
             ],
             [
-              -4.85718,
-              54.6349814
+              -4.8570915,
+              54.634991
             ],
             [
-              -4.8572015,
-              54.6349834
+              -4.8571163,
+              54.6349933
             ],
             [
-              -4.8572187,
-              54.6349804
+              -4.8571363,
+              54.6349898
             ]
           ]
         ]
@@ -6406,8 +6327,118 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "way/925595640",
+        "access": "private",
+        "building": "lighthouse",
+        "man_made": "lighthouse",
+        "name": "Noup Head Lighthouse",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "79",
+        "seamark:light:1:period": "30",
+        "seamark:light:1:range": "20",
+        "seamark:light:1:sector_end": "242",
+        "seamark:light:1:sector_start": "335",
+        "seamark:light:1:sequence": "0.6+(29.4)",
+        "seamark:light:reference": "A 3736",
+        "seamark:name": "Noup Head",
+        "seamark:type": "light_major",
+        "wikidata": "Q7063872",
+        "wikipedia": "en:Noup Head Lighthouse"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.0702787,
+              59.3310954
+            ],
+            [
+              -3.0702646,
+              59.331036
+            ],
+            [
+              -3.0699742,
+              59.3310541
+            ],
+            [
+              -3.0699884,
+              59.3311135
+            ],
+            [
+              -3.0702787,
+              59.3310954
+            ]
+          ]
+        ]
+      },
+      "id": "way/925595640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/972652570",
+        "building": "yes",
+        "height": "38",
+        "man_made": "lighthouse",
+        "name": "Holy Isle Outer or Pillar Rock Lighthouse",
+        "operator": "Northern Lighthouse Board",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "2",
+        "seamark:light:height": "38",
+        "seamark:light:period": "20",
+        "seamark:light:range": "25",
+        "seamark:light:reference": "A 4330",
+        "seamark:light:sequence": "0.5+(0.5)+0.5+(18.5)",
+        "seamark:name": "Holy Island (Outer)",
+        "seamark:type": "light_major",
+        "wikidata": "Q26156177"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.0608913,
+              55.5173708
+            ],
+            [
+              -5.0608912,
+              55.5173624
+            ],
+            [
+              -5.060891,
+              55.5173108
+            ],
+            [
+              -5.0608636,
+              55.5173109
+            ],
+            [
+              -5.060785,
+              55.517311
+            ],
+            [
+              -5.0607853,
+              55.517371
+            ],
+            [
+              -5.0608913,
+              55.5173708
+            ]
+          ]
+        ]
+      },
+      "id": "way/972652570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "way/986424727",
         "man_made": "lighthouse",
+        "name": "Rubha nan Gall Lighthouse",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:height": "17",
@@ -6484,7 +6515,6 @@
       "type": "Feature",
       "properties": {
         "@id": "way/1026009309",
-        "area": "yes",
         "building": "lighthouse",
         "building:levels": "5",
         "man_made": "lighthouse",
@@ -6793,6 +6823,801 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "way/1031615636",
+        "alt_name": "Hastings Range Rear Light",
+        "building": "yes",
+        "height": "8",
+        "man_made": "lighthouse",
+        "name": "Hastings Lighthouse",
+        "seamark:light:category": "upper",
+        "seamark:light:character": "F",
+        "seamark:light:colour": "red",
+        "seamark:light:height": "55",
+        "seamark:light:range": "4",
+        "seamark:light:reference": "A 0858.1",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 114. 2011-05-26.",
+        "wikidata": "Q67219604"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.5898084,
+              50.8582172
+            ],
+            [
+              0.5898071,
+              50.8582026
+            ],
+            [
+              0.5898278,
+              50.8581937
+            ],
+            [
+              0.5898499,
+              50.8582012
+            ],
+            [
+              0.5898513,
+              50.8582168
+            ],
+            [
+              0.5898298,
+              50.8582251
+            ],
+            [
+              0.5898084,
+              50.8582172
+            ]
+          ]
+        ]
+      },
+      "id": "way/1031615636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1064721120",
+        "building": "yes",
+        "building:colour": "white",
+        "building:levels": "4",
+        "building:material": "stone",
+        "man_made": "lighthouse",
+        "name": "Skelligs Lighthouse",
+        "operator": "Commissioners of Irish Lights",
+        "roof:colour": "white",
+        "roof:shape": "cone",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:group": "3",
+        "seamark:light:1:height": "53",
+        "seamark:light:1:period": "15",
+        "seamark:light:1:range": "12",
+        "seamark:light:1:sector_end": "115",
+        "seamark:light:1:sector_start": "262",
+        "seamark:light:1:sequence": "0.3+(2.3)+0.3+(2.3)+0.3+(9.5)",
+        "seamark:light:1:visibility": "part_obscured",
+        "seamark:name": "Skelligs Rock",
+        "seamark:radio_station:category": "ais",
+        "seamark:source": "https://map.openseamap.org/ (ais);US NGA Pub.114.(2020)",
+        "seamark:type": "light_major",
+        "website": "https://www.irishlights.ie/tourism/our-lighthouses/skelligs-rock.aspx",
+        "wikidata": "Q28333635",
+        "year_of_construction": "1826"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10.5417508,
+              51.7686889
+            ],
+            [
+              -10.5417526,
+              51.7686847
+            ],
+            [
+              -10.5417532,
+              51.7686801
+            ],
+            [
+              -10.5417524,
+              51.7686755
+            ],
+            [
+              -10.54175,
+              51.768671
+            ],
+            [
+              -10.5417464,
+              51.7686668
+            ],
+            [
+              -10.5417414,
+              51.7686632
+            ],
+            [
+              -10.5417353,
+              51.7686602
+            ],
+            [
+              -10.5417284,
+              51.768658
+            ],
+            [
+              -10.5417209,
+              51.7686567
+            ],
+            [
+              -10.5417134,
+              51.7686563
+            ],
+            [
+              -10.541706,
+              51.7686568
+            ],
+            [
+              -10.5416993,
+              51.7686581
+            ],
+            [
+              -10.5416931,
+              51.7686601
+            ],
+            [
+              -10.541684,
+              51.768665
+            ],
+            [
+              -10.541679,
+              51.7686697
+            ],
+            [
+              -10.5416759,
+              51.768675
+            ],
+            [
+              -10.541675,
+              51.7686826
+            ],
+            [
+              -10.541678,
+              51.76869
+            ],
+            [
+              -10.5416845,
+              51.7686964
+            ],
+            [
+              -10.5416939,
+              51.7687013
+            ],
+            [
+              -10.5417054,
+              51.7687042
+            ],
+            [
+              -10.5417176,
+              51.7687047
+            ],
+            [
+              -10.5417296,
+              51.7687028
+            ],
+            [
+              -10.54174,
+              51.7686987
+            ],
+            [
+              -10.5417478,
+              51.7686928
+            ],
+            [
+              -10.5417508,
+              51.7686889
+            ]
+          ]
+        ]
+      },
+      "id": "way/1064721120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1081104200",
+        "building": "lighthouse",
+        "man_made": "lighthouse",
+        "seamark:fog_signal:group": "4",
+        "seamark:fog_signal:period": "60",
+        "seamark:landmark:height": "13",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "2",
+        "seamark:light:height": "14",
+        "seamark:light:period": "10",
+        "seamark:light:range": "22",
+        "seamark:light:reference": "A 0892",
+        "seamark:light:sequence": "0.5+(2)+0.5+(7)",
+        "seamark:type": "light_major",
+        "wikidata": "Q26671598"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.1948101,
+              51.0760483
+            ],
+            [
+              1.1948012,
+              51.07605
+            ],
+            [
+              1.1947918,
+              51.0760498
+            ],
+            [
+              1.1947831,
+              51.0760477
+            ],
+            [
+              1.1947759,
+              51.076044
+            ],
+            [
+              1.1947709,
+              51.0760391
+            ],
+            [
+              1.1947688,
+              51.0760333
+            ],
+            [
+              1.1947698,
+              51.0760273
+            ],
+            [
+              1.1947738,
+              51.0760219
+            ],
+            [
+              1.1947804,
+              51.0760176
+            ],
+            [
+              1.1947889,
+              51.0760149
+            ],
+            [
+              1.1947983,
+              51.0760141
+            ],
+            [
+              1.1948077,
+              51.0760153
+            ],
+            [
+              1.1948159,
+              51.0760184
+            ],
+            [
+              1.194822,
+              51.0760229
+            ],
+            [
+              1.1948254,
+              51.0760285
+            ],
+            [
+              1.1948258,
+              51.0760345
+            ],
+            [
+              1.1948231,
+              51.0760401
+            ],
+            [
+              1.1948176,
+              51.0760448
+            ],
+            [
+              1.1948101,
+              51.0760483
+            ]
+          ]
+        ]
+      },
+      "id": "way/1081104200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1082788983",
+        "building": "lighthouse",
+        "height": "37",
+        "man_made": "lighthouse",
+        "name": "Girdle Ness Lighthouse",
+        "operator": "Northern Lighthouse Board",
+        "seamark:information": "Obscured by Greg Ness when bearing more than about 020°. DGPS Station",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "2",
+        "seamark:light:height": "56",
+        "seamark:light:period": "20",
+        "seamark:light:range": "22",
+        "seamark:light:reference": "A 3246",
+        "seamark:light:sequence": "0.5+(2)+0.5+(17)",
+        "seamark:name": "Girdle Ness",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "G",
+        "seamark:radio_station:category": "dgps",
+        "seamark:type": "light_major",
+        "wikidata": "Q17576459",
+        "wikimedia_commons": "File:Girdle Ness Lighthouse - geograph.org.uk - 2153006.jpg",
+        "wikipedia": "en:Girdle Ness Lighthouse"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.048625,
+              57.1390359
+            ],
+            [
+              -2.0486329,
+              57.1390246
+            ],
+            [
+              -2.0486335,
+              57.1390126
+            ],
+            [
+              -2.048627,
+              57.1390012
+            ],
+            [
+              -2.0486141,
+              57.1389916
+            ],
+            [
+              -2.0485962,
+              57.1389848
+            ],
+            [
+              -2.0485827,
+              57.1389827
+            ],
+            [
+              -2.0485752,
+              57.1389815
+            ],
+            [
+              -2.0485533,
+              57.138982
+            ],
+            [
+              -2.0485329,
+              57.1389863
+            ],
+            [
+              -2.0485162,
+              57.138994
+            ],
+            [
+              -2.0485049,
+              57.1390041
+            ],
+            [
+              -2.0485002,
+              57.1390157
+            ],
+            [
+              -2.0485027,
+              57.1390276
+            ],
+            [
+              -2.0485123,
+              57.1390384
+            ],
+            [
+              -2.0485279,
+              57.139047
+            ],
+            [
+              -2.0485479,
+              57.1390524
+            ],
+            [
+              -2.0485699,
+              57.1390539
+            ],
+            [
+              -2.0485917,
+              57.1390514
+            ],
+            [
+              -2.0486108,
+              57.1390452
+            ],
+            [
+              -2.048625,
+              57.1390359
+            ]
+          ]
+        ]
+      },
+      "id": "way/1082788983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1166108452",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "Slyne Head Lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:group": "2",
+        "seamark:light:height": "35",
+        "seamark:light:period": "15",
+        "seamark:light:range": "19",
+        "seamark:light:reference": "A 6288",
+        "seamark:light:sequence": "0.1+(2.4)+0.1+(12.4)",
+        "seamark:name": "Slyne Head",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "T",
+        "seamark:radio_station:category": "ais",
+        "seamark:radio_station:mmsi": "992501175",
+        "seamark:source": "https://map.openseamap.org/ (ais)",
+        "seamark:type": "light_major",
+        "source": "Commissioners of Irish Lights",
+        "wikidata": "Q7542437",
+        "wikipedia": "en:Slyne Head Lighthouse"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10.2342111,
+              53.3999611
+            ],
+            [
+              -10.2341945,
+              53.3999613
+            ],
+            [
+              -10.2341788,
+              53.3999646
+            ],
+            [
+              -10.2341656,
+              53.3999706
+            ],
+            [
+              -10.2341561,
+              53.3999787
+            ],
+            [
+              -10.2341513,
+              53.3999882
+            ],
+            [
+              -10.2341516,
+              53.3999981
+            ],
+            [
+              -10.234158,
+              53.4000084
+            ],
+            [
+              -10.2341699,
+              53.4000168
+            ],
+            [
+              -10.2341859,
+              53.4000223
+            ],
+            [
+              -10.2342041,
+              53.4000242
+            ],
+            [
+              -10.2342222,
+              53.4000222
+            ],
+            [
+              -10.2342382,
+              53.4000167
+            ],
+            [
+              -10.23425,
+              53.4000083
+            ],
+            [
+              -10.2342562,
+              53.3999979
+            ],
+            [
+              -10.2342562,
+              53.3999869
+            ],
+            [
+              -10.2342507,
+              53.3999775
+            ],
+            [
+              -10.2342407,
+              53.3999696
+            ],
+            [
+              -10.234227,
+              53.399964
+            ],
+            [
+              -10.2342111,
+              53.3999611
+            ]
+          ]
+        ]
+      },
+      "id": "way/1166108452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1265020213",
+        "building": "yes",
+        "man_made": "lighthouse",
+        "name": "South Bishop Lighthouse",
+        "seamark:fog_signal:category": "horn",
+        "seamark:fog_signal:group": "3",
+        "seamark:fog_signal:period": "45",
+        "seamark:landmark:height": "11",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "44",
+        "seamark:light:period": "5",
+        "seamark:light:range": "16",
+        "seamark:light:reference": "A 5276",
+        "seamark:light:sequence": "0.1+(4.9)",
+        "seamark:name": "South Bishop",
+        "seamark:radar_transponder:category": "racon",
+        "seamark:radar_transponder:group": "O",
+        "seamark:radar_transponder:period": "30",
+        "seamark:type": "light_major",
+        "source": "US NGA Pub. 114. 2011-05-26.;local knowledge",
+        "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/south-bishop-lighthouse",
+        "wikidata": "Q7566333",
+        "wikipedia": "en:South Bishop Lighthouse"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.4120712,
+              51.8528235
+            ],
+            [
+              -5.4121652,
+              51.8527847
+            ],
+            [
+              -5.4121511,
+              51.8527717
+            ],
+            [
+              -5.4121894,
+              51.8527558
+            ],
+            [
+              -5.4120442,
+              51.8526218
+            ],
+            [
+              -5.4120867,
+              51.8526042
+            ],
+            [
+              -5.4120877,
+              51.8525968
+            ],
+            [
+              -5.4120568,
+              51.8525833
+            ],
+            [
+              -5.4120319,
+              51.8525642
+            ],
+            [
+              -5.4120079,
+              51.8525106
+            ],
+            [
+              -5.4119436,
+              51.8525415
+            ],
+            [
+              -5.4117635,
+              51.8525465
+            ],
+            [
+              -5.4116155,
+              51.852608
+            ],
+            [
+              -5.4118039,
+              51.852781
+            ],
+            [
+              -5.4118736,
+              51.852752
+            ],
+            [
+              -5.4118812,
+              51.852759
+            ],
+            [
+              -5.4118512,
+              51.8527985
+            ],
+            [
+              -5.4118629,
+              51.8528118
+            ],
+            [
+              -5.411949,
+              51.8528371
+            ],
+            [
+              -5.4119758,
+              51.8528315
+            ],
+            [
+              -5.4120038,
+              51.8527973
+            ],
+            [
+              -5.412034,
+              51.8528252
+            ],
+            [
+              -5.412061,
+              51.8528141
+            ],
+            [
+              -5.4120712,
+              51.8528235
+            ]
+          ]
+        ]
+      },
+      "id": "way/1265020213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1357542818",
+        "building": "yes",
+        "height": "48",
+        "man_made": "lighthouse",
+        "name": "Rinns of Islay Lighthouse",
+        "roof:colour": "black",
+        "roof:height": "2.5",
+        "roof:levels": "0",
+        "roof:shape": "dome",
+        "seamark:light:1:character": "Fl",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "46",
+        "seamark:light:1:period": "5",
+        "seamark:light:1:range": "24",
+        "seamark:light:1:sector_end": "184",
+        "seamark:light:1:sector_start": "256",
+        "seamark:light:1:sequence": "0.2+(4.8)",
+        "seamark:light:reference": "A 4256",
+        "seamark:name": "Rinns of Islay",
+        "seamark:type": "light_major",
+        "wikidata": "Q2148102"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.5131288,
+              55.6730608
+            ],
+            [
+              -6.5131215,
+              55.6730704
+            ],
+            [
+              -6.5131205,
+              55.6730809
+            ],
+            [
+              -6.513126,
+              55.6730909
+            ],
+            [
+              -6.5131371,
+              55.6730993
+            ],
+            [
+              -6.5131527,
+              55.673105
+            ],
+            [
+              -6.5131708,
+              55.6731073
+            ],
+            [
+              -6.5131892,
+              55.6731061
+            ],
+            [
+              -6.5132043,
+              55.6731019
+            ],
+            [
+              -6.5132163,
+              55.6730954
+            ],
+            [
+              -6.5132242,
+              55.673087
+            ],
+            [
+              -6.5132271,
+              55.6730778
+            ],
+            [
+              -6.5132247,
+              55.6730684
+            ],
+            [
+              -6.5132174,
+              55.6730599
+            ],
+            [
+              -6.5132058,
+              55.6730531
+            ],
+            [
+              -6.513191,
+              55.6730487
+            ],
+            [
+              -6.5131745,
+              55.6730471
+            ],
+            [
+              -6.513158,
+              55.6730484
+            ],
+            [
+              -6.5131414,
+              55.6730531
+            ],
+            [
+              -6.5131288,
+              55.6730608
+            ]
+          ]
+        ]
+      },
+      "id": "way/1357542818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/13700557",
         "seamark:light:character": "F",
         "seamark:light:colour": "green",
@@ -6801,8 +7626,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.9863437,
-          50.708308
+          -1.9862872,
+          50.7082783
         ]
       },
       "id": "node/13700557"
@@ -6930,8 +7755,9 @@
       "type": "Feature",
       "properties": {
         "@id": "node/87885579",
+        "description": "North Ronaldsay (\"New\") Lighthouse",
         "man_made": "lighthouse",
-        "name": "North Ronaldsay (\"New\") Lighthouse",
+        "name": "North Ronaldsay Lighthouse",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:height": "43",
@@ -6985,43 +7811,11 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.0612136,
-          57.1456695
+          -2.0613638,
+          57.1456419
         ]
       },
       "id": "node/175990174"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/194470712",
-        "man_made": "lighthouse",
-        "name": "Cape Wrath",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:group": "4",
-        "seamark:light:height": "122",
-        "seamark:light:period": "30",
-        "seamark:light:range": "22",
-        "seamark:light:reference": "A 3880",
-        "seamark:light:sequence": "0.2+(3.6)+0.2+(3.6)+0.2+(3.6)+0.2+(18.4)",
-        "seamark:name": "Cape Wrath",
-        "seamark:radio_station:category": "ais",
-        "seamark:radio_station:mmsi": "992351087",
-        "seamark:type": "light_major",
-        "source": "survey",
-        "website": "http://www.visitcapewrath.com/around-cape-wrath/the-lighthouse/",
-        "wikidata": "Q15207438",
-        "wikipedia": "en:Cape Wrath Lighthouse"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -4.9991625,
-          58.6254769
-        ]
-      },
-      "id": "node/194470712"
     },
     {
       "type": "Feature",
@@ -7257,8 +8051,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.7862901,
-          51.2454565
+          -3.786597,
+          51.2455341
         ]
       },
       "id": "node/269343948"
@@ -7290,31 +8084,6 @@
         ]
       },
       "id": "node/286746302"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/287046728",
-        "man_made": "lighthouse",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:group": "2",
-        "seamark:light:height": "38",
-        "seamark:light:period": "20",
-        "seamark:light:range": "25",
-        "seamark:light:reference": "A 4330",
-        "seamark:light:sequence": "0.5+(0.5)+0.5+(18.5)",
-        "seamark:name": "Holy Island (Outer)",
-        "seamark:type": "light_major"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.0606881,
-          55.5173054
-        ]
-      },
-      "id": "node/287046728"
     },
     {
       "type": "Feature",
@@ -7358,7 +8127,6 @@
       "type": "Feature",
       "properties": {
         "@id": "node/292147780",
-        "man_made": "lighthouse",
         "seamark:fog_signal:category": "horn",
         "seamark:fog_signal:group": "2",
         "seamark:fog_signal:period": "45",
@@ -7374,7 +8142,8 @@
         "seamark:name": "Bardsey",
         "seamark:type": "light_major",
         "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/bardsey-lighthouse",
-        "wikidata": "Q10580915"
+        "wikidata": "Q10580915",
+        "wikipedia": "en:Bardsey Lighthouse"
       },
       "geometry": {
         "type": "Point",
@@ -7439,7 +8208,8 @@
         "seamark:name": "Point of Ayre",
         "seamark:radar_transponder:category": "racon",
         "seamark:type": "light_major",
-        "wikidata": "Q15267248"
+        "wikidata": "Q15267248",
+        "wikipedia": "en:Point of Ayre Lighthouse"
       },
       "geometry": {
         "type": "Point",
@@ -7471,45 +8241,11 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.7744116,
-          57.4704159
+          -1.7744572,
+          57.4704426
         ]
       },
       "id": "node/301240357"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/322520598",
-        "man_made": "lighthouse",
-        "name": "Slyne Head Lighthouse",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:group": "2",
-        "seamark:light:height": "35",
-        "seamark:light:period": "15",
-        "seamark:light:range": "19",
-        "seamark:light:reference": "A 6288",
-        "seamark:light:sequence": "0.1+(2.4)+0.1+(12.4)",
-        "seamark:name": "Slyne Head",
-        "seamark:radar_transponder:category": "racon",
-        "seamark:radar_transponder:group": "T",
-        "seamark:radio_station:category": "ais",
-        "seamark:radio_station:mmsi": "992501175",
-        "seamark:source": "https://map.openseamap.org/ (ais)",
-        "seamark:type": "light_major",
-        "source": "Commissioners of Irish Lights",
-        "wikidata": "Q7542437",
-        "wikipedia": "en:Slyne Head Lighthouse"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -10.234183,
-          53.39995
-        ]
-      },
-      "id": "node/322520598"
     },
     {
       "type": "Feature",
@@ -7568,7 +8304,8 @@
         "seamark:radio_station:category": "ais",
         "seamark:radio_station:mmsi": "992501127",
         "seamark:type": "light_major",
-        "source": "Commissioners of Irish Lights"
+        "source": "Commissioners of Irish Lights",
+        "wikidata": "Q28333622"
       },
       "geometry": {
         "type": "Point",
@@ -7813,49 +8550,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/322520629",
-        "man_made": "lighthouse",
-        "name": "Rathlin East (Altacarry Head) Lighthouse",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:group": "4",
-        "seamark:light:1:height": "74",
-        "seamark:light:1:period": "20",
-        "seamark:light:1:range": "26",
-        "seamark:light:1:sector_end": "6",
-        "seamark:light:1:sector_start": "110",
-        "seamark:light:1:sequence": "0.2+(2.3),0.2+(2.3),0.2+(2.3),0.2+(12.3)",
-        "seamark:light:2:character": "Fl",
-        "seamark:light:2:colour": "white",
-        "seamark:light:2:group": "4",
-        "seamark:light:2:height": "74",
-        "seamark:light:2:period": "20",
-        "seamark:light:2:range": "26",
-        "seamark:light:2:sector_end": "58",
-        "seamark:light:2:sector_start": "36",
-        "seamark:light:2:sequence": "0.2+(2.3),0.2+(2.3),0.2+(2.3),0.2+(12.3)",
-        "seamark:light:reference": "A 6062",
-        "seamark:name": "Rathlin East",
-        "seamark:radar_transponder:category": "racon",
-        "seamark:radar_transponder:group": "G",
-        "seamark:radar_transponder:sector_end": "3",
-        "seamark:radar_transponder:sector_start": "89",
-        "seamark:type": "light_major",
-        "source": "Commissioners of Irish Lights",
-        "wikidata": "Q28465954"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.1711214,
-          55.3015803
-        ]
-      },
-      "id": "node/322520629"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/322520637",
         "man_made": "lighthouse",
         "name": "Bull Rock Lighthouse",
@@ -8060,8 +8754,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.2074167,
-          52.2029167
+          -6.2069989,
+          52.2029602
         ]
       },
       "id": "node/322520666"
@@ -8121,42 +8815,11 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -7.8421769,
-          51.9428058
+          -7.8420461,
+          51.9428654
         ]
       },
       "id": "node/322520679"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/322520682",
-        "man_made": "survey_point",
-        "name": "Rathlin West Lighthouse & RSPB Sea Bird Centre",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "red",
-        "seamark:light:1:height": "62",
-        "seamark:light:1:period": "5",
-        "seamark:light:1:range": "22",
-        "seamark:light:1:sector_end": "225",
-        "seamark:light:1:sector_start": "15",
-        "seamark:light:1:sequence": "0.4+(4.6)",
-        "seamark:light:reference": "A 6064",
-        "seamark:name": "Rathlin West",
-        "seamark:radio_station:category": "ais",
-        "seamark:radio_station:mmsi": "992351000",
-        "seamark:source": "https://map.openseamap.org/ (ais)",
-        "seamark:type": "light_major",
-        "source": "Commissioners of Irish Lights + visit"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.28025,
-          55.300867
-        ]
-      },
-      "id": "node/322520682"
     },
     {
       "type": "Feature",
@@ -8712,8 +9375,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.191233,
-          55.258883
+          -6.1912487,
+          55.2588406
         ]
       },
       "id": "node/322520730"
@@ -8769,47 +9432,18 @@
         "seamark:name": "Beachy Head Lighthouse",
         "seamark:type": "light_major",
         "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/beachy-head-lighthouse",
-        "wikidata": "Q15197902"
+        "wikidata": "Q15197902",
+        "wikimedia_commons": "Category:Beachy Head Lighthouse",
+        "wikipedia": "en:Beachy Head Lighthouse"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.2414799,
-          50.7337039
+          0.2414829,
+          50.7337669
         ]
       },
       "id": "node/350509083"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/366588870",
-        "alt_name": "Niton Lighthouse",
-        "man_made": "lighthouse",
-        "name": "St. Catherine's Lighthouse",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:height": "41",
-        "seamark:light:1:period": "5",
-        "seamark:light:1:range": "26",
-        "seamark:light:1:sector_end": "117",
-        "seamark:light:1:sector_start": "257",
-        "seamark:light:1:sequence": "0.2+(4.8)",
-        "seamark:light:reference": "A 0774",
-        "seamark:name": "St. Catherine's Point.",
-        "seamark:radio_station:category": "dgps",
-        "seamark:type": "light_major",
-        "tourism": "Historic Site",
-        "wikidata": "Q5473757"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.2978872,
-          50.5756119
-        ]
-      },
-      "id": "node/366588870"
     },
     {
       "type": "Feature",
@@ -8837,6 +9471,7 @@
         "seamark:radio_station:category": "ais",
         "seamark:radio_station:mmsi": "992356014",
         "seamark:type": "light_major",
+        "website": "https://www.nlb.org.uk/lighthouses/eilean-glas/",
         "wikidata": "Q14544324",
         "wikipedia": "en:Eilean Glas Lighthouse"
       },
@@ -8848,39 +9483,6 @@
         ]
       },
       "id": "node/388215533"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/411711267",
-        "man_made": "lighthouse",
-        "name": "St. Abbs Lighthouse",
-        "operator": "Northern Lighthouse Board",
-        "operator:wikidata": "Q918253",
-        "operator:wikipedia": "en:Northern Lighthouse Board",
-        "seamark:landmark:height": "9",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:height": "68",
-        "seamark:light:period": "10",
-        "seamark:light:range": "26",
-        "seamark:light:reference": "A 2850",
-        "seamark:light:sequence": "0.3+(9.7)",
-        "seamark:name": "St. Abbs",
-        "seamark:radar_transponder:category": "racon",
-        "seamark:radar_transponder:group": "T",
-        "seamark:type": "light_major",
-        "wikidata": "Q5856384",
-        "wikipedia": "en:St Abb's Head Lighthouse"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.1387843,
-          55.9162155
-        ]
-      },
-      "id": "node/411711267"
     },
     {
       "type": "Feature",
@@ -8934,7 +9536,6 @@
       "properties": {
         "@id": "node/427582786",
         "man_made": "lighthouse",
-        "name": "Southwold Lighthouse",
         "seamark:landmark:category": "tower",
         "seamark:landmark:colour": "white",
         "seamark:landmark:height": "31",
@@ -8951,47 +9552,16 @@
         "seamark:name": "Southwold",
         "seamark:radio_station:category": "ais",
         "seamark:radio_station:mmsi": "992351019",
-        "seamark:type": "light_major",
-        "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/southwold-lighthouse",
-        "wikidata": "Q7571483"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.6813393,
-          52.3272264
-        ]
-      },
-      "id": "node/427582786"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/465643775",
-        "man_made": "lighthouse",
-        "seamark:information": "Obscured by Greg Ness when bearing more than about 020°. DGPS Station",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:group": "2",
-        "seamark:light:height": "56",
-        "seamark:light:period": "20",
-        "seamark:light:range": "22",
-        "seamark:light:reference": "A 3246",
-        "seamark:light:sequence": "0.5+(2)+0.5+(17)",
-        "seamark:name": "Girdle Ness",
-        "seamark:radar_transponder:category": "racon",
-        "seamark:radar_transponder:group": "G",
-        "seamark:radio_station:category": "dgps",
         "seamark:type": "light_major"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.0485474,
-          57.1390423
+          1.6813921,
+          52.3272416
         ]
       },
-      "id": "node/465643775"
+      "id": "node/427582786"
     },
     {
       "type": "Feature",
@@ -9047,8 +9617,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.2482245,
-          50.8308789
+          -0.2481893,
+          50.8308632
         ]
       },
       "id": "node/473772904"
@@ -9131,6 +9701,7 @@
         "@id": "node/529453794",
         "man_made": "lighthouse",
         "name": "The Heugh Lighthouse",
+        "operator": "PD Ports",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:height": "19",
@@ -9141,13 +9712,14 @@
         "seamark:type": "light_major",
         "source": "http://www.worldwidelighthouses.com/Lighthouses/English-Lighthouses/Privately-Owned/The-Heugh",
         "source_ref": "https://en.wikipedia.org/wiki/Heugh_Lighthouse",
-        "wikidata": "Q19874133"
+        "wikidata": "Q19874133",
+        "wikipedia": "en:Heugh Lighthouse"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.1761433,
-          54.6964978
+          -1.1761594,
+          54.6965071
         ]
       },
       "id": "node/529453794"
@@ -9186,6 +9758,7 @@
       "properties": {
         "@id": "node/530980938",
         "man_made": "lighthouse",
+        "name": "Sanda Island Lighthouse",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:height": "50",
@@ -9225,7 +9798,8 @@
         "seamark:light:reference": "A 4276",
         "seamark:name": "Davaar",
         "seamark:type": "light_major",
-        "source": "os7"
+        "source": "os7",
+        "wikidata": "Q17772261"
       },
       "geometry": {
         "type": "Point",
@@ -9301,44 +9875,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/538977739",
-        "alt_name": "South Pier Light",
-        "man_made": "lighthouse",
-        "seamark:landmark:height": "13",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:height": "16",
-        "seamark:light:1:period": "12",
-        "seamark:light:1:range": "20",
-        "seamark:light:1:sector_end": "274.0",
-        "seamark:light:1:sector_start": "20.0",
-        "seamark:light:1:sequence": "1.5+(10.5)",
-        "seamark:light:2:character": "Fl",
-        "seamark:light:2:colour": "red",
-        "seamark:light:2:height": "16",
-        "seamark:light:2:period": "12",
-        "seamark:light:2:range": "17",
-        "seamark:light:2:sector_end": "357.0",
-        "seamark:light:2:sector_start": "274.0",
-        "seamark:light:2:sequence": "1.5+(10.5)",
-        "seamark:light:reference": "A 2626",
-        "seamark:name": "South Gare",
-        "seamark:type": "light_major",
-        "source": "NPE",
-        "wikidata": "Q15278683"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.137441,
-          54.6474079
-        ]
-      },
-      "id": "node/538977739"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/552361746",
         "man_made": "lighthouse",
         "name": "Point Lynas Lighthouse",
@@ -9360,7 +9896,8 @@
         "seamark:radio_station:category": "dgps",
         "seamark:type": "light_major",
         "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/point-lynas-lighthouse",
-        "wikidata": "Q7208082"
+        "wikidata": "Q7208082",
+        "wikipedia": "en:Point Lynas Lighthouse"
       },
       "geometry": {
         "type": "Point",
@@ -9377,6 +9914,7 @@
         "@id": "node/603327299",
         "man_made": "lighthouse",
         "name": "Pentland Skerries Lighthouse",
+        "ref:GB:uprn": "134017024",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:group": "3",
@@ -9406,6 +9944,7 @@
         "@id": "node/610464527",
         "man_made": "lighthouse",
         "name": "Stroma Lighthouse",
+        "ref:canmore": "104143",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:group": "2",
@@ -9567,8 +10106,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.273319,
-          58.9356593
+          -3.2732917,
+          58.9356656
         ]
       },
       "id": "node/612583346"
@@ -9577,11 +10116,12 @@
       "type": "Feature",
       "properties": {
         "@id": "node/672768557",
+        "seamark:landmark:construction": "masonry",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "red",
         "seamark:light:height": "18",
         "seamark:light:period": "5",
-        "seamark:light:range": "7",
+        "seamark:light:range": "5",
         "seamark:light:reference": "A 0688",
         "seamark:light:sequence": "0.7+(4.3)",
         "seamark:name": "Spit Sand Fort",
@@ -9590,8 +10130,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.098963,
-          50.7704862
+          -1.0990609,
+          50.7706236
         ]
       },
       "id": "node/672768557"
@@ -9600,12 +10140,14 @@
       "type": "Feature",
       "properties": {
         "@id": "node/672768629",
+        "seamark:landmark:category": "dome",
+        "seamark:landmark:construction": "masonry",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:group": "3",
         "seamark:light:height": "16",
         "seamark:light:period": "10",
-        "seamark:light:range": "8",
+        "seamark:light:range": "5",
         "seamark:light:reference": "A 0760",
         "seamark:light:sequence": "0.5+(1)+0.5+(1)+0.5+(6.5)",
         "seamark:name": "St. Helen's Fort",
@@ -9614,8 +10156,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.0837176,
-          50.7049624
+          -1.0839657,
+          50.7050635
         ]
       },
       "id": "node/672768629"
@@ -9624,11 +10166,13 @@
       "type": "Feature",
       "properties": {
         "@id": "node/672768667",
+        "seamark:landmark:category": "dome",
+        "seamark:landmark:construction": "masonry",
         "seamark:light:character": "Iso",
         "seamark:light:colour": "green",
         "seamark:light:height": "21",
         "seamark:light:period": "2",
-        "seamark:light:range": "8",
+        "seamark:light:range": "5",
         "seamark:light:reference": "A 0750",
         "seamark:name": "Horse Sand Fort",
         "seamark:type": "light_major"
@@ -9716,7 +10260,8 @@
         "seamark:name": "Rubh Reidh",
         "seamark:radio_station:category": "ais",
         "seamark:type": "light_major",
-        "wikidata": "Q7375626"
+        "wikidata": "Q7375626",
+        "wikipedia": "en:Rua Reidh Lighthouse"
       },
       "geometry": {
         "type": "Point",
@@ -9731,7 +10276,6 @@
       "type": "Feature",
       "properties": {
         "@id": "node/720833941",
-        "man_made": "lighthouse",
         "seamark:fog_signal:category": "horn",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
@@ -9785,7 +10329,6 @@
       "type": "Feature",
       "properties": {
         "@id": "node/746831092",
-        "man_made": "lighthouse",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:group": "3",
@@ -9796,15 +10339,13 @@
         "seamark:light:sequence": "0.5+(2)+0.5+(2)+0.5+(24.5)",
         "seamark:name": "Maughold Head",
         "seamark:type": "light_major",
-        "source": "Isle of Man Government aerial imagery (2001)",
-        "wikidata": "Q18431331",
-        "wikipedia": "en:Maughold Head Lighthouse"
+        "source": "Isle of Man Government aerial imagery (2001)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -4.3094471,
-          54.2957125
+          -4.3095219,
+          54.2957561
         ]
       },
       "id": "node/746831092"
@@ -9899,6 +10440,7 @@
         "@id": "node/826383904",
         "man_made": "lighthouse",
         "name": "Eddystone Lighthouse",
+        "name:kw": "Golowji Men Gorthfros",
         "ref:admiralty": "A0098",
         "ref:nga": "114-132",
         "seamark:fog_signal:category": "horn",
@@ -9939,8 +10481,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -4.2656389,
-          50.18075
+          -4.2680422,
+          50.1837523
         ]
       },
       "id": "node/826383904"
@@ -9949,7 +10491,6 @@
       "type": "Feature",
       "properties": {
         "@id": "node/826650490",
-        "historic": "fort",
         "name": "Haile Sand Fort",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "red",
@@ -9998,7 +10539,8 @@
         "seamark:light:reference": "A 4254",
         "seamark:name": "Port Charlotte",
         "seamark:type": "light_major",
-        "wikidata": "Q29037510"
+        "wikidata": "Q29037510",
+        "wikipedia": "en:Loch Indaal"
       },
       "geometry": {
         "type": "Point",
@@ -10008,34 +10550,6 @@
         ]
       },
       "id": "node/839715997"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/840829617",
-        "man_made": "lighthouse",
-        "name": "Rinns of Islay Lighthouse",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:height": "46",
-        "seamark:light:1:period": "5",
-        "seamark:light:1:range": "24",
-        "seamark:light:1:sector_end": "184",
-        "seamark:light:1:sector_start": "256",
-        "seamark:light:1:sequence": "0.2+(4.8)",
-        "seamark:light:reference": "A 4256",
-        "seamark:name": "Rhinns of Islay",
-        "seamark:type": "light_major",
-        "wikidata": "Q2148102"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.5132529,
-          55.6731114
-        ]
-      },
-      "id": "node/840829617"
     },
     {
       "type": "Feature",
@@ -10088,7 +10602,8 @@
         "seamark:name": "Rattray Head",
         "seamark:radar_transponder:category": "racon",
         "seamark:radar_transponder:group": "M",
-        "seamark:type": "light_major"
+        "seamark:type": "light_major",
+        "wikidata": "Q17777585"
       },
       "geometry": {
         "type": "Point",
@@ -10108,7 +10623,6 @@
         "name": "Fife Ness",
         "operator": "Northern Lighthouse Board",
         "operator:wikidata": "Q918253",
-        "operator:wikipedia": "en:Northern Lighthouse Board",
         "seamark:light:1:character": "Iso",
         "seamark:light:1:colour": "white",
         "seamark:light:1:height": "12",
@@ -10142,8 +10656,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.5858601,
-          56.278843
+          -2.5858673,
+          56.278833
         ]
       },
       "id": "node/898145479"
@@ -10231,7 +10745,8 @@
         "seamark:light:reference": "A 3544",
         "seamark:name": "Noss Head",
         "seamark:type": "light_major",
-        "wikidata": "Q17567439"
+        "wikidata": "Q17567439",
+        "wikipedia": "en:Noss Head Lighthouse"
       },
       "geometry": {
         "type": "Point",
@@ -10288,7 +10803,8 @@
         "seamark:light:5:sector_start": "271",
         "seamark:light:5:sequence": "0.3+(2.7)",
         "seamark:light:reference": "A 3636",
-        "seamark:type": "light_major"
+        "seamark:type": "light_major",
+        "wikidata": "Q28890039"
       },
       "geometry": {
         "type": "Point",
@@ -10486,31 +11002,29 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1066115114",
-        "man_made": "lighthouse",
-        "name": "Skaddan South Lighthouse",
-        "seamark:light:1:character": "Fl",
+        "@id": "node/991794108",
+        "man_made": "tower",
+        "seamark:light:1:character": "Iso",
         "seamark:light:1:colour": "white",
-        "seamark:light:1:group": "4",
-        "seamark:light:1:height": "32",
-        "seamark:light:1:period": "30",
-        "seamark:light:1:range": "24",
-        "seamark:light:1:sector_end": "146",
-        "seamark:light:1:sector_start": "260",
-        "seamark:light:1:sequence": "0.2+(3.6),0.2+(3.6),0.2+(3.6),0.2+(18.4)",
-        "seamark:light:reference": "A 3750",
-        "seamark:name": "Skadan",
+        "seamark:light:1:height": "23",
+        "seamark:light:1:period": "5",
+        "seamark:light:1:range": "20",
+        "seamark:light:1:sector_end": "82",
+        "seamark:light:1:sector_start": "70",
+        "seamark:name": "Havens Tanker Traffic Warning Light",
+        "seamark:status": "occasional",
         "seamark:type": "light_major",
-        "wikidata": "Q17851293"
+        "source": "survey",
+        "tower:type": "radar"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.6526862,
-          59.5138965
+          0.4905911,
+          51.4622048
         ]
       },
-      "id": "node/1066115114"
+      "id": "node/991794108"
     },
     {
       "type": "Feature",
@@ -10552,8 +11066,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.993074,
-          50.707295
+          -1.9931193,
+          50.7073436
         ]
       },
       "id": "node/1086201410"
@@ -10595,7 +11109,8 @@
         "seamark:name": "Cantick Head",
         "seamark:type": "light_major",
         "source": "US NGA Pub. 114. 2011-05-26.",
-        "wikidata": "Q17829260"
+        "wikidata": "Q17829260",
+        "wikipedia": "en:Cantick Head Lighthouse"
       },
       "geometry": {
         "type": "Point",
@@ -10605,35 +11120,6 @@
         ]
       },
       "id": "node/1329027607"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1329725129",
-        "man_made": "lighthouse",
-        "name": "Noup Head Lighthouse",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:height": "79",
-        "seamark:light:1:period": "30",
-        "seamark:light:1:range": "20",
-        "seamark:light:1:sector_end": "242",
-        "seamark:light:1:sector_start": "335",
-        "seamark:light:1:sequence": "0.6+(29.4)",
-        "seamark:light:reference": "A 3736",
-        "seamark:name": "Noup Head",
-        "seamark:type": "light_major",
-        "wikidata": "Q7063872",
-        "wikipedia": "en:Noup Head Lighthouse"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -3.0701863,
-          59.3310822
-        ]
-      },
-      "id": "node/1329725129"
     },
     {
       "type": "Feature",
@@ -10656,68 +11142,11 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.6720538,
-          58.8964102
+          -2.6720261,
+          58.8964866
         ]
       },
       "id": "node/1329815864"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1329818028",
-        "man_made": "lighthouse",
-        "name": "Auskerry LIghthouse",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:height": "34",
-        "seamark:light:period": "20",
-        "seamark:light:range": "18",
-        "seamark:light:reference": "A 3680",
-        "seamark:light:sequence": "0.5+(19.5)",
-        "seamark:name": "Auskerry",
-        "seamark:type": "light_major",
-        "wikidata": "Q3378153"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.5722245,
-          59.0258107
-        ]
-      },
-      "id": "node/1329818028"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1329826961",
-        "man_made": "lighthouse",
-        "name": "Brough of Birsay Lighthouse",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:group": "3",
-        "seamark:light:height": "52",
-        "seamark:light:period": "25",
-        "seamark:light:range": "18",
-        "seamark:light:reference": "A 3700",
-        "seamark:light:sequence": "0.2+(4)+0.2+(4)+0.2+(16.4)",
-        "seamark:name": "Brough of Birsay",
-        "seamark:radio_station:category": "ais",
-        "seamark:radio_station:mmsi": "992351101",
-        "seamark:type": "light_major",
-        "url": "https://www.nlb.org.uk/lighthouses/brough-of-birsay/",
-        "wikidata": "Q15205148",
-        "wikipedia": "en:Brough of Birsay Lighthouse"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -3.3391792,
-          59.1368785
-        ]
-      },
-      "id": "node/1329826961"
     },
     {
       "type": "Feature",
@@ -10743,8 +11172,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -5.659298,
-          54.2263063
+          -5.6593905,
+          54.2263298
         ]
       },
       "id": "node/1352863234"
@@ -10754,6 +11183,7 @@
       "properties": {
         "@id": "node/1509182102",
         "man_made": "lighthouse",
+        "name": "Coquet Lighthouse",
         "seamark:fog_signal:category": "horn",
         "seamark:fog_signal:group": "1",
         "seamark:fog_signal:period": "30",
@@ -10848,38 +11278,10 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1541372711",
-        "man_made": "lighthouse",
-        "name": "Royal Sovereign Lighthouse",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:height": "28",
-        "seamark:light:period": "20",
-        "seamark:light:range": "12",
-        "seamark:light:reference": "A 0843",
-        "seamark:light:sequence": "1.4+(18.6)",
-        "seamark:name": "Royal Sovereign",
-        "seamark:radar_transponder:category": "ais",
-        "seamark:radio_station:mmsi": "992359001",
-        "seamark:source": "https://map.openseamap.org",
-        "seamark:type": "light_major",
-        "wikidata": "Q3739811",
-        "wikipedia": "en:Royal Sovereign Lighthouse"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.4349612,
-          50.723833
-        ]
-      },
-      "id": "node/1541372711"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/1541372720",
         "man_made": "lighthouse",
+        "name": "Admiralty Pier Lighthouse",
+        "operator": "Dover Harbour Board",
         "seamark:fog_signal:category": "horn",
         "seamark:fog_signal:group": "1",
         "seamark:fog_signal:period": "10",
@@ -10895,8 +11297,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.3277101,
-          51.1113931
+          1.3277371,
+          51.1114209
         ]
       },
       "id": "node/1541372720"
@@ -10915,7 +11317,7 @@
         "seamark:light:1:group": "4",
         "seamark:light:1:height": "37",
         "seamark:light:1:period": "15",
-        "seamark:light:1:range": "23",
+        "seamark:light:1:range": "12",
         "seamark:light:1:sector_end": "27",
         "seamark:light:1:sector_start": "85",
         "seamark:light:1:sequence": "0.1+(2.2),0.1+(2.2),0.1+(2.2),0.1+(8)",
@@ -10955,7 +11357,9 @@
         "seamark:radar_transponder:group": "T",
         "seamark:radio_station:category": "ais",
         "seamark:radio_station:mmsi": "992351120",
-        "seamark:type": "light_major"
+        "seamark:type": "light_major",
+        "wikidata": "Q15207781",
+        "wikipedia": "en:Casquets lighthouses"
       },
       "geometry": {
         "type": "Point",
@@ -11173,33 +11577,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1543890453",
-        "man_made": "lighthouse",
-        "seamark:fog_signal:group": "4",
-        "seamark:fog_signal:period": "60",
-        "seamark:landmark:height": "13",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:group": "2",
-        "seamark:light:height": "14",
-        "seamark:light:period": "10",
-        "seamark:light:range": "22",
-        "seamark:light:reference": "A 0892",
-        "seamark:light:sequence": "0.5+(2)+0.5+(7)",
-        "seamark:type": "light_major"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          1.1947924,
-          51.0760383
-        ]
-      },
-      "id": "node/1543890453"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/1543901034",
         "seamark:light:1:character": "Oc",
         "seamark:light:1:colour": "green",
@@ -11350,7 +11727,8 @@
         "seamark:radio_station:category": "ais",
         "seamark:radio_station:mmsi": "992351081",
         "seamark:type": "light_major",
-        "start_date": "1984"
+        "start_date": "1984",
+        "wikidata": "Q28831543"
       },
       "geometry": {
         "type": "Point",
@@ -11474,6 +11852,7 @@
       "type": "Feature",
       "properties": {
         "@id": "node/1552945506",
+        "name": "Ram's Head Lighthouse",
         "seamark:light:1:character": "Fl",
         "seamark:light:1:colour": "green",
         "seamark:light:1:height": "16",
@@ -11509,7 +11888,8 @@
         "seamark:light:reference": "A 3850",
         "seamark:name": "Ram′s Head",
         "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26."
+        "source": "US NGA Pub. 114. 2011-05-26.",
+        "wikidata": "Q127266937"
       },
       "geometry": {
         "type": "Point",
@@ -11519,172 +11899,6 @@
         ]
       },
       "id": "node/1552945506"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1552946645",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:height": "24",
-        "seamark:light:1:period": "3",
-        "seamark:light:1:range": "9",
-        "seamark:light:1:sector_end": "163",
-        "seamark:light:1:sector_start": "100",
-        "seamark:light:1:sequence": "1+(2)",
-        "seamark:light:2:character": "Fl",
-        "seamark:light:2:colour": "red",
-        "seamark:light:2:height": "24",
-        "seamark:light:2:period": "3",
-        "seamark:light:2:range": "6",
-        "seamark:light:2:sector_end": "211",
-        "seamark:light:2:sector_start": "163",
-        "seamark:light:2:sequence": "1+(2)",
-        "seamark:light:3:character": "Fl",
-        "seamark:light:3:colour": "white",
-        "seamark:light:3:height": "24",
-        "seamark:light:3:period": "3",
-        "seamark:light:3:range": "9",
-        "seamark:light:3:sector_end": "349",
-        "seamark:light:3:sector_start": "211",
-        "seamark:light:3:sequence": "1+(2)",
-        "seamark:light:4:character": "Fl",
-        "seamark:light:4:colour": "red",
-        "seamark:light:4:height": "24",
-        "seamark:light:4:period": "3",
-        "seamark:light:4:range": "6",
-        "seamark:light:4:sector_end": "0",
-        "seamark:light:4:sector_start": "349",
-        "seamark:light:4:sequence": "1+(2)",
-        "seamark:light:reference": "A 3824",
-        "seamark:name": "Whitehill",
-        "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.0036018,
-          60.5799647
-        ]
-      },
-      "id": "node/1552946645"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1552947149",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "green",
-        "seamark:light:1:height": "30",
-        "seamark:light:1:period": "3",
-        "seamark:light:1:range": "5",
-        "seamark:light:1:sector_end": "288",
-        "seamark:light:1:sector_start": "240",
-        "seamark:light:1:sequence": "0.3+(2.7)",
-        "seamark:light:2:character": "Fl",
-        "seamark:light:2:colour": "white",
-        "seamark:light:2:height": "30",
-        "seamark:light:2:period": "3",
-        "seamark:light:2:range": "8",
-        "seamark:light:2:sector_end": "293",
-        "seamark:light:2:sector_start": "288",
-        "seamark:light:2:sequence": "0.3+(2.7)",
-        "seamark:light:3:character": "Fl",
-        "seamark:light:3:colour": "red",
-        "seamark:light:3:height": "30",
-        "seamark:light:3:period": "3",
-        "seamark:light:3:range": "5",
-        "seamark:light:3:sector_end": "327",
-        "seamark:light:3:sector_start": "293",
-        "seamark:light:3:sequence": "0.3+(2.7)",
-        "seamark:light:4:character": "Fl",
-        "seamark:light:4:colour": "white",
-        "seamark:light:4:height": "30",
-        "seamark:light:4:period": "3",
-        "seamark:light:4:range": "8",
-        "seamark:light:4:sector_end": "44",
-        "seamark:light:4:sector_start": "327",
-        "seamark:light:4:sequence": "0.3+(2.7)",
-        "seamark:light:5:character": "Fl",
-        "seamark:light:5:colour": "red",
-        "seamark:light:5:height": "30",
-        "seamark:light:5:period": "3",
-        "seamark:light:5:range": "5",
-        "seamark:light:5:sector_end": "140",
-        "seamark:light:5:sector_start": "44",
-        "seamark:light:5:sequence": "0.3+(2.7)",
-        "seamark:light:6:character": "Fl",
-        "seamark:light:6:colour": "white",
-        "seamark:light:6:height": "30",
-        "seamark:light:6:period": "3",
-        "seamark:light:6:range": "8",
-        "seamark:light:6:sector_end": "190",
-        "seamark:light:6:sector_start": "140",
-        "seamark:light:6:sequence": "0.3+(2.7)",
-        "seamark:light:reference": "A 3821",
-        "seamark:name": "South Head",
-        "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.2977332,
-          60.512481
-        ]
-      },
-      "id": "node/1552947149"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1552947207",
-        "seamark:light:1:character": "Oc",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:height": "22",
-        "seamark:light:1:period": "6",
-        "seamark:light:1:range": "12",
-        "seamark:light:1:sector_end": "290",
-        "seamark:light:1:sector_start": "150",
-        "seamark:light:1:sequence": "4+(2)",
-        "seamark:light:2:character": "Oc",
-        "seamark:light:2:colour": "green",
-        "seamark:light:2:height": "22",
-        "seamark:light:2:period": "6",
-        "seamark:light:2:range": "8",
-        "seamark:light:2:sector_end": "327",
-        "seamark:light:2:sector_start": "290",
-        "seamark:light:2:sequence": "4+(2)",
-        "seamark:light:3:character": "Oc",
-        "seamark:light:3:colour": "white",
-        "seamark:light:3:height": "22",
-        "seamark:light:3:period": "6",
-        "seamark:light:3:range": "12",
-        "seamark:light:3:sector_end": "334",
-        "seamark:light:3:sector_start": "327",
-        "seamark:light:3:sequence": "4+(2)",
-        "seamark:light:4:character": "Oc",
-        "seamark:light:4:colour": "red",
-        "seamark:light:4:height": "22",
-        "seamark:light:4:period": "6",
-        "seamark:light:4:range": "8",
-        "seamark:light:4:sector_end": "80",
-        "seamark:light:4:sector_start": "334",
-        "seamark:light:4:sequence": "4+(2)",
-        "seamark:light:reference": "A 3820.5",
-        "seamark:name": "Quey Firth",
-        "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.3259835,
-          60.5240372
-        ]
-      },
-      "id": "node/1552947207"
     },
     {
       "type": "Feature",
@@ -11719,127 +11933,6 @@
         ]
       },
       "id": "node/1552948369"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1552948405",
-        "man_made": "lighthouse",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "green",
-        "seamark:light:1:group": "3",
-        "seamark:light:1:height": "18",
-        "seamark:light:1:period": "12",
-        "seamark:light:1:range": "6",
-        "seamark:light:1:sector_end": "345",
-        "seamark:light:1:sector_start": "320",
-        "seamark:light:1:sequence": "0.3+(1),0.3+(1),0.3+(9.1)",
-        "seamark:light:2:character": "Fl",
-        "seamark:light:2:colour": "white",
-        "seamark:light:2:group": "3",
-        "seamark:light:2:height": "18",
-        "seamark:light:2:period": "12",
-        "seamark:light:2:range": "9",
-        "seamark:light:2:sector_end": "350",
-        "seamark:light:2:sector_start": "345",
-        "seamark:light:2:sequence": "0.3+(1),0.3+(1),0.3+(9.1)",
-        "seamark:light:3:character": "Fl",
-        "seamark:light:3:colour": "red",
-        "seamark:light:3:group": "3",
-        "seamark:light:3:height": "18",
-        "seamark:light:3:period": "12",
-        "seamark:light:3:range": "6",
-        "seamark:light:3:sector_end": "160",
-        "seamark:light:3:sector_start": "350",
-        "seamark:light:3:sequence": "0.3+(1),0.3+(1),0.3+(9.1)",
-        "seamark:light:4:character": "Fl",
-        "seamark:light:4:colour": "white",
-        "seamark:light:4:group": "3",
-        "seamark:light:4:height": "18",
-        "seamark:light:4:period": "12",
-        "seamark:light:4:range": "9",
-        "seamark:light:4:sector_end": "165",
-        "seamark:light:4:sector_start": "160",
-        "seamark:light:4:sequence": "0.3+(1),0.3+(1),0.3+(9.1)",
-        "seamark:light:5:character": "Fl",
-        "seamark:light:5:colour": "green",
-        "seamark:light:5:group": "3",
-        "seamark:light:5:height": "18",
-        "seamark:light:5:period": "12",
-        "seamark:light:5:range": "6",
-        "seamark:light:5:sector_end": "210",
-        "seamark:light:5:sector_start": "165",
-        "seamark:light:5:sequence": "0.3+(1),0.3+(1),0.3+(9.1)",
-        "seamark:light:reference": "A 3814",
-        "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.1876633,
-          60.5225047
-        ]
-      },
-      "id": "node/1552948405"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1552948830",
-        "man_made": "lighthouse",
-        "seamark:light:1:character": "Oc",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:height": "9",
-        "seamark:light:1:period": "8",
-        "seamark:light:1:range": "15",
-        "seamark:light:1:sector_end": "194",
-        "seamark:light:1:sector_start": "189",
-        "seamark:light:1:sequence": "6+(2)",
-        "seamark:light:2:character": "Oc",
-        "seamark:light:2:colour": "green",
-        "seamark:light:2:height": "9",
-        "seamark:light:2:period": "8",
-        "seamark:light:2:range": "10",
-        "seamark:light:2:sector_end": "257",
-        "seamark:light:2:sector_start": "194",
-        "seamark:light:2:sequence": "6+(2)",
-        "seamark:light:3:character": "Oc",
-        "seamark:light:3:colour": "white",
-        "seamark:light:3:height": "9",
-        "seamark:light:3:period": "8",
-        "seamark:light:3:range": "15",
-        "seamark:light:3:sector_end": "261",
-        "seamark:light:3:sector_start": "257",
-        "seamark:light:3:sequence": "6+(2)",
-        "seamark:light:4:character": "Oc",
-        "seamark:light:4:colour": "red",
-        "seamark:light:4:height": "9",
-        "seamark:light:4:period": "8",
-        "seamark:light:4:range": "10",
-        "seamark:light:4:sector_end": "339",
-        "seamark:light:4:sector_start": "261",
-        "seamark:light:4:sequence": "6+(2)",
-        "seamark:light:5:character": "Oc",
-        "seamark:light:5:colour": "white",
-        "seamark:light:5:height": "9",
-        "seamark:light:5:period": "8",
-        "seamark:light:5:range": "15",
-        "seamark:light:5:sector_end": "66",
-        "seamark:light:5:sector_start": "339",
-        "seamark:light:5:sequence": "6+(2)",
-        "seamark:light:reference": "A 3812",
-        "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.1770138,
-          60.453732
-        ]
-      },
-      "id": "node/1552948830"
     },
     {
       "type": "Feature",
@@ -12099,48 +12192,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1552982747",
-        "seamark:light:1:character": "Fl",
-        "seamark:light:1:colour": "white",
-        "seamark:light:1:height": "15",
-        "seamark:light:1:period": "3",
-        "seamark:light:1:range": "9",
-        "seamark:light:1:sector_end": "163",
-        "seamark:light:1:sector_start": "26",
-        "seamark:light:1:sequence": "0.3+(2.7)",
-        "seamark:light:2:character": "Fl",
-        "seamark:light:2:colour": "red",
-        "seamark:light:2:height": "15",
-        "seamark:light:2:period": "3",
-        "seamark:light:2:range": "6",
-        "seamark:light:2:sector_end": "201",
-        "seamark:light:2:sector_start": "163",
-        "seamark:light:2:sequence": "0.3+(2.7)",
-        "seamark:light:3:character": "Fl",
-        "seamark:light:3:colour": "white",
-        "seamark:light:3:height": "15",
-        "seamark:light:3:period": "3",
-        "seamark:light:3:range": "9",
-        "seamark:light:3:sector_end": "215",
-        "seamark:light:3:sector_start": "201",
-        "seamark:light:3:sequence": "0.3+(2.7)",
-        "seamark:light:reference": "A 3610",
-        "seamark:name": "Hoxa Head",
-        "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -3.0348,
-          58.8218833
-        ]
-      },
-      "id": "node/1552982747"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/1553037056",
         "seamark:light:1:character": "Fl",
         "seamark:light:1:colour": "white",
@@ -12220,7 +12271,6 @@
         "name": "Isle of May Lighthouse",
         "operator": "Northern Lighthouse Board",
         "operator:wikidata": "Q918253",
-        "operator:wikipedia": "en:Northern Lighthouse Board",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:group": "2",
@@ -12238,8 +12288,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.5574451,
-          56.1856454
+          -2.5574644,
+          56.1856562
         ]
       },
       "id": "node/1553424321"
@@ -12319,8 +12369,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -5.145271,
-          54.8617756
+          -5.1468784,
+          54.8618513
         ]
       },
       "id": "node/1553441753"
@@ -12349,8 +12399,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -5.1595086,
-          55.0070508
+          -5.1594749,
+          55.0070771
         ]
       },
       "id": "node/1553441830"
@@ -12431,146 +12481,8 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1556269402",
-        "seamark:light:1:category": "lower",
-        "seamark:light:1:character": "Al",
-        "seamark:light:1:colour": "green;white",
-        "seamark:light:1:height": "5",
-        "seamark:light:1:range": "13",
-        "seamark:light:1:sector_end": "355",
-        "seamark:light:1:sector_start": "353",
-        "seamark:light:2:category": "lower",
-        "seamark:light:2:character": "F",
-        "seamark:light:2:colour": "white",
-        "seamark:light:2:height": "5",
-        "seamark:light:2:range": "16",
-        "seamark:light:2:sector_end": "357",
-        "seamark:light:2:sector_start": "355",
-        "seamark:light:3:category": "lower",
-        "seamark:light:3:character": "Al",
-        "seamark:light:3:colour": "red;white",
-        "seamark:light:3:height": "5",
-        "seamark:light:3:sector_end": "0",
-        "seamark:light:3:sector_start": "357",
-        "seamark:light:4:category": "lower",
-        "seamark:light:4:character": "F",
-        "seamark:light:4:colour": "red",
-        "seamark:light:4:height": "5",
-        "seamark:light:4:sector_end": "2",
-        "seamark:light:4:sector_start": "0",
-        "seamark:light:5:category": "lower",
-        "seamark:light:5:character": "Al",
-        "seamark:light:5:colour": "green;white",
-        "seamark:light:5:height": "5",
-        "seamark:light:5:range": "13",
-        "seamark:light:5:sector_end": "114",
-        "seamark:light:5:sector_start": "111",
-        "seamark:light:6:category": "lower",
-        "seamark:light:6:character": "F",
-        "seamark:light:6:colour": "white",
-        "seamark:light:6:height": "5",
-        "seamark:light:6:range": "16",
-        "seamark:light:6:sector_end": "116",
-        "seamark:light:6:sector_start": "114",
-        "seamark:light:7:category": "lower",
-        "seamark:light:7:character": "Al",
-        "seamark:light:7:colour": "red;white",
-        "seamark:light:7:height": "5",
-        "seamark:light:7:sector_end": "119",
-        "seamark:light:7:sector_start": "116",
-        "seamark:light:8:category": "lower",
-        "seamark:light:8:character": "F",
-        "seamark:light:8:colour": "red",
-        "seamark:light:8:height": "5",
-        "seamark:light:8:sector_end": "121",
-        "seamark:light:8:sector_start": "119",
-        "seamark:light:reference": "A 4422",
-        "seamark:name": "No.7N",
-        "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -4.75595,
-          56.0009167
-        ]
-      },
-      "id": "node/1556269402"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1556269587",
-        "seamark:light:1:character": "F",
-        "seamark:light:1:colour": "green",
-        "seamark:light:1:height": "4",
-        "seamark:light:1:range": "13",
-        "seamark:light:1:sector_end": "77.5",
-        "seamark:light:1:sector_start": "75",
-        "seamark:light:2:character": "Al",
-        "seamark:light:2:colour": "green;white",
-        "seamark:light:2:height": "4",
-        "seamark:light:2:range": "13",
-        "seamark:light:2:sector_end": "79.5",
-        "seamark:light:2:sector_start": "77.5",
-        "seamark:light:3:character": "F",
-        "seamark:light:3:colour": "white",
-        "seamark:light:3:height": "4",
-        "seamark:light:3:range": "16",
-        "seamark:light:3:sector_end": "80.5",
-        "seamark:light:3:sector_start": "79.5",
-        "seamark:light:4:character": "Al",
-        "seamark:light:4:colour": "red;white",
-        "seamark:light:4:height": "4",
-        "seamark:light:4:sector_end": "82.5",
-        "seamark:light:4:sector_start": "80.5",
-        "seamark:light:5:character": "F",
-        "seamark:light:5:colour": "red",
-        "seamark:light:5:height": "4",
-        "seamark:light:5:sector_end": "85",
-        "seamark:light:5:sector_start": "82.5",
-        "seamark:light:6:character": "F",
-        "seamark:light:6:colour": "green",
-        "seamark:light:6:height": "4",
-        "seamark:light:6:range": "13",
-        "seamark:light:6:sector_end": "134",
-        "seamark:light:6:sector_start": "132",
-        "seamark:light:7:character": "Al",
-        "seamark:light:7:colour": "green;white",
-        "seamark:light:7:height": "4",
-        "seamark:light:7:range": "13",
-        "seamark:light:7:sector_end": "137",
-        "seamark:light:7:sector_start": "134",
-        "seamark:light:8:character": "F",
-        "seamark:light:8:colour": "white",
-        "seamark:light:8:height": "4",
-        "seamark:light:8:range": "16",
-        "seamark:light:8:sector_end": "139",
-        "seamark:light:8:sector_start": "137",
-        "seamark:light:9:character": "Al",
-        "seamark:light:9:colour": "red;white",
-        "seamark:light:9:height": "4",
-        "seamark:light:9:sector_end": "142",
-        "seamark:light:9:sector_start": "139",
-        "seamark:light:reference": "A 4421",
-        "seamark:name": "No.8N",
-        "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -4.7367333,
-          55.9847833
-        ]
-      },
-      "id": "node/1556269587"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/1556272140",
+        "man_made": "lighthouse",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:height": "21",
@@ -12646,6 +12558,7 @@
         "@id": "node/1556302102",
         "man_made": "lighthouse",
         "name": "Dubh Artach Lighthouse",
+        "name:gd": "Taigh-solais na Dubh Hirteach",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
         "seamark:light:group": "2",
@@ -12663,8 +12576,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.6357235,
-          56.1310556
+          -6.634462,
+          56.1322538
         ]
       },
       "id": "node/1556302102"
@@ -12689,8 +12602,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -7.6885527,
-          57.6990672
+          -7.6884315,
+          57.6990235
         ]
       },
       "id": "node/1556305162"
@@ -12725,13 +12638,14 @@
         "seamark:type": "light_major",
         "source": "US NGA Pub. 114. 2011-05-26.",
         "start_date": "1857",
+        "wikidata": "Q16902419",
         "wikipedia": "en:Ushenish Lighthouse"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -7.1928822,
-          57.2984074
+          -7.1927937,
+          57.2983835
         ]
       },
       "id": "node/1556308171"
@@ -12808,10 +12722,10 @@
       "type": "Feature",
       "properties": {
         "@id": "node/1556354938",
-        "HE_ref": "1400195",
         "listed_status": "Grade II",
         "man_made": "lighthouse",
         "name": "Black Nore Lighthouse",
+        "ref:GB:nhle": "1400195",
         "seamark:information": "Visible 044° -243° , obsc. N. of 049° .",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
@@ -12862,8 +12776,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.773563,
-          51.4946
+          -2.773616,
+          51.4946113
         ]
       },
       "id": "node/1556354940"
@@ -13049,41 +12963,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1556386877",
-        "man_made": "lighthouse",
-        "name": "South Bishop Lighthouse",
-        "seamark:fog_signal:category": "horn",
-        "seamark:fog_signal:group": "3",
-        "seamark:fog_signal:period": "45",
-        "seamark:landmark:height": "11",
-        "seamark:light:character": "Fl",
-        "seamark:light:colour": "white",
-        "seamark:light:height": "44",
-        "seamark:light:period": "5",
-        "seamark:light:range": "16",
-        "seamark:light:reference": "A 5276",
-        "seamark:light:sequence": "0.1+(4.9)",
-        "seamark:name": "South Bishop",
-        "seamark:radar_transponder:category": "racon",
-        "seamark:radar_transponder:group": "O",
-        "seamark:radar_transponder:period": "30",
-        "seamark:type": "light_major",
-        "source": "US NGA Pub. 114. 2011-05-26.;local knowledge",
-        "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/south-bishop-lighthouse",
-        "wikidata": "Q7566333"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.4118914,
-          51.8526619
-        ]
-      },
-      "id": "node/1556386877"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/1556386912",
         "man_made": "lighthouse",
         "name": "Strumble Head Lighthouse",
@@ -13212,18 +13091,25 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2083672715",
-        "seamark:light:1:category": "directional",
-        "seamark:type": "light_major"
+        "@id": "node/2095988451",
+        "designation": "Lighthouse",
+        "man_made": "lighthouse",
+        "name": "Stone Ness Lighthouse",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:height": "12",
+        "seamark:light:period": "2.5",
+        "seamark:type": "light_major",
+        "wikidata": "Q28465937"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.3924161,
-          58.2003606
+          0.2813037,
+          51.4609288
         ]
       },
-      "id": "node/2083672715"
+      "id": "node/2095988451"
     },
     {
       "type": "Feature",
@@ -13257,7 +13143,9 @@
         "seamark:light:height": "21",
         "seamark:light:period": "15",
         "seamark:light:range": "25",
-        "seamark:type": "light_major"
+        "seamark:type": "light_major",
+        "wikidata": "Q16901754",
+        "wikipedia": "en:Tiumpan Head Lighthouse"
       },
       "geometry": {
         "type": "Point",
@@ -13404,6 +13292,7 @@
       "type": "Feature",
       "properties": {
         "@id": "node/3264209317",
+        "image": "https://archive.org/details/higham-gravesend-2022/PXL_20220604_181149918.jpg",
         "man_made": "lighthouse",
         "name": "Shornemead Light",
         "seamark:light:1:character": "Fl",
@@ -13454,7 +13343,8 @@
         "seamark:light:sequence": "0.3+(19.7)",
         "seamark:name": "Strathy Point",
         "seamark:type": "light_major",
-        "wikidata": "Q28465866"
+        "wikidata": "Q28465866",
+        "wikipedia": "en:Strathy Point Lighthouse"
       },
       "geometry": {
         "type": "Point",
@@ -13512,6 +13402,24 @@
         ]
       },
       "id": "node/3665915947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3714250237",
+        "fixme": "might not be the right seamark, but it's sort of a light on a pillar - it definitely wasn't a buoy.",
+        "seamark:buoy_lateral:colour": "green",
+        "seamark:light:colour": "green",
+        "seamark:type": "light_major"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.6178209,
+          53.3143681
+        ]
+      },
+      "id": "node/3714250237"
     },
     {
       "type": "Feature",
@@ -13705,6 +13613,30 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/7734243513",
+        "barrier": "gate",
+        "seamark:light:1:category": "vertical",
+        "seamark:light:1:character": "F",
+        "seamark:light:1:colour": "red",
+        "seamark:light:1:height": "19.7",
+        "seamark:light:1:multiple": "2",
+        "seamark:light:1:range": "1",
+        "seamark:light:1:sector_end": "100",
+        "seamark:light:1:sector_start": "230",
+        "seamark:type": "light_major"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3687383,
+          50.8068944
+        ]
+      },
+      "id": "node/7734243513"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/7910921083",
         "height": "12",
         "man_made": "lighthouse",
@@ -13712,6 +13644,8 @@
         "operator": "Port of London Authority",
         "seamark:light:character": "Fl",
         "seamark:light:colour": "white",
+        "seamark:light:height": "11",
+        "seamark:light:period": "2.5",
         "seamark:light:range": "3",
         "seamark:type": "light_major"
       },
@@ -13766,13 +13700,17 @@
         "seamark:light:1:range": "6",
         "seamark:light:1:sector_end": "174",
         "seamark:light:1:sector_start": "336",
+        "seamark:light:category": "vertical",
+        "seamark:light:character": "F",
+        "seamark:light:colour": "green",
+        "seamark:light:multiple": "2",
         "seamark:type": "light_major"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.1833333,
-          51.49
+          0.1829367,
+          51.4901861
         ]
       },
       "id": "node/9317863706"
@@ -13868,6 +13806,162 @@
         ]
       },
       "id": "node/9463399771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9779557704",
+        "image": "https://archive.org/details/northfleet-2021-05-30/PXL_20210530_172508118.jpg",
+        "man_made": "tower",
+        "material": "metal",
+        "operator": "Port of London Authority",
+        "seamark:light:1:character": "Oc",
+        "seamark:light:1:colour": "red",
+        "seamark:light:1:height": "39",
+        "seamark:light:1:period": "10",
+        "seamark:light:1:range": "7",
+        "seamark:light:1:sector_end": "149",
+        "seamark:light:1:sector_start": "126",
+        "seamark:light:2:character": "Oc",
+        "seamark:light:2:colour": "white",
+        "seamark:light:2:height": "39",
+        "seamark:light:2:period": "10",
+        "seamark:light:2:range": "10",
+        "seamark:light:2:sector_end": "159",
+        "seamark:light:2:sector_start": "149",
+        "seamark:light:3:character": "Oc",
+        "seamark:light:3:colour": "green",
+        "seamark:light:3:height": "39",
+        "seamark:light:3:period": "10",
+        "seamark:light:3:range": "9",
+        "seamark:light:3:sector_end": "268",
+        "seamark:light:3:sector_start": "159",
+        "seamark:light:4:character": "Oc",
+        "seamark:light:4:colour": "white",
+        "seamark:light:4:height": "39",
+        "seamark:light:4:period": "10",
+        "seamark:light:4:range": "10",
+        "seamark:light:4:sector_end": "279",
+        "seamark:light:4:sector_start": "268",
+        "seamark:light:character": "Iso",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "30",
+        "seamark:light:period": "6",
+        "seamark:light:range": "6",
+        "seamark:name": "Northfleet Upper Light",
+        "seamark:status": "occasional",
+        "seamark:type": "light_major",
+        "tower:construction": "lattice",
+        "tower:type": "radar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3349583,
+          51.4487287
+        ]
+      },
+      "id": "node/9779557704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10651669916",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "red",
+        "seamark:light:period": "5",
+        "seamark:type": "light_major"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2574062,
+          51.4630583
+        ]
+      },
+      "id": "node/10651669916"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10651669917",
+        "seamark:light:character": "Fl",
+        "seamark:light:colour": "green",
+        "seamark:light:period": "5",
+        "seamark:type": "light_major"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.260303,
+          51.4664137
+        ]
+      },
+      "id": "node/10651669917"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10657168532",
+        "seamark:light:character": "Q",
+        "seamark:light:colour": "white",
+        "seamark:light:height": "20",
+        "seamark:light:range": "13",
+        "seamark:radar_reflector": "yes",
+        "seamark:type": "light_major"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.7231021,
+          51.4449002
+        ]
+      },
+      "id": "node/10657168532"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10665469633",
+        "seamark:light:1:character": "Iso",
+        "seamark:light:1:colour": "white",
+        "seamark:light:1:height": "36",
+        "seamark:light:1:period": "10",
+        "seamark:light:1:range": "18",
+        "seamark:light:1:sector_end": "294",
+        "seamark:light:1:sector_start": "247",
+        "seamark:light:2:character": "Iso",
+        "seamark:light:2:colour": "red",
+        "seamark:light:2:height": "36",
+        "seamark:light:2:period": "10",
+        "seamark:light:2:range": "16",
+        "seamark:light:2:sector_end": "328",
+        "seamark:light:2:sector_start": "294",
+        "seamark:light:3:character": "Iso",
+        "seamark:light:3:colour": "white",
+        "seamark:light:3:height": "36",
+        "seamark:light:3:period": "10",
+        "seamark:light:3:range": "18",
+        "seamark:light:3:sector_end": "148",
+        "seamark:light:3:sector_start": "328",
+        "seamark:light:4:character": "Iso",
+        "seamark:light:4:colour": "red",
+        "seamark:light:4:height": "36",
+        "seamark:light:4:period": "10",
+        "seamark:light:4:range": "16",
+        "seamark:light:4:sector_end": "247",
+        "seamark:light:4:sector_start": "148",
+        "seamark:name": "La Corbière",
+        "seamark:type": "light_major"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2503305,
+          49.1798484
+        ]
+      },
+      "id": "node/10665469633"
     }
   ]
 }
