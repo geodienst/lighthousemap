@@ -32,7 +32,7 @@ var map = new maplibregl.Map({
 	container: 'seamap',
 	style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',
 	center: [2.6, 54.2],
-	zoom: 6,
+	zoom: 3,
 	attributionControl: false
 });
 
@@ -41,6 +41,21 @@ map.addControl(new maplibregl.AttributionControl({
 }));
 
 map.addControl(new maplibregl.NavigationControl(), 'top-left');
+map.addControl(new maplibregl.GlobeControl(), 'top-left');
+
+// Enable globe projection once style is loaded
+map.on('style.load', function() {
+	map.setProjection({ type: 'globe' });
+	map.setSky({
+		'sky-color': '#000010',
+		'sky-horizon-blend': 0.5,
+		'horizon-color': '#000020',
+		'horizon-fog-blend': 0.8,
+		'fog-color': '#000010',
+		'fog-ground-blend': 1.0,
+		'atmosphere-blend': ['interpolate', ['linear'], ['zoom'], 0, 1, 12, 0]
+	});
+});
 
 // --- Data loading ---
 function loadData() {
@@ -220,7 +235,11 @@ function startAnimation() {
 			var color = useRealColors ? resolveColor(state) : '#FFFF00';
 			if (!color) continue;
 
+			// Skip lights on the back side of the globe
+			if (map.transform.isLocationOccluded(new maplibregl.LngLat(light.lng, light.lat))) continue;
+
 			var point = map.project([light.lng, light.lat]);
+
 			var radius = getRadius(light.range);
 
 			overlayCtx.beginPath();
