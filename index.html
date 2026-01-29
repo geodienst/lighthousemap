@@ -3,9 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Lights (at sea)</title>
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
-		integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
-		crossorigin=""/>
+		<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
 		<style>
 			html, body {
 				margin: 0;
@@ -27,7 +25,7 @@
 				z-index: 1000;
 			}
 
-			#seamap .leaflet-control-attribution,
+			.maplibregl-ctrl-attrib,
 			#controls {
 				margin: 10px;
 				font-size: 12px;
@@ -36,7 +34,7 @@
 				text-shadow: 0px 0px 2px black;
 			}
 
-			#seamap .leaflet-control-attribution a {
+			.maplibregl-ctrl-attrib a {
 				color: inherit;
 				text-decoration: underline;
 			}
@@ -46,159 +44,13 @@
 		<div id="seamap"></div>
 		<div id="controls">
 			<label>
-				<input name="real-colors" type="checkbox">
+				<input name="real-colors" type="checkbox" checked>
 				Show real colors
 			</label>
 		</div>
 		<a href="https://github.com/geodienst/lighthousemap"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1000" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
-		<script id="seamap-query" type="text/x-overpass">
-			[out:json][timeout:300];
-			// gather results
-			(
-			  // query part for: “"seamark:light:sequence"=*”
-			  node["seamark:light:sequence"]({{bbox}});
-			  node["seamark:light:1:sequence"]({{bbox}});
-			  way["seamark:light:sequence"]({{bbox}});
-			  way["seamark:light:1:sequence"]({{bbox}});
-			  // relation["seamark:light:sequence"]({{bbox}});
-			);
-			// print results
-			out body;
-			>;
-			out skel qt;
-		</script>
-		<script id="seamap-wikidata-query" type="text/x-sparql">
-			SELECT ?item ?itemLabel ?location ?height ?focalHeight ?sequence
-			WHERE
-			{
-			  ?item wdt:P31 wd:Q39715.
-			  ?item wdt:P625 ?location.
-			  OPTIONAL {
-				?item wdt:P2048 ?height.
-				?item wdt:P2923 ?focalHeight.
-				?item wdt:P1030 ?sequence.
-			  }
-			  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-			}
-		</script>
-		<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet-src.js"></script>
-		<script src="https://unpkg.com/osmtogeojson@3.0.0-beta.2/osmtogeojson.js"
-		  integrity="sha384-O1DMEF/gKYhLsICYtozkRWjEr9OfkZzVawUjyOPtevnKB2S1BegNJO0R251Pfuwz"
-		  crossorigin=""></script>
-		<script src="https://unpkg.com/rbush@2.0.1/rbush.js"></script>
-		<script src="https://unpkg.com/@turf/turf@3.5.2/turf.min.js"></script>
-		<script src="leaflet.indexedfeaturelayer.js"></script>
-		<script src="leaflet.rangedmarker.js"></script>
-		<script src="leaflet.light.js"></script>
-		<script>
-			let map = L.map('seamap', {attributionControl: false})
-				.setView([54.2, 2.6], 6)
-				.addControl(L.control.attribution({
-					position: 'bottomright',
-					prefix: 'Made by <a href="https://www.geodienst.xyz/">Geodienst</a>'
-				}));
-
-			L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
-				detectRetina: true,
-				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attribution/">CartoDB</a>'
-			}).addTo(map);
-
-			let bounds = map.getBounds();
-
-			function bbox(bounds) {
-				let ne = bounds.getNorthEast();
-				let sw = bounds.getSouthWest();
-				return [sw.lat, sw.lng, ne.lat, ne.lng]
-			}
-
-			let query = document.getElementById('seamap-query').textContent
-				.replace(/\{\{bbox\}\}/g, bbox(bounds).join(','));
-
-			// // Query the entire world
-			// bounds = [-90, -180, 90, 180]
-
-			// let query = document.getElementById('seamap-query').textContent
-			// 	.replace(/\{\{bbox\}\}/g, bounds.join(','));
-
-
-			let url = 'https://www.overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
-
-			url = 'data-full.json'; // For testing
-
-			let data = fetch(url)
-				.then(req => req.json())
-				.then(json => osmtogeojson(json))
-				.then(json => ({
-					type: json.type,
-					features: json.features.map(feature => {
-						return feature.geometry.type == 'Polygon'
-							? Object.assign({}, feature, {geometry: turf.centroid(feature).geometry})
-							: feature;
-					})
-				}));
-
-			let lights = data.then(geojson => {
-				return L.indexedGeoJSON(null, {
-					pointToLayer: function(feat, latlng) {
-						let sequence;
-
-						try {
-							sequence = L.Light.sequence(feat.properties.tags, '#FF0');
-						} catch (e) {
-							console.error('Error parsing sequence: %s', e, feat.properties.tags);
-
-							// Fallback sequence
-							sequence = L.Light.sequence({
-								'seamark:light:sequence': '1+(1)'
-							});
-						}
-
-						return new L.Light(latlng, {
-							interactive: false,
-							title: feat.properties.tags['name'],
-							radius: (parseFloat(feat.properties.tags['seamark:light:range'], 10) || 1) * 1852,
-							sequence: sequence,
-							stroke: false,
-							fillOpacity: 0.9,
-							fill: !!sequence.state(0),
-							fillColor: sequence.state(0)
-						});
-					}
-				}).addTo(map).addData(geojson);
-			});
-
-			let useRealColors = true;
-
-			document.querySelector('input[name=real-colors]').checked = useRealColors;
-
-			document.querySelector('input[name=real-colors]').addEventListener('change', function(e) {
-				useRealColors = this.checked;
-			});
-
-			lights.then(layer => {
-				let draw = function(t) {
-					layer.eachVisibleLayer(marker => {
-						var state = false
-						try{
-							var state = marker.options.sequence.state(t);
-							marker.setColor(state ? (useRealColors ? state : '#FF0') : false);
-						} catch(e){
-							// console.error(e)
-						}
-
-					});
-				};
-
-				let update = function(t) {
-					draw(t / 1000);
-					requestAnimationFrame(update);
-				};
-
-				update(0);
-			}).catch(e => console.error(e));
-
-			lights.catch(e => console.error(e));
-
-		</script>
+		<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+		<script src="light.js"></script>
+		<script src="lighthousemap.js"></script>
 	</body>
 </html>

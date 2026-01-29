@@ -1,15 +1,14 @@
-L.Light = L.Circle.extend({
-	setColor(color) {
-		if (this._color !== color) {
-			this._color = color;
-			L.Path.prototype.setStyle.call(this, {fill: !!color, fillColor: color});
-		}
-	}
-});
+// light.js - Standalone light sequence parser
+// Extracted from leaflet.light.js, no external dependencies
+//
+// Usage:
+//   let seq = LightSequence.parse(tags, '#FF0');
+//   let color = seq.state(timeInSeconds); // returns color string or false
 
-L.Light.sequence = function(tags, fallbackColor = '#FF0') {
+window.LightSequence = {};
+
+LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 	renameProperty = function(tags, property) {
-		console.log('test')
 		old_key = 'seamark:light:1:' + property
 		new_key = 'seamark:light:' + property
 
@@ -29,8 +28,6 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 	tags = renameProperty(tags, 'sector_end')
 	tags = renameProperty(tags, 'sector_start')
 	tags = renameProperty(tags, 'sequence')
-
-
 
 	let character = tags['seamark:light:character'] || 'Fl';
 
@@ -94,11 +91,11 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 
 	switch (character) {
 		case 'F': // Fixed Light
-			return new L.Light.Fixed(colors[0]);
+			return new LightSequence.Fixed(colors[0]);
 
 		case 'Iso':
-			return new L.Light.CombinedSequence(colors.map(color => {
-				return new L.Light.Sequence(sequence, color);
+			return new LightSequence.CombinedSequence(colors.map(color => {
+				return new LightSequence.Sequence(sequence, color);
 			}));
 
 		case 'Oc': // Occulting Light
@@ -120,20 +117,20 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 					sequence = letter[2];
 				}
 
-				return new L.Light.Sequence(sequence, color);
+				return new LightSequence.Sequence(sequence, color);
 			});
 
 			if (sequences.length < colors.length)
 				console.warn('There are fewer sequences than colors', {character, sequence, colors}, tags);
 
-			return new L.Light.CombinedSequence(sequences);
+			return new LightSequence.CombinedSequence(sequences);
 
 	 	default:
 			throw 'Unknown character: ' + character
 	}
 }
 
-L.Light.Fixed = class {
+LightSequence.Fixed = class {
 	constructor(color) {
 		this.color = color;
 	}
@@ -143,7 +140,7 @@ L.Light.Fixed = class {
 	}
 }
 
-L.Light.CombinedSequence = class {
+LightSequence.CombinedSequence = class {
 	constructor(sequences) {
 		this.sequences = sequences;
 
@@ -168,7 +165,7 @@ L.Light.CombinedSequence = class {
 	}
 }
 
-L.Light.Sequence = class {
+LightSequence.Sequence = class {
 	constructor(seq, color=true) {
 		this.setSequence(seq, color);
 	}
