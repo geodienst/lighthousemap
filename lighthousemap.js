@@ -92,7 +92,8 @@ function processElements(elements) {
 		var el = elements[i];
 
 		if (!el.tags) continue;
-		if (!el.tags['seamark:light:sequence'] && !el.tags['seamark:light:1:sequence']) continue;
+		if (!el.tags['seamark:light:sequence'] && !el.tags['seamark:light:1:sequence']
+			&& !el.tags['seamark:light:character'] && !el.tags['seamark:light:1:character']) continue;
 
 		var lng, lat;
 

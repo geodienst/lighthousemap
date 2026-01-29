@@ -47,8 +47,41 @@ LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 		sequence = (period / 2) + '+(' + (period / 2) + ')';
 	}
 
+	// Synthesize sequence from character + period when no explicit sequence is provided
+	// Handles lights tagged with e.g. seamark:light:character=Fl + seamark:light:period=10
+	if (!sequence && 'seamark:light:period' in tags) {
+		const period = parseFloat(tags['seamark:light:period'], 10);
+		const group = parseInt(tags['seamark:light:group'], 10) || 1;
+
+		if (character == 'F') {
+			// Fixed light, no sequence needed — will be handled by switch below
+		} else if (character == 'Fl' || character == 'LFl') {
+			const flash = character == 'LFl' ? 2.0 : 0.5;
+			const totalFlash = group * flash + (group - 1) * flash;
+			const dark = period - totalFlash;
+			if (dark > 0) {
+				sequence = Array(group).fill(flash + '+(' + flash + ')').join('+');
+				// Replace last dark interval with the actual remainder
+				var parts = sequence.split('+');
+				parts[parts.length - 1] = '(' + dark + ')';
+				sequence = parts.join('+');
+			} else {
+				sequence = flash + '+(' + (period - flash) + ')';
+			}
+		} else if (character == 'Oc') {
+			const dark = 0.5;
+			sequence = (period - dark) + '+(' + dark + ')';
+		} else if (character == 'Q' || character == 'IQ') {
+			const flash = 0.25;
+			sequence = Array(group).fill(flash + '+(' + flash + ')').join('+');
+			var parts = sequence.split('+');
+			parts[parts.length - 1] = '(' + (period - group * flash * 2 + flash) + ')';
+			sequence = parts.join('+');
+		}
+	}
+
 	// For those Flashing lights that have a single number sequence
-	if (character.match(/^Fl|LFl|IQ$/) && sequence.match(/^\d+$/)) {
+	if (character.match(/^Fl|LFl|IQ$/) && sequence && sequence.match(/^\d+$/)) {
 		const flash = parseFloat(sequence)
 		const remainder = 'seamark:light:period' in tags ? (parseFloat(tags['seamark:light:period']) - flash) : flash;
 		character = 'Fl';
@@ -56,13 +89,13 @@ LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 	}
 
 	// Convert FFl to Fl
-	if (character == 'FFl' && sequence.match(/^\d+$/) && tags['seamark:light:period'].match(/^\d+$/)) {
+	if (character == 'FFl' && sequence && sequence.match(/^\d+$/) && tags['seamark:light:period'] && tags['seamark:light:period'].match(/^\d+$/)) {
 		character = 'Fl';
 		sequence = parseFloat(sequence, 10) + '+(' + (parseFloat(tags['seamark:light:period'], 10) - parseFloat(sequence, 10)) + ')';
 	}
 
 	// Convert Q with Q+LFL sequence to Fl
-	if (character == 'Q' && 'seamark:light:period' in tags && sequence.match(/^Q(\(\d+\))?\s*\+\s*LFL/)) {
+	if (character == 'Q' && 'seamark:light:period' in tags && sequence && sequence.match(/^Q(\(\d+\))?\s*\+\s*LFL/)) {
 		let qlfl = sequence.match(/^Q(\((\d+)\))?\s*\+\s*LFL/);
 		const period = parseFloat(tags['seamark:light:period']);
 		const short = parseFloat(qlfl[2] || tags['seamark:light:group'] || 1);
@@ -79,7 +112,7 @@ LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 	}
 
 	// Convert simple quick flashes which indicates how many with group and the total duration of that group with sequence into Fl.
-	if (character == 'Q' && sequence.match(/^\d$/) && 'seamark:light:group' in tags) {
+	if (character == 'Q' && sequence && sequence.match(/^\d$/) && 'seamark:light:group' in tags) {
 		const short = parseFloat(tags['seamark:light:group']);
 		const flash = parseFloat(sequence) / short / 2;
 		character = 'Fl';
@@ -87,7 +120,7 @@ LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 	}
 
 	// Remove the 'second' suffix
-	sequence = sequence.replace(/s$/, '');
+	if (sequence) sequence = sequence.replace(/s$/, '');
 
 	switch (character) {
 		case 'F': // Fixed Light
