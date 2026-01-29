@@ -31,12 +31,26 @@ LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 
 	let character = tags['seamark:light:character'] || 'Fl';
 
+	// Normalize common misspellings in OSM data
+	character = character
+		.replace(/^FI$/, 'Fl')       // uppercase I instead of lowercase l
+		.replace(/^LFI$/, 'LFl')
+		.replace(/^FL$/, 'Fl')
+		.replace(/^LFL$/, 'LFl')
+		.replace(/^fl$/, 'Fl')
+		.replace(/^flashing$/i, 'Fl')
+		.replace(/^Fl_of\d+$/, 'Fl') // e.g. Fl_of1923
+		.replace(/^Fl IMH$/, 'Fl')   // junk suffix
+		.replace(/^AlFl$/, 'Al.Fl')  // missing dot
+		.replace(/^AlQ$/, 'Al.Q')    // missing dot
+		.replace(/^W$/, 'Fl');       // bare color used as character
+
 	let colors = (tags['seamark:light:colour'] || fallbackColor).split(';');
 
 	let sequence = tags['seamark:light:sequence'];
 
 	if (character.match(/^Al\./)) {// Alternating color!
-		character = tags['seamark:light:character'].substring(3);
+		character = character.substring(3);
 
 		if (character == 'Iso' && sequence && sequence.match(/^\d+$/))
 			sequence = sequence + '+(' + sequence + ')';
@@ -70,13 +84,57 @@ LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 			}
 		} else if (character == 'Oc') {
 			const dark = 0.5;
-			sequence = (period - dark) + '+(' + dark + ')';
+			if (group > 1) {
+				// Grouped occulting: multiple dark blinks per period
+				const totalDark = group * dark + (group - 1) * dark;
+				const light = period - totalDark;
+				if (light > 0) {
+					sequence = Array(group).fill('(' + dark + ')+' + dark).join('+');
+					// Replace last light interval with the actual remainder
+					var parts = sequence.split('+');
+					parts[parts.length - 1] = light;
+					sequence = parts.join('+');
+				} else {
+					sequence = (period - dark) + '+(' + dark + ')';
+				}
+			} else {
+				sequence = (period - dark) + '+(' + dark + ')';
+			}
 		} else if (character == 'Q' || character == 'IQ') {
 			const flash = 0.25;
 			sequence = Array(group).fill(flash + '+(' + flash + ')').join('+');
 			var parts = sequence.split('+');
 			parts[parts.length - 1] = '(' + (period - group * flash * 2 + flash) + ')';
 			sequence = parts.join('+');
+		} else if (character == 'VQ' || character == 'IVQ') {
+			// Very Quick: 120 flashes/min = 0.5s cycle (0.1s flash, 0.4s dark)
+			const flash = 0.1;
+			const cycle = 0.5;
+			sequence = Array(group).fill(flash + '+(' + (cycle - flash) + ')').join('+');
+			var parts = sequence.split('+');
+			parts[parts.length - 1] = '(' + (period - group * cycle + (cycle - flash)) + ')';
+			sequence = parts.join('+');
+		} else if (character == 'UQ' || character == 'IUQ') {
+			// Ultra Quick: 240 flashes/min = 0.25s cycle (0.05s flash, 0.2s dark)
+			const flash = 0.05;
+			const cycle = 0.25;
+			sequence = Array(group).fill(flash + '+(' + (cycle - flash) + ')').join('+');
+			var parts = sequence.split('+');
+			parts[parts.length - 1] = '(' + (period - group * cycle + (cycle - flash)) + ')';
+			sequence = parts.join('+');
+		} else if (character == 'Q+LFl' || character == 'VQ+LFl' || character == 'UQ+LFl') {
+			// Composite: quick flashes followed by a long flash (e.g. South Cardinal)
+			const base = character.split('+')[0]; // Q, VQ, or UQ
+			const flash = base == 'UQ' ? 0.05 : base == 'VQ' ? 0.1 : 0.2;
+			const gap = base == 'UQ' ? 0.2 : base == 'VQ' ? 0.4 : 0.2;
+			const longflash = 2.0;
+			const remainder = period - (group * (flash + gap) + longflash);
+			if (remainder > 0) {
+				sequence = Array(group).fill(flash + '+(' + gap + ')').join('+') + '+' + longflash + '+(' + remainder + ')';
+			} else {
+				sequence = Array(group).fill(flash + '+(' + gap + ')').join('+') + '+' + longflash + '+(' + Math.max(0.5, gap) + ')';
+			}
+			character = 'Fl';
 		}
 	}
 
@@ -88,27 +146,34 @@ LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 		sequence = flash + '+(' + remainder + ')';
 	}
 
-	// Convert FFl to Fl
-	if (character == 'FFl' && sequence && sequence.match(/^\d+$/) && tags['seamark:light:period'] && tags['seamark:light:period'].match(/^\d+$/)) {
+	// Convert FFl (Fixed and Flashing) to Fl
+	if (character == 'FFl') {
 		character = 'Fl';
-		sequence = parseFloat(sequence, 10) + '+(' + (parseFloat(tags['seamark:light:period'], 10) - parseFloat(sequence, 10)) + ')';
+		if (sequence && sequence.match(/^\d+$/) && tags['seamark:light:period'] && tags['seamark:light:period'].match(/^\d+$/)) {
+			sequence = parseFloat(sequence, 10) + '+(' + (parseFloat(tags['seamark:light:period'], 10) - parseFloat(sequence, 10)) + ')';
+		}
 	}
 
-	// Convert Q with Q+LFL sequence to Fl
-	if (character == 'Q' && 'seamark:light:period' in tags && sequence && sequence.match(/^Q(\(\d+\))?\s*\+\s*LFL/)) {
-		let qlfl = sequence.match(/^Q(\((\d+)\))?\s*\+\s*LFL/);
+	// Convert FLFl (Fixed/Long Flash) and OcFl (Occulting/Flash) to Fl — they have standard sequences
+	if ((character == 'FLFl' || character == 'OcFl') && sequence) {
+		character = 'Fl';
+	}
+
+	// Convert Q/VQ/UQ with +LFL sequence to Fl
+	if ((character == 'Q' || character == 'VQ' || character == 'UQ') && 'seamark:light:period' in tags && sequence && sequence.match(/^[VU]?Q(\(\d+\))?\s*\+\s*LFL/i)) {
+		let qlfl = sequence.match(/^[VU]?Q(\((\d+)\))?\s*\+\s*LFL/i);
 		const period = parseFloat(tags['seamark:light:period']);
 		const short = parseFloat(qlfl[2] || tags['seamark:light:group'] || 1);
-		const long = 1;
-		const flash = 0.2;
+		const flash = character == 'UQ' ? 0.05 : character == 'VQ' ? 0.1 : 0.2;
+		const gap = character == 'UQ' ? 0.2 : character == 'VQ' ? 0.4 : 0.2;
 		const longflash = 1.0;
-		const remainder = period - (short * 2 * flash + longflash)
+		const remainder = period - (short * (flash + gap) + longflash)
 
 		if (remainder < 0)
-			throw 'Could not convert Q+LFL to Fl: negative remainder';
+			throw 'Could not convert ' + character + '+LFL to Fl: negative remainder';
 
 		character = 'Fl';
-		sequence = Array(short).fill(flash + '+(' + flash + ')').join('+') + '+' + longflash + '+(' + remainder + ')';
+		sequence = Array(short).fill(flash + '+(' + gap + ')').join('+') + '+' + longflash + '+(' + remainder + ')';
 	}
 
 	// Convert simple quick flashes which indicates how many with group and the total duration of that group with sequence into Fl.
@@ -119,8 +184,54 @@ LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 		sequence = Array(short).fill(flash + '+(' + flash + ')').join('+');
 	}
 
+	// Strip outer parentheses wrapping entire sequence (OSM data quirk)
+	// e.g. "(00.3+(04.7))" → "00.3+(04.7)"
+	if (sequence && sequence.match(/^\(.*\)$/)) {
+		const inner = sequence.substring(1, sequence.length - 1);
+		// Only strip if the inner content looks like a valid sequence (has + separators)
+		if (inner.includes('+')) {
+			sequence = inner;
+		}
+	}
+
+	// Strip bracket group notation e.g. "[2]5+(15)" → "5+(15)", "[3]8+(12)" → "8+(12)"
+	// The group count is already in seamark:light:group
+	if (sequence && sequence.match(/^\[\d+\]/)) {
+		sequence = sequence.replace(/^\[\d+\]/, '');
+	}
+
+	// Strip bracket repeat notation e.g. "[00.5+(00.5)]9+(06.0)" → expand the repeated part
+	if (sequence && sequence.match(/^\[[\d.+()]+\]\d+/)) {
+		const m = sequence.match(/^\[([\d.+()]+)\](\d+)\+(.+)$/);
+		if (m) {
+			const repeatedPart = m[1];
+			const count = parseInt(m[2]);
+			const remainder = m[3];
+			sequence = Array(count).fill(repeatedPart).join('+') + '+' + remainder;
+		}
+	}
+
 	// Remove the 'second' suffix
 	if (sequence) sequence = sequence.replace(/s$/, '');
+
+	// Composite characters with explicit sequences can be treated as Fl
+	if ((character == 'Q+LFl' || character == 'VQ+LFl' || character == 'UQ+LFl') && sequence) {
+		character = 'Fl';
+	}
+
+	// Bare 'Al' without sub-type: treat as fixed alternating
+	if (character == 'Al') {
+		if (sequence) {
+			character = 'Fl';
+		} else {
+			return new LightSequence.Fixed(colors[0]);
+		}
+	}
+
+	// Handle Fl(N) where group count is embedded in character
+	if (character.match(/^Fl\(\d+\)$/)) {
+		character = 'Fl';
+	}
 
 	switch (character) {
 		case 'F': // Fixed Light
@@ -135,6 +246,11 @@ LightSequence.parse = function(tags, fallbackColor = '#FF0') {
 		case 'Fl': // Flashing Light
 		case 'LFl': // Long Flash Light
 		case 'Q': // Quick Flashing Light
+		case 'VQ': // Very Quick Flashing Light
+		case 'UQ': // Ultra Quick Flashing Light
+		case 'IQ': // Interrupted Quick Flashing Light
+		case 'IVQ': // Interrupted Very Quick Flashing Light
+		case 'IUQ': // Interrupted Ultra Quick Flashing Light
 		case 'Mo':
 			if (!sequence || sequence.match(/^\d+$/))
 				throw 'Unexpected sequence: ' + sequence;
@@ -208,7 +324,7 @@ LightSequence.Sequence = class {
 
 		this.steps = seq.replace(/\s/g, '').split('+').map(step => {
 			let state = color;
-			if (/^\(\d+(\.\d+)?\)$/.test(step)) {
+			if (/^\(\d*\.?\d+\)$/.test(step)) {
 				state = false;
 				step = step.substring(1, step.length - 1);
 			}

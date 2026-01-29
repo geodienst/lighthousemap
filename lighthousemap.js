@@ -82,17 +82,17 @@ map.on('style.load', function() {
 
 // --- Data loading ---
 function loadData() {
+	var localUrl = 'data-reduced.json';
 	var remoteUrl = 'https://raw.githubusercontent.com/geodienst/lighthousemap/master/data-full.json';
-	var localUrl = 'data-full.json';
 
-	return fetch(remoteUrl)
+	return fetch(localUrl)
 		.then(function(response) {
-			if (!response.ok) throw new Error('Remote fetch failed: ' + response.status);
+			if (!response.ok) throw new Error('Local fetch failed: ' + response.status);
 			return response.json();
 		})
 		.catch(function(err) {
-			console.warn('Remote data fetch failed, falling back to local:', err);
-			return fetch(localUrl).then(function(r) { return r.json(); });
+			console.warn('Local data fetch failed, falling back to remote:', err);
+			return fetch(remoteUrl).then(function(r) { return r.json(); });
 		})
 		.then(function(json) {
 			processElements(json.elements);
