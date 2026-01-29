@@ -318,13 +318,42 @@ function startAnimation() {
 }
 
 // --- Controls ---
-var realColorsCheckbox = document.querySelector('input[name=real-colors]');
-if (realColorsCheckbox) {
-	realColorsCheckbox.checked = useRealColors;
-	realColorsCheckbox.addEventListener('change', function() {
-		useRealColors = this.checked;
-	});
-}
+var ICON_COLORS = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 29 29'%3E%3Ccircle cx='10' cy='10' r='4' fill='%23f00' stroke='%23000' stroke-width='.75'/%3E%3Ccircle cx='19' cy='10' r='4' fill='%230f0' stroke='%23000' stroke-width='.75'/%3E%3Ccircle cx='14.5' cy='18' r='4' fill='%23ffa500' stroke='%23000' stroke-width='.75'/%3E%3C/svg%3E";
+var ICON_YELLOW = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 29 29'%3E%3Ccircle cx='10' cy='10' r='4' fill='%23ff0' stroke='%23000' stroke-width='.75'/%3E%3Ccircle cx='19' cy='10' r='4' fill='%23ff0' stroke='%23000' stroke-width='.75'/%3E%3Ccircle cx='14.5' cy='18' r='4' fill='%23ff0' stroke='%23000' stroke-width='.75'/%3E%3C/svg%3E";
+
+var RealColorsControl = function() {};
+RealColorsControl.prototype.onAdd = function(map) {
+	this._map = map;
+	this._container = document.createElement('div');
+	this._container.className = 'maplibregl-ctrl maplibregl-ctrl-group';
+
+	this._button = document.createElement('button');
+	this._button.type = 'button';
+	this._button.title = 'Toggle real colors';
+
+	this._icon = document.createElement('span');
+	this._icon.className = 'maplibregl-ctrl-icon';
+	this._icon.setAttribute('aria-hidden', 'true');
+	this._updateIcon();
+	this._button.appendChild(this._icon);
+
+	this._button.addEventListener('click', function() {
+		useRealColors = !useRealColors;
+		this._updateIcon();
+	}.bind(this));
+
+	this._container.appendChild(this._button);
+	return this._container;
+};
+RealColorsControl.prototype._updateIcon = function() {
+	this._icon.style.backgroundImage = 'url("' + (useRealColors ? ICON_COLORS : ICON_YELLOW) + '")';
+};
+RealColorsControl.prototype.onRemove = function() {
+	this._container.parentNode.removeChild(this._container);
+	this._map = undefined;
+};
+
+map.addControl(new RealColorsControl(), 'top-left');
 
 // --- Initialization ---
 map.on('load', function() {
