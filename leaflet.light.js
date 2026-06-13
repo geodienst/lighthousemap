@@ -8,67 +8,57 @@ L.Light = L.Circle.extend({
 });
 
 L.Light.sequence = function(tags, fallbackColor = '#FF0') {
-	renameProperty = function(tags, property) {
-		console.log('test')
-		old_key = 'seamark:light:1:' + property
-		new_key = 'seamark:light:' + property
+	const renameProperty = function(tags, property) {
+		const oldKey = 'seamark:light:1:' + property;
+		const newKey = 'seamark:light:' + property;
 
-		if (!(new_key in tags) && old_key in tags) {
-			tags[new_key] = tags[old_key]
+		if (!(newKey in tags) && oldKey in tags) {
+			tags[newKey] = tags[oldKey];
 		}
+		return tags;
+	};
 
-		return tags
-	}
+	const workTags = Object.assign({}, tags);
 
-	tags = renameProperty(tags, 'character')
-	tags = renameProperty(tags, 'colour')
-	tags = renameProperty(tags, 'group')
-	tags = renameProperty(tags, 'height')
-	tags = renameProperty(tags, 'period')
-	tags = renameProperty(tags, 'range')
-	tags = renameProperty(tags, 'sector_end')
-	tags = renameProperty(tags, 'sector_start')
-	tags = renameProperty(tags, 'sequence')
+	['character', 'colour', 'group', 'height', 'period', 'range', 'sector_end', 'sector_start', 'sequence'].forEach(prop => {
+		renameProperty(workTags, prop);
+	});
 
-
-
-	let character = tags['seamark:light:character'] || 'Fl';
-
-	let colors = (tags['seamark:light:colour'] || fallbackColor).split(';');
-
-	let sequence = tags['seamark:light:sequence'];
+	let character = workTags['seamark:light:character'] || 'Fl';
+	const colors = (workTags['seamark:light:colour'] || fallbackColor).split(';');
+	let sequence = workTags['seamark:light:sequence'];
 
 	if (character.match(/^Al\./)) {// Alternating color!
-		character = tags['seamark:light:character'].substring(3);
+		character = character.substring(3);
 
 		if (character == 'Iso' && sequence && sequence.match(/^\d+$/))
 			sequence = sequence + '+(' + sequence + ')';
 	}
 
-	if (character == 'Iso' && !sequence && 'seamark:light:period' in tags) {
-		const period = parseFloat(tags['seamark:light:period'], 10);
+	if (character == 'Iso' && !sequence && 'seamark:light:period' in workTags) {
+		const period = parseFloat(workTags['seamark:light:period'], 10);
 		sequence = (period / 2) + '+(' + (period / 2) + ')';
 	}
 
 	// For those Flashing lights that have a single number sequence
-	if (character.match(/^Fl|LFl|IQ$/) && sequence.match(/^\d+$/)) {
+	if (character.match(/^Fl|LFl|IQ$/) && sequence && sequence.match(/^\d+$/)) {
 		const flash = parseFloat(sequence)
-		const remainder = 'seamark:light:period' in tags ? (parseFloat(tags['seamark:light:period']) - flash) : flash;
+		const remainder = 'seamark:light:period' in workTags ? (parseFloat(workTags['seamark:light:period']) - flash) : flash;
 		character = 'Fl';
 		sequence = flash + '+(' + remainder + ')';
 	}
 
 	// Convert FFl to Fl
-	if (character == 'FFl' && sequence.match(/^\d+$/) && tags['seamark:light:period'].match(/^\d+$/)) {
+	if (character == 'FFl' && sequence && sequence.match(/^\d+$/) && workTags['seamark:light:period'] && workTags['seamark:light:period'].match(/^\d+$/)) {
 		character = 'Fl';
-		sequence = parseFloat(sequence, 10) + '+(' + (parseFloat(tags['seamark:light:period'], 10) - parseFloat(sequence, 10)) + ')';
+		sequence = parseFloat(sequence, 10) + '+(' + (parseFloat(workTags['seamark:light:period'], 10) - parseFloat(sequence, 10)) + ')';
 	}
 
 	// Convert Q with Q+LFL sequence to Fl
-	if (character == 'Q' && 'seamark:light:period' in tags && sequence.match(/^Q(\(\d+\))?\s*\+\s*LFL/)) {
+	if (character == 'Q' && 'seamark:light:period' in workTags && sequence && sequence.match(/^Q(\(\d+\))?\s*\+\s*LFL/)) {
 		let qlfl = sequence.match(/^Q(\((\d+)\))?\s*\+\s*LFL/);
-		const period = parseFloat(tags['seamark:light:period']);
-		const short = parseFloat(qlfl[2] || tags['seamark:light:group'] || 1);
+		const period = parseFloat(workTags['seamark:light:period']);
+		const short = parseFloat(qlfl[2] || workTags['seamark:light:group'] || 1);
 		const long = 1;
 		const flash = 0.2;
 		const longflash = 1.0;
@@ -81,16 +71,18 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 		sequence = Array(short).fill(flash + '+(' + flash + ')').join('+') + '+' + longflash + '+(' + remainder + ')';
 	}
 
-	// Convert simple quick flashes which indicates how many with group and the total duration of that group with sequence into Fl.
-	if (character == 'Q' && sequence.match(/^\d$/) && 'seamark:light:group' in tags) {
-		const short = parseFloat(tags['seamark:light:group']);
+	// Convert simple quick flashes
+	if (character == 'Q' && sequence && sequence.match(/^\d$/) && 'seamark:light:group' in workTags) {
+		const short = parseFloat(workTags['seamark:light:group']);
 		const flash = parseFloat(sequence) / short / 2;
 		character = 'Fl';
 		sequence = Array(short).fill(flash + '+(' + flash + ')').join('+');
 	}
 
 	// Remove the 'second' suffix
-	sequence = sequence.replace(/s$/, '');
+	if (sequence) {
+		sequence = sequence.replace(/s$/, '');
+	}
 
 	switch (character) {
 		case 'F': // Fixed Light
@@ -124,7 +116,7 @@ L.Light.sequence = function(tags, fallbackColor = '#FF0') {
 			});
 
 			if (sequences.length < colors.length)
-				console.warn('There are fewer sequences than colors', {character, sequence, colors}, tags);
+				console.warn('There are fewer sequences than colors', {character, sequence, colors}, workTags);
 
 			return new L.Light.CombinedSequence(sequences);
 
