@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-25T03:32:20Z",
+    "timestamp_osm_base": "2026-07-26T03:49:19Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -240415,8 +240415,8 @@
 {
   "type": "node",
   "id": 1340857985,
-  "lat": 42.2393686,
-  "lon": 11.1081141,
+  "lat": 42.2393840,
+  "lon": 11.1080960,
   "tags": {
     "man_made": "lighthouse",
     "name": "Faro di Giannutri",
