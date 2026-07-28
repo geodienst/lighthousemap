@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-27T03:56:21Z",
+    "timestamp_osm_base": "2026-07-28T03:27:53Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -546272,7 +546272,8 @@
     "seamark:light:reference": "D 2102",
     "seamark:light:sequence": "2+(3)",
     "seamark:name": "Assenta",
-    "seamark:type": "light_minor"
+    "seamark:type": "light_minor",
+    "wikidata": "Q28374961"
   }
 },
 {
