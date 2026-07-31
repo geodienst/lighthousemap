@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-30T03:21:41Z",
+    "timestamp_osm_base": "2026-07-31T03:44:54Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -359899,6 +359899,26 @@
 },
 {
   "type": "node",
+  "id": 2400747002,
+  "lat": 43.6768861,
+  "lon": 10.2690469,
+  "tags": {
+    "operator:type": "private",
+    "seamark:beacon:colour": "green",
+    "seamark:beacon:shape": "post",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "8",
+    "seamark:light:period": "3",
+    "seamark:light:range": "8",
+    "seamark:light:reference": "E 1347.25",
+    "seamark:light:sequence": "1+(2)",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-07-29."
+  }
+},
+{
+  "type": "node",
   "id": 2401335472,
   "lat": -18.4798922,
   "lon": -70.3328980,
@@ -423490,15 +423510,11 @@
 {
   "type": "node",
   "id": 5467601871,
-  "lat": 41.0149554,
-  "lon": -73.5381331,
+  "lat": 41.0149688,
+  "lon": -73.5381691,
   "tags": {
-    "operator": "CT Department of Energy and Environmental Protection",
-    "ref": "3",
-    "seamark:beacon_lateral:category": "port",
-    "seamark:beacon_lateral:colour": "green",
-    "seamark:beacon_lateral:shape": "tower",
-    "seamark:beacon_lateral:system": "iala-b",
+    "man_made": "tower",
+    "name": "Light 3",
     "seamark:daymark:colour": "green",
     "seamark:daymark:colour_pattern": "border",
     "seamark:daymark:shape": "square",
@@ -423511,21 +423527,18 @@
     "seamark:light:range": "4",
     "seamark:light:sequence": "00.3+(02.2)",
     "seamark:name": "3",
-    "seamark:type": "beacon_lateral"
+    "tower:construction": "lattice",
+    "tower:type": "navigation"
   }
 },
 {
   "type": "node",
   "id": 5467647343,
-  "lat": 41.0150636,
-  "lon": -73.5350986,
+  "lat": 41.0150624,
+  "lon": -73.5350970,
   "tags": {
-    "operator": "CT Department of Energy and Environmental Protection",
-    "ref": "4",
-    "seamark:beacon_lateral:category": "starboard",
-    "seamark:beacon_lateral:colour": "red",
-    "seamark:beacon_lateral:shape": "lattice",
-    "seamark:beacon_lateral:system": "iala-b",
+    "man_made": "tower",
+    "name": "Light 4",
     "seamark:daymark:colour": "red",
     "seamark:daymark:colour_pattern": "border",
     "seamark:daymark:shape": "triangle, point up",
@@ -423537,8 +423550,9 @@
     "seamark:light:period": "4",
     "seamark:light:range": "4",
     "seamark:light:sequence": "00.4+(03.6)",
-    "seamark:name": "4",
-    "seamark:type": "beacon_lateral"
+    "seamark:name": "Stamford Harbor East Breakwater Light 4",
+    "tower:construction": "lattice",
+    "tower:type": "navigation"
   }
 },
 {
@@ -430374,30 +430388,6 @@
     "seamark:type": "light_major",
     "source": "US NGA Pub. 110. 2024-05-18.",
     "wikidata": "Q3378242"
-  }
-},
-{
-  "type": "node",
-  "id": 6732435501,
-  "lat": 41.0136538,
-  "lon": -73.5425794,
-  "tags": {
-    "historic": "lighthouse",
-    "man_made": "lighthouse",
-    "name": "Stamford Harbor Ledge Light",
-    "operator": "Privately Operated",
-    "seamark:beacon_special_purpose:category": "warning",
-    "seamark:beacon_special_purpose:colour": "white",
-    "seamark:beacon_special_purpose:shape": "tower",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:exhibition": "night",
-    "seamark:light:group": "1",
-    "seamark:light:period": "4",
-    "seamark:light:sequence": "00.4+(03.6)",
-    "seamark:name": "Stamford Harbor Ledge Obstruction Light",
-    "seamark:type": "landmark",
-    "wikipedia": "en:Stamford Harbor Ledge Light"
   }
 },
 {
@@ -442095,13 +442085,42 @@
   "tags": {
     "man_made": "lighthouse",
     "name": "Faro rosso",
+    "seamark:beacon:colour": "red",
+    "seamark:beacon:height": "7.0",
+    "seamark:beacon:shape": "post",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
+    "seamark:light:height": "8",
     "seamark:light:period": "3",
     "seamark:light:range": "8",
+    "seamark:light:reference": "E 1583",
     "seamark:light:sequence": "1+(2)",
-    "seamark:name": "Faro Rosso",
-    "seamark:type": "light_minor"
+    "seamark:safety_distance": "25",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-07-29."
+  }
+},
+{
+  "type": "node",
+  "id": 8619096500,
+  "lat": 40.8955814,
+  "lon": 12.9647375,
+  "tags": {
+    "man_made": "lighthouse",
+    "seamark:beacon:colour": "red",
+    "seamark:beacon:height": "12",
+    "seamark:beacon:shape": "tower",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "yellow",
+    "seamark:light:height": "12",
+    "seamark:light:period": "3",
+    "seamark:light:range": "9",
+    "seamark:light:reference": "E 1584",
+    "seamark:light:sequence": "1+(2)",
+    "seamark:name": "Porto di Ponza",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-07-29.",
+    "wikimedia_commons": "File:GABRI 11-02-2007 (1).jpg"
   }
 },
 {
@@ -540958,6 +540977,28 @@
   }
 },
 {
+  "type": "node",
+  "id": 14061715157,
+  "lat": 41.2106042,
+  "lon": 13.5892470,
+  "tags": {
+    "seamark:beacon:colour": "red",
+    "seamark:beacon:height": "6.1",
+    "seamark:beacon:shape": "tower",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:group": "2",
+    "seamark:light:height": "20",
+    "seamark:light:period": "10",
+    "seamark:light:range": "7",
+    "seamark:light:reference": "E 1560",
+    "seamark:light:sequence": "1+(1.5)+1+(6.5)",
+    "seamark:name": "Punta dello Stenardo",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-07-29."
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -560706,6 +560747,74 @@
 },
 {
   "type": "way",
+  "id": 716763582,
+  "nodes": [
+    6732455509,
+    6732435556,
+    6732455495,
+    6732435582,
+    6732435500,
+    6732435565,
+    6732455546,
+    6732455491,
+    8008382331,
+    8008382335,
+    8008382326,
+    8008382332,
+    8008382330,
+    8008382334,
+    6732435527,
+    8008382328,
+    8008382325,
+    6732435517,
+    8008382333,
+    8008382327,
+    6732435574,
+    8008382329,
+    6732455532,
+    6732435507,
+    6732435531,
+    6732455487,
+    6732435536,
+    6732435542,
+    6732435551,
+    6732455509
+  ],
+  "tags": {
+    "building": "lighthouse",
+    "ele": "0.18",
+    "height": "20.55",
+    "heritage": "2",
+    "heritage:operator": "nrhp",
+    "heritage:website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "historic": "lighthouse",
+    "man_made": "lighthouse",
+    "name": "Stamford Harbor Ledge Light",
+    "nrhp:criteria": "(A), (C), (D)",
+    "nrhp:inscription_date": "1991-04-03",
+    "operator": "Privately Operated",
+    "protection_title": "private",
+    "ref:nrhp": "91000348",
+    "seamark:beacon_special_purpose:category": "warning",
+    "seamark:beacon_special_purpose:colour": "white",
+    "seamark:beacon_special_purpose:shape": "tower",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "4",
+    "seamark:light:sequence": "00.4+(03.6)",
+    "seamark:name": "Stamford Harbor Ledge Obstruction Light",
+    "seamark:reference": "LLNR 25195",
+    "seamark:type": "landmark",
+    "source": "U.S. Coast Guard, Light List vol. I, Atlantic Coast, COMDTPUB P16502.1, 2025",
+    "source_ref": "https://catalog.archives.gov/id/132354089",
+    "start_date": "1882",
+    "wikipedia": "en:Stamford Harbor Ledge Light"
+  }
+},
+{
+  "type": "way",
   "id": 716913383,
   "nodes": [
     6733508519,
@@ -575250,6 +575359,180 @@
   "id": 4004566696,
   "lat": 40.8502856,
   "lon": -73.9469649
+},
+{
+  "type": "node",
+  "id": 6732435500,
+  "lat": 41.0136239,
+  "lon": -73.5426188
+},
+{
+  "type": "node",
+  "id": 6732435507,
+  "lat": 41.0136521,
+  "lon": -73.5425230
+},
+{
+  "type": "node",
+  "id": 6732435517,
+  "lat": 41.0136974,
+  "lon": -73.5425616
+},
+{
+  "type": "node",
+  "id": 6732435527,
+  "lat": 41.0136972,
+  "lon": -73.5425993
+},
+{
+  "type": "node",
+  "id": 6732435531,
+  "lat": 41.0136427,
+  "lon": -73.5425257
+},
+{
+  "type": "node",
+  "id": 6732435536,
+  "lat": 41.0136262,
+  "lon": -73.5425388
+},
+{
+  "type": "node",
+  "id": 6732435542,
+  "lat": 41.0136201,
+  "lon": -73.5425487
+},
+{
+  "type": "node",
+  "id": 6732435551,
+  "lat": 41.0136159,
+  "lon": -73.5425591
+},
+{
+  "type": "node",
+  "id": 6732435556,
+  "lat": 41.0136128,
+  "lon": -73.5425841
+},
+{
+  "type": "node",
+  "id": 6732435565,
+  "lat": 41.0136312,
+  "lon": -73.5426273
+},
+{
+  "type": "node",
+  "id": 6732435574,
+  "lat": 41.0136799,
+  "lon": -73.5425319
+},
+{
+  "type": "node",
+  "id": 6732435582,
+  "lat": 41.0136183,
+  "lon": -73.5426084
+},
+{
+  "type": "node",
+  "id": 6732455487,
+  "lat": 41.0136339,
+  "lon": -73.5425311
+},
+{
+  "type": "node",
+  "id": 6732455491,
+  "lat": 41.0136489,
+  "lon": -73.5426369
+},
+{
+  "type": "node",
+  "id": 6732455495,
+  "lat": 41.0136145,
+  "lon": -73.5425967
+},
+{
+  "type": "node",
+  "id": 6732455509,
+  "lat": 41.0136133,
+  "lon": -73.5425714
+},
+{
+  "type": "node",
+  "id": 6732455532,
+  "lat": 41.0136618,
+  "lon": -73.5425232
+},
+{
+  "type": "node",
+  "id": 6732455546,
+  "lat": 41.0136396,
+  "lon": -73.5426334
+},
+{
+  "type": "node",
+  "id": 8008382325,
+  "lat": 41.0136995,
+  "lon": -73.5425741
+},
+{
+  "type": "node",
+  "id": 8008382326,
+  "lat": 41.0136771,
+  "lon": -73.5426306
+},
+{
+  "type": "node",
+  "id": 8008382327,
+  "lat": 41.0136874,
+  "lon": -73.5425400
+},
+{
+  "type": "node",
+  "id": 8008382328,
+  "lat": 41.0136994,
+  "lon": -73.5425869
+},
+{
+  "type": "node",
+  "id": 8008382329,
+  "lat": 41.0136712,
+  "lon": -73.5425262
+},
+{
+  "type": "node",
+  "id": 8008382330,
+  "lat": 41.0136914,
+  "lon": -73.5426137
+},
+{
+  "type": "node",
+  "id": 8008382331,
+  "lat": 41.0136586,
+  "lon": -73.5426376
+},
+{
+  "type": "node",
+  "id": 8008382332,
+  "lat": 41.0136850,
+  "lon": -73.5426232
+},
+{
+  "type": "node",
+  "id": 8008382333,
+  "lat": 41.0136933,
+  "lon": -73.5425501
+},
+{
+  "type": "node",
+  "id": 8008382334,
+  "lat": 41.0136929,
+  "lon": -73.5426108
+},
+{
+  "type": "node",
+  "id": 8008382335,
+  "lat": 41.0136681,
+  "lon": -73.5426354
 },
 {
   "type": "node",
