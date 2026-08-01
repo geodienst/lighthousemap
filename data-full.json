@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-07-31T03:44:54Z",
+    "timestamp_osm_base": "2026-08-01T03:45:02Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -540994,6 +540994,51 @@
     "seamark:light:reference": "E 1560",
     "seamark:light:sequence": "1+(1.5)+1+(6.5)",
     "seamark:name": "Punta dello Stenardo",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-07-29."
+  }
+},
+{
+  "type": "node",
+  "id": 14065376089,
+  "lat": 40.4756407,
+  "lon": 17.2236966,
+  "tags": {
+    "operator:type": "private",
+    "seamark:beacon:colour": "green",
+    "seamark:beacon:height": "10.1",
+    "seamark:beacon:shape": "column;building;pedestal",
+    "seamark:information": "pedestal",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "12",
+    "seamark:light:period": "5",
+    "seamark:light:range": "8",
+    "seamark:light:reference": "E 2146",
+    "seamark:light:sequence": "1+(4)",
+    "seamark:name": "Passaggio Piccolo East mole",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-07-29."
+  }
+},
+{
+  "type": "node",
+  "id": 14065376090,
+  "lat": 40.4763122,
+  "lon": 17.2216178,
+  "tags": {
+    "operator:type": "private",
+    "seamark:beacon:colour": "red",
+    "seamark:beacon:height": "7.9",
+    "seamark:beacon:shape": "post",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "10",
+    "seamark:light:period": "5",
+    "seamark:light:range": "4",
+    "seamark:light:reference": "E 2145",
+    "seamark:light:sequence": "1+(4)",
+    "seamark:name": "Passaggio Piccolo Commercial port West mole",
     "seamark:type": "beacon",
     "source": "US NGA Pub. 113. 2026-07-29."
   }
