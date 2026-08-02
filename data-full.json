@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-01T03:45:02Z",
+    "timestamp_osm_base": "2026-08-02T03:46:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -341215,6 +341215,7 @@
   "lat": 35.1468737,
   "lon": 35.9213244,
   "tags": {
+    "image": "https://static.panoramio.com.storage.googleapis.com/photos/large/87860236.jpg",
     "man_made": "lighthouse",
     "name": "Baniyas",
     "seamark:light:1:character": "Fl",
@@ -554515,6 +554516,8 @@
     4072704253
   ],
   "tags": {
+    "addr:state": "OR",
+    "addr:street": "Lighthouse Trail",
     "building": "yes",
     "height": "28",
     "man_made": "lighthouse",
