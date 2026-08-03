@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-02T03:46:21Z",
+    "timestamp_osm_base": "2026-08-03T03:48:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -341215,7 +341215,7 @@
   "lat": 35.1468737,
   "lon": 35.9213244,
   "tags": {
-    "image": "https://static.panoramio.com.storage.googleapis.com/photos/large/87860236.jpg",
+    "image": "https://web.archive.org/web/20161025050905/http://www.panoramio.com/photo/87860236",
     "man_made": "lighthouse",
     "name": "Baniyas",
     "seamark:light:1:character": "Fl",
@@ -471791,7 +471791,8 @@
     "seamark:light:9:sequence": "(5)+1",
     "seamark:name": "Hovsund",
     "seamark:type": "light_minor",
-    "seamark:vertical_length": "6.5"
+    "seamark:vertical_length": "6.5",
+    "wikimedia_commons": "File:Hovsund lighthouse with whale bone remains near the pier at Hov, Vestvågøy, Lofoten Islands, Norway..jpg"
   }
 },
 {
