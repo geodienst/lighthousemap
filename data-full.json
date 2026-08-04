@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-03T03:48:21Z",
+    "timestamp_osm_base": "2026-08-04T03:31:06Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -309421,8 +309421,8 @@
 {
   "type": "node",
   "id": 1567953959,
-  "lat": 36.7279802,
-  "lon": -3.7263956,
+  "lat": 36.7279695,
+  "lon": -3.7264171,
   "tags": {
     "man_made": "lighthouse",
     "seamark:light:character": "Fl",
@@ -311650,24 +311650,6 @@
     "seamark:light:reference": "D 2142",
     "seamark:light:sequence": "2+(3)",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2011-10-20."
-  }
-},
-{
-  "type": "node",
-  "id": 1568365262,
-  "lat": 38.4437981,
-  "lon": -9.1057995,
-  "tags": {
-    "seamark:beacon_special_purpose:height": "3",
-    "seamark:light:character": "Oc",
-    "seamark:light:colour": "yellow",
-    "seamark:light:period": "6",
-    "seamark:light:range": "3",
-    "seamark:light:reference": "D 2144.2",
-    "seamark:light:sequence": "5+(1)",
-    "seamark:name": "E2N",
-    "seamark:type": "beacon_special_purpose",
     "source": "US NGA Pub. 113. 2011-10-20."
   }
 },
