@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-05T03:26:42Z",
+    "timestamp_osm_base": "2026-08-06T03:30:11Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -42846,8 +42846,8 @@
 {
   "type": "node",
   "id": 1191084331,
-  "lat": -38.9072004,
-  "lon": 145.9225593,
+  "lat": -38.9072296,
+  "lon": 145.9226639,
   "tags": {
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -541026,6 +541026,79 @@
     "seamark:name": "Passaggio Piccolo Commercial port West mole",
     "seamark:type": "beacon",
     "source": "US NGA Pub. 113. 2026-07-29."
+  }
+},
+{
+  "type": "node",
+  "id": 14075449595,
+  "lat": -0.8972310,
+  "lon": 131.1850528,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "11",
+    "seamark:light:1:period": "15",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sector_end": "207",
+    "seamark:light:1:sector_start": "295",
+    "seamark:light:1:sequence": "0.5+(2),0.5+(2),0.5+(9.5)",
+    "seamark:light:reference": "Q 3372",
+    "seamark:name": "Pulau Tsiof",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14075470402,
+  "lat": -1.0887393,
+  "lon": 131.1814617,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "8",
+    "seamark:light:1:period": "12.5",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sector_end": "015",
+    "seamark:light:1:sector_start": "130",
+    "seamark:light:1:sequence": "0.5+(2),0.5+(9.5)",
+    "seamark:light:reference": "Q 3379",
+    "seamark:name": "Balbili Island",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14075470412,
+  "lat": -1.7526367,
+  "lon": 131.1431118,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "33",
+    "seamark:light:1:period": "7.5",
+    "seamark:light:1:range": "16",
+    "seamark:light:1:sector_end": "018",
+    "seamark:light:1:sector_start": "060",
+    "seamark:light:1:sequence": "0.5+(7)",
+    "seamark:light:reference": "Q 3358",
+    "seamark:name": "Jef Joes",
+    "seamark:type": "landmark"
   }
 },
 {
