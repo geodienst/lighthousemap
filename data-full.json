@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-06T03:30:11Z",
+    "timestamp_osm_base": "2026-08-07T03:11:19Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -2418,8 +2418,8 @@
 {
   "type": "node",
   "id": 270999676,
-  "lat": 44.4919138,
-  "lon": 12.2841277,
+  "lat": 44.4919156,
+  "lon": 12.2842466,
   "tags": {
     "man_made": "lighthouse",
     "seamark:information": "Reserve light range 18M.Traffic signals.Current signals.",
@@ -8507,35 +8507,6 @@
     "seamark:type": "light_minor",
     "source": "survey",
     "wikidata": "Q24515751"
-  }
-},
-{
-  "type": "node",
-  "id": 427959994,
-  "lat": 41.3609829,
-  "lon": 2.1659475,
-  "tags": {
-    "ele": "100",
-    "man_made": "lighthouse",
-    "name": "Far de Montjuïc",
-    "name:ca": "Far de Montjuïc",
-    "name:en": "Montjuic Lighthouse",
-    "seamark:light:1:character": "Fl",
-    "seamark:light:1:colour": "white",
-    "seamark:light:1:group": "2",
-    "seamark:light:1:height": "108",
-    "seamark:light:1:period": "15",
-    "seamark:light:1:range": "26",
-    "seamark:light:1:sector_end": "66.6",
-    "seamark:light:1:sector_start": "240.5",
-    "seamark:light:1:sequence": "0.3+(3.4),0.3+(11)",
-    "seamark:light:reference": "E 0400",
-    "seamark:name": "Montjuich",
-    "seamark:type": "light_major",
-    "website": "https://guia.barcelona.cat/detall/far-de-montjuic_133140417.html",
-    "wikidata": "Q30912204",
-    "wikimedia_commons": "Category:Far de Montjuïc",
-    "wikipedia": "ca:Far de Montjuïc"
   }
 },
 {
@@ -301112,7 +301083,8 @@
     "seamark:light:reference": "A 5610.1",
     "seamark:light:sequence": "7.5+(2.5)",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 114. 2011-05-26."
+    "source": "US NGA Pub. 114. 2011-05-26.",
+    "wikidata": "Q26206723"
   }
 },
 {
@@ -541102,6 +541074,179 @@
   }
 },
 {
+  "type": "node",
+  "id": 14077089662,
+  "lat": -1.1709827,
+  "lon": 129.9772391,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "46",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "20",
+    "seamark:light:1:sequence": "0.3+(4.7)",
+    "seamark:light:reference": "Q 3361",
+    "seamark:name": "Pulau Kofiau",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "D",
+    "seamark:radar_transponder:range": "12",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14077089683,
+  "lat": -1.1727708,
+  "lon": 129.3002980,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "34",
+    "seamark:light:1:period": "10",
+    "seamark:light:1:range": "15",
+    "seamark:light:1:sequence": "0.5+(2),0.5+(7)",
+    "seamark:light:reference": "Q 1603.5",
+    "seamark:name": "Pulau Boo Besar",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14077089692,
+  "lat": -1.7739045,
+  "lon": 129.6249682,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "46",
+    "seamark:light:1:period": "20",
+    "seamark:light:1:range": "20",
+    "seamark:light:1:sequence": "0.5+(3),0.5+(3),0.5+(12.5)",
+    "seamark:light:reference": "Q 3357.5",
+    "seamark:name": "Pulau Nampale",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14077332729,
+  "lat": -0.9097144,
+  "lon": 130.5969730,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "115",
+    "seamark:light:1:period": "10",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sector_end": "077",
+    "seamark:light:1:sector_start": "261",
+    "seamark:light:1:sequence": "0.5+(1.5),0.5+(7.5)",
+    "seamark:light:reference": "Q 3362",
+    "seamark:name": "Selat Sagewin",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14077490610,
+  "lat": -0.9458258,
+  "lon": 134.8296066,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "45",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "18",
+    "seamark:light:1:sector_end": "238",
+    "seamark:light:1:sector_start": "060",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:2:character": "Fl",
+    "seamark:light:2:colour": "white",
+    "seamark:light:2:height": "45",
+    "seamark:light:2:period": "5",
+    "seamark:light:2:range": "18",
+    "seamark:light:2:sector_end": "255",
+    "seamark:light:2:sector_start": "238",
+    "seamark:light:2:sequence": "0.5+(4.5)",
+    "seamark:light:2:visibility": "part_obscured",
+    "seamark:light:reference": "Q 3392",
+    "seamark:name": "Palau Numfoor",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14077490615,
+  "lat": -0.8622667,
+  "lon": 134.1348186,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "16",
+    "seamark:light:1:period": "15",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sector_end": "343",
+    "seamark:light:1:sector_start": "132",
+    "seamark:light:1:sequence": "0.5+(2),0.5+(2),0.5+(9.5)",
+    "seamark:light:reference": "Q 3389",
+    "seamark:name": "Tg. Memori",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14077490620,
+  "lat": -0.5460900,
+  "lon": 133.1501543,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "32",
+    "seamark:light:1:period": "10",
+    "seamark:light:1:range": "14",
+    "seamark:light:1:sequence": "0.5+(2),0.5+(7)",
+    "seamark:light:reference": "Q 3376.5",
+    "seamark:name": "Saoekorem",
+    "seamark:type": "landmark"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -558909,6 +559054,55 @@
     "seamark:type": "light_major",
     "source": "NRCan-CanVec-7.0",
     "wikidata": "Q28375755"
+  }
+},
+{
+  "type": "way",
+  "id": 646482857,
+  "nodes": [
+    6074186025,
+    6074186032,
+    6074186031,
+    6074186030,
+    6074186029,
+    6074186026,
+    6074186033,
+    6074186035,
+    6074186028,
+    6074186027,
+    6074186034,
+    6074186025
+  ],
+  "tags": {
+    "architect": "Josep Cabestany",
+    "building": "lighthouse",
+    "building:levels": "3",
+    "ele": "100",
+    "heritage": "yes",
+    "historic": "heritage",
+    "man_made": "lighthouse",
+    "name": "Far de Montjuïc",
+    "name:ca": "Far de Montjuïc",
+    "name:en": "Montjuic Lighthouse",
+    "operator": "Autoritat Portuària de Barcelona",
+    "operator:short": "APB",
+    "operator:type": "public",
+    "operator:wikidata": "Q42190368",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "108",
+    "seamark:light:1:period": "15",
+    "seamark:light:1:range": "26",
+    "seamark:light:1:sector_end": "66.6",
+    "seamark:light:1:sector_start": "240.5",
+    "seamark:light:1:sequence": "0.3+(3.4),0.3+(11)",
+    "seamark:light:reference": "E 0400",
+    "seamark:name": "Montjuich",
+    "seamark:type": "light_major",
+    "website": "https://www.portdebarcelona.cat/ca/port-vell/patrimoni-cultural/propietats/far-de-montjuic",
+    "wikidata": "Q30912204",
+    "year_of_construction": "1906"
   }
 },
 {
@@ -603106,6 +603300,72 @@
   "id": 9437854100,
   "lat": 41.3250812,
   "lon": 2.1523559
+},
+{
+  "type": "node",
+  "id": 6074186025,
+  "lat": 41.3609696,
+  "lon": 2.1659864
+},
+{
+  "type": "node",
+  "id": 6074186026,
+  "lat": 41.3609852,
+  "lon": 2.1661000
+},
+{
+  "type": "node",
+  "id": 6074186027,
+  "lat": 41.3609589,
+  "lon": 2.1658479
+},
+{
+  "type": "node",
+  "id": 6074186028,
+  "lat": 41.3608628,
+  "lon": 2.1659675
+},
+{
+  "type": "node",
+  "id": 6074186029,
+  "lat": 41.3609709,
+  "lon": 2.1661168
+},
+{
+  "type": "node",
+  "id": 6074186030,
+  "lat": 41.3610269,
+  "lon": 2.1661976
+},
+{
+  "type": "node",
+  "id": 6074186031,
+  "lat": 41.3610749,
+  "lon": 2.1661351
+},
+{
+  "type": "node",
+  "id": 6074186032,
+  "lat": 41.3610206,
+  "lon": 2.1660584
+},
+{
+  "type": "node",
+  "id": 6074186033,
+  "lat": 41.3609350,
+  "lon": 2.1660308
+},
+{
+  "type": "node",
+  "id": 6074186034,
+  "lat": 41.3610168,
+  "lon": 2.1659263
+},
+{
+  "type": "node",
+  "id": 6074186035,
+  "lat": 41.3609216,
+  "lon": 2.1660482
 },
 {
   "type": "node",
