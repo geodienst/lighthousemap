@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-07T03:11:19Z",
+    "timestamp_osm_base": "2026-08-08T02:16:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -13386,7 +13386,9 @@
     "seamark:radio_station:mmsi": "992271015",
     "seamark:type": "light_major",
     "source:name:br": "proper translation",
-    "wikidata": "Q2085054"
+    "start_date": "1881",
+    "wikidata": "Q2085054",
+    "wikipedia": "fr:Phare du Millier"
   }
 },
 {
@@ -14087,6 +14089,7 @@
     "height": "17",
     "man_made": "lighthouse",
     "name": "Boat Bluff Lighthouse",
+    "name:fr": "Phare de Boat Bluff",
     "operator": "Gerry and Lee LaRose",
     "seamark:light:1:character": "Oc",
     "seamark:light:1:colour": "white",
@@ -14117,7 +14120,8 @@
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 111. 2010-09-02.",
     "wikidata": "Q4931485",
-    "wikipedia": "en:Boat Bluff Lighthouse"
+    "wikipedia": "en:Boat Bluff Lighthouse",
+    "wikipedia:fr": "Phare de Boat Bluff"
   }
 },
 {
@@ -248139,7 +248143,8 @@
     "seamark:light:reference": "D 0877",
     "seamark:name": "Raoulic Jetty",
     "seamark:type": "light_major",
-    "source": "US NGA Pub. 113. 2010-10-22."
+    "source": "US NGA Pub. 113. 2010-10-22.",
+    "wikimedia_commons": "File:Phare de la jetée du Raoulic zu Audierne, Bretagne, Frankreich.jpg"
   }
 },
 {
@@ -344027,7 +344032,7 @@
   "lon": 32.4942470,
   "tags": {
     "man_made": "lighthouse",
-    "name": "Тарханкут",
+    "name": "Тарханкутский маяк",
     "name:de": "Leuchtturm Tarchankutsky",
     "name:uk": "Тарханкут",
     "seamark:fog_signal:category": "horn",
@@ -541247,6 +541252,53 @@
   }
 },
 {
+  "type": "node",
+  "id": 14079309329,
+  "lat": -1.8874216,
+  "lon": 136.2448789,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "16",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "4",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 3394.5",
+    "seamark:name": "Serui, W. pier, inner head",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14079309334,
+  "lat": -1.7934224,
+  "lon": 136.9029382,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "26",
+    "seamark:light:1:period": "3",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sector_end": "055",
+    "seamark:light:1:sector_start": "165",
+    "seamark:light:1:sequence": "0.3+(2.7)",
+    "seamark:light:reference": "Q 3393.7",
+    "seamark:name": "Tg. Rainbawa",
+    "seamark:topmark:colour": "white",
+    "seamark:topmark:shape": "rhombus",
+    "seamark:type": "landmark"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -541476,10 +541528,9 @@
     388517872
   ],
   "tags": {
-    "alt_name": "Punta Candeeira",
     "building": "yes",
     "man_made": "lighthouse",
-    "name": "Punta Candieira",
+    "name": "Faro de Punta Candieira",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "3+1",
@@ -541491,7 +541542,7 @@
     "seamark:name": "Punta Candelaria",
     "seamark:type": "light_major",
     "wikidata": "Q6546369",
-    "wikipedia": "gl:Faro de Punta Candeeira"
+    "wikipedia": "gl:Faro de Punta Candieira"
   }
 },
 {
