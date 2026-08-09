@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-08T02:16:21Z",
+    "timestamp_osm_base": "2026-08-09T02:24:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -541299,6 +541299,334 @@
   }
 },
 {
+  "type": "node",
+  "id": 14079915855,
+  "lat": -1.6019510,
+  "lon": 135.4106174,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "40",
+    "seamark:light:period": "3",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3395",
+    "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:name": "Tg. Woka",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080032700,
+  "lat": -2.6956580,
+  "lon": 136.0190758,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "53",
+    "seamark:light:period": "4",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "Q 3395.9",
+    "seamark:light:sequence": "1+(3)",
+    "seamark:name": "Tanjung Kamengsenu",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080068234,
+  "lat": -2.2282716,
+  "lon": 136.2661100,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "LFl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "35",
+    "seamark:light:period": "10",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "Q 3396",
+    "seamark:light:sequence": "3+(7)",
+    "seamark:name": "Naufi",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080093000,
+  "lat": -2.2058718,
+  "lon": 136.4219671,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "23",
+    "seamark:light:period": "6",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3396.2",
+    "seamark:light:sequence": "1+(5)",
+    "seamark:name": "Tanjung Worisanua",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080361740,
+  "lat": -1.4635231,
+  "lon": 137.9197863,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "31",
+    "seamark:light:period": "5",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3396.6",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Mamberamo",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080548452,
+  "lat": -1.8464418,
+  "lon": 138.7505972,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "18",
+    "seamark:light:period": "5",
+    "seamark:light:range": "6",
+    "seamark:light:reference": "Q 3397",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Sarmi",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080636054,
+  "lat": -1.9582720,
+  "lon": 138.8944268,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "14",
+    "seamark:light:period": "5",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3397.5",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Holmaffin",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14080651470,
+  "lat": -2.0046627,
+  "lon": 139.2417725,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "23",
+    "seamark:light:period": "6",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "Q 3397.6",
+    "seamark:light:sequence": "0.5+(5.5)",
+    "seamark:name": "Jamna",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080811517,
+  "lat": -2.4405456,
+  "lon": 140.6118099,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "12",
+    "seamark:light:period": "6",
+    "seamark:light:range": "14",
+    "seamark:light:reference": "Q 3397.95",
+    "seamark:light:sequence": "0.5+(5.5)",
+    "seamark:name": "Tg. Kelapa",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080831282,
+  "lat": -2.5338562,
+  "lon": 140.7445951,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2+1",
+    "seamark:light:height": "215",
+    "seamark:light:period": "24",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "Q 3398",
+    "seamark:light:sequence": "1+(3)+1+(9)+1+(9)",
+    "seamark:name": "Soeadja Moko",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080954812,
+  "lat": -2.6073293,
+  "lon": 141.0013959,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "200",
+    "seamark:light:period": "10",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "Q 3399.8",
+    "seamark:light:sequence": "1+(9)",
+    "seamark:name": "Oinake",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080954820,
+  "lat": -2.5426315,
+  "lon": 140.7059737,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:category": "rear",
+    "seamark:light:character": "Oc",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "22",
+    "seamark:light:period": "4",
+    "seamark:light:range": "6",
+    "seamark:light:reference": "Q 3399.1",
+    "seamark:light:sequence": "3+(1)",
+    "seamark:name": "Noebae Han",
+    "seamark:topmark:colour": "white",
+    "seamark:topmark:shape": "triangle, point down",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14080954830,
+  "lat": -2.5418722,
+  "lon": 140.7183305,
+  "tags": {
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "13",
+    "seamark:light:period": "4",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3398.8",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "Hollandia Baai, NW. of Entsjau",
+    "seamark:radar_reflector": "yes",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "cylinder",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14080954835,
+  "lat": -2.5394229,
+  "lon": 140.7115465,
+  "tags": {
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "13",
+    "seamark:light:period": "5",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3398.9",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Hollandia Baai, N. side of harbor",
+    "seamark:radar_reflector": "yes",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "cone, point up",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14080976479,
+  "lat": -2.7261719,
+  "lon": 134.5041527,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "LFl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "13",
+    "seamark:light:period": "10",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3395.55",
+    "seamark:light:sequence": "2+(8)",
+    "seamark:name": "Teluk Wandamen, Miei",
+    "seamark:type": "landmark"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -596095,26 +596423,26 @@
 {
   "type": "node",
   "id": 3160335744,
-  "lat": 65.1497182,
-  "lon": -13.6550621
+  "lat": 65.1497336,
+  "lon": -13.6549836
 },
 {
   "type": "node",
   "id": 3160335760,
-  "lat": 65.1497865,
-  "lon": -13.6550246
+  "lat": 65.1497912,
+  "lon": -13.6549987
 },
 {
   "type": "node",
   "id": 3160342397,
-  "lat": 65.1497393,
-  "lon": -13.6549659
+  "lat": 65.1497539,
+  "lon": -13.6549252
 },
 {
   "type": "node",
   "id": 3160342544,
-  "lat": 65.1497655,
-  "lon": -13.6551207
+  "lat": 65.1497709,
+  "lon": -13.6550571
 },
 {
   "type": "node",
