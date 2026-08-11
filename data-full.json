@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-10T02:29:04Z",
+    "timestamp_osm_base": "2026-08-11T02:21:33Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -228931,6 +228931,28 @@
 },
 {
   "type": "node",
+  "id": 1293786626,
+  "lat": -8.4767487,
+  "lon": 140.3515232,
+  "tags": {
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "13",
+    "seamark:light:period": "5",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "Q 3338.7",
+    "seamark:light:sequence": "1+(4)",
+    "seamark:name": "Merauke Inner",
+    "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2023"
+  }
+},
+{
+  "type": "node",
   "id": 1293788611,
   "lat": 12.2237325,
   "lon": 93.0203835,
@@ -350763,30 +350785,6 @@
 },
 {
   "type": "node",
-  "id": 1837834366,
-  "lat": 46.8230996,
-  "lon": -54.1962038,
-  "tags": {
-    "man_made": "lighthouse",
-    "name": "Cape St. Mary's Lighthouse",
-    "seamark:fog_signal:category": "horn",
-    "seamark:fog_signal:group": "1",
-    "seamark:fog_signal:period": "30",
-    "seamark:fog_signal:sequence": "3+(27)",
-    "seamark:landmark:height": "12",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "118.9",
-    "seamark:light:period": "5",
-    "seamark:light:range": "21",
-    "seamark:light:reference": "H 0432",
-    "seamark:light:sequence": "0.5+(4.5)",
-    "seamark:name": "Cape St. Mary's",
-    "seamark:type": "landmark"
-  }
-},
-{
-  "type": "node",
   "id": 1838208163,
   "lat": 46.9144444,
   "lon": -54.1844444,
@@ -371991,6 +371989,35 @@
     "seamark:topmark:colour": "green",
     "seamark:topmark:shape": "cone, point up",
     "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 4312918714,
+  "lat": -8.2432696,
+  "lon": 139.4409712,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "35",
+    "seamark:light:1:period": "4",
+    "seamark:light:1:range": "24",
+    "seamark:light:1:sector_end": "110",
+    "seamark:light:1:sector_start": "242",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 3340",
+    "seamark:name": "Habee",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "M",
+    "seamark:radar_transponder:period": "30",
+    "seamark:radar_transponder:range": "5",
+    "seamark:radar_transponder:sector_end": "072",
+    "seamark:radar_transponder:sector_start": "295",
+    "seamark:type": "landmark"
   }
 },
 {
@@ -430872,11 +430899,13 @@
 {
   "type": "node",
   "id": 6818200572,
-  "lat": -8.4788585,
-  "lon": 140.3896761,
+  "lat": -8.4787983,
+  "lon": 140.3896828,
   "tags": {
-    "man_made": "beacon",
-    "name": "Sungai Merauke beacon",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "25",
@@ -430884,18 +430913,18 @@
     "seamark:light:range": "20",
     "seamark:light:reference": "Q 3339.2",
     "seamark:light:sequence": "1+(5)",
-    "source": "NGA Pub. 112 2019"
+    "seamark:name": "Sungai Merauke",
+    "seamark:type": "landmark",
+    "source": "NGA Pub. 112 2023"
   }
 },
 {
   "type": "node",
   "id": 6818263917,
-  "lat": -8.4604125,
-  "lon": 140.3610766,
+  "lat": -8.4603839,
+  "lon": 140.3611075,
   "tags": {
-    "height": "10",
-    "man_made": "beacon",
-    "name": "Sungai Merauke Range, Front",
+    "seamark:light:category": "front",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "14",
@@ -430903,19 +430932,23 @@
     "seamark:light:range": "10",
     "seamark:light:reference": "Q 3339",
     "seamark:light:sequence": "0.5+(3.5)",
-    "seamark:name": "Sungai Merauke Range, front",
-    "source": "NGA Pub. 112 2019"
+    "seamark:name": "Sungai Merauke Range",
+    "seamark:topmark:colour": "white",
+    "seamark:topmark:shape": "triangle, point up",
+    "source": "NGA Pub. 112 2023"
   }
 },
 {
   "type": "node",
   "id": 6818263918,
-  "lat": -8.4570069,
-  "lon": 140.3634640,
+  "lat": -8.4569823,
+  "lon": 140.3634924,
   "tags": {
-    "height": "15.85",
-    "man_made": "beacon",
-    "name": "Sungai Merauke Range, Rear",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:category": "rear",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "21",
@@ -430923,7 +430956,11 @@
     "seamark:light:range": "12",
     "seamark:light:reference": "Q 3339.1",
     "seamark:light:sequence": "0.3+(2.7)",
-    "source": "NGA Pub. 112 2019"
+    "seamark:name": "Sungai Merauke Range",
+    "seamark:topmark:colour": "white",
+    "seamark:topmark:shape": "triangle, point down",
+    "seamark:type": "landmark",
+    "source": "NGA Pub. 112 2023"
   }
 },
 {
@@ -541994,6 +542031,353 @@
   }
 },
 {
+  "type": "node",
+  "id": 14085040577,
+  "lat": -1.3525235,
+  "lon": 134.2755665,
+  "tags": {
+    "man_made": "lighthouse",
+    "name": "Mercusuar Tanjung Oransbari",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Oc",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "50",
+    "seamark:light:period": "4",
+    "seamark:light:range": "21",
+    "seamark:light:reference": "Q 3395.1",
+    "seamark:light:sequence": "3+(1)",
+    "seamark:name": "Tanjung Oransbari",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14085075102,
+  "lat": -2.5368101,
+  "lon": 134.3932738,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:information": "Green beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "14",
+    "seamark:light:period": "5",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "Q 3395.5",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Yop",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14085202488,
+  "lat": -9.1357285,
+  "lon": 141.0177170,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "14",
+    "seamark:light:period": "3",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "Q 3336",
+    "seamark:light:sequence": "0.4+(2.6)",
+    "seamark:name": "Sungai Torasi",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14085209844,
+  "lat": -0.8768955,
+  "lon": 134.0762569,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "not_conspicuous",
+    "seamark:landmark:construction": "metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "11",
+    "seamark:light:period": "5",
+    "seamark:light:range": "7",
+    "seamark:light:reference": "Q 3391",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Butsiuri Reef",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14085387049,
+  "lat": -8.4996165,
+  "lon": 140.3257591,
+  "tags": {
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "12",
+    "seamark:light:period": "4",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "Q 3338.5",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "Merauke",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "rectangle, vertical",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14085387054,
+  "lat": -8.5021451,
+  "lon": 140.3731631,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "4",
+    "seamark:light:height": "44",
+    "seamark:light:period": "20",
+    "seamark:light:range": "27",
+    "seamark:light:reference": "Q 3338",
+    "seamark:light:sequence": "1+(3),1+(3),1+(3),1+(7),",
+    "seamark:name": "Tg. Mimiabe",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14085682486,
+  "lat": -8.1268331,
+  "lon": 139.9524961,
+  "tags": {
+    "seamark:beacon_special_purpose:colour": "white",
+    "seamark:beacon_special_purpose:shape": "post",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "13",
+    "seamark:light:period": "3",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "Q 3339.8",
+    "seamark:light:sequence": "0.6+(2.4)",
+    "seamark:name": "Tanjung Mawal",
+    "seamark:type": "beacon_special_purpose"
+  }
+},
+{
+  "type": "node",
+  "id": 14085728055,
+  "lat": -8.0108196,
+  "lon": 138.8936663,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "23",
+    "seamark:light:period": "6",
+    "seamark:light:range": "19",
+    "seamark:light:reference": "Q 3340.52",
+    "seamark:light:sequence": "1+(5)",
+    "seamark:name": "Kimaan",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14085728056,
+  "lat": -8.3445587,
+  "lon": 138.9604708,
+  "tags": {
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "14",
+    "seamark:light:period": "3",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "Q 3340.51",
+    "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:name": "Selat Muli NW",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14085859239,
+  "lat": -7.1902074,
+  "lon": 138.6481164,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "green",
+    "seamark:landmark:construction": "grp",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "13",
+    "seamark:light:period": "4",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3340.68",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "Modderhock",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14085859244,
+  "lat": -7.3888671,
+  "lon": 138.5321601,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:beacon_special_purpose:category": "unknown_purpose",
+    "seamark:beacon_special_purpose:colour": "white",
+    "seamark:beacon_special_purpose:shape": "tower",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "13",
+    "seamark:light:period": "3",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3340.55",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:name": "Tanjung Kolff",
+    "seamark:type": "beacon_special_purpose"
+  }
+},
+{
+  "type": "node",
+  "id": 14085870409,
+  "lat": -7.1638013,
+  "lon": 138.7911106,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red",
+    "seamark:landmark:construction": "grp",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "13",
+    "seamark:light:period": "5",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3340.65",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Sungai Digul S. estuary",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14086149235,
+  "lat": -4.8299930,
+  "lon": 136.8006474,
+  "tags": {
+    "seamark:beacon_special_purpose:category": "leading",
+    "seamark:beacon_special_purpose:colour": "white",
+    "seamark:beacon_special_purpose:shape": "tower",
+    "seamark:information": "Channel marked by lights.",
+    "seamark:light:category": "rear",
+    "seamark:light:character": "Oc",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "13",
+    "seamark:light:period": "4",
+    "seamark:light:range": "6",
+    "seamark:light:reference": "Q 3342.61",
+    "seamark:light:sequence": "3+(1)",
+    "seamark:name": "Inner Aika River Range",
+    "seamark:type": "beacon_special_purpose"
+  }
+},
+{
+  "type": "node",
+  "id": 14086155503,
+  "lat": -5.5227493,
+  "lon": 138.1383864,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "not_conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "23",
+    "seamark:light:period": "3",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "Q 3340.87",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:name": "Sungai Utumbuwe",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14086155508,
+  "lat": -5.5555016,
+  "lon": 138.0662698,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "13",
+    "seamark:light:period": "3",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3340.9",
+    "seamark:light:sequence": "0.6+(2.4)",
+    "seamark:name": "Utumbuwe River, entrance",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14086209052,
+  "lat": -4.7588750,
+  "lon": 136.5097826,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "16",
+    "seamark:light:period": "12.5",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3343",
+    "seamark:light:sequence": "0.5+(2),0.5+(9.5)",
+    "seamark:name": "Nime",
+    "seamark:radar_reflector": "yes",
+    "seamark:type": "landmark"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -545909,7 +546293,8 @@
     "source": "US NGA Pub. 116. 2011-07-07.",
     "source:name": "Sjöfartsverket (name=Ölands Norra Udde)",
     "tourism": "attraction",
-    "wheelchair": "no"
+    "wheelchair": "no",
+    "wikidata": "Q1024406"
   }
 },
 {
@@ -559469,7 +559854,7 @@
   "tags": {
     "building": "lighthouse",
     "man_made": "lighthouse",
-    "name": "Faro de Cabo Roche",
+    "name": "Faro del Cabo de Roche",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "4",
@@ -571294,6 +571679,44 @@
   }
 },
 {
+  "type": "way",
+  "id": 1548517152,
+  "nodes": [
+    14084756398,
+    14084756399,
+    1837834366,
+    14084756389,
+    14084756395,
+    14084756390,
+    14084756396,
+    14084756397,
+    14084756391,
+    14084756392,
+    14084756393,
+    14084756394,
+    14084756398
+  ],
+  "tags": {
+    "area": "yes",
+    "man_made": "lighthouse",
+    "name": "Cape St. Mary's Lighthouse",
+    "seamark:fog_signal:category": "horn",
+    "seamark:fog_signal:group": "1",
+    "seamark:fog_signal:period": "30",
+    "seamark:fog_signal:sequence": "3+(27)",
+    "seamark:landmark:height": "12",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "118.9",
+    "seamark:light:period": "5",
+    "seamark:light:range": "21",
+    "seamark:light:reference": "H 0432",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Cape St. Mary's",
+    "seamark:type": "landmark"
+  }
+},
+{
   "type": "node",
   "id": 2145540823,
   "lat": -17.4950408,
@@ -579614,6 +580037,78 @@
   "id": 13316446837,
   "lat": 47.0743015,
   "lon": -55.8591136
+},
+{
+  "type": "node",
+  "id": 1837834366,
+  "lat": 46.8230798,
+  "lon": -54.1961341
+},
+{
+  "type": "node",
+  "id": 14084756389,
+  "lat": 46.8230953,
+  "lon": -54.1961489
+},
+{
+  "type": "node",
+  "id": 14084756390,
+  "lat": 46.8231041,
+  "lon": -54.1961995
+},
+{
+  "type": "node",
+  "id": 14084756391,
+  "lat": 46.8230619,
+  "lon": -54.1962410
+},
+{
+  "type": "node",
+  "id": 14084756392,
+  "lat": 46.8230430,
+  "lon": -54.1962286
+},
+{
+  "type": "node",
+  "id": 14084756393,
+  "lat": 46.8230314,
+  "lon": -54.1962034
+},
+{
+  "type": "node",
+  "id": 14084756394,
+  "lat": 46.8230306,
+  "lon": -54.1961731
+},
+{
+  "type": "node",
+  "id": 14084756395,
+  "lat": 46.8231040,
+  "lon": -54.1961726
+},
+{
+  "type": "node",
+  "id": 14084756396,
+  "lat": 46.8230955,
+  "lon": -54.1962233
+},
+{
+  "type": "node",
+  "id": 14084756397,
+  "lat": 46.8230802,
+  "lon": -54.1962384
+},
+{
+  "type": "node",
+  "id": 14084756398,
+  "lat": 46.8230409,
+  "lon": -54.1961468
+},
+{
+  "type": "node",
+  "id": 14084756399,
+  "lat": 46.8230591,
+  "lon": -54.1961323
 },
 {
   "type": "node",
