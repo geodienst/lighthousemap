@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-11T02:21:33Z",
+    "timestamp_osm_base": "2026-08-12T02:38:25Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -6010,8 +6010,16 @@
   "lat": 51.3891918,
   "lon": -9.6028899,
   "tags": {
+    "alt_name": "Fastnet Light House",
+    "building": "lighthouse",
+    "building:colour": "white",
+    "building:material": "stone",
+    "logainm:ref": "1417127",
+    "logainm:url": "https://www.logainm.ie/1417127.aspx",
     "man_made": "lighthouse",
     "name": "Fastnet Lighthouse",
+    "operator": "Commissioners of Irish Lights",
+    "operator:wikidata": "Q3684800",
     "seamark:fog_signal:category": "horn",
     "seamark:fog_signal:group": "4",
     "seamark:fog_signal:period": "60",
@@ -6030,7 +6038,8 @@
     "seamark:type": "light_major",
     "source": "Commissioners of Irish Lights",
     "url": "https://www.irishlights.ie/tourism/our-lighthouses/fastnet.aspx",
-    "wikidata": "Q3067133"
+    "wikidata": "Q3067133",
+    "wikimedia_commons": "Category:Fastnet Light"
   }
 },
 {
@@ -542375,6 +542384,62 @@
     "seamark:name": "Nime",
     "seamark:radar_reflector": "yes",
     "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14088391206,
+  "lat": -3.6733363,
+  "lon": 133.6967958,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "27",
+    "seamark:light:period": "3",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3344.7",
+    "seamark:light:sequence": "0.6+(2.4)",
+    "seamark:name": "Tanjung Simora",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14088391216,
+  "lat": -3.7272872,
+  "lon": 133.8143762,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "35",
+    "seamark:light:period": "15",
+    "seamark:light:range": "14",
+    "seamark:light:reference": "Q 3345.3",
+    "seamark:light:sequence": "0.5+(2),0.5+(2),0.5+(9.5)",
+    "seamark:name": "Bitsyaru",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14088391217,
+  "lat": -3.8350636,
+  "lon": 134.0987708,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "57",
+    "seamark:light:period": "5",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3345.4",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Pulau Nusurumi",
+    "seamark:type": "light_major"
   }
 },
 {
