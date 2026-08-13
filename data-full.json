@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-12T02:38:25Z",
+    "timestamp_osm_base": "2026-08-13T02:41:32Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -284848,27 +284848,6 @@
 },
 {
   "type": "node",
-  "id": 1550124597,
-  "lat": 56.9739274,
-  "lon": 24.0923686,
-  "tags": {
-    "seamark:beacon_special_purpose:category": "warning",
-    "seamark:beacon_special_purpose:colour": "white",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "green",
-    "seamark:light:group": "3",
-    "seamark:light:height": "8",
-    "seamark:light:period": "9",
-    "seamark:light:range": "1",
-    "seamark:light:reference": "C 3552",
-    "seamark:light:sequence": "0.5+(1.5)+0.5+(1.5)+0.5+(4.5)",
-    "seamark:radar_reflector": "yes",
-    "seamark:type": "beacon_special_purpose",
-    "source": "US NGA Pub. 116. 2011-07-07."
-  }
-},
-{
-  "type": "node",
   "id": 1550124828,
   "lat": 56.9854849,
   "lon": 24.0940082,
@@ -361241,7 +361220,8 @@
   "lon": 133.0425493,
   "tags": {
     "man_made": "lighthouse",
-    "name": "Mys POVOROTNYY",
+    "name": "Мыс Поворотный",
+    "name:en": "Mys Povorotnyy Lighthouse",
     "name:ru": "Маяк Поворотный",
     "note": "Reserve Lt 12M. RC Int.number: M7572",
     "seamark:information": "Visible 262°30′ -127°30′ . Reserve light range 12M. Signal station. Radiobeacon.",
@@ -539165,6 +539145,49 @@
 },
 {
   "type": "node",
+  "id": 13787481865,
+  "lat": -1.2329992,
+  "lon": 131.0971697,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "green",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:category": "rear",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "14",
+    "seamark:light:period": "5",
+    "seamark:light:range": "6",
+    "seamark:light:reference": "Q 3381.1",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Segarou Island",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "cone, point up",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 13787481866,
+  "lat": -1.1679251,
+  "lon": 131.1148426,
+  "tags": {
+    "seamark:landmark:category": "column",
+    "seamark:landmark:colour": "red",
+    "seamark:light:category": "front",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "7",
+    "seamark:light:period": "5",
+    "seamark:light:range": "6",
+    "seamark:light:reference": "Q 3381",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Segarou Island",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
   "id": 13792472198,
   "lat": 31.8406025,
   "lon": -116.6260027,
@@ -541311,6 +541334,31 @@
 },
 {
   "type": "node",
+  "id": 14075449590,
+  "lat": -0.8372286,
+  "lon": 131.2107470,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "4",
+    "seamark:light:height": "86",
+    "seamark:light:period": "25",
+    "seamark:light:range": "22",
+    "seamark:light:reference": "Q 3373.3",
+    "seamark:light:sequence": "0.6+(3),0.6+(3),0.6+(3),0.6+(13.6)",
+    "seamark:name": "Pulau Buaya",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "K",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
   "id": 14075449595,
   "lat": -0.8972310,
   "lon": 131.1850528,
@@ -541336,6 +541384,75 @@
 },
 {
   "type": "node",
+  "id": 14075470311,
+  "lat": -0.8829625,
+  "lon": 131.2590787,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:category": "front",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "10",
+    "seamark:light:period": "3",
+    "seamark:light:range": "6",
+    "seamark:light:reference": "Q 3368",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:name": "Sorong Range",
+    "seamark:topmark:colour": "white",
+    "seamark:topmark:shape": "triangle, point up",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14075470316,
+  "lat": -0.8906265,
+  "lon": 131.2604990,
+  "tags": {
+    "seamark:beacon_isolated_danger:colour": "black;red;black",
+    "seamark:beacon_isolated_danger:colour_pattern": "horizontal",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "7",
+    "seamark:light:period": "10",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "Q 3368.5",
+    "seamark:light:sequence": "0.5+(2),0.5+(7)",
+    "seamark:name": "Karang Dua",
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 spheres",
+    "seamark:type": "beacon_isolated_danger"
+  }
+},
+{
+  "type": "node",
+  "id": 14075470353,
+  "lat": -0.8838313,
+  "lon": 131.2370559,
+  "tags": {
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "post",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "7",
+    "seamark:light:period": "2",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "Q 3374",
+    "seamark:light:sequence": "0.5+(1.5)",
+    "seamark:name": "Doom Island",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "cone, point up",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
   "id": 14075470402,
   "lat": -1.0887393,
   "lon": 131.1814617,
@@ -541355,6 +541472,28 @@
     "seamark:light:1:sequence": "0.5+(2),0.5+(9.5)",
     "seamark:light:reference": "Q 3379",
     "seamark:name": "Balbili Island",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14075470407,
+  "lat": -1.4051601,
+  "lon": 130.9147258,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "13",
+    "seamark:light:period": "10",
+    "seamark:light:range": "8",
+    "seamark:light:reference": "Q 3386",
+    "seamark:light:sequence": "1+(9)",
+    "seamark:name": "Membok Island",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "cylinder",
     "seamark:type": "landmark"
   }
 },
@@ -541474,6 +541613,50 @@
     "seamark:light:1:sequence": "0.5+(1.5),0.5+(7.5)",
     "seamark:light:reference": "Q 3362",
     "seamark:name": "Selat Sagewin",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14077332734,
+  "lat": -0.6467254,
+  "lon": 130.5785634,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "22",
+    "seamark:light:period": "5",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "Q 3362.5",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Pulau Agusta",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14077332743,
+  "lat": -0.4693026,
+  "lon": 130.7845010,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "62",
+    "seamark:light:period": "7.5",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "Q 3363",
+    "seamark:light:sequence": "0.5+(7)",
+    "seamark:name": "Saonek Besar",
     "seamark:type": "landmark"
   }
 },
@@ -542440,6 +542623,106 @@
     "seamark:light:sequence": "0.5+(4.5)",
     "seamark:name": "Pulau Nusurumi",
     "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14089002197,
+  "lat": -0.3333596,
+  "lon": 117.4983635,
+  "tags": {
+    "seamark:light:character": "LFl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "14",
+    "seamark:light:period": "10",
+    "seamark:light:range": "11",
+    "seamark:light:reference": "Q 1468.5",
+    "seamark:light:sequence": "2+(8)",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 14089017468,
+  "lat": -3.1095625,
+  "lon": 107.8805673,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "16",
+    "seamark:light:period": "10",
+    "seamark:light:range": "13",
+    "seamark:light:reference": "Q 1020.6",
+    "seamark:light:sequence": "1+(9)",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 14090380330,
+  "lat": -4.3125352,
+  "lon": 133.6311887,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "30",
+    "seamark:light:period": "15",
+    "seamark:light:range": "16",
+    "seamark:light:reference": "Q 3345.5",
+    "seamark:light:sequence": "0.5+(2),0.5+(2),0.5+(9.5)",
+    "seamark:name": "Palau Adi",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14090380335,
+  "lat": -3.9878338,
+  "lon": 133.5240893,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "13",
+    "seamark:light:period": "3",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3343.5",
+    "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:name": "Pulau Keliwala",
+    "seamark:radar_reflector": "yes",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14090380336,
+  "lat": -3.5767478,
+  "lon": 133.6468406,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:group": "2",
+    "seamark:light:height": "50",
+    "seamark:light:period": "10",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3344.5",
+    "seamark:light:sequence": "0.5+(2),0.5+(7)",
+    "seamark:name": "Serotte Island",
+    "seamark:type": "beacon_lateral"
   }
 },
 {
