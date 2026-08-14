@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-13T02:41:32Z",
+    "timestamp_osm_base": "2026-08-14T02:39:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -440203,6 +440203,23 @@
 },
 {
   "type": "node",
+  "id": 7906739681,
+  "lat": -27.1265754,
+  "lon": -109.2761990,
+  "tags": {
+    "man_made": "beacon",
+    "name": "Hotu Iti",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "10",
+    "seamark:light:sequence": "1+(9)",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
   "id": 7935214311,
   "lat": 13.1578100,
   "lon": -61.2423771,
@@ -542723,6 +542740,161 @@
     "seamark:light:sequence": "0.5+(2),0.5+(7)",
     "seamark:name": "Serotte Island",
     "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14091623218,
+  "lat": -2.6994206,
+  "lon": 132.4420903,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "yellow",
+    "seamark:light:height": "8",
+    "seamark:light:period": "2",
+    "seamark:light:range": "4",
+    "seamark:light:reference": "Q 3350",
+    "seamark:light:sequence": "0.5+(1.5)",
+    "seamark:name": "Kokas",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14091623229,
+  "lat": -2.6224024,
+  "lon": 131.6666083,
+  "tags": {
+    "man_made": "lighthouse",
+    "name": "Mercusuar Pulau Sabuda",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "100",
+    "seamark:light:1:period": "18",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sector_end": "034",
+    "seamark:light:1:sector_start": "090",
+    "seamark:light:1:sequence": "0.5+(3),0.5+(14)",
+    "seamark:light:reference": "Q 3348.4",
+    "seamark:name": "Pulau Sabuda, NE. point",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14091623230,
+  "lat": -2.9366623,
+  "lon": 131.9768259,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "55",
+    "seamark:light:period": "5",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3347.7",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Batu Putih, W. end",
+    "seamark:radar_reflector": "yes",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14091623231,
+  "lat": -2.9705345,
+  "lon": 132.1120575,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "50",
+    "seamark:light:period": "10",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "Q 3347.6",
+    "seamark:light:sequence": "0.2+(1.4),0.2+(8.2)",
+    "seamark:name": "Pulau Ekka",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14091623232,
+  "lat": -2.9488738,
+  "lon": 132.2964675,
+  "tags": {
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "15",
+    "seamark:light:period": "4",
+    "seamark:light:range": "6",
+    "seamark:light:reference": "Q 3347.5",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "Meti Meti",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "cylinder",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14091623237,
+  "lat": -2.9344089,
+  "lon": 132.3083630,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "12",
+    "seamark:light:period": "3",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "Q 3347",
+    "seamark:light:sequence": "1+(2)",
+    "seamark:name": "Fakfak",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14091623238,
+  "lat": -2.9920371,
+  "lon": 132.3199386,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "34",
+    "seamark:light:1:period": "15",
+    "seamark:light:1:range": "7",
+    "seamark:light:1:sector_end": "094.5",
+    "seamark:light:1:sector_start": "139.5",
+    "seamark:light:1:sequence": "0.5+(2),0.5+(2),0.5+(9.5)",
+    "seamark:light:reference": "Q 3346",
+    "seamark:name": "Pulau Panjong, E. end",
+    "seamark:type": "landmark"
   }
 },
 {
