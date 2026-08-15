@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-14T02:39:21Z",
+    "timestamp_osm_base": "2026-08-15T01:44:58Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -369120,8 +369120,8 @@
 {
   "type": "node",
   "id": 3651177256,
-  "lat": 31.8138466,
-  "lon": 34.6462407,
+  "lat": 31.8139068,
+  "lon": 34.6462222,
   "tags": {
     "man_made": "lighthouse",
     "seamark:light:character": "Fl",
@@ -447568,6 +447568,25 @@
     "seamark:name": "Qinglan Tou",
     "seamark:type": "light_minor",
     "source": "China MSA Notice No. 1111/2012"
+  }
+},
+{
+  "type": "node",
+  "id": 9008015707,
+  "lat": 22.1821667,
+  "lon": 113.5606667,
+  "tags": {
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:buoy_lateral:shape": "can",
+    "seamark:buoy_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:period": "1.5",
+    "seamark:light:range": "3",
+    "seamark:light:sequence": "0.5+(1)",
+    "seamark:name": "S1",
+    "seamark:type": "buoy_lateral"
   }
 },
 {
@@ -542895,6 +542914,44 @@
     "seamark:light:reference": "Q 3346",
     "seamark:name": "Pulau Panjong, E. end",
     "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14094455547,
+  "lat": 22.1843333,
+  "lon": 113.5611667,
+  "tags": {
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:buoy_lateral:shape": "can",
+    "seamark:buoy_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:period": "1.5",
+    "seamark:light:range": "3",
+    "seamark:light:sequence": "0.5+(1)",
+    "seamark:name": "S3",
+    "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14094455548,
+  "lat": 22.1828333,
+  "lon": 113.5603333,
+  "tags": {
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:buoy_lateral:shape": "can",
+    "seamark:buoy_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:period": "2.5",
+    "seamark:light:range": "3",
+    "seamark:light:sequence": "0.5+(2)",
+    "seamark:name": "S2",
+    "seamark:type": "buoy_lateral"
   }
 },
 {
