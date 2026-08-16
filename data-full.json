@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-15T01:44:58Z",
+    "timestamp_osm_base": "2026-08-16T01:53:12Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -430823,6 +430823,30 @@
 },
 {
   "type": "node",
+  "id": 6818125701,
+  "lat": -5.7518481,
+  "lon": 134.1966939,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "LFl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "22",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sector_end": "280",
+    "seamark:light:1:sector_start": "020",
+    "seamark:light:1:sequence": "2+(3)",
+    "seamark:light:reference": "Q 1632",
+    "seamark:name": "Kepulauan Aru",
+    "seamark:type": "landmark",
+    "source": "NGA Pub. 112 2026"
+  }
+},
+{
+  "type": "node",
   "id": 6818141094,
   "lat": -5.3349367,
   "lon": 134.5550903,
@@ -542952,6 +542976,344 @@
     "seamark:light:sequence": "0.5+(2)",
     "seamark:name": "S2",
     "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14096087060,
+  "lat": -2.4490314,
+  "lon": 133.1157267,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "50",
+    "seamark:light:1:period": "15",
+    "seamark:light:1:range": "18",
+    "seamark:light:1:sector_end": "253",
+    "seamark:light:1:sector_start": "078",
+    "seamark:light:1:sequence": "0.5+(2),0.5+(2),0.5+(9.5)",
+    "seamark:light:reference": "Q 3354",
+    "seamark:name": "Tanjung Tanahmerah",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14096160638,
+  "lat": -2.2902813,
+  "lon": 132.3058166,
+  "tags": {
+    "seamark:landmark:category": "column",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "36",
+    "seamark:light:period": "5",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "Q 3349",
+    "seamark:light:sequence": "1+(4)",
+    "seamark:name": "Tanjung Sabra",
+    "seamark:pile:category": "tripodal",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14096160645,
+  "lat": -2.2920629,
+  "lon": 132.6753630,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "13",
+    "seamark:light:period": "3",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3352",
+    "seamark:light:sequence": "0.6+(2.4)",
+    "seamark:name": "Tg. Karakra",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14096187916,
+  "lat": -2.0591867,
+  "lon": 132.0415720,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "14",
+    "seamark:light:period": "3",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 3356",
+    "seamark:light:sequence": "0.6+(2.4)",
+    "seamark:name": "Tg. Putus",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14096232393,
+  "lat": -10.7261449,
+  "lon": 123.0462578,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "LFl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "47",
+    "seamark:light:1:period": "10",
+    "seamark:light:1:range": "20",
+    "seamark:light:1:sector_end": "211",
+    "seamark:light:1:sector_start": "090",
+    "seamark:light:1:sequence": "2+(2),2+(4)",
+    "seamark:light:reference": "Q 1356",
+    "seamark:name": "Pulau Roti",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14096485370,
+  "lat": -10.4318554,
+  "lon": 123.3791735,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "23",
+    "seamark:light:period": "4",
+    "seamark:light:range": "14",
+    "seamark:light:reference": "Q 1358",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "Tanjung Pukuatu",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14096538639,
+  "lat": -3.3781838,
+  "lon": 143.4096665,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "4",
+    "seamark:light:height": "9",
+    "seamark:light:period": "16",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3400.2",
+    "seamark:light:sequence": "0.5+(1.5),0.5+(1.5),0.5+(1.5),0.5+(9.5)",
+    "seamark:name": "Unei Island",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14096538644,
+  "lat": -3.2441398,
+  "lon": 143.3038328,
+  "tags": {
+    "seamark:landmark:category": "column",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "not_conspicuous",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "8",
+    "seamark:light:period": "6",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3400.18",
+    "seamark:light:sequence": "0.3+(1),0.3+(4.4)",
+    "seamark:name": "Walis Island",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14096538645,
+  "lat": -3.1304407,
+  "lon": 142.3639807,
+  "tags": {
+    "seamark:landmark:category": "column",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "6",
+    "seamark:light:period": "10",
+    "seamark:light:range": "3",
+    "seamark:light:reference": "K 3400.15",
+    "seamark:light:sequence": "0.5+(2),0.5+(7)",
+    "seamark:name": "Stein Reef",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14096538651,
+  "lat": -2.6790114,
+  "lon": 141.3082569,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "68",
+    "seamark:light:period": "5",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3400",
+    "seamark:light:sequence": "0.2+(4.8)",
+    "seamark:name": "Cape Concordia",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14096702878,
+  "lat": -3.5538367,
+  "lon": 143.6330659,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "7",
+    "seamark:light:period": "3",
+    "seamark:light:range": "3",
+    "seamark:light:reference": "K 3400.7",
+    "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:name": "Wewak W. side",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 14096702879,
+  "lat": -3.5675386,
+  "lon": 143.6480147,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "7",
+    "seamark:light:period": "5",
+    "seamark:light:range": "3",
+    "seamark:light:reference": "K 3400.6",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Wewak",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "triangle, point up",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 14096702884,
+  "lat": -3.4352525,
+  "lon": 143.5444102,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "9",
+    "seamark:light:period": "5",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3400.4",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Cape Samein",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14097330164,
+  "lat": -4.3859419,
+  "lon": 145.3222065,
+  "tags": {
+    "man_made": "lighthouse",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "16",
+    "seamark:light:period": "9",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3401.6",
+    "seamark:light:sequence": "0.3+(1),0.3+(1),0.3+(6.1)",
+    "seamark:name": "Cap Gourdon",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14097330165,
+  "lat": -4.1189465,
+  "lon": 144.8624423,
+  "tags": {
+    "man_made": "lighthouse",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "14",
+    "seamark:light:period": "8",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3401.4",
+    "seamark:light:sequence": "0.4+(1),0.4+(6.2)",
+    "seamark:name": "Condor Point",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14097343482,
+  "lat": -4.8481737,
+  "lon": 145.8053984,
+  "tags": {
+    "man_made": "lighthouse",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "22",
+    "seamark:light:1:period": "6",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sector_end": "338",
+    "seamark:light:1:sector_start": "135",
+    "seamark:light:1:sequence": "0.3+(1),0.3+(4.4)",
+    "seamark:light:reference": "K 3401.8",
+    "seamark:name": "Cape Croisilles",
+    "seamark:type": "landmark"
   }
 },
 {
