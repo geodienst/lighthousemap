@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-16T01:53:12Z",
+    "timestamp_osm_base": "2026-08-18T01:45:49Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1317,30 +1317,6 @@
     "wikidata": "Q6546359",
     "wikimedia_commons": "File:La_Oliva_-_Faro_de_Tostón_11_ies.jpg",
     "wikipedia": "en:Tostón Lighthouse"
-  }
-},
-{
-  "type": "node",
-  "id": 174203769,
-  "lat": 45.4785418,
-  "lon": 12.5832172,
-  "tags": {
-    "man_made": "lighthouse",
-    "name": "Faro di Piave Vecchia",
-    "seamark:information": "Reserve light range 18M.",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:group": "4",
-    "seamark:light:height": "45",
-    "seamark:light:period": "24",
-    "seamark:light:range": "18",
-    "seamark:light:reference": "E 2504",
-    "seamark:light:sequence": "0.2+(2.8)+0.2+(2.8)+0.2+(2.8)+0.2+(14.8)",
-    "seamark:name": "Faro di Piave Vecchia",
-    "seamark:type": "light_major",
-    "source": "US NGA Pub. 113. 2010-10-22.",
-    "wikidata": "Q3739801",
-    "wikipedia": "it:Faro di Piave Vecchia"
   }
 },
 {
@@ -5137,32 +5113,6 @@
     "seamark:type": "light_major",
     "source": "Commissioners of Irish Lights",
     "wikidata": "Q28333631"
-  }
-},
-{
-  "type": "node",
-  "id": 322520644,
-  "lat": 53.2755680,
-  "lon": -6.0758445,
-  "tags": {
-    "man_made": "lighthouse",
-    "name": "Muglins Lighthouse",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "red",
-    "seamark:light:group": "1",
-    "seamark:light:height": "14",
-    "seamark:light:period": "5",
-    "seamark:light:range": "11",
-    "seamark:light:reference": "A 5868",
-    "seamark:light:sequence": "0.7+(4.3)",
-    "seamark:light_major:colour": "white;red;white",
-    "seamark:light_major:colour_pattern": "horizontal",
-    "seamark:name": "Muglins",
-    "seamark:radio_station:category": "ais",
-    "seamark:type": "light_major",
-    "source": "Commissioners of Irish Lights",
-    "wikidata": "Q28333608",
-    "wikimedia_commons": "Category:Muglins Lighthouse"
   }
 },
 {
@@ -29835,7 +29785,8 @@
     "seamark:light:sequence": "1+(2)+1+(11)",
     "seamark:type": "beacon_special_purpose",
     "source": "LINZ;Approaches to Napier Chart;Chart NZ561",
-    "source:date": "2017-01-01"
+    "source:date": "2017-01-01",
+    "wikidata": "Q113647961"
   }
 },
 {
@@ -462440,6 +462391,32 @@
 },
 {
   "type": "node",
+  "id": 9540404551,
+  "lat": -6.3192546,
+  "lon": 147.8059267,
+  "tags": {
+    "man_made": "lighthouse",
+    "seamark:information": "Temporarily extinguished (2025)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "grp",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "27",
+    "seamark:light:1:period": "8",
+    "seamark:light:1:range": "8",
+    "seamark:light:1:sector_end": "318",
+    "seamark:light:1:sector_start": "170",
+    "seamark:light:1:sequence": "0.4+(1),0.4+(6.2)",
+    "seamark:light:reference": "K 3405.4",
+    "seamark:name": "Kitumala Point",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
   "id": 9540432265,
   "lat": 58.5909613,
   "lon": -135.0188301,
@@ -539780,6 +539757,54 @@
 },
 {
   "type": "node",
+  "id": 13876278706,
+  "lat": -11.2547818,
+  "lon": 152.1353974,
+  "tags": {
+    "man_made": "lighthouse",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:construction": "metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "24",
+    "seamark:light:period": "10",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3450",
+    "seamark:light:sequence": "0.1+(9.9)",
+    "seamark:name": "Pana Waipona Island",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "triangle, point up",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 13876312969,
+  "lat": -10.7869236,
+  "lon": 152.0072804,
+  "tags": {
+    "man_made": "lighthouse",
+    "seamark:landmark:category": "column",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "16",
+    "seamark:light:1:period": "4",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sector_end": "035.7",
+    "seamark:light:1:sector_start": "164.5",
+    "seamark:light:1:sequence": "0.4+(3.6)",
+    "seamark:light:reference": "K 3449",
+    "seamark:name": "Lunn Island",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "square",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
   "id": 13887405989,
   "lat": 43.5671622,
   "lon": -6.0783552,
@@ -540699,6 +540724,31 @@
     "seamark:name": "White Point Breakwater",
     "seamark:type": "light_minor",
     "source": "https://www.notmar.gc.ca/publications/list-lights/atl/atl8832-en.php"
+  }
+},
+{
+  "type": "node",
+  "id": 13994638348,
+  "lat": -9.0387046,
+  "lon": 149.3158341,
+  "tags": {
+    "man_made": "lighthouse",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "grp",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "5",
+    "seamark:light:1:period": "6",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sector_end": "330",
+    "seamark:light:1:sector_start": "150",
+    "seamark:light:1:sequence": "0.3+(1),0.3+(4.4)",
+    "seamark:light:reference": "K 3428",
+    "seamark:name": "Hall Point",
+    "seamark:type": "landmark"
   }
 },
 {
@@ -543313,6 +543363,531 @@
     "seamark:light:1:sequence": "0.3+(1),0.3+(4.4)",
     "seamark:light:reference": "K 3401.8",
     "seamark:name": "Cape Croisilles",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14098489114,
+  "lat": -5.2107808,
+  "lon": 145.7869059,
+  "tags": {
+    "seamark:information": "Aero light",
+    "seamark:landmark:category": "tower",
+    "seamark:light:category": "aero",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "18",
+    "seamark:light:period": "9.5",
+    "seamark:light:range": "25",
+    "seamark:light:reference": "K 3404",
+    "seamark:light:sequence": "0.3+(9.2)",
+    "seamark:name": "AVIATION LIGHT",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14098489115,
+  "lat": -5.2124353,
+  "lon": 145.8148396,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "30",
+    "seamark:light:period": "15",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "K 3402",
+    "seamark:light:sequence": "0.2+(14.8)",
+    "seamark:name": "Coast Watchers",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14098537321,
+  "lat": -6.6560618,
+  "lon": 147.8630939,
+  "tags": {
+    "seamark:information": "Visible 230°-000° except where obscured by Tami Island",
+    "seamark:landmark:category": "column",
+    "seamark:landmark:colour": "white",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "20",
+    "seamark:light:1:period": "6",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sector_end": "000",
+    "seamark:light:1:sector_start": "230",
+    "seamark:light:1:sequence": "0.6+(5.4)",
+    "seamark:light:reference": "K 3406",
+    "seamark:name": "Nussing Island, Cape Cretin",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14098727798,
+  "lat": -8.9042441,
+  "lon": 148.4709140,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:beacon_special_purpose:category": "leading",
+    "seamark:beacon_special_purpose:colour": "white",
+    "seamark:beacon_special_purpose:shape": "tower",
+    "seamark:light:category": "rear",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "134",
+    "seamark:light:period": "10",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3424.1",
+    "seamark:light:sequence": "0.2+(9.8)",
+    "seamark:name": "Oro Bay Range",
+    "seamark:topmark:colour": "white",
+    "seamark:topmark:shape": "rectangle, horizontal",
+    "seamark:type": "beacon_special_purpose"
+  }
+},
+{
+  "type": "node",
+  "id": 14098727799,
+  "lat": -8.9030990,
+  "lon": 148.4729914,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:beacon_special_purpose:category": "leading",
+    "seamark:beacon_special_purpose:colour": "white",
+    "seamark:beacon_special_purpose:shape": "tower",
+    "seamark:information": "Temporarily extinguished (2025)",
+    "seamark:light:category": "front",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "119",
+    "seamark:light:period": "3",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3424",
+    "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:name": "Oro Bay Range",
+    "seamark:topmark:colour": "white",
+    "seamark:topmark:shape": "triangle, point up",
+    "seamark:type": "beacon_special_purpose"
+  }
+},
+{
+  "type": "node",
+  "id": 14098765205,
+  "lat": -7.0133751,
+  "lon": 147.0693760,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "46",
+    "seamark:light:1:period": "20",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sector_end": "300",
+    "seamark:light:1:sector_start": "140",
+    "seamark:light:1:sequence": "1+(3),1+(15)",
+    "seamark:light:reference": "K 3415",
+    "seamark:name": "Burnung Point",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14098798297,
+  "lat": -9.0688342,
+  "lon": 149.2987731,
+  "tags": {
+    "seamark:light:1:category": "rear",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "122",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "16",
+    "seamark:light:1:sector_end": "280",
+    "seamark:light:1:sector_start": "175",
+    "seamark:light:1:sequence": "0.2+(4.8)",
+    "seamark:light:1:visibility": "part_obscured",
+    "seamark:light:2:character": "Fl",
+    "seamark:light:2:colour": "white",
+    "seamark:light:2:height": "122",
+    "seamark:light:2:period": "5",
+    "seamark:light:2:range": "16",
+    "seamark:light:2:sector_end": "330",
+    "seamark:light:2:sector_start": "280",
+    "seamark:light:2:sequence": "0.2+(4.8)",
+    "seamark:light:reference": "K 3430.1",
+    "seamark:name": "Tufi Harbor Range",
+    "seamark:topmark:colour": "white",
+    "seamark:topmark:shape": "rectangle, vertical",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14098798298,
+  "lat": -9.0868745,
+  "lon": 149.3212996,
+  "tags": {
+    "seamark:light:1:category": "front",
+    "seamark:light:1:character": "Oc",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "30",
+    "seamark:light:1:period": "3",
+    "seamark:light:1:range": "15",
+    "seamark:light:1:sector_end": "345",
+    "seamark:light:1:sector_start": "260",
+    "seamark:light:1:sequence": "2+(1)",
+    "seamark:light:reference": "K 3430",
+    "seamark:name": "Tufi Harbor Range",
+    "seamark:topmark:colour": "white",
+    "seamark:topmark:shape": "rectangle, vertical",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14099189208,
+  "lat": -9.1263333,
+  "lon": 149.3921667,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "7",
+    "seamark:light:period": "1.5",
+    "seamark:light:range": "4",
+    "seamark:light:reference": "K 3429.8",
+    "seamark:light:sequence": "0.2+(1.3)",
+    "seamark:name": "Stewart Reef",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "square",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 14099189209,
+  "lat": -9.1805892,
+  "lon": 149.4512683,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "11",
+    "seamark:light:period": "12",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3429.4",
+    "seamark:light:sequence": "0.5+(1.5),0.5+(1.5),0.5+(7.5)",
+    "seamark:name": "Greaves Reef",
+    "seamark:pile:category": "tripodal",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14099189216,
+  "lat": -9.1985223,
+  "lon": 149.4470106,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "9",
+    "seamark:light:period": "10",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3429.6",
+    "seamark:light:sequence": "1+(9)",
+    "seamark:name": "Ham Reef",
+    "seamark:pile:category": "tripodal",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14099189223,
+  "lat": -9.1987609,
+  "lon": 149.4783616,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:landmark:category": "column",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "not_conspicuous",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "9",
+    "seamark:light:period": "2.5",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3429",
+    "seamark:light:sequence": "0.5+(2)",
+    "seamark:name": "Veale Reef",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14099223607,
+  "lat": -9.6291829,
+  "lon": 150.0233224,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:conspicuity": "not_conspicuous",
+    "seamark:landmark:construction": "framework",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "23",
+    "seamark:light:period": "8",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3432",
+    "seamark:light:sequence": "0.4+(1),0.4+(6.2)",
+    "seamark:name": "Ipoteto Island",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14100475426,
+  "lat": -10.3411116,
+  "lon": 151.8677024,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:beacon_special_purpose:colour": "White;Black",
+    "seamark:beacon_special_purpose:colour_pattern": "horizontal",
+    "seamark:beacon_special_purpose:shape": "pile",
+    "seamark:information": "Temporarily extinguished (2022)",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "8",
+    "seamark:light:1:period": "6",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sector_end": "204.4",
+    "seamark:light:1:sector_start": "298",
+    "seamark:light:1:sequence": "0.5+(1),0.5+(4)",
+    "seamark:light:reference": "K 3446",
+    "seamark:name": "Hastings Island",
+    "seamark:radar_reflector": "yes",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "triangle, point up",
+    "seamark:type": "beacon_special_purpose"
+  }
+},
+{
+  "type": "node",
+  "id": 14100475427,
+  "lat": -10.3527528,
+  "lon": 151.3849157,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "8",
+    "seamark:light:period": "6",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3438",
+    "seamark:light:sequence": "0.4+(5.6)",
+    "seamark:name": "Kegawam Island",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14100841935,
+  "lat": -11.4494593,
+  "lon": 154.3982986,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2025)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:construction": "framework",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "43",
+    "seamark:light:period": "8",
+    "seamark:light:range": "16",
+    "seamark:light:reference": "K 3450.5",
+    "seamark:light:sequence": "0.5+(7.5)",
+    "seamark:name": "Adele Island",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14100891751,
+  "lat": -10.5313907,
+  "lon": 151.2123729,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2022)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "16",
+    "seamark:light:1:period": "2.5",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sector_end": "317",
+    "seamark:light:1:sector_start": "016",
+    "seamark:light:1:sequence": "0.5+(2)",
+    "seamark:light:reference": "K 3444",
+    "seamark:name": "Bright Island, N. end",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14100891752,
+  "lat": -10.5115073,
+  "lon": 151.1350144,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2022)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "11",
+    "seamark:light:period": "12",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3440",
+    "seamark:light:sequence": "0.5+(1.5),0.5+(1.5),0.5+(7.5)",
+    "seamark:name": "Shortland Reef",
+    "seamark:pile:category": "tripodal",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14101188303,
+  "lat": -10.2450730,
+  "lon": 150.9417408,
+  "tags": {
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "pile",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:information": "Temporarily extinguished (2006)",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "7",
+    "seamark:light:period": "2",
+    "seamark:light:range": "4",
+    "seamark:light:reference": "K 3451.23",
+    "seamark:light:sequence": "0.2+(1.8)",
+    "seamark:name": "Strathord Islands, N. side",
+    "seamark:radar_reflector": "yes",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "triangle, point up",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14101188308,
+  "lat": -10.2483134,
+  "lon": 150.9416682,
+  "tags": {
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "pile",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "7",
+    "seamark:light:period": "2",
+    "seamark:light:range": "4",
+    "seamark:light:reference": "K 3451.24",
+    "seamark:light:sequence": "0.2+(1.8)",
+    "seamark:name": "Strathord Islands, S. side",
+    "seamark:radar_reflector": "yes",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "square",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14101256406,
+  "lat": -10.2243657,
+  "lon": 150.8830500,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "35",
+    "seamark:light:period": "2.5",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3451",
+    "seamark:light:sequence": "0.5+(2)",
+    "seamark:name": "Meimeiara Island",
+    "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 14101425621,
+  "lat": -10.5729235,
+  "lon": 150.7020579,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "7",
+    "seamark:light:period": "5",
+    "seamark:light:range": "6",
+    "seamark:light:reference": "K 3453",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Sariba Island",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 14101425622,
+  "lat": -10.6027970,
+  "lon": 150.6106043,
+  "tags": {
+    "seamark:landmark:category": "column",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "10",
+    "seamark:light:period": "8",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3455",
+    "seamark:light:sequence": "0.5+(1),0.5+(6)",
+    "seamark:name": "Weka Una Rock",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14101425635,
+  "lat": -10.5696828,
+  "lon": 149.8801181,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2022)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "188",
+    "seamark:light:period": "12",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "K 3456.5",
+    "seamark:light:sequence": "0.2+(11.8)",
+    "seamark:name": "Ava Point",
     "seamark:type": "landmark"
   }
 },
@@ -552663,10 +553238,9 @@
     "building": "lighthouse",
     "building:material": "brick",
     "charge": "15 PLN",
-    "check_date": "2025-07-29",
+    "check_date": "2026-08-16",
     "colour": "red",
     "fee": "yes",
-    "fixme": "Closed from 2026-05-01 due to renovation",
     "height": "41.5",
     "man_made": "lighthouse",
     "name": "Latarnia morska Hel",
@@ -568638,7 +569212,8 @@
     "seamark:light:sequence": "0.5+(2)+0.5+(2)+0.5+(6.5)",
     "seamark:name": "Cancale",
     "seamark:type": "light_minor",
-    "wikidata": "Q23894666"
+    "wikidata": "Q23894666",
+    "wikipedia": "Phare_de_la_Fen%C3%AAtre"
   }
 },
 {
@@ -569872,6 +570447,52 @@
     "start_date": "1900",
     "wikidata": "Q1518751",
     "wikipedia": "sv:Kullens fyr"
+  }
+},
+{
+  "type": "way",
+  "id": 1202003081,
+  "nodes": [
+    11143985340,
+    11143985317,
+    11143985360,
+    11143985337,
+    11143985313,
+    11143985344,
+    11143985324,
+    11143985355,
+    11143985343,
+    11143985316,
+    11143985339,
+    11143985320,
+    11143985349,
+    11143985329,
+    11143985310,
+    11143985325,
+    11143985326,
+    11143985315,
+    11143985335,
+    11143985359,
+    11143985340
+  ],
+  "tags": {
+    "building:part": "tower",
+    "man_made": "lighthouse",
+    "name": "Faro di Piave Vecchia",
+    "seamark:information": "Reserve light range 18M.",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "4",
+    "seamark:light:height": "45",
+    "seamark:light:period": "24",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "E 2504",
+    "seamark:light:sequence": "0.2+(2.8)+0.2+(2.8)+0.2+(2.8)+0.2+(14.8)",
+    "seamark:name": "Faro di Piave Vecchia",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 113. 2010-10-22.",
+    "wikidata": "Q3739801",
+    "wikipedia": "it:Faro di Piave Vecchia"
   }
 },
 {
@@ -572653,6 +573274,44 @@
     "seamark:light:sequence": "0.5+(4.5)",
     "seamark:name": "Cape St. Mary's",
     "seamark:type": "landmark"
+  }
+},
+{
+  "type": "way",
+  "id": 1550422742,
+  "nodes": [
+    14101709740,
+    14101709731,
+    14101709732,
+    14101709739,
+    14101709733,
+    14101709734,
+    14101709735,
+    14101709738,
+    14101709736,
+    14101709737,
+    14101709740
+  ],
+  "tags": {
+    "building": "lighthouse",
+    "man_made": "lighthouse",
+    "name": "Muglins Lighthouse",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:group": "1",
+    "seamark:light:height": "14",
+    "seamark:light:period": "5",
+    "seamark:light:range": "11",
+    "seamark:light:reference": "A 5868",
+    "seamark:light:sequence": "0.7+(4.3)",
+    "seamark:light_major:colour": "white;red;white",
+    "seamark:light_major:colour_pattern": "horizontal",
+    "seamark:name": "Muglins",
+    "seamark:radio_station:category": "ais",
+    "seamark:type": "light_major",
+    "source": "Commissioners of Irish Lights",
+    "wikidata": "Q28333608",
+    "wikimedia_commons": "Category:Muglins Lighthouse"
   }
 },
 {
@@ -593651,6 +594310,66 @@
 },
 {
   "type": "node",
+  "id": 14101709731,
+  "lat": 53.2755857,
+  "lon": -6.0758915
+},
+{
+  "type": "node",
+  "id": 14101709732,
+  "lat": 53.2755960,
+  "lon": -6.0758850
+},
+{
+  "type": "node",
+  "id": 14101709733,
+  "lat": 53.2756010,
+  "lon": -6.0758535
+},
+{
+  "type": "node",
+  "id": 14101709734,
+  "lat": 53.2755953,
+  "lon": -6.0758408
+},
+{
+  "type": "node",
+  "id": 14101709735,
+  "lat": 53.2755865,
+  "lon": -6.0758352
+},
+{
+  "type": "node",
+  "id": 14101709736,
+  "lat": 53.2755697,
+  "lon": -6.0758521
+},
+{
+  "type": "node",
+  "id": 14101709737,
+  "lat": 53.2755689,
+  "lon": -6.0758707
+},
+{
+  "type": "node",
+  "id": 14101709738,
+  "lat": 53.2755772,
+  "lon": -6.0758384
+},
+{
+  "type": "node",
+  "id": 14101709739,
+  "lat": 53.2756017,
+  "lon": -6.0758693
+},
+{
+  "type": "node",
+  "id": 14101709740,
+  "lat": 53.2755752,
+  "lon": -6.0758860
+},
+{
+  "type": "node",
   "id": 3154719214,
   "lat": 53.1343651,
   "lon": -4.4129264
@@ -611918,6 +612637,126 @@
   "id": 1182528302,
   "lat": 44.9686449,
   "lon": 12.5295148
+},
+{
+  "type": "node",
+  "id": 11143985310,
+  "lat": 45.4785718,
+  "lon": 12.5832388
+},
+{
+  "type": "node",
+  "id": 11143985313,
+  "lat": 45.4785470,
+  "lon": 12.5831608
+},
+{
+  "type": "node",
+  "id": 11143985315,
+  "lat": 45.4785889,
+  "lon": 12.5832084
+},
+{
+  "type": "node",
+  "id": 11143985316,
+  "lat": 45.4785321,
+  "lon": 12.5832175
+},
+{
+  "type": "node",
+  "id": 11143985317,
+  "lat": 45.4785743,
+  "lon": 12.5831625
+},
+{
+  "type": "node",
+  "id": 11143985320,
+  "lat": 45.4785446,
+  "lon": 12.5832370
+},
+{
+  "type": "node",
+  "id": 11143985324,
+  "lat": 45.4785333,
+  "lon": 12.5831786
+},
+{
+  "type": "node",
+  "id": 11143985325,
+  "lat": 45.4785797,
+  "lon": 12.5832314
+},
+{
+  "type": "node",
+  "id": 11143985326,
+  "lat": 45.4785855,
+  "lon": 12.5832209
+},
+{
+  "type": "node",
+  "id": 11143985329,
+  "lat": 45.4785628,
+  "lon": 12.5832423
+},
+{
+  "type": "node",
+  "id": 11143985335,
+  "lat": 45.4785893,
+  "lon": 12.5831950
+},
+{
+  "type": "node",
+  "id": 11143985337,
+  "lat": 45.4785561,
+  "lon": 12.5831572
+},
+{
+  "type": "node",
+  "id": 11143985339,
+  "lat": 45.4785373,
+  "lon": 12.5832286
+},
+{
+  "type": "node",
+  "id": 11143985340,
+  "lat": 45.4785816,
+  "lon": 12.5831709
+},
+{
+  "type": "node",
+  "id": 11143985343,
+  "lat": 45.4785296,
+  "lon": 12.5832045
+},
+{
+  "type": "node",
+  "id": 11143985344,
+  "lat": 45.4785392,
+  "lon": 12.5831681
+},
+{
+  "type": "node",
+  "id": 11143985349,
+  "lat": 45.4785534,
+  "lon": 12.5832417
+},
+{
+  "type": "node",
+  "id": 11143985355,
+  "lat": 45.4785300,
+  "lon": 12.5831911
+},
+{
+  "type": "node",
+  "id": 11143985359,
+  "lat": 45.4785868,
+  "lon": 12.5831821
+},
+{
+  "type": "node",
+  "id": 11143985360,
+  "lat": 45.4785655,
+  "lon": 12.5831578
 },
 {
   "type": "node",
