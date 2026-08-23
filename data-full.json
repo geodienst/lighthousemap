@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-22T01:45:20Z",
+    "timestamp_osm_base": "2026-08-23T01:55:01Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -224496,8 +224496,8 @@
 {
   "type": "node",
   "id": 1276653558,
-  "lat": 44.0099849,
-  "lon": 15.1756940,
+  "lat": 44.0111279,
+  "lon": 15.1751420,
   "tags": {
     "beacon": "lateral_starboard",
     "beacon:colour": "red",
@@ -228918,6 +228918,30 @@
     "seamark:name": "Merauke Inner",
     "seamark:type": "beacon_lateral",
     "source": "US NGA Pub. 112. 2023"
+  }
+},
+{
+  "type": "node",
+  "id": 1293788381,
+  "lat": 6.9865107,
+  "lon": 93.9267366,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2019)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "45",
+    "seamark:light:period": "10",
+    "seamark:light:range": "6",
+    "seamark:light:reference": "F 1225",
+    "seamark:light:sequence": "0.5+(2.5),0.5+(6.5)",
+    "seamark:name": "Chisen",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
   }
 },
 {
@@ -253452,8 +253476,8 @@
 {
   "type": "node",
   "id": 1377047425,
-  "lat": 44.0019957,
-  "lon": 15.0905895,
+  "lat": 44.0020394,
+  "lon": 15.0906992,
   "tags": {
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -257914,6 +257938,9 @@
   "lon": 11.0124443,
   "tags": {
     "man_made": "lighthouse",
+    "name": "Phare d'Aghir",
+    "name:ar": "منارة أغير",
+    "name:fr": "Phare d'Aghir",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
     "seamark:light:1:height": "7",
@@ -431408,6 +431435,85 @@
 },
 {
   "type": "node",
+  "id": 6985275375,
+  "lat": 21.7912359,
+  "lon": 87.8630298,
+  "tags": {
+    "man_made": "lighthouse",
+    "name": "Dariapur",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "30",
+    "seamark:light:period": "20",
+    "seamark:light:range": "19",
+    "seamark:light:reference": "F 1029",
+    "seamark:light:sequence": "1.4+(1.9),1.4+(15.3)",
+    "seamark:name": "Dariapur",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "G",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 6985275376,
+  "lat": 21.6583406,
+  "lon": 88.0465184,
+  "tags": {
+    "man_made": "lighthouse",
+    "name": "Sagar Island",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "26",
+    "seamark:light:period": "3",
+    "seamark:light:range": "17",
+    "seamark:light:reference": "F 1028",
+    "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:name": "Sagar Island",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194446",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 6985689539,
+  "lat": 20.3313629,
+  "lon": 86.7393453,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "38",
+    "seamark:light:1:period": "20",
+    "seamark:light:1:range": "27",
+    "seamark:light:1:sector_end": "45",
+    "seamark:light:1:sector_start": "205",
+    "seamark:light:1:sequence": "0.2+(4.8),0.2+(14.8)",
+    "seamark:light:reference": "F 1006",
+    "seamark:name": "False Point",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
+  }
+},
+{
+  "type": "node",
   "id": 6990600915,
   "lat": 45.6895992,
   "lon": -120.7888403,
@@ -544771,29 +544877,6 @@
 },
 {
   "type": "node",
-  "id": 14109278666,
-  "lat": 6.9865107,
-  "lon": 93.9267366,
-  "tags": {
-    "seamark:information": "Temporarily extinguished (2019)",
-    "seamark:landmark:category": "tower",
-    "seamark:landmark:colour": "white",
-    "seamark:landmark:construction": "masonry",
-    "seamark:landmark:function": "light_support",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:group": "2",
-    "seamark:light:height": "45",
-    "seamark:light:period": "10",
-    "seamark:light:range": "6",
-    "seamark:light:reference": "F 1225",
-    "seamark:light:sequence": "0.5+(2.5),0.5+(6.5)",
-    "seamark:name": "Chisen",
-    "seamark:type": "landmark"
-  }
-},
-{
-  "type": "node",
   "id": 14109301616,
   "lat": 7.0157657,
   "lon": 93.9337009,
@@ -545296,6 +545379,84 @@
     "seamark:light:2:sequence": "10+(5)",
     "seamark:light:reference": "F 1058",
     "seamark:name": "Oyster Island",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14112033537,
+  "lat": 21.4312032,
+  "lon": 91.9789524,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "76",
+    "seamark:light:period": "15",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 1056.4",
+    "seamark:light:sequence": "0.7+(14.3)",
+    "seamark:name": "Cox's Bazar",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "C",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14112101958,
+  "lat": 22.1793283,
+  "lon": 91.8211594,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "LFl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "45",
+    "seamark:light:period": "10",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "F 1048",
+    "seamark:light:sequence": "0.5+(9.5)",
+    "seamark:name": "Normans Point",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "T",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14112462292,
+  "lat": 22.2269307,
+  "lon": 91.8004391,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "LFl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "45",
+    "seamark:light:period": "10",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "F 1049",
+    "seamark:light:sequence": "0.3+(9.7)",
+    "seamark:name": "Patenga",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "C",
     "seamark:type": "landmark",
     "source": "US NGA Pub. 112. 2026"
   }
