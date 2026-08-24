@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-23T01:55:01Z",
+    "timestamp_osm_base": "2026-08-24T01:53:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -33363,30 +33363,6 @@
 },
 {
   "type": "node",
-  "id": 1054461946,
-  "lat": 17.6764566,
-  "lon": 83.2927269,
-  "tags": {
-    "man_made": "lighthouse",
-    "name": "Dolphin's Nose Lighthouse",
-    "seamark:information": "Signal station.",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "173",
-    "seamark:light:period": "10",
-    "seamark:light:range": "32",
-    "seamark:light:reference": "F 0970",
-    "seamark:light:sequence": "0.3+(9.7)",
-    "seamark:name": "Dolphins Nose",
-    "seamark:radar_transponder:category": "racon",
-    "seamark:radar_transponder:group": "O",
-    "seamark:type": "landmark",
-    "source": "US NGA Pub. 112. 2009-11-12.",
-    "wikidata": "Q57499110"
-  }
-},
-{
-  "type": "node",
   "id": 1059504458,
   "lat": 30.6319744,
   "lon": -9.8823741,
@@ -46274,6 +46250,7 @@
   "lat": -27.1471198,
   "lon": -109.4311492,
   "tags": {
+    "man_made": "beacon",
     "seamark:beacon_lateral:colour": "white;red;white",
     "seamark:beacon_lateral:colour_pattern": "horizontal",
     "seamark:beacon_lateral:shape": "pole",
@@ -237374,9 +237351,10 @@
 {
   "type": "node",
   "id": 1340857329,
-  "lat": 36.6887667,
-  "lon": 15.1517167,
+  "lat": 36.6886603,
+  "lon": 15.1516937,
   "tags": {
+    "man_made": "lighthouse",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
     "seamark:light:1:group": "2",
@@ -370555,6 +370533,32 @@
 },
 {
   "type": "node",
+  "id": 3997522208,
+  "lat": 18.0664637,
+  "lon": 83.6375476,
+  "tags": {
+    "man_made": "lighthouse",
+    "name": "Santapalle Lighthouse",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "42",
+    "seamark:light:period": "10",
+    "seamark:light:range": "23",
+    "seamark:light:reference": "F 0980",
+    "seamark:light:sequence": "0.2+(2.3).0.2+(7.3)",
+    "seamark:name": "Santapilli",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
+  }
+},
+{
+  "type": "node",
   "id": 4004208424,
   "lat": 38.3189723,
   "lon": -76.4209824,
@@ -431508,6 +431512,31 @@
     "seamark:light:1:sequence": "0.2+(4.8),0.2+(14.8)",
     "seamark:light:reference": "F 1006",
     "seamark:name": "False Point",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 6989702927,
+  "lat": 17.2959011,
+  "lon": 82.6183524,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "18",
+    "seamark:light:period": "15",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "F 0966",
+    "seamark:light:sequence": "1.5+(13.5)",
+    "seamark:name": "Pentakota",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194436",
     "seamark:type": "landmark",
     "source": "US NGA Pub. 112. 2026"
   }
@@ -545462,6 +545491,150 @@
   }
 },
 {
+  "type": "node",
+  "id": 14114265469,
+  "lat": 19.8678497,
+  "lon": 86.1080857,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "37",
+    "seamark:light:period": "10",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 1003",
+    "seamark:light:sequence": "0.3+(9.7)",
+    "seamark:name": "Chandrabhaga",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194443",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14114438041,
+  "lat": 19.7897747,
+  "lon": 85.8063524,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "29",
+    "seamark:light:period": "20",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "F 1002",
+    "seamark:light:sequence": "0.1+(4.9),0.1+(4.9),0.1+(9.9)",
+    "seamark:name": "Puri",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194442",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14114524050,
+  "lat": 19.2560191,
+  "lon": 84.9066837,
+  "tags": {
+    "note": "Per OSM wiki, operational navigational lights should be mapped as node. Do not merge this to the building object.",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "45",
+    "seamark:light:period": "5",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 0988",
+    "seamark:light:sequence": "0.2+(4.8)",
+    "seamark:name": "Gopalpur",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "S",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194441",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14115780058,
+  "lat": 17.6764525,
+  "lon": 83.2926884,
+  "tags": {
+    "seamark:information": "F.R. on radio masts 240m NW",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "173",
+    "seamark:light:period": "10",
+    "seamark:light:range": "32",
+    "seamark:light:reference": "F 0970",
+    "seamark:light:sequence": "0.3+(9.7)",
+    "seamark:name": "Dolphins Nose",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "O",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194437",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2009-11-12."
+  }
+},
+{
+  "type": "node",
+  "id": 14116283369,
+  "lat": 17.4878231,
+  "lon": 83.0029118,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "35",
+    "seamark:light:period": "15",
+    "seamark:light:range": "27",
+    "seamark:light:reference": "F 0968",
+    "seamark:light:sequence": "0.4+(3.4),0.4+(10.8)",
+    "seamark:name": "Pudimadaka",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14116776493,
+  "lat": -27.0629226,
+  "lon": -70.8258738,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "3",
+    "seamark:light:sequence": "1+(2)",
+    "seamark:light:type": "beacon_lateral"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -550350,7 +550523,7 @@
     "building": "yes",
     "description": "Faro emplazado en la punta Queixal del Monte Louro.",
     "man_made": "lighthouse",
-    "name": "Faro de Louro",
+    "name": "Faro de Monte Louro",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "2+1",
@@ -585905,13 +586078,13 @@
 {
   "type": "node",
   "id": 1572634588,
-  "lat": 42.7392356,
+  "lat": 42.7392357,
   "lon": -9.0786824
 },
 {
   "type": "node",
   "id": 1650805058,
-  "lat": 42.7392177,
+  "lat": 42.7392178,
   "lon": -9.0787328
 },
 {
@@ -585930,13 +586103,13 @@
   "type": "node",
   "id": 1650805097,
   "lat": 42.7392598,
-  "lon": -9.0786709
+  "lon": -9.0786708
 },
 {
   "type": "node",
   "id": 1650805098,
   "lat": 42.7392862,
-  "lon": -9.0786325
+  "lon": -9.0786324
 },
 {
   "type": "node",
@@ -585947,7 +586120,7 @@
 {
   "type": "node",
   "id": 1650805100,
-  "lat": 42.7393534,
+  "lat": 42.7393535,
   "lon": -9.0787183
 },
 {
