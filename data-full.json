@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-24T01:53:21Z",
+    "timestamp_osm_base": "2026-08-25T01:47:18Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -235169,6 +235169,7 @@
   "tags": {
     "man_made": "lighthouse",
     "name": "Pointe de l'Arenella",
+    "name:it": "Punta l'Arenella",
     "seamark:light:1:character": "Oc",
     "seamark:light:1:colour": "red",
     "seamark:light:1:group": "2",
@@ -304561,8 +304562,7 @@
     "seamark:light:range": "5",
     "seamark:light:reference": "E 0434.591",
     "seamark:light:sequence": "0.5+(1.5)+0.5+(4.5)",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2011-10-20."
+    "seamark:type": "light_minor"
   }
 },
 {
@@ -545635,6 +545635,159 @@
   }
 },
 {
+  "type": "node",
+  "id": 14118680340,
+  "lat": 16.5868669,
+  "lon": 82.2783213,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "diagonal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "43",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "24",
+    "seamark:light:1:sector_end": "045",
+    "seamark:light:1:sector_start": "225",
+    "seamark:light:1:sequence": "0.2+(4.8)",
+    "seamark:light:reference": "F 0958",
+    "seamark:name": "Sacramento",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194434",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14119188001,
+  "lat": 16.3170108,
+  "lon": 81.7254404,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "29",
+    "seamark:light:period": "15",
+    "seamark:light:range": "27",
+    "seamark:light:reference": "F 0957",
+    "seamark:light:sequence": "0.4+(3.4),0.4+(10.8)",
+    "seamark:name": "Narasapur",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "B",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194433",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14119496932,
+  "lat": 16.2482600,
+  "lon": 81.2338614,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "49",
+    "seamark:light:period": "20",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 0955",
+    "seamark:light:sequence": "0.5+(2),0.5+(2),0.5+(14.5)",
+    "seamark:name": "Machilipatnam",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194432",
+    "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 14120124585,
+  "lat": 15.7847087,
+  "lon": 80.9977317,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "diagonal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "34",
+    "seamark:light:period": "15",
+    "seamark:light:range": "24",
+    "seamark:light:reference": "F 0953",
+    "seamark:light:sequence": "1.2+(13.8)",
+    "seamark:name": "Nagayalanka",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194431",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14120391007,
+  "lat": 15.8837106,
+  "lon": 80.6383619,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "36",
+    "seamark:light:period": "5",
+    "seamark:light:range": "23",
+    "seamark:light:reference": "F 0952.8",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Nizampatnam",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14120596699,
+  "lat": 15.7955961,
+  "lon": 80.4101131,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "34",
+    "seamark:light:period": "15",
+    "seamark:light:range": "25",
+    "seamark:light:reference": "F 0952.9",
+    "seamark:light:sequence": "0.6+(1.9),0.6+(11.9)",
+    "seamark:name": "Vodarevu",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194429",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -546999,6 +547152,7 @@
     "comment": "character wikipedia: ISO 4s <=> US NGA Pub. 113.(2020): Fl(3)12s",
     "man_made": "lighthouse",
     "name": "Phare de la Madonetta",
+    "name:it": "Faro della Madonetta",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:group": "3",
@@ -569258,27 +569412,26 @@
   "id": 995837284,
   "nodes": [
     9195461356,
-    9195461355,
     9195461354,
     9195461353,
-    9195461352,
     9195461351,
     9195461357,
-    9195461350,
     9195461349,
     9195461348,
-    9195461347,
     9195461346,
     9195461356
   ],
   "tags": {
     "alt_name": "Akmeņraga bāka",
     "building": "lighthouse",
-    "height": "37",
+    "contact:phone": "+371 28350899",
+    "fee": "yes",
+    "height": "38",
     "man_made": "lighthouse",
     "name": "Akmensraga bāka",
     "name:de": "Leuchtturm Akmeņraga",
     "name:lv": "Akmensraga bāka",
+    "opening_hours": "Apr-Oct We-Su 10:00-16:00; Nov-Mar We-Su 10:00-14:00",
     "seamark:light:1:character": "LFl",
     "seamark:light:1:colour": "white",
     "seamark:light:1:group": "2",
@@ -569291,8 +569444,9 @@
     "seamark:light:reference": "C 3442",
     "seamark:name": "Akmensrags",
     "seamark:type": "landmark",
+    "start_date": "1912",
     "wikidata": "Q11128308",
-    "wikipedia": "de:Leuchtturm Akmensrags"
+    "wikipedia": "lv:Akmeņraga bāka"
   }
 },
 {
@@ -621040,74 +621194,50 @@
 {
   "type": "node",
   "id": 9195461346,
-  "lat": 56.8317872,
-  "lon": 21.0570543
-},
-{
-  "type": "node",
-  "id": 9195461347,
-  "lat": 56.8317987,
-  "lon": 21.0570367
+  "lat": 56.8317885,
+  "lon": 21.0570512
 },
 {
   "type": "node",
   "id": 9195461348,
-  "lat": 56.8318136,
-  "lon": 21.0570319
+  "lat": 56.8318081,
+  "lon": 21.0570320
 },
 {
   "type": "node",
   "id": 9195461349,
-  "lat": 56.8318277,
-  "lon": 21.0570414
-},
-{
-  "type": "node",
-  "id": 9195461350,
-  "lat": 56.8318374,
-  "lon": 21.0570625
+  "lat": 56.8318294,
+  "lon": 21.0570437
 },
 {
   "type": "node",
   "id": 9195461351,
-  "lat": 56.8318348,
-  "lon": 21.0571154
-},
-{
-  "type": "node",
-  "id": 9195461352,
-  "lat": 56.8318233,
-  "lon": 21.0571331
+  "lat": 56.8318335,
+  "lon": 21.0571186
 },
 {
   "type": "node",
   "id": 9195461353,
-  "lat": 56.8318084,
-  "lon": 21.0571379
+  "lat": 56.8318139,
+  "lon": 21.0571378
 },
 {
   "type": "node",
   "id": 9195461354,
-  "lat": 56.8317943,
-  "lon": 21.0571284
-},
-{
-  "type": "node",
-  "id": 9195461355,
-  "lat": 56.8317846,
-  "lon": 21.0571073
+  "lat": 56.8317926,
+  "lon": 21.0571260
 },
 {
   "type": "node",
   "id": 9195461356,
   "lat": 56.8317820,
-  "lon": 21.0570802
+  "lon": 21.0570902
 },
 {
   "type": "node",
   "id": 9195461357,
   "lat": 56.8318400,
-  "lon": 21.0570896
+  "lon": 21.0570796
 },
 {
   "type": "node",
