@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-25T01:47:18Z",
+    "timestamp_osm_base": "2026-08-26T01:53:40Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -223821,8 +223821,12 @@
     "communication:gsm-r": "yes",
     "communication:mobile_phone": "yes",
     "communication:radio": "yes",
+    "height": "12",
+    "location": "roof",
     "man_made": "antenna",
-    "seamark:information": "Reserve light range 8M.",
+    "operator": "Plovput d.o.o.",
+    "operator:wikidata": "Q7205180",
+    "seamark:information": "Reserve light range 8M;https://www.itu.int/mmsapp/coaststation/one/440;https://www.plovput.hr/en/radio-service/vhf-system",
     "seamark:light:character": "LFl",
     "seamark:light:colour": "white",
     "seamark:light:group": "2",
@@ -223832,6 +223836,11 @@
     "seamark:light:reference": "E 3036",
     "seamark:light:sequence": "2+(2)+2+(4)",
     "seamark:name": "Otok Susak",
+    "seamark:radio_station:callsign": "Rijeka Radio;9AR",
+    "seamark:radio_station:category": "public_communication",
+    "seamark:radio_station:channel": "16;20;70",
+    "seamark:radio_station:mmsi": "002380200",
+    "seamark:radio_station:range": "25",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 113. 2010-10-22."
   }
@@ -426710,7 +426719,8 @@
     "seamark:light:3:sector_end": "236",
     "seamark:light:3:sector_start": "147",
     "seamark:light:3:sequence": "00.50+(01.00)+00.50+(01.00)+00.50+(01.00)+00.50+(15.00)",
-    "seamark:type": "landmark"
+    "seamark:type": "landmark",
+    "wikipedia": "en:Dolphin Lighthouse"
   }
 },
 {
@@ -508431,7 +508441,8 @@
     "seamark:light:4:sector_start": "186",
     "seamark:light:4:sequence": "00.30+(01.40)+00.30+(04.00)",
     "seamark:name": "Sunk Rock",
-    "seamark:type": "landmark"
+    "seamark:type": "landmark",
+    "wikipedia": "en:Sunk Rock Lighthouse"
   }
 },
 {
