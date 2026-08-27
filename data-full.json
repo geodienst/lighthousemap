@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-26T01:53:40Z",
+    "timestamp_osm_base": "2026-08-27T09:34:42Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -2119,13 +2119,15 @@
 {
   "type": "node",
   "id": 262792987,
-  "lat": 13.0397156,
-  "lon": 80.2794416,
+  "lat": 13.0397416,
+  "lon": 80.2794512,
   "tags": {
-    "height": "45.72 metres",
-    "man_made": "lighthouse",
-    "name": "சென்னை மெரினா கலங்கரை விளக்கம்",
-    "name:en": "Chennai Marina Lighthouse",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "2",
@@ -2137,11 +2139,10 @@
     "seamark:name": "Madras",
     "seamark:radar_transponder:category": "racon",
     "seamark:radar_transponder:group": "K",
-    "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2009-11-12.",
-    "wikidata": "Q6546309",
-    "wikimedia_commons": "Category:Chennai Lighthouse",
-    "wikipedia": "en:Chennai Lighthouse (1977)"
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194425",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
   }
 },
 {
@@ -4636,28 +4637,6 @@
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 113. 2010-10-22.",
     "source:name:br": "proper translation"
-  }
-},
-{
-  "type": "node",
-  "id": 322481116,
-  "lat": 13.4212564,
-  "lon": 80.3261476,
-  "tags": {
-    "man_made": "lighthouse",
-    "name": "Pulicat Lighthouse",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "53",
-    "seamark:light:period": "5",
-    "seamark:light:range": "26",
-    "seamark:light:reference": "F 0950",
-    "seamark:light:sequence": "0.2+(4.8)",
-    "seamark:name": "Pulicat",
-    "seamark:radar_transponder:category": "racon",
-    "seamark:radar_transponder:group": "B",
-    "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2009-11-12."
   }
 },
 {
@@ -545794,6 +545773,86 @@
     "seamark:name": "Vodarevu",
     "seamark:radio_station:category": "ais",
     "seamark:radio_station:mmsi": "004194429",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14124342644,
+  "lat": 14.2857191,
+  "lon": 80.1380194,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "34",
+    "seamark:light:period": "15",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "F 0952",
+    "seamark:light:sequence": "0.5+(2),0.5+(2),0.5+(9.5)",
+    "seamark:name": "Krishnapatnam",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "C",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194428",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14124980469,
+  "lat": 13.8950536,
+  "lon": 80.2052637,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "33",
+    "seamark:light:period": "15",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 0951",
+    "seamark:light:sequence": "0.4+(14.6)",
+    "seamark:name": "Armagon Shoal",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194427",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14125482643,
+  "lat": 13.4212683,
+  "lon": 80.3261229,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2019)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "53",
+    "seamark:light:period": "5",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 0950",
+    "seamark:light:sequence": "0.2+(4.8)",
+    "seamark:name": "Pulicat",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "B",
+    "seamark:status": "extinguished",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
