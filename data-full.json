@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-27T09:34:42Z",
+    "timestamp_osm_base": "2026-08-28T11:16:50Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -225968,10 +225968,12 @@
 {
   "type": "node",
   "id": 1293081657,
-  "lat": 12.4696322,
-  "lon": 102.0581224,
+  "lat": 12.4697370,
+  "lon": 102.0580360,
   "tags": {
     "man_made": "lighthouse",
+    "name": "ประภาคารแหลมสิงห์",
+    "name:de": "Laeng Sing Leuchtturm",
     "name:en": "Laem Sing Lighthouse",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -545858,6 +545860,53 @@
   }
 },
 {
+  "type": "node",
+  "id": 14128656655,
+  "lat": 12.6153566,
+  "lon": 80.1918175,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "42",
+    "seamark:light:period": "10",
+    "seamark:light:range": "30",
+    "seamark:light:reference": "F 0932",
+    "seamark:light:sequence": "0.4+(9.6)",
+    "seamark:name": "Mahabalipuram",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194424",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14129860120,
+  "lat": 12.2754707,
+  "lon": 80.0109492,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "diagonal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "36",
+    "seamark:light:period": "20",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "F 0929",
+    "seamark:light:sequence": "2+(3),2+(3),2+(8)",
+    "seamark:name": "Alam Parai Fort",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -559186,6 +559235,7 @@
     1572675350
   ],
   "tags": {
+    "alt_name": "Faro da Robaleira",
     "building": "yes",
     "man_made": "lighthouse",
     "name": "Faro da Punta Promontoiro",
