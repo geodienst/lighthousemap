@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-28T11:16:50Z",
+    "timestamp_osm_base": "2026-08-29T06:57:41Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -5130,9 +5130,12 @@
 {
   "type": "node",
   "id": 322520647,
-  "lat": 51.7930377,
-  "lon": -8.2546661,
+  "lat": 51.7930401,
+  "lon": -8.2547367,
   "tags": {
+    "name": "Roches Point Lighthouse",
+    "operator": "Commissioners of Irish Lights",
+    "panoramax": "8e97cd86-e464-44b0-a9f1-7a9af48fab89",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "red",
     "seamark:light:1:exhibition": "night",
