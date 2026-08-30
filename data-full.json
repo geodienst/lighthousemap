@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-29T06:57:41Z",
+    "timestamp_osm_base": "2026-08-30T05:17:51Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -224489,8 +224489,8 @@
 {
   "type": "node",
   "id": 1276657411,
-  "lat": 44.0285143,
-  "lon": 15.1403969,
+  "lat": 44.0285197,
+  "lon": 15.1403938,
   "tags": {
     "beacon": "lateral_starboard",
     "beacon:colour": "red",
@@ -545905,6 +545905,34 @@
     "seamark:light:reference": "F 0929",
     "seamark:light:sequence": "2+(3),2+(3),2+(8)",
     "seamark:name": "Alam Parai Fort",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14133313937,
+  "lat": 11.9166023,
+  "lon": 79.8308495,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "48",
+    "seamark:light:period": "15",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 0926",
+    "seamark:light:sequence": "0.5+(3.2),0.5+(10.8)",
+    "seamark:name": "Pondicherry",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "D",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194423",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
