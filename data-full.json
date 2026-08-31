@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-30T05:17:51Z",
+    "timestamp_osm_base": "2026-08-31T05:25:06Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -344733,6 +344733,38 @@
 },
 {
   "type": "node",
+  "id": 1669880989,
+  "lat": 11.5042577,
+  "lon": 79.7704816,
+  "tags": {
+    "alt_name": "Parangipettai Lighthouse",
+    "man_made": "lighthouse",
+    "name": "Portonovo Lighthouse",
+    "name:en": "Portonovo Lighthouse",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "36",
+    "seamark:light:period": "15",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 0919",
+    "seamark:light:sequence": "0.4+(14.6)",
+    "seamark:name": "Porto Novo",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "B",
+    "seamark:radio_station:category": "ais_base",
+    "seamark:radio_station:mmsi": "004194422",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026",
+    "wikidata": "Q126085369"
+  }
+},
+{
+  "type": "node",
   "id": 1675335638,
   "lat": 48.5928071,
   "lon": -123.4868772,
@@ -545933,6 +545965,55 @@
     "seamark:radar_transponder:group": "D",
     "seamark:radio_station:category": "ais",
     "seamark:radio_station:mmsi": "004194423",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14135701851,
+  "lat": 11.1414779,
+  "lon": 79.8567057,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "vertical",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "4",
+    "seamark:light:height": "33",
+    "seamark:light:period": "15",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "F 0918",
+    "seamark:light:sequence": "0.35+(2.2),0.35+(2.2),0.35+(2.2),0.35+(7)",
+    "seamark:name": "Pumpukar",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026;DGLL"
+  }
+},
+{
+  "type": "node",
+  "id": 14135757226,
+  "lat": 10.9140636,
+  "lon": 79.8505509,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2020)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "18",
+    "seamark:light:period": "10",
+    "seamark:light:range": "13",
+    "seamark:light:reference": "F 0916",
+    "seamark:light:sequence": "1+(2),1+(6)",
+    "seamark:name": "Karikal",
+    "seamark:status": "extinguished",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
