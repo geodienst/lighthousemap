@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-08-31T05:25:06Z",
+    "timestamp_osm_base": "2026-09-01T04:59:01Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -546014,6 +546014,35 @@
     "seamark:light:sequence": "1+(2),1+(6)",
     "seamark:name": "Karikal",
     "seamark:status": "extinguished",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14137778355,
+  "lat": 10.7659444,
+  "lon": 79.8501263,
+  "tags": {
+    "seamark:information": "Radiobeacon",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "48",
+    "seamark:light:period": "20",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 0914",
+    "seamark:light:sequence": "0.5+(2),0.5+(17)",
+    "seamark:name": "Nagappattinam",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "G",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194421",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
