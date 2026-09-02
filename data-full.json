@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-01T04:59:01Z",
+    "timestamp_osm_base": "2026-09-02T04:23:17Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -258424,6 +258424,7 @@
   "tags": {
     "abandoned": "yes",
     "abandoned:man_made": "lighthouse",
+    "height": "31",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Маяк_Анива.jpg",
     "man_made": "lighthouse",
     "name": "Маяк Анива",
@@ -546043,6 +546044,54 @@
     "seamark:radar_transponder:group": "G",
     "seamark:radio_station:category": "ais",
     "seamark:radio_station:mmsi": "004194421",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14140089204,
+  "lat": 10.2937996,
+  "lon": 79.8689068,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "13",
+    "seamark:light:period": "10",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "F 0910",
+    "seamark:light:sequence": "0.3+(1.5),0.3+(1.5),0.3+(6.1)",
+    "seamark:name": "Calimere Point",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14140108199,
+  "lat": 10.2782970,
+  "lon": 79.8257340,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "45",
+    "seamark:light:period": "10",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "F 0902",
+    "seamark:light:sequence": "0.2+(9.8)",
+    "seamark:name": "Kodikkarai",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194420",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
