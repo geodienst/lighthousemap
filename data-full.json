@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-02T04:23:17Z",
+    "timestamp_osm_base": "2026-09-03T04:16:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -22496,7 +22496,9 @@
     "seamark:light:sequence": "1+(4)",
     "seamark:name": "Torre d'en Beu",
     "seamark:type": "light_minor",
-    "wikimedia_commons": "File:Santanyí,_Mallorca,_Illes_Balears,_Spain_-_panoramio.jpg"
+    "wikidata": "Q5856532",
+    "wikimedia_commons": "File:Santanyí,_Mallorca,_Illes_Balears,_Spain_-_panoramio.jpg",
+    "wikipedia": "es:Faro de Torre den Beu"
   }
 },
 {
@@ -546092,6 +546094,29 @@
     "seamark:name": "Kodikkarai",
     "seamark:radio_station:category": "ais",
     "seamark:radio_station:mmsi": "004194420",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14142694809,
+  "lat": 10.2676963,
+  "lon": 79.3037573,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "vertical",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "48",
+    "seamark:light:period": "5",
+    "seamark:light:range": "22",
+    "seamark:light:reference": "F 0901.9",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Mallipatnam",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
