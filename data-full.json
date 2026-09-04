@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-03T04:16:21Z",
+    "timestamp_osm_base": "2026-09-04T04:23:05Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -24966,6 +24966,29 @@
     "seamark:name": "Ugljan",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 113. 2010-10-22."
+  }
+},
+{
+  "type": "node",
+  "id": 849508105,
+  "lat": 9.3175840,
+  "lon": 79.3306663,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "diagonal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "16",
+    "seamark:light:period": "20",
+    "seamark:light:range": "13",
+    "seamark:light:reference": "F 0906",
+    "seamark:light:sequence": "0.8+(2),0.8+(16.4)",
+    "seamark:name": "Rameswaram",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
   }
 },
 {
@@ -307159,8 +307182,8 @@
 {
   "type": "node",
   "id": 1566313494,
-  "lat": 39.5494021,
-  "lon": 2.6002538,
+  "lat": 39.5494026,
+  "lon": 2.6002327,
   "tags": {
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
@@ -546117,6 +546140,56 @@
     "seamark:light:reference": "F 0901.9",
     "seamark:light:sequence": "0.5+(4.5)",
     "seamark:name": "Mallipatnam",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14144046086,
+  "lat": 10.0108214,
+  "lon": 79.2290522,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "49",
+    "seamark:light:period": "15",
+    "seamark:light:range": "19",
+    "seamark:light:reference": "F 0901.7",
+    "seamark:light:sequence": "0.5+(2),0.5+(12)",
+    "seamark:name": "Ammapattinam",
+    "seamark:radio_station:category": "ais_base",
+    "seamark:radio_station:mmsi": "004194419",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14144313731,
+  "lat": 9.8050273,
+  "lon": 79.0786338,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "49",
+    "seamark:light:period": "10",
+    "seamark:light:range": "19",
+    "seamark:light:reference": "F 0901.5",
+    "seamark:light:sequence": "0.3+(1.5),0.3+(1.5),0.3+(6.1)",
+    "seamark:name": "Pasipattanan",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
