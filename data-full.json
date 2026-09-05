@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-04T04:23:05Z",
+    "timestamp_osm_base": "2026-09-05T04:18:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -546195,6 +546195,57 @@
   }
 },
 {
+  "type": "node",
+  "id": 14148580423,
+  "lat": 9.2880870,
+  "lon": 79.2185322,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "29",
+    "seamark:light:period": "5",
+    "seamark:light:range": "9",
+    "seamark:light:reference": "F 0900",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Pamban Channel",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194418",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:type": "signal_station_warning",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14150103144,
+  "lat": 9.2275845,
+  "lon": 78.7851370,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "35",
+    "seamark:light:period": "15",
+    "seamark:light:range": "19",
+    "seamark:light:reference": "F 0738",
+    "seamark:light:sequence": "0.1+(14.9)",
+    "seamark:name": "Kilakkarai",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194417",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -558032,9 +558083,8 @@
     3366714326
   ],
   "tags": {
-    "building": "yes",
+    "building": "lighthouse",
     "ele": "60",
-    "height": "32",
     "man_made": "lighthouse",
     "name": "Faro di punta Palascìa",
     "seamark:information": "Reserve light range 11M.",
