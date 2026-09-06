@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-05T04:18:21Z",
+    "timestamp_osm_base": "2026-09-06T04:29:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -151605,8 +151605,8 @@
 {
   "type": "node",
   "id": 1211582103,
-  "lat": 59.5632914,
-  "lon": 10.4085409,
+  "lat": 59.5632862,
+  "lon": 10.4085283,
   "tags": {
     "name": "Kroksberget",
     "ref:kystverket": "026300",
@@ -224492,12 +224492,12 @@
   "lat": 44.0111279,
   "lon": 15.1751420,
   "tags": {
-    "beacon": "lateral_starboard",
-    "beacon:colour": "red",
-    "description": "Blz (2) r 10 s 7 sm",
-    "light": "yes",
-    "name": "Blz (2) r 10 s",
-    "seamark": "beacon",
+    "height": "5",
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:group": "2",
@@ -224506,9 +224506,8 @@
     "seamark:light:range": "7",
     "seamark:light:reference": "E 3115",
     "seamark:light:sequence": "0.5+(2)+0.5+(7)",
-    "seamark:name": "Otocic Mrtovnjak",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2010-10-22."
+    "seamark:name": "Otočić Mrtovnjak",
+    "seamark:type": "beacon_lateral"
   }
 },
 {
@@ -224517,11 +224516,12 @@
   "lat": 44.0285197,
   "lon": 15.1403938,
   "tags": {
-    "beacon": "lateral_starboard",
-    "beacon:colour": "red",
-    "light": "yes",
+    "height": "5",
     "man_made": "beacon",
-    "seamark": "beacon",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:height": "6",
@@ -224529,9 +224529,8 @@
     "seamark:light:range": "4",
     "seamark:light:reference": "E 3112",
     "seamark:light:sequence": "0.5+(2.5)",
-    "seamark:name": "Uvala Komaseva",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2010-10-22."
+    "seamark:name": "Uvala Komoševa",
+    "seamark:type": "beacon_lateral"
   }
 },
 {
@@ -253271,20 +253270,23 @@
   "lat": 44.0886273,
   "lon": 15.0423835,
   "tags": {
-    "seamark:information": "Obsured 267°-326°.",
-    "seamark:light:1:character": "Fl",
-    "seamark:light:1:colour": "white",
-    "seamark:light:1:group": "2",
-    "seamark:light:1:height": "7",
-    "seamark:light:1:period": "8",
-    "seamark:light:1:range": "6",
-    "seamark:light:1:sector_end": "267",
-    "seamark:light:1:sector_start": "326",
-    "seamark:light:1:sequence": "0.5+(1),0.5+(1),0.5+(4.5)",
+    "seamark:beacon_isolated_danger:colour": "black;red;black",
+    "seamark:beacon_isolated_danger:colour_pattern": "horizontal",
+    "seamark:beacon_isolated_danger:shape": "pile",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "7",
+    "seamark:light:period": "8",
+    "seamark:light:range": "6",
     "seamark:light:reference": "E 3121",
-    "seamark:name": "Plicina Beli",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2010-10-22."
+    "seamark:light:sequence": "0.5+(1)+0.5+(6)",
+    "seamark:name": "Pličina Beli",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "992381550",
+    "seamark:topmark:colour": "black",
+    "seamark:topmark:shape": "2 spheres",
+    "seamark:type": "beacon_isolated_danger"
   }
 },
 {
@@ -263123,7 +263125,7 @@
     "seamark:light:range": "3",
     "seamark:light:reference": "E 3857",
     "seamark:light:sequence": "0.5+(3.5)",
-    "seamark:name": "Nisis Kastos",
+    "seamark:name": "Sarakiniko port",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 113. 2010-09-02"
   }
@@ -263141,7 +263143,7 @@
     "seamark:light:range": "5",
     "seamark:light:reference": "E 3856",
     "seamark:light:sequence": "1+(3)",
-    "seamark:name": "Nisis Kastos",
+    "seamark:name": "Kastos port",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 113. 2010-09-02"
   }
@@ -480110,11 +480112,12 @@
   "lat": 44.0517810,
   "lon": 15.1126366,
   "tags": {
-    "beacon": "lateral_port",
-    "beacon:colour": "red",
-    "light": "yes",
+    "height": "5",
     "man_made": "beacon",
-    "seamark": "beacon",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:height": "6",
@@ -480122,9 +480125,8 @@
     "seamark:light:range": "4",
     "seamark:light:reference": "E 3110",
     "seamark:light:sequence": "0.3+(1.7)",
-    "seamark:name": "Iz Veli",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2010-10-22."
+    "seamark:name": "Veli Iž",
+    "seamark:type": "beacon_lateral"
   }
 },
 {
