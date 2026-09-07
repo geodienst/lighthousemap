@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-06T04:29:21Z",
+    "timestamp_osm_base": "2026-09-07T04:29:20Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -229013,6 +229013,37 @@
 },
 {
   "type": "node",
+  "id": 1293789668,
+  "lat": 8.3729144,
+  "lon": 78.0656508,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "diagonal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "45",
+    "seamark:light:1:period": "10",
+    "seamark:light:1:range": "23",
+    "seamark:light:1:sector_end": "70",
+    "seamark:light:1:sector_start": "115",
+    "seamark:light:1:sequence": "0.2+(1.5),0.2+(8.1)",
+    "seamark:light:reference": "F 0730",
+    "seamark:name": "Manappad Point",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "G",
+    "seamark:radar_transponder:wavelength": "0.03-X",
+    "seamark:radio_station:category": "ais_base",
+    "seamark:radio_station:mmsi": "004194415",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
   "id": 1293790323,
   "lat": 9.9984080,
   "lon": 76.2215060,
@@ -234742,6 +234773,7 @@
   "tags": {
     "man_made": "lighthouse",
     "name": "Tourelle de Tignosu",
+    "operator": "Faro di Tignosu",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:height": "6",
@@ -309298,6 +309330,7 @@
   "lat": 39.9971894,
   "lon": 4.2668058,
   "tags": {
+    "man_made": "lighthouse",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "1+2",
@@ -546245,6 +546278,56 @@
     "seamark:radio_station:mmsi": "004194417",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14157182576,
+  "lat": 8.7856225,
+  "lon": 78.1969944,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "diagonal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "48",
+    "seamark:light:period": "10",
+    "seamark:light:range": "28",
+    "seamark:light:reference": "F 0734",
+    "seamark:light:sequence": "0.5+(9.5)",
+    "seamark:name": "Pandiyan Tivu",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "O",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004194416",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14158723200,
+  "lat": 43.4181667,
+  "lon": 13.7460000,
+  "tags": {
+    "ref": "3915.9",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "yellow",
+    "seamark:light:group": "5",
+    "seamark:light:height": "7.5",
+    "seamark:light:period": "20",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "E 2340",
+    "seamark:light:sequence": "1+(1)+1+(1)+1+(1)+1+(1)+1+(11)",
+    "seamark:topmark:colour": "yellow",
+    "seamark:topmark:shape": "x-shape",
+    "seamark:type": "beacon_special_purpose"
   }
 },
 {
