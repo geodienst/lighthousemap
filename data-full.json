@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-07T04:29:20Z",
+    "timestamp_osm_base": "2026-09-08T04:26:51Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -13674,7 +13674,8 @@
     "seamark:light:reference": "J 6330",
     "seamark:name": "Noordwestpunt",
     "seamark:type": "landmark",
-    "wikidata": "Q2279321"
+    "wikidata": "Q2279321",
+    "wikimedia_commons": "File:Oranjestad - 55376389172.jpg"
   }
 },
 {
@@ -323491,7 +323492,6 @@
   "lat": 35.5474762,
   "lon": 23.7806786,
   "tags": {
-    "man_made": "lighthouse",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:height": "8",
@@ -323506,10 +323506,9 @@
 {
   "type": "node",
   "id": 1576220528,
-  "lat": 35.5481366,
-  "lon": 23.7812431,
+  "lat": 35.5479974,
+  "lon": 23.7822619,
   "tags": {
-    "man_made": "lighthouse",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
     "seamark:light:height": "8",
@@ -588449,122 +588448,122 @@
 {
   "type": "node",
   "id": 388517796,
-  "lat": 43.7710424,
-  "lon": -7.8696789
+  "lat": 43.7710565,
+  "lon": -7.8696897
 },
 {
   "type": "node",
   "id": 2614090807,
-  "lat": 43.7710657,
-  "lon": -7.8696798
+  "lat": 43.7710798,
+  "lon": -7.8696906
 },
 {
   "type": "node",
   "id": 2614090808,
-  "lat": 43.7710700,
-  "lon": -7.8696861
+  "lat": 43.7710841,
+  "lon": -7.8696969
 },
 {
   "type": "node",
   "id": 2614090809,
-  "lat": 43.7710469,
-  "lon": -7.8697275
+  "lat": 43.7710610,
+  "lon": -7.8697383
 },
 {
   "type": "node",
   "id": 2614090810,
-  "lat": 43.7710414,
-  "lon": -7.8697234
+  "lat": 43.7710555,
+  "lon": -7.8697342
 },
 {
   "type": "node",
   "id": 2614090811,
-  "lat": 43.7710727,
-  "lon": -7.8696939
+  "lat": 43.7710868,
+  "lon": -7.8697047
 },
 {
   "type": "node",
   "id": 2614090812,
-  "lat": 43.7710735,
-  "lon": -7.8697024
+  "lat": 43.7710876,
+  "lon": -7.8697132
 },
 {
   "type": "node",
   "id": 2614090813,
-  "lat": 43.7710723,
-  "lon": -7.8697109
+  "lat": 43.7710864,
+  "lon": -7.8697217
 },
 {
   "type": "node",
   "id": 2614090814,
-  "lat": 43.7710693,
-  "lon": -7.8697185
+  "lat": 43.7710834,
+  "lon": -7.8697293
 },
 {
   "type": "node",
   "id": 2614090815,
-  "lat": 43.7710648,
-  "lon": -7.8697244
+  "lat": 43.7710789,
+  "lon": -7.8697352
 },
 {
   "type": "node",
   "id": 2614090816,
-  "lat": 43.7710592,
-  "lon": -7.8697280
+  "lat": 43.7710733,
+  "lon": -7.8697388
 },
 {
   "type": "node",
   "id": 2614090817,
-  "lat": 43.7710530,
-  "lon": -7.8697291
+  "lat": 43.7710671,
+  "lon": -7.8697399
 },
 {
   "type": "node",
   "id": 2614090818,
-  "lat": 43.7710372,
-  "lon": -7.8697171
+  "lat": 43.7710513,
+  "lon": -7.8697279
 },
 {
   "type": "node",
   "id": 2614090819,
-  "lat": 43.7710345,
-  "lon": -7.8697093
+  "lat": 43.7710486,
+  "lon": -7.8697201
 },
 {
   "type": "node",
   "id": 2614090820,
-  "lat": 43.7710337,
-  "lon": -7.8697008
+  "lat": 43.7710478,
+  "lon": -7.8697116
 },
 {
   "type": "node",
   "id": 2614090821,
-  "lat": 43.7710349,
-  "lon": -7.8696923
+  "lat": 43.7710490,
+  "lon": -7.8697031
 },
 {
   "type": "node",
   "id": 2614090822,
-  "lat": 43.7710379,
-  "lon": -7.8696847
+  "lat": 43.7710520,
+  "lon": -7.8696955
 },
 {
   "type": "node",
   "id": 2614090823,
-  "lat": 43.7710480,
-  "lon": -7.8696751
+  "lat": 43.7710621,
+  "lon": -7.8696859
 },
 {
   "type": "node",
   "id": 2614090824,
-  "lat": 43.7710542,
-  "lon": -7.8696741
+  "lat": 43.7710683,
+  "lon": -7.8696849
 },
 {
   "type": "node",
   "id": 2614090825,
-  "lat": 43.7710603,
-  "lon": -7.8696757
+  "lat": 43.7710744,
+  "lon": -7.8696865
 },
 {
   "type": "node",
