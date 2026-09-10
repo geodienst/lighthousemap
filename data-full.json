@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-09T04:33:40Z",
+    "timestamp_osm_base": "2026-09-10T04:32:50Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -3572,7 +3572,7 @@
   "tags": {
     "height": "12",
     "man_made": "lighthouse",
-    "name": "Tokarevskogo",
+    "name": "Маяк Токаревского",
     "name:ru": "Маяк Токаревского",
     "seamark:light:1:character": "LFl",
     "seamark:light:1:colour": "white",
@@ -546433,6 +546433,73 @@
     "seamark:light:reference": "F 0842",
     "seamark:light:sequence": "0.3+(0.2),0.3+(9.2)",
     "seamark:name": "Little Basses Reef",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14165626420,
+  "lat": 6.1820913,
+  "lon": 81.4813981,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "34",
+    "seamark:light:period": "15",
+    "seamark:light:range": "25",
+    "seamark:light:reference": "F 0840",
+    "seamark:light:sequence": "0.4+(14.6)",
+    "seamark:name": "Great Basses Reef",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "O",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14166550706,
+  "lat": 6.0245517,
+  "lon": 80.2193745,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "28",
+    "seamark:light:period": "15",
+    "seamark:light:range": "25",
+    "seamark:light:reference": "F 0830",
+    "seamark:light:sequence": "0.3+(2.7),0.3+(11.7)",
+    "seamark:name": "Point De Galle",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14166561575,
+  "lat": 6.4633432,
+  "lon": 79.9683264,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "46",
+    "seamark:light:period": "20",
+    "seamark:light:range": "27",
+    "seamark:light:reference": "F 0826",
+    "seamark:light:sequence": "0.5+(19.5)",
+    "seamark:name": "Barberyn",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
