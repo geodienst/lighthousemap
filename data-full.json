@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-10T04:32:50Z",
+    "timestamp_osm_base": "2026-09-11T04:30:26Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -4367,18 +4367,25 @@
     "name": "Kovalam Lighthouse",
     "operator": "Directorate General of Lighthouses and Lightships",
     "phone": "+91-471-2480337",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "57",
     "seamark:light:period": "15",
     "seamark:light:range": "31",
     "seamark:light:reference": "F 0718",
-    "seamark:light:sequence": "0.6+(14.4)",
+    "seamark:light:sequence": "0.5+(14.5)",
     "seamark:name": "Vilinjam",
     "seamark:radar_transponder:category": "racon",
     "seamark:radar_transponder:group": "O",
-    "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2009-11-12.",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192247",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026",
     "wikidata": "Q18395643",
     "wikimedia_commons": "File:Light_house_beach_kovalam_-_panoramio.jpg",
     "wikipedia": "en:Vizhinjam Lighthouse"
@@ -25213,8 +25220,8 @@
 {
   "type": "node",
   "id": 860138970,
-  "lat": 39.8599532,
-  "lon": 8.4342546,
+  "lat": 39.8600661,
+  "lon": 8.4342156,
   "tags": {
     "man_made": "lighthouse",
     "name": "Faro Capo San Marco",
@@ -262763,60 +262770,41 @@
 },
 {
   "type": "node",
-  "id": 1426523530,
-  "lat": 39.2356476,
-  "lon": 20.1280114,
-  "tags": {
-    "seamark:landmark:height": "9",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:group": "3",
-    "seamark:light:height": "64",
-    "seamark:light:period": "24",
-    "seamark:light:range": "20",
-    "seamark:light:reference": "E 3792",
-    "seamark:light:sequence": "0.8+(3.2)+0.8+(3.2)+0.8+(15.2)",
-    "seamark:name": "Lakka",
-    "seamark:type": "landmark",
-    "source": "US NGA Pub. 113. 2010-09-02"
-  }
-},
-{
-  "type": "node",
   "id": 1426523531,
   "lat": 39.2045547,
   "lon": 20.1948242,
   "tags": {
     "man_made": "lighthouse",
-    "seamark:landmark:height": "11",
+    "seamark:beacon:height": "11.0",
+    "seamark:beacon:shape": "tower;building",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
     "seamark:light:1:height": "26",
     "seamark:light:1:period": "5",
     "seamark:light:1:range": "10",
-    "seamark:light:1:sector_end": "250.0",
-    "seamark:light:1:sector_start": "135.0",
+    "seamark:light:1:sector_end": "250",
+    "seamark:light:1:sector_start": "135",
     "seamark:light:1:sequence": "1+(4)",
     "seamark:light:2:character": "Fl",
-    "seamark:light:2:colour": "white",
+    "seamark:light:2:colour": "red",
     "seamark:light:2:height": "26",
     "seamark:light:2:period": "5",
-    "seamark:light:2:range": "10",
-    "seamark:light:2:sector_end": "325.0",
-    "seamark:light:2:sector_start": "283.0",
+    "seamark:light:2:range": "8",
+    "seamark:light:2:sector_end": "283",
+    "seamark:light:2:sector_start": "250",
     "seamark:light:2:sequence": "1+(4)",
     "seamark:light:3:character": "Fl",
-    "seamark:light:3:colour": "red",
+    "seamark:light:3:colour": "white",
     "seamark:light:3:height": "26",
     "seamark:light:3:period": "5",
-    "seamark:light:3:range": "8",
-    "seamark:light:3:sector_end": "283.0",
-    "seamark:light:3:sector_start": "250.0",
+    "seamark:light:3:range": "10",
+    "seamark:light:3:sector_end": "325",
+    "seamark:light:3:sector_start": "283",
     "seamark:light:3:sequence": "1+(4)",
-    "seamark:light:reference": "E 3794",
+    "seamark:light:reference": "N 3794",
     "seamark:name": "Nisis Panayia",
-    "seamark:type": "landmark",
-    "source": "US NGA Pub. 113. 2010-09-02"
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-08-19."
   }
 },
 {
@@ -262826,16 +262814,21 @@
   "lon": 20.1905141,
   "tags": {
     "man_made": "lighthouse",
+    "seamark:beacon:colour": "white;green",
+    "seamark:beacon:colour_pattern": "vertical",
+    "seamark:beacon:construction": "metal;framework",
+    "seamark:beacon:height": "6.1",
+    "seamark:information": "gallery",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
-    "seamark:light:height": "8",
+    "seamark:light:height": "9",
     "seamark:light:period": "3",
     "seamark:light:range": "3",
-    "seamark:light:reference": "E 3794.7",
+    "seamark:light:reference": "N 3794.70",
     "seamark:light:sequence": "0.3+(2.7)",
     "seamark:name": "Point Kiavari",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2010-09-02"
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-08-19."
   }
 },
 {
@@ -262844,16 +262837,21 @@
   "lat": 39.2007568,
   "lon": 20.1857088,
   "tags": {
+    "seamark:beacon:colour": "white;red",
+    "seamark:beacon:colour_pattern": "vertical",
+    "seamark:beacon:construction": "metal;framework",
+    "seamark:beacon:height": "6.1",
+    "seamark:information": "gallery",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
-    "seamark:light:height": "7",
+    "seamark:light:height": "8",
     "seamark:light:period": "2",
     "seamark:light:range": "3",
-    "seamark:light:reference": "E 3795.6",
+    "seamark:light:reference": "N 3795.60",
     "seamark:light:sequence": "0.2+(1.8)",
     "seamark:name": "Akra Nikolaos",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2010-09-02"
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-08-19."
   }
 },
 {
@@ -308456,8 +308454,8 @@
 {
   "type": "node",
   "id": 1566346223,
-  "lat": 38.3280405,
-  "lon": -0.4895494,
+  "lat": 38.3280228,
+  "lon": -0.4895419,
   "tags": {
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
@@ -359442,6 +359440,28 @@
     "seamark:name": "Asagi Kovanagzi",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 113. 2011-10-20."
+  }
+},
+{
+  "type": "node",
+  "id": 2252752471,
+  "lat": 39.2290894,
+  "lon": 20.1635108,
+  "tags": {
+    "seamark:beacon:colour": "white;green",
+    "seamark:beacon:colour_pattern": "vertical",
+    "seamark:beacon:construction": "metal;framework",
+    "seamark:beacon:shape": "building",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "7",
+    "seamark:light:period": "2",
+    "seamark:light:range": "3",
+    "seamark:light:reference": "N 3791.20",
+    "seamark:light:sequence": "0.3+(1.7)",
+    "seamark:name": "Longos",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-08-19."
   }
 },
 {
@@ -546505,6 +546525,132 @@
   }
 },
 {
+  "type": "node",
+  "id": 14168789939,
+  "lat": 6.9609067,
+  "lon": 79.8513144,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "13",
+    "seamark:light:period": "3",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "F 0790",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:name": "Colombo Harbor NW. breakwater, N. head",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14168789941,
+  "lat": 6.9552683,
+  "lon": 79.8469752,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "13",
+    "seamark:light:period": "3",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "F 0788",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:name": "Colombo Harbor NW. breakwater, S. head",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14168942140,
+  "lat": 9.1074228,
+  "lon": 79.7311409,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "17",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sector_end": "270",
+    "seamark:light:1:sector_start": "090",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "F 0884",
+    "seamark:name": "Mannar Island",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14170477599,
+  "lat": 8.2957611,
+  "lon": 73.0656702,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "22",
+    "seamark:light:period": "10",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "F 0758.1",
+    "seamark:light:sequence": "1+(2),1+(6)",
+    "seamark:name": "Minicoy Island E. side",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14170537930,
+  "lat": 8.2693655,
+  "lon": 73.0260739,
+  "tags": {
+    "seamark:information": "Obscured 223°-226° by foliage within 6 miles, Obscured 238°-246° within 4 miles, Obscured 270°-273° within 2 miles",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "47",
+    "seamark:light:period": "15",
+    "seamark:light:range": "26",
+    "seamark:light:reference": "F 0758",
+    "seamark:light:sequence": "0.7+(14.3)",
+    "seamark:light:visibility": "part_obscured",
+    "seamark:name": "Minicoy Island",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "G",
+    "seamark:radar_transponder:period": "93",
+    "seamark:radar_transponder:range": "18",
+    "seamark:radar_transponder:sector_end": "150",
+    "seamark:radar_transponder:sector_start": "192",
+    "seamark:radar_transponder:wavelength": "0.03-X",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -549071,6 +549217,97 @@
     "source": "ANFR 08/2019;US NGA Pub. 113. 2010-10-22.",
     "wikidata": "Q3378330",
     "wikipedia": "fr:Phare de Pertusato"
+  }
+},
+{
+  "type": "way",
+  "id": 97595085,
+  "nodes": [
+    1129837219,
+    1129837004,
+    1129835819,
+    1129834655,
+    1129837219
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "lighthouse",
+    "name": "Άκρα Οβορός",
+    "seamark:beacon:height": "11.0",
+    "seamark:beacon:shape": "tower;building",
+    "seamark:information": "Reserve light F.W.R",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "41",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "20",
+    "seamark:light:1:sector_end": "167",
+    "seamark:light:1:sector_start": "136",
+    "seamark:light:1:sequence": "0.3+(4.7)",
+    "seamark:light:2:character": "Fl",
+    "seamark:light:2:colour": "red",
+    "seamark:light:2:height": "41",
+    "seamark:light:2:period": "5",
+    "seamark:light:2:range": "15",
+    "seamark:light:2:sector_end": "185",
+    "seamark:light:2:sector_start": "167",
+    "seamark:light:2:sequence": "0.3+(4.7)",
+    "seamark:light:3:character": "Fl",
+    "seamark:light:3:colour": "white",
+    "seamark:light:3:height": "41",
+    "seamark:light:3:period": "5",
+    "seamark:light:3:range": "20",
+    "seamark:light:3:sector_end": "307",
+    "seamark:light:3:sector_start": "185",
+    "seamark:light:3:sequence": "0.3+(4.7)",
+    "seamark:light:4:character": "Fl",
+    "seamark:light:4:colour": "red",
+    "seamark:light:4:height": "41",
+    "seamark:light:4:period": "5",
+    "seamark:light:4:range": "15",
+    "seamark:light:4:sector_end": "37",
+    "seamark:light:4:sector_start": "307",
+    "seamark:light:4:sequence": "0.3+(4.7)",
+    "seamark:light:5:character": "Fl",
+    "seamark:light:5:colour": "white",
+    "seamark:light:5:height": "41",
+    "seamark:light:5:period": "5",
+    "seamark:light:5:range": "20",
+    "seamark:light:5:sector_end": "60",
+    "seamark:light:5:sector_start": "37",
+    "seamark:light:5:sequence": "0.3+(4.7)",
+    "seamark:light:reference": "N 3796",
+    "seamark:name": "Nisis Andipaxoi",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-08-19."
+  }
+},
+{
+  "type": "way",
+  "id": 97633141,
+  "nodes": [
+    1130187740,
+    1130188119,
+    1130185619,
+    1130186697,
+    1130187740
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "lighthouse",
+    "seamark:beacon:height": "9.1",
+    "seamark:beacon:shape": "tower;building",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "210",
+    "seamark:light:period": "24",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "N 3792",
+    "seamark:light:sequence": "0.8+(3.2)+0.8+(3.2)+0.8+(15.2)",
+    "seamark:name": "Lakka",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-08-19."
   }
 },
 {
@@ -611039,6 +611276,30 @@
 },
 {
   "type": "node",
+  "id": 1130185619,
+  "lat": 39.2356262,
+  "lon": 20.1280011
+},
+{
+  "type": "node",
+  "id": 1130186697,
+  "lat": 39.2356323,
+  "lon": 20.1280366
+},
+{
+  "type": "node",
+  "id": 1130187740,
+  "lat": 39.2356679,
+  "lon": 20.1280264
+},
+{
+  "type": "node",
+  "id": 1130188119,
+  "lat": 39.2356618,
+  "lon": 20.1279909
+},
+{
+  "type": "node",
   "id": 536506336,
   "lat": 40.7703784,
   "lon": 14.0168229
@@ -611942,6 +612203,30 @@
   "id": 2915911684,
   "lat": 38.4610731,
   "lon": 20.5820044
+},
+{
+  "type": "node",
+  "id": 1129834655,
+  "lat": 39.1405811,
+  "lon": 20.2484966
+},
+{
+  "type": "node",
+  "id": 1129835819,
+  "lat": 39.1405820,
+  "lon": 20.2485370
+},
+{
+  "type": "node",
+  "id": 1129837004,
+  "lat": 39.1405536,
+  "lon": 20.2485381
+},
+{
+  "type": "node",
+  "id": 1129837219,
+  "lat": 39.1405527,
+  "lon": 20.2484977
 },
 {
   "type": "node",
