@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-12T04:27:31Z",
+    "timestamp_osm_base": "2026-09-13T04:39:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -225296,11 +225296,12 @@
     "ref": "183",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
-    "seamark:light:height": "5",
+    "seamark:light:height": "8",
     "seamark:light:period": "5",
     "seamark:light:range": "5",
     "seamark:light:reference": "P 3580.88",
     "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Kei Yan Shek",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2009-11-12."
   }
@@ -262861,18 +262862,21 @@
   "lat": 39.1967533,
   "lon": 20.1885035,
   "tags": {
-    "man_made": "lighthouse",
-    "name": "Agios Nikolas Lighthouse",
+    "seamark:beacon:colour": "white;green",
+    "seamark:beacon:colour_pattern": "vertical",
+    "seamark:beacon:construction": "metal;framework",
+    "seamark:beacon:height": "6.1",
+    "seamark:information": "gallery",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
     "seamark:light:height": "8",
     "seamark:light:period": "2",
     "seamark:light:range": "3",
-    "seamark:light:reference": "E 3795",
+    "seamark:light:reference": "N 3795",
     "seamark:light:sequence": "0.2+(1.8)",
     "seamark:name": "Limin Paxon",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2010-09-02"
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-09-12."
   }
 },
 {
@@ -262881,15 +262885,20 @@
   "lat": 39.2051705,
   "lon": 20.1934699,
   "tags": {
+    "seamark:beacon:colour": "white;red",
+    "seamark:beacon:colour_pattern": "vertical",
+    "seamark:beacon:height": "3.0",
+    "seamark:beacon:shape": "building",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:height": "11",
     "seamark:light:period": "3",
     "seamark:light:range": "3",
-    "seamark:light:reference": "E 3794.5",
+    "seamark:light:reference": "N 3794.50",
     "seamark:light:sequence": "0.3+(2.7)",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2010-09-02"
+    "seamark:name": "Island",
+    "seamark:type": "beacon",
+    "source": "US NGA Pub. 113. 2026-09-12."
   }
 },
 {
@@ -266297,8 +266306,8 @@
 {
   "type": "node",
   "id": 1435090056,
-  "lat": 47.9265763,
-  "lon": -53.3629774,
+  "lat": 47.9271423,
+  "lon": -53.3636782,
   "tags": {
     "fixme": "could be a beacon with a light",
     "man_made": "lighthouse",
@@ -546674,6 +546683,36 @@
     "seamark:name": "Muttum Point",
     "seamark:radar_transponder:category": "racon",
     "seamark:radar_transponder:group": "M",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14174767435,
+  "lat": 8.0813530,
+  "lon": 77.5469712,
+  "tags": {
+    "seamark:information": "May be difficult to identify due to background lights",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "63",
+    "seamark:light:period": "20",
+    "seamark:light:range": "29",
+    "seamark:light:reference": "F 0726",
+    "seamark:light:sequence": "0.7+(3.3),0.7+(15.3)",
+    "seamark:name": "Cape Comorin",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "C",
+    "seamark:radar_transponder:wavelength": "0.10-S",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192248",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
