@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-13T04:39:21Z",
+    "timestamp_osm_base": "2026-09-14T04:47:00Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -248706,6 +248706,7 @@
   "lat": 48.4235146,
   "lon": -4.7789246,
   "tags": {
+    "check_date": "2026-09-13",
     "man_made": "lighthouse",
     "name": "Phare de Trézien",
     "name:br": "Tour-tan Trezian",
@@ -359792,8 +359793,8 @@
 {
   "type": "node",
   "id": 2341676054,
-  "lat": 25.1927399,
-  "lon": 121.7869730,
+  "lat": 25.1927511,
+  "lon": 121.7869686,
   "tags": {
     "alt_name": "基隆嶼燈塔",
     "ele": "189.3",
@@ -546718,6 +546719,32 @@
   }
 },
 {
+  "type": "node",
+  "id": 14179746090,
+  "lat": 8.8806264,
+  "lon": 76.5659905,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "diagonal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "42",
+    "seamark:light:period": "15",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "F 0712",
+    "seamark:light:sequence": "0.1+(3.7),0.1+(3.7),0.1+(7.3)",
+    "seamark:name": "Quilan",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192246",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -546997,6 +547024,8 @@
     "addr:street": "Seepromenade",
     "addr:suburb": "Warnemünde",
     "building": "yes",
+    "building:colour": "lightyellow",
+    "building:material": "brick",
     "colour": "#BDB191",
     "fee": "yes",
     "height": "30.13 m",
