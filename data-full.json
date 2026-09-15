@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-14T04:47:00Z",
+    "timestamp_osm_base": "2026-09-15T04:47:04Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -229060,25 +229060,35 @@
     "addr:city": "Ernakulam",
     "addr:postcode": "682508",
     "addr:street": "Puthuvypu, Ochanthuruth",
+    "alt_name": "Vypin Lighthouse",
     "ele": "49",
     "height": "46",
     "man_made": "lighthouse",
     "name": "Puthuvype Light House",
+    "name:en": "Puthuvype Lighthouse",
     "operator": "Directorate General of Lighthouses And Lightships",
     "phone": "+91-484-2502443",
+    "seamark:landmark:category": "radar_scanner;tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "4",
     "seamark:light:height": "49",
     "seamark:light:period": "20",
-    "seamark:light:range": "28",
+    "seamark:light:range": "27",
     "seamark:light:reference": "F 0698",
     "seamark:light:sequence": "0.4+(2.9)+0.4+(2.9)+0.4+(2.9)+0.4+(9.7)",
     "seamark:name": "Cochin",
     "seamark:radar_transponder:category": "racon",
     "seamark:radar_transponder:group": "K",
-    "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2009-11-12.",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192244",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026",
+    "website": "https://www.dgll.nic.in/DGLL-light-house-location/kochi/vypin-lighthouse",
     "wikidata": "Q13114877",
     "wikimedia_commons": "Category:Vypin lighthouse",
     "wikipedia": "en:Vypin Lighthouse"
@@ -545749,7 +545759,7 @@
     "seamark:light:group": "1",
     "seamark:light:period": "3",
     "seamark:light:sequence": "1+(2)",
-    "seamark:light:type": "beacon_lateral"
+    "seamark:type": "beacon_lateral"
   }
 },
 {
@@ -546740,6 +546750,54 @@
     "seamark:name": "Quilan",
     "seamark:radio_station:category": "ais",
     "seamark:radio_station:mmsi": "004192246",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14179994156,
+  "lat": 9.4939002,
+  "lon": 76.3209537,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "33",
+    "seamark:light:period": "15",
+    "seamark:light:range": "25",
+    "seamark:light:reference": "F 0706",
+    "seamark:light:sequence": "0.8+(14.2)",
+    "seamark:name": "Alleppey",
+    "seamark:radio_station:category": "ais_base",
+    "seamark:radio_station:mmsi": "004192245",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14180423921,
+  "lat": 9.7482640,
+  "lon": 76.2864543,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "35",
+    "seamark:light:period": "10",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "F 0705",
+    "seamark:light:sequence": "0.3+(2.2),0.3+(7.2)",
+    "seamark:name": "Manakkodam",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
