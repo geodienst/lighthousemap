@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-16T04:42:44Z",
+    "timestamp_osm_base": "2026-09-17T04:45:35Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -546930,6 +546930,57 @@
     "seamark:light:reference": "F 0754.4",
     "seamark:light:sequence": "0.5+(14.5)",
     "seamark:name": "Amini Island",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14184530144,
+  "lat": 10.8772765,
+  "lon": 72.2054270,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "framework;metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "35",
+    "seamark:light:period": "30",
+    "seamark:light:range": "11",
+    "seamark:light:reference": "F 0754.7",
+    "seamark:light:sequence": "1+(3),1+(3),1+(21)",
+    "seamark:name": "Agatti Island",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "B",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14185319502,
+  "lat": 10.0834574,
+  "lon": 73.6477013,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "44",
+    "seamark:light:1:period": "20",
+    "seamark:light:1:range": "18",
+    "seamark:light:1:sector_end": "190",
+    "seamark:light:1:sector_start": "195",
+    "seamark:light:reference": "F 0757",
+    "seamark:light:sequence": "0.5+(3.4),0.5+(3.4),0.5+(11.7)",
+    "seamark:name": "Kalpeni",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
