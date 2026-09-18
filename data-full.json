@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-17T04:45:35Z",
+    "timestamp_osm_base": "2026-09-18T04:35:51Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -23586,9 +23586,10 @@
   "lat": 54.6299856,
   "lon": 19.8855185,
   "tags": {
+    "description": "Baltiyskaya Kosa Range Rear light and VTS radar tower C3100.161",
     "height": "40",
     "man_made": "lighthouse",
-    "name": "Baltiyskaya Kosa Range Rear light and VTS radar tower C3100.161",
+    "name": "Башня Росморпорта",
     "name:de": "Leuchturm Kossa Oberfeuer",
     "seamark:building:construction": "metal",
     "seamark:information": "Radiobeacon. VTS",
@@ -257803,6 +257804,7 @@
   "lon": 5.6914176,
   "tags": {
     "name": "Cap Ras El Afia",
+    "name:fr": "Cap Ras El Afia",
     "place": "isolated_dwelling",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "red",
@@ -357450,33 +357452,6 @@
     "seamark:name": "Neah Bay Coast Guard Breakwater Obstruction Light A",
     "seamark:reference": "LLNR 16162",
     "seamark:type": "light_minor"
-  }
-},
-{
-  "type": "node",
-  "id": 2049098392,
-  "lat": 43.5496919,
-  "lon": -6.5325156,
-  "tags": {
-    "man_made": "lighthouse",
-    "name": "Faro de Luarca",
-    "seamark:fog_signal:category": "siren",
-    "seamark:fog_signal:group": "L",
-    "seamark:fog_signal:period": "30",
-    "seamark:light:category": "upper",
-    "seamark:light:character": "Oc",
-    "seamark:light:colour": "white",
-    "seamark:light:group": "3",
-    "seamark:light:height": "65",
-    "seamark:light:period": "15",
-    "seamark:light:range": "14",
-    "seamark:light:reference": "D 1646",
-    "seamark:light:sequence": "7+(2)+1+(2)+1+(2)",
-    "seamark:name": "Punta La Blanca",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2011-10-20.",
-    "tourism": "attraction",
-    "wikidata": "Q8960899"
   }
 },
 {
@@ -546986,6 +546961,56 @@
   }
 },
 {
+  "type": "node",
+  "id": 14188956240,
+  "lat": 10.8154329,
+  "lon": 73.7015556,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "44",
+    "seamark:light:period": "10",
+    "seamark:light:range": "16",
+    "seamark:light:reference": "F 0755",
+    "seamark:light:sequence": "0.5+(1),0.5+(8)",
+    "seamark:name": "Androth Island",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "D",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14190038094,
+  "lat": 10.5611493,
+  "lon": 72.6461191,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "40",
+    "seamark:light:period": "5",
+    "seamark:light:range": "21",
+    "seamark:light:reference": "F 0755.5",
+    "seamark:light:sequence": "0.3+(4.7)",
+    "seamark:name": "Kavarat Island",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "K",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -549089,6 +549114,43 @@
     "wheelchair": "no",
     "wikidata": "Q1639005",
     "wikipedia": "fr:Phare de l'Île Vierge"
+  }
+},
+{
+  "type": "way",
+  "id": 93378514,
+  "nodes": [
+    2049098392,
+    1082745576,
+    1082745200,
+    1082745137,
+    1082745643,
+    1082745630,
+    1082745526,
+    1082745597,
+    2049098392
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "lighthouse",
+    "name": "Faro de Luarca",
+    "seamark:fog_signal:category": "siren",
+    "seamark:fog_signal:group": "L",
+    "seamark:fog_signal:period": "30",
+    "seamark:light:category": "upper",
+    "seamark:light:character": "Oc",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "65",
+    "seamark:light:period": "15",
+    "seamark:light:range": "14",
+    "seamark:light:reference": "D 1646",
+    "seamark:light:sequence": "7+(2)+1+(2)+1+(2)",
+    "seamark:name": "Punta La Blanca",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 113. 2011-10-20.",
+    "tourism": "attraction",
+    "wikidata": "Q8960899"
   }
 },
 {
@@ -556999,6 +557061,7 @@
   "tags": {
     "alt_name": "Tower of Lloyd",
     "building": "yes",
+    "height": "30",
     "historic": "monument",
     "name": "Spire of Lloyd",
     "name:ga": "Spuaic Lloyd",
@@ -589656,6 +589719,54 @@
   "id": 11145959140,
   "lat": 43.7005646,
   "lon": -7.4366355
+},
+{
+  "type": "node",
+  "id": 1082745137,
+  "lat": 43.5497089,
+  "lon": -6.5324841
+},
+{
+  "type": "node",
+  "id": 1082745200,
+  "lat": 43.5497219,
+  "lon": -6.5325357
+},
+{
+  "type": "node",
+  "id": 1082745526,
+  "lat": 43.5495648,
+  "lon": -6.5323288
+},
+{
+  "type": "node",
+  "id": 1082745576,
+  "lat": 43.5496720,
+  "lon": -6.5325641
+},
+{
+  "type": "node",
+  "id": 1082745597,
+  "lat": 43.5496155,
+  "lon": -6.5325297
+},
+{
+  "type": "node",
+  "id": 1082745630,
+  "lat": 43.5496960,
+  "lon": -6.5322657
+},
+{
+  "type": "node",
+  "id": 1082745643,
+  "lat": 43.5497466,
+  "lon": -6.5324660
+},
+{
+  "type": "node",
+  "id": 2049098392,
+  "lat": 43.5496581,
+  "lon": -6.5325092
 },
 {
   "type": "node",
