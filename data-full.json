@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-18T04:35:51Z",
+    "timestamp_osm_base": "2026-09-19T04:30:15Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -348859,8 +348859,8 @@
 {
   "type": "node",
   "id": 1822889357,
-  "lat": 60.0938135,
-  "lon": 26.9520124,
+  "lat": 60.0939793,
+  "lon": 26.9518515,
   "tags": {
     "man_made": "lighthouse",
     "name": "Северный Гогландский маяк",
@@ -372013,8 +372013,9 @@
     "height": "15",
     "image": "http://www.kaliningradgid.ru/image/1373203381_954.jpg",
     "man_made": "lighthouse",
-    "name": "Заливно (Haffwinkel/Rinderort)",
+    "name": "Заливно",
     "name:de": "Rinderort (Haffwinkel)",
+    "name:ru": "Заливно",
     "ruins": "no",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
@@ -547006,6 +547007,55 @@
     "seamark:name": "Kavarat Island",
     "seamark:radar_transponder:category": "racon",
     "seamark:radar_transponder:group": "K",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14191159987,
+  "lat": 10.7779293,
+  "lon": 75.9169386,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "34",
+    "seamark:light:period": "15",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "F 0692",
+    "seamark:light:sequence": "0.5+(14.5)",
+    "seamark:name": "Ponnani",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192243",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14192006221,
+  "lat": 11.2584415,
+  "lon": 75.7691702,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "17",
+    "seamark:light:period": "6",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "F 0686",
+    "seamark:light:sequence": "0.3+(1.4),0.3+(4)",
+    "seamark:name": "Calicut",
+    "seamark:signal_station_warning:category": "storm",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
