@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-19T04:30:15Z",
+    "timestamp_osm_base": "2026-09-20T04:47:35Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -566834,6 +566834,7 @@
   "tags": {
     "alt_name": "Phare de Granville",
     "building": "yes",
+    "building:colour": "grey",
     "height": "25",
     "heritage": "3",
     "heritage:operator": "mhs",
