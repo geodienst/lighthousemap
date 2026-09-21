@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-20T04:47:35Z",
+    "timestamp_osm_base": "2026-09-21T04:47:53Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -565943,7 +565943,7 @@
     6502700751
   ],
   "tags": {
-    "building": "yes",
+    "building": "lighthouse",
     "check_date": "2025-04-01",
     "man_made": "lighthouse",
     "name": "Faro di Sciara Biscari",
@@ -571294,56 +571294,6 @@
 },
 {
   "type": "way",
-  "id": 1022084360,
-  "nodes": [
-    9437854100,
-    457322892,
-    9437854098,
-    9426601890,
-    9426601891,
-    9437854099,
-    9426601874,
-    9426601875,
-    9426601876,
-    9426601877,
-    9426601878,
-    9426601879,
-    9426601887,
-    9426601888,
-    9426601889,
-    9426601880,
-    9426601881,
-    9426601883,
-    9426601884,
-    9426601885,
-    9426601886,
-    9437854100
-  ],
-  "tags": {
-    "alt_name": "Far de la Torre del Riu",
-    "building": "yes",
-    "building:levels": "1",
-    "man_made": "lighthouse",
-    "name": "Far del Llobregat",
-    "name:ca": "Far de la Torre del Riu",
-    "seamark:light:1:character": "Fl",
-    "seamark:light:1:colour": "white",
-    "seamark:light:1:height": "32",
-    "seamark:light:1:period": "5",
-    "seamark:light:1:range": "23",
-    "seamark:light:1:sector_end": "30",
-    "seamark:light:1:sector_start": "240",
-    "seamark:light:1:sequence": "1+(4)",
-    "seamark:light:reference": "E 0398",
-    "seamark:name": "Rio Llobregat",
-    "seamark:type": "light_major",
-    "wikidata": "Q29939858",
-    "wikimedia_commons": "Category:Far del Llobregat",
-    "wikipedia": "ca:Far del Llobregat"
-  }
-},
-{
-  "type": "way",
   "id": 1025548702,
   "nodes": [
     1835849834,
@@ -576617,6 +576567,62 @@
     "source": "Commissioners of Irish Lights",
     "wikidata": "Q28333608",
     "wikimedia_commons": "Category:Muglins Lighthouse"
+  }
+},
+{
+  "type": "way",
+  "id": 1560853447,
+  "nodes": [
+    9426601893,
+    9426601876,
+    9426601877,
+    9426601878,
+    9426601879,
+    9426601887,
+    9426601888,
+    9426601889,
+    9426601880,
+    9426601881,
+    9426601883,
+    9426601884,
+    9426601885,
+    9426601886,
+    9437854100,
+    9437854098,
+    9426601892,
+    9426601893
+  ],
+  "tags": {
+    "alt_name": "Far de la Torre del Riu",
+    "architect": "Simó Ferrer Bosch",
+    "building": "lighthouse",
+    "building:architecture": "neoclassicism",
+    "building:levels": "1",
+    "height": "31",
+    "heritage": "yes",
+    "historic": "building",
+    "man_made": "lighthouse",
+    "name": "Far del Llobregat",
+    "name:ca": "Far del Llobregat",
+    "operator": "Autoritat Portuària de Barcelona",
+    "operator:short": "APB",
+    "operator:type": "public",
+    "operator:wikidata": "Q42190368",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "32",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "23",
+    "seamark:light:1:sector_end": "30",
+    "seamark:light:1:sector_start": "240",
+    "seamark:light:1:sequence": "1+(4)",
+    "seamark:light:reference": "E 0398",
+    "seamark:name": "Llobregat",
+    "seamark:type": "light_major",
+    "url": "https://www.portdebarcelona.cat/ca/coneix-el-port/territori-port/senyalitzacio-maritima/llobregat",
+    "website": "https://www.portdebarcelona.cat/ca/port-vell/patrimoni-cultural/propietats/far-del-llobregat",
+    "wikidata": "Q29939858",
+    "year_of_construction": "1852-01-01"
   }
 },
 {
@@ -609429,129 +609435,105 @@
 },
 {
   "type": "node",
-  "id": 457322892,
-  "lat": 41.3250556,
-  "lon": 2.1523542
-},
-{
-  "type": "node",
-  "id": 9426601874,
-  "lat": 41.3249977,
-  "lon": 2.1522851
-},
-{
-  "type": "node",
-  "id": 9426601875,
-  "lat": 41.3249936,
-  "lon": 2.1522518
-},
-{
-  "type": "node",
   "id": 9426601876,
-  "lat": 41.3249980,
-  "lon": 2.1522174
+  "lat": 41.3250164,
+  "lon": 2.1522129
 },
 {
   "type": "node",
   "id": 9426601877,
-  "lat": 41.3250104,
-  "lon": 2.1521875
+  "lat": 41.3250307,
+  "lon": 2.1521804
 },
 {
   "type": "node",
   "id": 9426601878,
-  "lat": 41.3250292,
-  "lon": 2.1521645
+  "lat": 41.3250499,
+  "lon": 2.1521577
 },
 {
   "type": "node",
   "id": 9426601879,
-  "lat": 41.3250527,
-  "lon": 2.1521508
+  "lat": 41.3250730,
+  "lon": 2.1521442
 },
 {
   "type": "node",
   "id": 9426601880,
-  "lat": 41.3251406,
-  "lon": 2.1522009
+  "lat": 41.3251598,
+  "lon": 2.1521936
 },
 {
   "type": "node",
   "id": 9426601881,
-  "lat": 41.3251493,
-  "lon": 2.1522330
+  "lat": 41.3251683,
+  "lon": 2.1522253
 },
 {
   "type": "node",
   "id": 9426601883,
-  "lat": 41.3251498,
-  "lon": 2.1522671
+  "lat": 41.3251688,
+  "lon": 2.1522589
 },
 {
   "type": "node",
   "id": 9426601884,
-  "lat": 41.3251420,
-  "lon": 2.1522996
+  "lat": 41.3251611,
+  "lon": 2.1522910
 },
 {
   "type": "node",
   "id": 9426601885,
-  "lat": 41.3251268,
-  "lon": 2.1523270
+  "lat": 41.3251461,
+  "lon": 2.1523180
 },
 {
   "type": "node",
   "id": 9426601886,
-  "lat": 41.3251058,
-  "lon": 2.1523465
+  "lat": 41.3251254,
+  "lon": 2.1523373
 },
 {
   "type": "node",
   "id": 9426601887,
-  "lat": 41.3250782,
-  "lon": 2.1521478
+  "lat": 41.3250982,
+  "lon": 2.1521412
 },
 {
   "type": "node",
   "id": 9426601888,
-  "lat": 41.3251031,
-  "lon": 2.1521559
+  "lat": 41.3251228,
+  "lon": 2.1521492
 },
 {
   "type": "node",
   "id": 9426601889,
-  "lat": 41.3251246,
-  "lon": 2.1521743
+  "lat": 41.3251440,
+  "lon": 2.1521674
 },
 {
   "type": "node",
-  "id": 9426601890,
-  "lat": 41.3250291,
-  "lon": 2.1523395
+  "id": 9426601892,
+  "lat": 41.3250006,
+  "lon": 2.1523853
 },
 {
   "type": "node",
-  "id": 9426601891,
-  "lat": 41.3250108,
-  "lon": 2.1523173
+  "id": 9426601893,
+  "lat": 41.3249511,
+  "lon": 2.1522593
 },
 {
   "type": "node",
   "id": 9437854098,
-  "lat": 41.3250419,
-  "lon": 2.1523485
-},
-{
-  "type": "node",
-  "id": 9437854099,
-  "lat": 41.3250032,
-  "lon": 2.1523020
+  "lat": 41.3250672,
+  "lon": 2.1523419
 },
 {
   "type": "node",
   "id": 9437854100,
-  "lat": 41.3250812,
-  "lon": 2.1523559
+  "lat": 41.3251012,
+  "lon": 2.1523465
 },
 {
   "type": "node",
