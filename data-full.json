@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-21T04:47:53Z",
+    "timestamp_osm_base": "2026-09-22T04:47:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -547061,6 +547061,134 @@
   }
 },
 {
+  "type": "node",
+  "id": 14203043424,
+  "lat": 11.4690212,
+  "lon": 75.6372163,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "57",
+    "seamark:light:period": "5",
+    "seamark:light:range": "23",
+    "seamark:light:reference": "F 0682",
+    "seamark:light:sequence": "0.2+(4.8)",
+    "seamark:name": "Kadalur Point",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14203445199,
+  "lat": 11.7483097,
+  "lon": 75.4859877,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2009)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "27",
+    "seamark:light:1:period": "9",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sector_end": "120",
+    "seamark:light:1:sector_start": "322",
+    "seamark:light:1:sequence": "0.3+(1.5),0.3+(1.5),0.3+(5.1)",
+    "seamark:light:reference": "F 0674",
+    "seamark:name": "Tellicherry",
+    "seamark:status": "extinguished",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14203483180,
+  "lat": 11.8604747,
+  "lon": 75.3559247,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "35",
+    "seamark:light:period": "10",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "F 0672",
+    "seamark:light:sequence": "0.5+(9.5)",
+    "seamark:name": "Cannanore",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14203697295,
+  "lat": 12.0071626,
+  "lon": 75.2019370,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "62",
+    "seamark:light:period": "20",
+    "seamark:light:range": "22",
+    "seamark:light:reference": "F 0669.5",
+    "seamark:light:sequence": "0.5+(2),0.5+(17)",
+    "seamark:name": "Kotte Kunnu",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "K",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192241",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14203913127,
+  "lat": 12.5054578,
+  "lon": 74.9731027,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "38",
+    "seamark:light:period": "20",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "F 0668.5",
+    "seamark:light:sequence": "0.5+(2),0.5+(2),0.5+(14.5)",
+    "seamark:name": "Kasaragod",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192240",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -571796,6 +571924,7 @@
     9530552183
   ],
   "tags": {
+    "height": "26",
     "man_made": "lighthouse",
     "name": "Papes bāka",
     "name:de": "Leuchtturm Pape",
