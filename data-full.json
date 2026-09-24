@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-22T08:45:51Z",
+    "timestamp_osm_base": "2026-09-24T04:40:17Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -4389,31 +4389,6 @@
     "wikidata": "Q18395643",
     "wikimedia_commons": "File:Light_house_beach_kovalam_-_panoramio.jpg",
     "wikipedia": "en:Vizhinjam Lighthouse"
-  }
-},
-{
-  "type": "node",
-  "id": 310085225,
-  "lat": 36.7543647,
-  "lon": 22.5757735,
-  "tags": {
-    "int_name": "Gythio Lighthouse",
-    "man_made": "lighthouse",
-    "name": "Φάρος Κρανάης",
-    "name:de": "Leuchtturm von Gythio",
-    "name:el": "Φάρος Κρανάης",
-    "name:en": "Gythio Lighthouse",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:group": "3",
-    "seamark:light:height": "25",
-    "seamark:light:period": "18",
-    "seamark:light:range": "14",
-    "seamark:light:reference": "E 4052",
-    "seamark:light:sequence": "1+(3)+1+(3)+1+(9)",
-    "seamark:name": "Limin Yithion",
-    "seamark:type": "light_minor",
-    "wikidata": "Q17636584"
   }
 },
 {
@@ -229124,9 +229099,14 @@
 {
   "type": "node",
   "id": 1293790477,
-  "lat": 13.2234926,
-  "lon": 74.7367944,
+  "lat": 13.2239270,
+  "lon": 74.7368225,
   "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "3",
@@ -229136,8 +229116,10 @@
     "seamark:light:reference": "F 0658",
     "seamark:light:sequence": "0.2+(3.8)+0.2+(3.8)+0.2+(11.8)",
     "seamark:name": "Kapu",
-    "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192238",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub. 112. 2026"
   }
 },
 {
@@ -547215,6 +547197,33 @@
   }
 },
 {
+  "type": "node",
+  "id": 14206134366,
+  "lat": 12.8476567,
+  "lon": 74.8378831,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2024)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "10",
+    "seamark:light:1:period": "3",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sector_end": "153",
+    "seamark:light:1:sector_start": "018",
+    "seamark:light:reference": "F 0668",
+    "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:name": "Mangalore",
+    "seamark:status": "extinguished",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -558257,6 +558266,7 @@
     "image": "https://photos.app.goo.gl/JENTYooHiqS6bhEU6",
     "man_made": "lighthouse",
     "name": "Latarnia morska Świnoujście",
+    "name:de": "Leuchtturm Morska",
     "opening_hours": "08:00-20:00",
     "seamark:light:1:character": "Oc",
     "seamark:light:1:colour": "red",
@@ -561500,7 +561510,7 @@
     "image": "https://commons.wikimedia.org/wiki/File%3ALeuchtturm_Dornbusch_1.jpg",
     "man_made": "lighthouse",
     "name": "Leuchtturm Dornbusch",
-    "opening_hours": "Jun-Oct: Mo-Sa 10:30-16:00",
+    "opening_hours": "Apr-Oct: Mo-Su 10:30-16:00",
     "seamark:conspicuity": "conspicuous",
     "seamark:construction": "concreted",
     "seamark:landmark:colour": "white",
@@ -567316,7 +567326,8 @@
     "seamark:radio_station:mmsi": "992471078",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 113. 2010-10-22.",
-    "wikidata": "Q55119933"
+    "wikidata": "Q55119933",
+    "wikimedia_commons": "File:Ustica - Faro di Punta Cavazzi (49783).jpg"
   }
 },
 {
@@ -567461,6 +567472,37 @@
     "seamark:radio_station:mmsi": "992271318",
     "seamark:type": "light_major",
     "wikidata": "Q1638606"
+  }
+},
+{
+  "type": "way",
+  "id": 738606519,
+  "nodes": [
+    6916385495,
+    6916385491,
+    310085225,
+    6916385493,
+    6916385495
+  ],
+  "tags": {
+    "building": "yes",
+    "int_name": "Gythio Lighthouse",
+    "man_made": "lighthouse",
+    "name": "Φάρος Κρανάης",
+    "name:de": "Leuchtturm von Gythio",
+    "name:el": "Φάρος Κρανάης",
+    "name:en": "Gythio Lighthouse",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "25",
+    "seamark:light:period": "18",
+    "seamark:light:range": "14",
+    "seamark:light:reference": "E 4052",
+    "seamark:light:sequence": "1+(3)+1+(3)+1+(9)",
+    "seamark:name": "Limin Yithion",
+    "seamark:type": "light_major",
+    "wikidata": "Q17636584"
   }
 },
 {
@@ -612710,6 +612752,30 @@
 },
 {
   "type": "node",
+  "id": 310085225,
+  "lat": 36.7542864,
+  "lon": 22.5757905
+},
+{
+  "type": "node",
+  "id": 6916385491,
+  "lat": 36.7544015,
+  "lon": 22.5757905
+},
+{
+  "type": "node",
+  "id": 6916385493,
+  "lat": 36.7542864,
+  "lon": 22.5756876
+},
+{
+  "type": "node",
+  "id": 6916385495,
+  "lat": 36.7544015,
+  "lon": 22.5756876
+},
+{
+  "type": "node",
   "id": 452551286,
   "lat": 38.1913726,
   "lon": 20.4677601
@@ -614607,32 +614673,32 @@
 {
   "type": "node",
   "id": 1751308138,
-  "lat": 43.4548226,
-  "lon": 4.5703535
+  "lat": 43.4548225,
+  "lon": 4.5703536
 },
 {
   "type": "node",
   "id": 1751308159,
-  "lat": 43.4548219,
-  "lon": 4.5702890
+  "lat": 43.4548216,
+  "lon": 4.5702886
 },
 {
   "type": "node",
   "id": 1751308300,
-  "lat": 43.4548503,
-  "lon": 4.5702884
+  "lat": 43.4548423,
+  "lon": 4.5702881
 },
 {
   "type": "node",
   "id": 6342620176,
-  "lat": 43.4548694,
-  "lon": 4.5702878
+  "lat": 43.4548700,
+  "lon": 4.5702870
 },
 {
   "type": "node",
   "id": 6342620177,
-  "lat": 43.4548706,
-  "lon": 4.5703510
+  "lat": 43.4548711,
+  "lon": 4.5703517
 },
 {
   "type": "node",
