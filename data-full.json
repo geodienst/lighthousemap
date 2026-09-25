@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-24T04:40:17Z",
+    "timestamp_osm_base": "2026-09-25T04:49:57Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -547221,6 +547221,35 @@
     "seamark:status": "extinguished",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14211910785,
+  "lat": 14.7103435,
+  "lon": 74.2393774,
+  "tags": {
+    "man_made": "lighthouse",
+    "name": "Belekeri Lighthouse",
+    "name:en": "Belekeri Lighthouse",
+    "seamark:information": "Shown Sep. 16 to May 15",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "66",
+    "seamark:light:period": "10",
+    "seamark:light:range": "9",
+    "seamark:light:reference": "F 0637",
+    "seamark:light:sequence": "0.3+(1.7),0.3+(1.7),0.3+(5.7)",
+    "seamark:name": "Kukra Island",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026",
+    "wikidata": "Q141548642"
   }
 },
 {
