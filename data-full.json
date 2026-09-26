@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-25T04:49:57Z",
+    "timestamp_osm_base": "2026-09-26T04:48:55Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -17907,6 +17907,7 @@
   "tags": {
     "man_made": "lighthouse",
     "name": "Faru de Lluces",
+    "name:ast": "Faru de Lluces",
     "name:es": "Faro de Luces",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -221595,8 +221596,8 @@
 {
   "type": "node",
   "id": 1244901148,
-  "lat": 42.4683522,
-  "lon": 27.5530030,
+  "lat": 42.4683407,
+  "lon": 27.5530011,
   "tags": {
     "man_made": "lighthouse",
     "name": "Фар Св. Анастасия",
@@ -576852,6 +576853,50 @@
   }
 },
 {
+  "type": "way",
+  "id": 1562206787,
+  "nodes": [
+    14214352117,
+    14214352106,
+    14214352107,
+    14214352108,
+    14214352109,
+    14214352115,
+    14214352116,
+    14214352110,
+    14214352111,
+    14214352112,
+    14214352113,
+    14214352114,
+    14214352117
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "lighthouse",
+    "name": "Фар Св. Анастасия",
+    "seamark:light:1:character": "LFl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "22",
+    "seamark:light:1:period": "8",
+    "seamark:light:1:range": "8",
+    "seamark:light:1:sector_end": "132",
+    "seamark:light:1:sector_start": "92",
+    "seamark:light:1:sequence": "2+(6)",
+    "seamark:light:2:character": "LFl",
+    "seamark:light:2:colour": "red",
+    "seamark:light:2:height": "22",
+    "seamark:light:2:period": "8",
+    "seamark:light:2:range": "4",
+    "seamark:light:2:sector_end": "92",
+    "seamark:light:2:sector_start": "132",
+    "seamark:light:2:sequence": "2+(6)",
+    "seamark:light:reference": "E 4980",
+    "seamark:name": "Ostrov Bolshevik",
+    "seamark:type": "light_minor",
+    "wikidata": "Q28376418"
+  }
+},
+{
   "type": "node",
   "id": 2145540823,
   "lat": -17.4950408,
@@ -614062,6 +614107,78 @@
   "id": 10313013747,
   "lat": 41.0062953,
   "lon": 28.9854537
+},
+{
+  "type": "node",
+  "id": 14214352106,
+  "lat": 42.4683535,
+  "lon": 27.5529825
+},
+{
+  "type": "node",
+  "id": 14214352107,
+  "lat": 42.4683586,
+  "lon": 27.5529931
+},
+{
+  "type": "node",
+  "id": 14214352108,
+  "lat": 42.4683592,
+  "lon": 27.5530058
+},
+{
+  "type": "node",
+  "id": 14214352109,
+  "lat": 42.4683551,
+  "lon": 27.5530172
+},
+{
+  "type": "node",
+  "id": 14214352110,
+  "lat": 42.4683296,
+  "lon": 27.5530201
+},
+{
+  "type": "node",
+  "id": 14214352111,
+  "lat": 42.4683241,
+  "lon": 27.5530095
+},
+{
+  "type": "node",
+  "id": 14214352112,
+  "lat": 42.4683232,
+  "lon": 27.5529965
+},
+{
+  "type": "node",
+  "id": 14214352113,
+  "lat": 42.4683274,
+  "lon": 27.5529848
+},
+{
+  "type": "node",
+  "id": 14214352114,
+  "lat": 42.4683354,
+  "lon": 27.5529775
+},
+{
+  "type": "node",
+  "id": 14214352115,
+  "lat": 42.4683474,
+  "lon": 27.5530244
+},
+{
+  "type": "node",
+  "id": 14214352116,
+  "lat": 42.4683381,
+  "lon": 27.5530254
+},
+{
+  "type": "node",
+  "id": 14214352117,
+  "lat": 42.4683449,
+  "lon": 27.5529767
 },
 {
   "type": "node",
