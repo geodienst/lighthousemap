@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-27T05:11:33Z",
+    "timestamp_osm_base": "2026-09-28T05:14:50Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -6736,28 +6736,6 @@
     "seamark:name": "Vistnestangen",
     "seamark:type": "light_minor",
     "seamark:vertical_length": "3"
-  }
-},
-{
-  "type": "node",
-  "id": 352842146,
-  "lat": 33.8227966,
-  "lon": 11.0427740,
-  "tags": {
-    "man_made": "lighthouse",
-    "name": "Phare de Taguermess",
-    "name:fr": "Phare de Taguermess",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "64",
-    "seamark:light:period": "5",
-    "seamark:light:range": "24",
-    "seamark:light:reference": "E 6332",
-    "seamark:light:sequence": "0.3+(4.7)",
-    "seamark:name": "Ra's Taguermess",
-    "seamark:type": "light_major",
-    "wikidata": "Q39996948",
-    "wikimedia_commons": "Category:Tourgueness lighthouse"
   }
 },
 {
@@ -241623,7 +241601,8 @@
   "lat": 45.4265690,
   "lon": 12.3749080,
   "tags": {
-    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:colour": "yellow",
+    "seamark:buoy_special_purpose:shape": "spar",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "yellow",
     "seamark:light:group": "3",
@@ -241633,7 +241612,7 @@
     "seamark:light:reference": "E 2490.8",
     "seamark:light:sequence": "0.5+(1)+0.5+(1)+0.5+(5.5)",
     "seamark:radar_reflector": "yes",
-    "seamark:type": "beacon_special_purpose",
+    "seamark:type": "buoy_special_purpose",
     "source": "US NGA Pub. 113. 2010-10-22."
   }
 },
@@ -559312,6 +559291,61 @@
 },
 {
   "type": "way",
+  "id": 334821358,
+  "nodes": [
+    352842146,
+    3419360308,
+    3419360306,
+    3419360304,
+    3419360303,
+    3419360301,
+    3419360299,
+    3419360297,
+    3419360295,
+    3419360293,
+    3419359591,
+    3419359589,
+    3419359587,
+    3419359585,
+    3419359583,
+    3419359581,
+    3419359580,
+    3419359582,
+    3419359584,
+    3419359586,
+    3419359588,
+    3419359590,
+    3419359592,
+    3419360294,
+    3419360296,
+    3419360298,
+    3419360300,
+    3419360302,
+    3419360305,
+    3419360307,
+    3419360309,
+    352842146
+  ],
+  "tags": {
+    "building": "yes",
+    "man_made": "lighthouse",
+    "name": "Phare de Taguermess",
+    "name:fr": "Phare de Taguermess",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "64",
+    "seamark:light:period": "5",
+    "seamark:light:range": "24",
+    "seamark:light:reference": "E 6332",
+    "seamark:light:sequence": "0.3+(4.7)",
+    "seamark:name": "Ra's Taguermess",
+    "seamark:type": "light_major",
+    "wikidata": "Q39996948",
+    "wikimedia_commons": "Category:Tourgueness lighthouse"
+  }
+},
+{
+  "type": "way",
   "id": 335159009,
   "nodes": [
     4348252818,
@@ -609104,6 +609138,192 @@
   "id": 11393391932,
   "lat": -36.6055505,
   "lon": 174.8974346
+},
+{
+  "type": "node",
+  "id": 352842146,
+  "lat": 33.8228590,
+  "lon": 11.0428031
+},
+{
+  "type": "node",
+  "id": 3419359580,
+  "lat": 33.8227769,
+  "lon": 11.0427951
+},
+{
+  "type": "node",
+  "id": 3419359581,
+  "lat": 33.8227769,
+  "lon": 11.0428050
+},
+{
+  "type": "node",
+  "id": 3419359582,
+  "lat": 33.8227785,
+  "lon": 11.0427855
+},
+{
+  "type": "node",
+  "id": 3419359583,
+  "lat": 33.8227786,
+  "lon": 11.0428146
+},
+{
+  "type": "node",
+  "id": 3419359584,
+  "lat": 33.8227817,
+  "lon": 11.0427764
+},
+{
+  "type": "node",
+  "id": 3419359586,
+  "lat": 33.8227863,
+  "lon": 11.0427683
+},
+{
+  "type": "node",
+  "id": 3419359588,
+  "lat": 33.8227921,
+  "lon": 11.0427614
+},
+{
+  "type": "node",
+  "id": 3419359590,
+  "lat": 33.8227989,
+  "lon": 11.0427560
+},
+{
+  "type": "node",
+  "id": 3419359592,
+  "lat": 33.8228065,
+  "lon": 11.0427524
+},
+{
+  "type": "node",
+  "id": 3419360294,
+  "lat": 33.8228145,
+  "lon": 11.0427506
+},
+{
+  "type": "node",
+  "id": 3419360296,
+  "lat": 33.8228227,
+  "lon": 11.0427508
+},
+{
+  "type": "node",
+  "id": 3419360298,
+  "lat": 33.8228307,
+  "lon": 11.0427529
+},
+{
+  "type": "node",
+  "id": 3419360300,
+  "lat": 33.8228381,
+  "lon": 11.0427568
+},
+{
+  "type": "node",
+  "id": 3419360302,
+  "lat": 33.8228448,
+  "lon": 11.0427625
+},
+{
+  "type": "node",
+  "id": 3419360305,
+  "lat": 33.8228507,
+  "lon": 11.0427700
+},
+{
+  "type": "node",
+  "id": 3419360307,
+  "lat": 33.8228568,
+  "lon": 11.0427837
+},
+{
+  "type": "node",
+  "id": 3419360308,
+  "lat": 33.8228577,
+  "lon": 11.0428128
+},
+{
+  "type": "node",
+  "id": 3419360309,
+  "lat": 33.8228587,
+  "lon": 11.0427933
+},
+{
+  "type": "node",
+  "id": 3419359585,
+  "lat": 33.8227817,
+  "lon": 11.0428237
+},
+{
+  "type": "node",
+  "id": 3419359587,
+  "lat": 33.8227863,
+  "lon": 11.0428318
+},
+{
+  "type": "node",
+  "id": 3419359589,
+  "lat": 33.8227921,
+  "lon": 11.0428387
+},
+{
+  "type": "node",
+  "id": 3419359591,
+  "lat": 33.8227990,
+  "lon": 11.0428440
+},
+{
+  "type": "node",
+  "id": 3419360293,
+  "lat": 33.8228066,
+  "lon": 11.0428477
+},
+{
+  "type": "node",
+  "id": 3419360295,
+  "lat": 33.8228146,
+  "lon": 11.0428494
+},
+{
+  "type": "node",
+  "id": 3419360297,
+  "lat": 33.8228228,
+  "lon": 11.0428492
+},
+{
+  "type": "node",
+  "id": 3419360299,
+  "lat": 33.8228308,
+  "lon": 11.0428471
+},
+{
+  "type": "node",
+  "id": 3419360301,
+  "lat": 33.8228382,
+  "lon": 11.0428431
+},
+{
+  "type": "node",
+  "id": 3419360303,
+  "lat": 33.8228449,
+  "lon": 11.0428375
+},
+{
+  "type": "node",
+  "id": 3419360304,
+  "lat": 33.8228505,
+  "lon": 11.0428303
+},
+{
+  "type": "node",
+  "id": 3419360306,
+  "lat": 33.8228548,
+  "lon": 11.0428220
 },
 {
   "type": "node",
