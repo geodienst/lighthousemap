@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-28T05:14:50Z",
+    "timestamp_osm_base": "2026-09-29T05:36:43Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -273308,7 +273308,7 @@
     "seamark:light:3:sector_start": "148",
     "seamark:light:3:sequence": "4.5+(1.5)",
     "seamark:light:reference": "C 6862",
-    "seamark:name": "Ettergrundshallan",
+    "seamark:name": "Ettergrundshällan",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 116. 2011-07-07."
   }
@@ -558485,7 +558485,7 @@
     "disused": "yes",
     "height": "17",
     "historic": "yes",
-    "man_made": "lighthouse",
+    "man_made": "tower",
     "material": "steel",
     "name": "Latarnia morska Góra Szwedów",
     "seamark:light:character": "Iso",
@@ -558497,6 +558497,7 @@
     "seamark:status": "disused",
     "seamark:type": "light_minor",
     "tourism": "attraction",
+    "was:man_made": "lighthouse",
     "wikidata": "Q1960624",
     "wikipedia": "pl:Latarnia Morska Góra Szwedów"
   }
