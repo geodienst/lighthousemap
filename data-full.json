@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-29T05:36:43Z",
+    "timestamp_osm_base": "2026-09-30T05:25:32Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -343287,11 +343287,10 @@
 {
   "type": "node",
   "id": 1581774405,
-  "lat": 4.9355882,
-  "lon": -1.7073706,
+  "lat": 4.9354872,
+  "lon": -1.7072605,
   "tags": {
     "man_made": "lighthouse",
-    "name": "Fort Orange",
     "seamark:light:1:character": "Oc",
     "seamark:light:1:colour": "white",
     "seamark:light:1:group": "2",
