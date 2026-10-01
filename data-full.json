@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-30T05:25:32Z",
+    "timestamp_osm_base": "2026-10-01T05:43:19Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -329315,8 +329315,8 @@
 {
   "type": "node",
   "id": 1578794965,
-  "lat": 42.4815116,
-  "lon": 27.4833042,
+  "lat": 42.4814904,
+  "lon": 27.4833414,
   "tags": {
     "man_made": "lighthouse",
     "name": "Бургас - източен вълнолом",
