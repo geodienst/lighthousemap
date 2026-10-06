@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-05T05:28:15Z",
+    "timestamp_osm_base": "2026-10-06T06:12:08Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -547367,6 +547367,33 @@
   }
 },
 {
+  "type": "node",
+  "id": 14252180601,
+  "lat": 15.4919967,
+  "lon": 73.7725580,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "85",
+    "seamark:light:period": "20",
+    "seamark:light:range": "27",
+    "seamark:light:reference": "F 0606",
+    "seamark:light:sequence": "0.4+(3.5),0.4+(3.5),0.4+(11.8)",
+    "seamark:name": "Aguada",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "O",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192234",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -554970,7 +554997,7 @@
     "name": "Latarnia Morska Niechorze",
     "name:de": "Leuchtturm Horst",
     "name:pl": "Latarnia Morska Niechorze",
-    "opening_hours": "Mo-Su 10:00-20:00",
+    "opening_hours": "Mo-Su,PH 10:00-18:00",
     "roof:shape": "hipped",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -554984,6 +555011,7 @@
     "source:addr": "rewal.e-mapa.net",
     "start_date": "1866",
     "tourism": "attraction",
+    "wheelchair": "no",
     "wikidata": "Q11321434",
     "wikipedia": "pl:Latarnia Morska Niechorze"
   }
@@ -558498,6 +558526,7 @@
     "start_date": "1946",
     "tourism": "attraction",
     "website": "http://www.latarnia.kolobrzeg.pl/",
+    "wheelchair": "no",
     "wikidata": "Q11309665",
     "wikipedia": "pl:Latarnia Morska Kołobrzeg"
   }
