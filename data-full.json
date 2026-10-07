@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-06T06:12:08Z",
+    "timestamp_osm_base": "2026-10-07T05:50:11Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -236499,9 +236499,9 @@
     "addr:city": "أرزيو",
     "addr:place": "جزيرة أرزيو",
     "man_made": "lighthouse",
-    "name": "منارة جزيرة أرزيو",
+    "name": "Phare de l'îlot d'Arzew منارة جزيرة أرزيو",
     "name:ar": "منارة جزيرة أرزيو",
-    "name:fr": "phare de l'îlot d'Arzew",
+    "name:fr": "Phare de l'îlot d'Arzew",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:height": "19",
