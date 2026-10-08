@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-07T05:50:11Z",
+    "timestamp_osm_base": "2026-10-08T05:54:19Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -547389,6 +547389,32 @@
     "seamark:radar_transponder:group": "O",
     "seamark:radio_station:category": "ais",
     "seamark:radio_station:mmsi": "004192234",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14260232635,
+  "lat": 15.8553566,
+  "lon": 73.6149438,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "82",
+    "seamark:light:period": "5",
+    "seamark:light:range": "24",
+    "seamark:light:reference": "F 0600",
+    "seamark:light:sequence": "0.3+(4.7)",
+    "seamark:name": "Vengurla",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192233",
+    "seamark:signal_station_warning:category": "storm",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
