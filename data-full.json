@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-09T05:59:49Z",
+    "timestamp_osm_base": "2026-10-10T05:42:39Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -5073,7 +5073,8 @@
     "seamark:radio_station:mmsi": "992501129",
     "seamark:type": "light_major",
     "source": "Commissioners of Irish Lights",
-    "wikidata": "Q28333631"
+    "wikidata": "Q28333631",
+    "wikipedia": "en:Sheep's Head Lighthouse"
   }
 },
 {
@@ -254682,8 +254683,8 @@
 {
   "type": "node",
   "id": 1377047791,
-  "lat": 44.5797909,
-  "lon": 14.9474499,
+  "lat": 44.5797890,
+  "lon": 14.9474383,
   "tags": {
     "seamark:information": "Visible 157°-219°.",
     "seamark:light:1:character": "Fl",
@@ -258817,9 +258818,9 @@
   "tags": {
     "height": "11",
     "man_made": "lighthouse",
-    "name": "Φάρος Ακρωτηρίου Λευκάδας",
-    "name:el": "Φάρος Ακρωτηρίου Λευκάδας",
-    "name:en": "Cape Lefkas Lighthouse",
+    "name": "Φάρος Ακρωτηρίου Λευκάτα",
+    "name:el": "Φάρος Ακρωτηρίου Λευκάτα",
+    "name:en": "Cape Lefkatas Lighthouse",
     "seamark:information": "Round tower on house",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -547459,6 +547460,74 @@
     "seamark:name": "Vengurla Rocks (Burnt Islands)",
     "seamark:radar_transponder:category": "racon",
     "seamark:radar_transponder:group": "D",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14267872911,
+  "lat": 16.5622653,
+  "lon": 73.3331771,
+  "tags": {
+    "man_made": "beacon",
+    "operator": "Maharashtra Maritime Board",
+    "seamark:landmark:category": "mast",
+    "seamark:landmark:construction": "metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "LFl",
+    "seamark:light:1:colour": "green",
+    "seamark:light:1:height": "16",
+    "seamark:light:1:period": "9",
+    "seamark:light:1:range": "5",
+    "seamark:light:1:sector_end": "045",
+    "seamark:light:1:sector_start": "270",
+    "seamark:light:1:sequence": "2+(7)",
+    "seamark:light:1:visibility": "part_obscured",
+    "seamark:light:2:character": "LFl",
+    "seamark:light:2:colour": "red",
+    "seamark:light:2:height": "16",
+    "seamark:light:2:period": "9",
+    "seamark:light:2:range": "5",
+    "seamark:light:2:sector_end": "090",
+    "seamark:light:2:sector_start": "045",
+    "seamark:light:2:sequence": "2+(7)",
+    "seamark:light:3:character": "LFl",
+    "seamark:light:3:colour": "white",
+    "seamark:light:3:height": "16",
+    "seamark:light:3:period": "9",
+    "seamark:light:3:range": "5",
+    "seamark:light:3:sector_end": "270",
+    "seamark:light:3:sector_start": "090",
+    "seamark:light:3:sequence": "2+(7)",
+    "seamark:light:reference": "F 0588",
+    "seamark:name": "Vijayadurg Harbor",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14268946243,
+  "lat": 16.6059684,
+  "lon": 73.3212792,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "46",
+    "seamark:light:period": "15",
+    "seamark:light:range": "29",
+    "seamark:light:reference": "F 0586",
+    "seamark:light:sequence": "0.4+(14.6)",
+    "seamark:name": "Rajapur, Wagapur Point",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192231",
+    "seamark:signal_station_warning:category": "storm",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
