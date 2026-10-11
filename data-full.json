@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-10T05:42:39Z",
+    "timestamp_osm_base": "2026-10-11T05:38:03Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -3594,6 +3594,7 @@
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2009-11-12.",
     "start_date": "1910",
+    "tourism": "attraction",
     "wikidata": "Q110259647",
     "wikipedia": "ru:Маяк Токаревского"
   }
@@ -5831,8 +5832,8 @@
 {
   "type": "node",
   "id": 322520715,
-  "lat": 52.2708475,
-  "lon": -9.8817151,
+  "lat": 52.2709447,
+  "lon": -9.8816824,
   "tags": {
     "man_made": "lighthouse",
     "name": "Little Samphire Island Lighthouse",
@@ -254520,8 +254521,8 @@
 {
   "type": "node",
   "id": 1377047746,
-  "lat": 44.2928167,
-  "lon": 15.1522000,
+  "lat": 44.2928215,
+  "lon": 15.1521490,
   "tags": {
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "red",
@@ -264429,6 +264430,8 @@
   "lat": 37.9401363,
   "lon": 21.1208131,
   "tags": {
+    "construction_date": "1906",
+    "height": "15",
     "man_made": "lighthouse",
     "seamark:light:1:character": "LFl",
     "seamark:light:1:colour": "white",
@@ -266117,8 +266120,8 @@
 {
   "type": "node",
   "id": 1431927751,
-  "lat": 44.3493900,
-  "lon": 15.0962018,
+  "lat": 44.3494098,
+  "lon": 15.0961898,
   "tags": {
     "height": "5",
     "man_made": "beacon",
@@ -288002,7 +288005,7 @@
     "seamark:light:7:sector_start": "241",
     "seamark:light:7:sequence": "0.5+(0.5),0.5+(2.5)",
     "seamark:light:reference": "C 5200",
-    "seamark:name": "Kuivassaari",
+    "seamark:name": "Kuivasaari",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 116. 2011-07-07."
   }
@@ -553661,8 +553664,10 @@
   ],
   "tags": {
     "building": "yes",
+    "listed_status": "Grade II",
     "man_made": "lighthouse",
     "name": "Lundy South Lighthouse",
+    "ref:GB:nhle": "1326625",
     "ref:GB:uprn": "10013838001",
     "seamark:fog_signal:category": "horn",
     "seamark:fog_signal:group": "1",
@@ -561208,6 +561213,7 @@
     "seamark:light:sequence": "2+(2)+2+(14)",
     "seamark:type": "light_major",
     "wikidata": "Q1130607",
+    "wikimedia_commons": "Category:Yaquina Head Light",
     "wikipedia": "en:Yaquina Head Light"
   }
 },
@@ -561391,8 +561397,10 @@
   ],
   "tags": {
     "building:part": "tower",
+    "listed_status": "Grade II",
     "man_made": "lighthouse",
     "name": "Lundy North Lighthouse",
+    "ref:GB:nhle": "1277976",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
     "seamark:light:1:height": "48",
@@ -569655,8 +569663,11 @@
   "tags": {
     "building": "yes",
     "height": "23",
+    "heritage": "4",
+    "heritage:operator": "qhr",
     "man_made": "lighthouse",
     "name": "Cape Moreton Lighthouse",
+    "ref:qhr": "600257",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "4",
