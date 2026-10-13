@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-12T05:47:51Z",
+    "timestamp_osm_base": "2026-10-13T06:41:02Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -222689,6 +222689,32 @@
 },
 {
   "type": "node",
+  "id": 1271039793,
+  "lat": 23.1007222,
+  "lon": 120.0360000,
+  "tags": {
+    "description": "是台灣的極西點",
+    "man_made": "lighthouse",
+    "name": "國聖港燈塔",
+    "seamark:information": "Fl.W. 4s, Fl.R. 4s marks end of peninsula 1.3 miles NNE.",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "34",
+    "seamark:light:1:period": "15",
+    "seamark:light:1:range": "16",
+    "seamark:light:1:sector_end": "193",
+    "seamark:light:1:sector_start": "0",
+    "seamark:light:1:sequence": "1.5+(3)+1.5+(9)",
+    "seamark:light:reference": "P 4630",
+    "seamark:name": "國聖港燈塔",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2009-11-12.",
+    "wikidata": "Q101096639"
+  }
+},
+{
+  "type": "node",
   "id": 1271039902,
   "lat": 23.5398333,
   "lon": 119.5243333,
@@ -253895,8 +253921,8 @@
 {
   "type": "node",
   "id": 1377047513,
-  "lat": 44.3951434,
-  "lon": 14.8929280,
+  "lat": 44.3952817,
+  "lon": 14.8932297,
   "tags": {
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -499623,6 +499649,7 @@
     "seamark:light:height": "7",
     "seamark:light:period": "2.5",
     "seamark:light:range": "4",
+    "seamark:light:reference": "G 4458",
     "seamark:light:sequence": "00.3+(02.2)",
     "seamark:name": "Coos Bay North Jetty Light 3A",
     "seamark:type": "beacon_lateral"
@@ -561909,6 +561936,7 @@
     "tourism": "attraction",
     "wheelchair": "no",
     "wikidata": "Q1821420",
+    "wikimedia_commons": "Category:Leuchtturm Dornbusch",
     "wikipedia": "de:Leuchtturm Dornbusch"
   }
 },
