@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-13T06:41:02Z",
+    "timestamp_osm_base": "2026-10-14T04:45:20Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -30464,8 +30464,8 @@
 {
   "type": "node",
   "id": 1052815795,
-  "lat": -37.6069809,
-  "lon": 176.4199456,
+  "lat": -37.6065078,
+  "lon": 176.4199187,
   "tags": {
     "height": "63",
     "man_made": "lighthouse",
@@ -41771,8 +41771,8 @@
 {
   "type": "node",
   "id": 1169738162,
-  "lat": 24.2901667,
-  "lon": 120.5006111,
+  "lat": 24.2901588,
+  "lon": 120.5006232,
   "tags": {
     "man_made": "lighthouse",
     "name": "南堤頭燈塔",
@@ -41793,10 +41793,10 @@
 {
   "type": "node",
   "id": 1169738473,
-  "lat": 24.2851223,
-  "lon": 120.5118075,
+  "lat": 24.2851211,
+  "lon": 120.5118920,
   "tags": {
-    "man_made": "lighthouse",
+    "man_made": "beacon",
     "name": "南內堤燈塔",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
@@ -222760,8 +222760,8 @@
 {
   "type": "node",
   "id": 1271039934,
-  "lat": 24.2996944,
-  "lon": 120.4865000,
+  "lat": 24.2953185,
+  "lon": 120.4920964,
   "tags": {
     "man_made": "lighthouse",
     "name": "北堤頭燈塔",
@@ -222782,9 +222782,10 @@
 {
   "type": "node",
   "id": 1271039939,
-  "lat": 24.2914504,
-  "lon": 120.5104031,
+  "lat": 24.2914296,
+  "lon": 120.5104782,
   "tags": {
+    "man_made": "beacon",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
     "seamark:light:height": "9",
@@ -222799,9 +222800,10 @@
 {
   "type": "node",
   "id": 1271039940,
-  "lat": 24.2918578,
-  "lon": 120.5123759,
+  "lat": 24.2918419,
+  "lon": 120.5124590,
   "tags": {
+    "man_made": "beacon",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
     "seamark:light:height": "10",
@@ -222816,10 +222818,10 @@
 {
   "type": "node",
   "id": 1271039946,
-  "lat": 24.2882180,
-  "lon": 120.5149450,
+  "lat": 24.2882076,
+  "lon": 120.5150543,
   "tags": {
-    "man_made": "lighthouse",
+    "man_made": "beacon",
     "name": "淺水船渠東連續壁紅色燈杆",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -243574,25 +243576,6 @@
     "seamark:light:range": "9",
     "seamark:light:reference": "E 2172.2",
     "seamark:light:sequence": "1+(4)",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2010-10-22."
-  }
-},
-{
-  "type": "node",
-  "id": 1347582866,
-  "lat": 40.0613092,
-  "lon": 17.9835556,
-  "tags": {
-    "seamark:light:1:character": "Fl",
-    "seamark:light:1:colour": "green",
-    "seamark:light:1:height": "11",
-    "seamark:light:1:period": "5",
-    "seamark:light:1:range": "9",
-    "seamark:light:1:sector_end": "54",
-    "seamark:light:1:sector_start": "90",
-    "seamark:light:1:sequence": "1+(4)",
-    "seamark:light:reference": "E 2172",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 113. 2010-10-22."
   }
@@ -344570,6 +344553,7 @@
   "lon": -52.8574167,
   "tags": {
     "man_made": "lighthouse",
+    "name": "Ferryland Head Lighthouse",
     "seamark:landmark:height": "8",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -561678,6 +561662,64 @@
 },
 {
   "type": "way",
+  "id": 426644475,
+  "nodes": [
+    4259212969,
+    4259212968,
+    4259212970,
+    4259212973,
+    4259212975,
+    4259212977,
+    4259212981,
+    4259212984,
+    4259212987,
+    4259213191,
+    4259213195,
+    4259213199,
+    4259213202,
+    4259213204,
+    4259213207,
+    4259213209,
+    4259213214,
+    4259213216,
+    4259213218,
+    4259213219,
+    4259213217,
+    4259213215,
+    4259213212,
+    4259213208,
+    4259213205,
+    4259213203,
+    4259213200,
+    4259213198,
+    4259213194,
+    4259212988,
+    4259212986,
+    4259212982,
+    4259212980,
+    4259212976,
+    4259212974,
+    4259212972,
+    4259212969
+  ],
+  "tags": {
+    "building": "tower",
+    "man_made": "tower",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "green",
+    "seamark:light:1:height": "11",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "9",
+    "seamark:light:1:sector_end": "54",
+    "seamark:light:1:sector_start": "90",
+    "seamark:light:1:sequence": "1+(4)",
+    "seamark:light:reference": "E 2172",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 113. 2010-10-22."
+  }
+},
+{
+  "type": "way",
   "id": 426743093,
   "nodes": [
     4260042341,
@@ -613038,6 +613080,222 @@
   "id": 4239620700,
   "lat": 40.4118035,
   "lon": 17.2035009
+},
+{
+  "type": "node",
+  "id": 4259212968,
+  "lat": 40.0612806,
+  "lon": 17.9832696
+},
+{
+  "type": "node",
+  "id": 4259212969,
+  "lat": 40.0612808,
+  "lon": 17.9832727
+},
+{
+  "type": "node",
+  "id": 4259212970,
+  "lat": 40.0612809,
+  "lon": 17.9832666
+},
+{
+  "type": "node",
+  "id": 4259212972,
+  "lat": 40.0612813,
+  "lon": 17.9832757
+},
+{
+  "type": "node",
+  "id": 4259212973,
+  "lat": 40.0612816,
+  "lon": 17.9832637
+},
+{
+  "type": "node",
+  "id": 4259212974,
+  "lat": 40.0612822,
+  "lon": 17.9832785
+},
+{
+  "type": "node",
+  "id": 4259212975,
+  "lat": 40.0612827,
+  "lon": 17.9832610
+},
+{
+  "type": "node",
+  "id": 4259212976,
+  "lat": 40.0612835,
+  "lon": 17.9832811
+},
+{
+  "type": "node",
+  "id": 4259212977,
+  "lat": 40.0612841,
+  "lon": 17.9832585
+},
+{
+  "type": "node",
+  "id": 4259212980,
+  "lat": 40.0612851,
+  "lon": 17.9832833
+},
+{
+  "type": "node",
+  "id": 4259212981,
+  "lat": 40.0612858,
+  "lon": 17.9832564
+},
+{
+  "type": "node",
+  "id": 4259212982,
+  "lat": 40.0612870,
+  "lon": 17.9832851
+},
+{
+  "type": "node",
+  "id": 4259212984,
+  "lat": 40.0612878,
+  "lon": 17.9832548
+},
+{
+  "type": "node",
+  "id": 4259212986,
+  "lat": 40.0612891,
+  "lon": 17.9832865
+},
+{
+  "type": "node",
+  "id": 4259212987,
+  "lat": 40.0612899,
+  "lon": 17.9832536
+},
+{
+  "type": "node",
+  "id": 4259212988,
+  "lat": 40.0612913,
+  "lon": 17.9832874
+},
+{
+  "type": "node",
+  "id": 4259213191,
+  "lat": 40.0612922,
+  "lon": 17.9832529
+},
+{
+  "type": "node",
+  "id": 4259213194,
+  "lat": 40.0612937,
+  "lon": 17.9832878
+},
+{
+  "type": "node",
+  "id": 4259213195,
+  "lat": 40.0612946,
+  "lon": 17.9832527
+},
+{
+  "type": "node",
+  "id": 4259213198,
+  "lat": 40.0612960,
+  "lon": 17.9832876
+},
+{
+  "type": "node",
+  "id": 4259213199,
+  "lat": 40.0612969,
+  "lon": 17.9832531
+},
+{
+  "type": "node",
+  "id": 4259213200,
+  "lat": 40.0612983,
+  "lon": 17.9832869
+},
+{
+  "type": "node",
+  "id": 4259213202,
+  "lat": 40.0612991,
+  "lon": 17.9832540
+},
+{
+  "type": "node",
+  "id": 4259213203,
+  "lat": 40.0613005,
+  "lon": 17.9832857
+},
+{
+  "type": "node",
+  "id": 4259213204,
+  "lat": 40.0613012,
+  "lon": 17.9832553
+},
+{
+  "type": "node",
+  "id": 4259213205,
+  "lat": 40.0613024,
+  "lon": 17.9832840
+},
+{
+  "type": "node",
+  "id": 4259213207,
+  "lat": 40.0613031,
+  "lon": 17.9832572
+},
+{
+  "type": "node",
+  "id": 4259213208,
+  "lat": 40.0613041,
+  "lon": 17.9832820
+},
+{
+  "type": "node",
+  "id": 4259213209,
+  "lat": 40.0613047,
+  "lon": 17.9832594
+},
+{
+  "type": "node",
+  "id": 4259213212,
+  "lat": 40.0613056,
+  "lon": 17.9832795
+},
+{
+  "type": "node",
+  "id": 4259213214,
+  "lat": 40.0613060,
+  "lon": 17.9832620
+},
+{
+  "type": "node",
+  "id": 4259213215,
+  "lat": 40.0613066,
+  "lon": 17.9832768
+},
+{
+  "type": "node",
+  "id": 4259213216,
+  "lat": 40.0613069,
+  "lon": 17.9832648
+},
+{
+  "type": "node",
+  "id": 4259213217,
+  "lat": 40.0613073,
+  "lon": 17.9832739
+},
+{
+  "type": "node",
+  "id": 4259213218,
+  "lat": 40.0613075,
+  "lon": 17.9832678
+},
+{
+  "type": "node",
+  "id": 4259213219,
+  "lat": 40.0613076,
+  "lon": 17.9832708
 },
 {
   "type": "node",
