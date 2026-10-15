@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-14T04:45:20Z",
+    "timestamp_osm_base": "2026-10-15T04:29:06Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -6747,11 +6747,11 @@
   "lon": 0.1972640,
   "tags": {
     "man_made": "lighthouse",
-    "name": "Faro Cabo San Antonio",
+    "name": "Far del Cap de Sant Antoni",
     "name:ca": "Far del Cap de Sant Antoni",
     "name:es": "Faro Cabo de San Antonio",
     "nat_ref": "25300",
-    "operator": "Ayuntamiento de Jávea",
+    "operator": "Ajuntament de Xàbia",
     "ref": "E-0180",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -6762,7 +6762,8 @@
     "seamark:light:reference": "E 0180",
     "seamark:light:sequence": "0.2+(3.1)+0.2+(3.1)+0.2+(3.1)+0.2+(9.9)",
     "seamark:name": "Cabo de San Antonio",
-    "seamark:type": "light_major"
+    "seamark:type": "light_major",
+    "wikidata": "Q5856557"
   }
 },
 {
