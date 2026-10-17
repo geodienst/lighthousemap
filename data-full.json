@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-15T04:29:06Z",
+    "timestamp_osm_base": "2026-10-17T04:17:15Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -567377,6 +567377,7 @@
     "man_made": "lighthouse",
     "mhs:inscription_date": "2012-09-13",
     "name": "Phare du Cap Ferrat",
+    "name:it": "Faro di Capo Ferrato",
     "ref:FR:ANFR": "1495651",
     "ref:mhs": "PA06000043",
     "seamark:light:1:character": "Fl",
