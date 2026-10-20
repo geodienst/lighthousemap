@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-19T04:33:35Z",
+    "timestamp_osm_base": "2026-10-20T04:41:06Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -301975,7 +301975,7 @@
   "tags": {
     "historic": "yes",
     "man_made": "lighthouse",
-    "name": "Skerries Lighthouse",
+    "name": "Goleudy'r Moelrhoniaid",
     "name:cy": "Goleudy'r Moelrhoniaid",
     "name:en": "Skerries Lighthouse",
     "seamark:fog_signal:category": "horn",
@@ -343823,7 +343823,9 @@
   "lon": -4.6995555,
   "tags": {
     "man_made": "lighthouse",
-    "name": "South Stack Lighthouse",
+    "name": "Goleudy Ynys Lawd",
+    "name:cy": "Goleudy Ynys Lawd",
+    "name:en": "South Stack Lighthouse",
     "operator": "Trinity House",
     "seamark:fog_signal:category": "horn",
     "seamark:fog_signal:group": "1",
@@ -343842,7 +343844,7 @@
     "seamark:type": "light_major",
     "url": "https://www.trinityhouse.co.uk/lighthouses-and-lightvessels/south-stack-lighthouse",
     "wikidata": "Q15278727",
-    "wikipedia": "en:South Stack Lighthouse"
+    "wikipedia": "cy:Goleudy Ynys Lawd"
   }
 },
 {
@@ -431986,8 +431988,8 @@
 {
   "type": "node",
   "id": 7046223636,
-  "lat": 46.2885779,
-  "lon": 141.8930830,
+  "lat": 46.2886085,
+  "lon": 141.8930618,
   "tags": {
     "ref:admiralty": "M7796",
     "ref:nga": "112-20",
