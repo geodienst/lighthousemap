@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-20T04:41:06Z",
+    "timestamp_osm_base": "2026-10-21T04:36:50Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -551145,6 +551145,7 @@
     "seamark:name": "Lan Yu",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 112. 2009-11-12.",
+    "website": "https://tour.taitung.gov.tw/zh-tw/attraction/details/402",
     "wikidata": "Q17036349",
     "wikipedia": "zh:蘭嶼燈塔"
   }
@@ -568413,15 +568414,19 @@
     "communication:microwave": "yes",
     "communication:mobile_phone": "yes",
     "height": "64",
+    "heritage": "2",
+    "heritage:operator": "mhs",
     "historic": "yes",
     "image": "File:Calais Nord phare.JPG",
     "image:0": "https://photos.app.goo.gl/9mTwyj9B5AYZX43e9",
     "man_made": "lighthouse",
+    "mhs:inscription_date": "2011-04-19",
     "name": "Phare de Calais",
     "ref:FR:ANFR": "806674",
     "ref:admiralty": "A1144",
     "ref:aladin": "6200029",
     "ref:arlhs": "FRA004",
+    "ref:mhs": "PA62000123",
     "ref:nga": "114-8904",
     "seamark:landmark:category": "tower",
     "seamark:landmark:colour": "black;white",
@@ -568442,6 +568447,7 @@
     "seamark:radio_station:channel": "17",
     "seamark:radio_station:frequency": "156850000",
     "seamark:type": "landmark",
+    "source:heritage": "Ministère de la Culture - 2026-09",
     "tower:type": "communication",
     "wikidata": "Q2839983"
   }
