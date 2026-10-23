@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-22T04:34:50Z",
+    "timestamp_osm_base": "2026-10-23T04:40:41Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -225154,6 +225154,7 @@
   "lat": 30.4620833,
   "lon": 122.2409167,
   "tags": {
+    "name:zh": "癞头峙",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "3",
@@ -349475,8 +349476,8 @@
 {
   "type": "node",
   "id": 1832083212,
-  "lat": 47.6114722,
-  "lon": -53.1766944,
+  "lat": 47.6114906,
+  "lon": -53.1767092,
   "tags": {
     "seamark:landmark:height": "6",
     "seamark:light:character": "LFl",
@@ -574435,15 +574436,16 @@
   ],
   "tags": {
     "building:part": "tower",
+    "height": "45",
     "man_made": "lighthouse",
     "name": "Faro di Piave Vecchia",
-    "seamark:information": "Reserve light range 18M.",
+    "seamark:information": "Reserve light range 15M.",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "4",
     "seamark:light:height": "45",
-    "seamark:light:period": "24",
-    "seamark:light:range": "18",
+    "seamark:light:period": "20",
+    "seamark:light:range": "15",
     "seamark:light:reference": "E 2504",
     "seamark:light:sequence": "0.2+(2.8)+0.2+(2.8)+0.2+(2.8)+0.2+(14.8)",
     "seamark:name": "Faro di Piave Vecchia",
@@ -591607,38 +591609,38 @@
 {
   "type": "node",
   "id": 1370799024,
-  "lat": 45.5685145,
-  "lon": -1.0658088
+  "lat": 45.5685258,
+  "lon": -1.0658236
 },
 {
   "type": "node",
   "id": 2029804294,
-  "lat": 45.5685144,
-  "lon": -1.0657345
+  "lat": 45.5685272,
+  "lon": -1.0657504
 },
 {
   "type": "node",
   "id": 2029804295,
-  "lat": 45.5685145,
-  "lon": -1.0657573
+  "lat": 45.5685267,
+  "lon": -1.0657734
 },
 {
   "type": "node",
   "id": 2029804304,
-  "lat": 45.5685667,
-  "lon": -1.0657617
+  "lat": 45.5685796,
+  "lon": -1.0657781
 },
 {
   "type": "node",
   "id": 2029804306,
-  "lat": 45.5685666,
-  "lon": -1.0657343
+  "lat": 45.5685797,
+  "lon": -1.0657504
 },
 {
   "type": "node",
   "id": 7089519756,
-  "lat": 45.5685667,
-  "lon": -1.0658087
+  "lat": 45.5685795,
+  "lon": -1.0658231
 },
 {
   "type": "node",
