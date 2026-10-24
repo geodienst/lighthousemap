@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-23T04:40:41Z",
+    "timestamp_osm_base": "2026-10-24T04:27:57Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -222427,9 +222427,10 @@
 {
   "type": "node",
   "id": 1271039128,
-  "lat": 24.5955258,
-  "lon": 121.8818939,
+  "lat": 24.5955160,
+  "lon": 121.8819475,
   "tags": {
+    "man_made": "lighthouse",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:group": "2",
@@ -222445,10 +222446,10 @@
 {
   "type": "node",
   "id": 1271039141,
-  "lat": 24.5931597,
-  "lon": 121.8808674,
+  "lat": 24.5931615,
+  "lon": 121.8808553,
   "tags": {
-    "man_made": "beacon",
+    "man_made": "lighthouse",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
     "seamark:light:group": "2",
@@ -222464,9 +222465,10 @@
 {
   "type": "node",
   "id": 1271039162,
-  "lat": 24.5969451,
-  "lon": 121.8680669,
+  "lat": 24.5970213,
+  "lon": 121.8680897,
   "tags": {
+    "man_made": "beacon",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
     "seamark:light:height": "13",
@@ -222484,6 +222486,7 @@
   "lat": 24.5967523,
   "lon": 121.8733808,
   "tags": {
+    "man_made": "beacon",
     "seamark:information": "Q.R. lights mark entrance to Pei-fang Wan, close NW.",
     "seamark:light:character": "Oc",
     "seamark:light:colour": "red",
@@ -547951,6 +547954,7 @@
     "building": "lighthouse",
     "description:it": "Il faro della Vittoria si trova a Trieste ed è stato costruito tra il 15 gennaio 1923 ed il 24 maggio 1927 ad opera dell'architetto italiano Arduino Berlam. Altezza 68 metri, elevazione 115 metri (slm), portata 31 miglia nautiche.",
     "ele": "68",
+    "fee": "no",
     "height": "57 m",
     "it:fvg:ctrn:code": "4ATO",
     "it:fvg:ctrn:revision": "1A0",
@@ -547960,6 +547964,8 @@
     "name:en": "Victory Lighthouse",
     "name:it": "Faro della Vittoria",
     "name:sl": "Svetilnik zmage",
+    "opening_hours": "Apr 03-Apr 30,May,Jun,Sep Fr-Su 15:00-19:00; Apr 03-Apr 30,May,Jun,Sep Sa-Su 10:00-13:00; Jul,Aug We-Su 10:00-13:00,16:00-19:00; Oct Fr-Su 15:00-18:00; Oct Sa-Su 10:00-13:00; Nov 01-Nov 04 09:30-16:30",
+    "opening_hours:url": "https://farodellavittoria.it/en/visitor-information-2/",
     "seamark:information": "Reserve light range 18M.Signal station.",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
