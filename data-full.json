@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-24T04:27:57Z",
+    "timestamp_osm_base": "2026-10-25T04:32:51Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -480207,6 +480207,35 @@
 },
 {
   "type": "node",
+  "id": 10859523157,
+  "lat": 23.1900850,
+  "lon": 119.4281285,
+  "tags": {
+    "man_made": "lighthouse",
+    "name": "七美嶼燈塔",
+    "name:en": "Qimei Lighthouse",
+    "name:zh": "七美嶼燈塔",
+    "name:zh-Hans": "七美屿灯塔",
+    "name:zh-Hant": "七美嶼燈塔",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "41",
+    "seamark:light:1:period": "10",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sector_end": "158",
+    "seamark:light:1:sector_start": "228",
+    "seamark:light:1:sequence": "0.5+(1),0.5+(8)",
+    "seamark:light:reference": "F 4642",
+    "seamark:name": "Chi-mei Yu",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2009-11-12.",
+    "wikidata": "Q10864721",
+    "wikipedia": "zh:七美嶼燈塔"
+  }
+},
+{
+  "type": "node",
   "id": 10874940160,
   "lat": 22.5445556,
   "lon": 120.2889722,
@@ -551097,6 +551126,7 @@
   ],
   "tags": {
     "building": "yes",
+    "communication:radar": "yes",
     "height": "33",
     "heritage": "3",
     "heritage:operator": "mhs",
@@ -571000,40 +571030,6 @@
     "seamark:name": "Kyle Rhea",
     "seamark:type": "light_minor",
     "wikidata": "Q28465868"
-  }
-},
-{
-  "type": "way",
-  "id": 954872181,
-  "nodes": [
-    8838206857,
-    1271039928,
-    8838206858,
-    8838206859,
-    8838206860,
-    8838206857
-  ],
-  "tags": {
-    "building": "service",
-    "man_made": "lighthouse",
-    "name": "七美嶼燈塔",
-    "name:en": "Qimei Lighthouse",
-    "name:zh": "七美嶼燈塔",
-    "seamark:light:1:character": "Fl",
-    "seamark:light:1:colour": "white",
-    "seamark:light:1:group": "2",
-    "seamark:light:1:height": "41",
-    "seamark:light:1:period": "10",
-    "seamark:light:1:range": "11",
-    "seamark:light:1:sector_end": "158",
-    "seamark:light:1:sector_start": "228",
-    "seamark:light:1:sequence": "0.5+(1),0.5+(8)",
-    "seamark:light:reference": "F 4642",
-    "seamark:name": "Chi-mei Yu",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2009-11-12.",
-    "wikidata": "Q10864721",
-    "wikipedia": "zh:七美嶼燈塔"
   }
 },
 {
@@ -626609,36 +626605,6 @@
   "id": 5700637462,
   "lat": 22.2090121,
   "lon": 114.2591245
-},
-{
-  "type": "node",
-  "id": 1271039928,
-  "lat": 23.1901820,
-  "lon": 119.4281513
-},
-{
-  "type": "node",
-  "id": 8838206857,
-  "lat": 23.1901921,
-  "lon": 119.4281119
-},
-{
-  "type": "node",
-  "id": 8838206858,
-  "lat": 23.1901735,
-  "lon": 119.4281845
-},
-{
-  "type": "node",
-  "id": 8838206859,
-  "lat": 23.1901289,
-  "lon": 119.4281710
-},
-{
-  "type": "node",
-  "id": 8838206860,
-  "lat": 23.1901476,
-  "lon": 119.4280984
 },
 {
   "type": "node",
