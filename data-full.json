@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-25T04:32:51Z",
+    "timestamp_osm_base": "2026-10-27T04:55:54Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -21938,8 +21938,8 @@
 {
   "type": "node",
   "id": 701383764,
-  "lat": 39.1513297,
-  "lon": -0.2341398,
+  "lat": 39.1513175,
+  "lon": -0.2339139,
   "tags": {
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
@@ -31214,6 +31214,7 @@
   "tags": {
     "height": "18",
     "man_made": "lighthouse",
+    "name": "Pencarrow Sector Light",
     "ref:linz:hydrographic_id": "70759;70762;70763",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
@@ -231973,8 +231974,8 @@
 {
   "type": "node",
   "id": 1316282604,
-  "lat": 47.0413161,
-  "lon": -60.5979845,
+  "lat": 47.0413190,
+  "lon": -60.5980896,
   "tags": {
     "man_made": "beacon",
     "seamark:light:1:character": "LFl",
@@ -431399,6 +431400,7 @@
   "lat": 45.6462015,
   "lon": -1.1063891,
   "tags": {
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Phare_de_Terre-N%C3%A8gre.jpg/500px-Phare_de_Terre-N%C3%A8gre.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20110803095100",
     "ref:admiralty": "D1294.10",
     "ref:aladin": "1700149",
     "ref:inspire": "http://www.shom.fr/BDML/BALISAGE/FR000001097300001",
@@ -433574,6 +433576,25 @@
     "seamark:light:reference": "P 4661.16",
     "seamark:light:sequence": "1+(4)",
     "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 7235187835,
+  "lat": 22.5532778,
+  "lon": 120.3150556,
+  "tags": {
+    "ref": "31791",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "37.2",
+    "seamark:light:period": "4",
+    "seamark:light:range": "8.9",
+    "seamark:light:reference": "P 4624.463",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "N3",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
   }
 },
 {
@@ -480248,7 +480269,8 @@
     "seamark:light:reference": "P 4624.415",
     "seamark:light:sequence": "1+(3)",
     "seamark:name": "31715",
-    "seamark:type": "light_minor"
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/23-72(民).pdf"
   }
 },
 {
@@ -480308,14 +480330,16 @@
   "lat": 22.5153889,
   "lon": 120.3125000,
   "tags": {
+    "ref": "31895",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "yellow",
     "seamark:light:height": "18",
     "seamark:light:period": "4",
     "seamark:light:range": "4",
+    "seamark:light:reference": "P 4624.413",
     "seamark:light:sequence": "1+(3)",
-    "seamark:name": "31895",
-    "seamark:type": "light_minor"
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/23-72(民).pdf"
   }
 },
 {
@@ -480331,7 +480355,8 @@
     "seamark:light:range": "5",
     "seamark:light:sequence": "0.5+(3.5)",
     "seamark:name": "31715-1",
-    "seamark:type": "light_minor"
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/23-72(民).pdf"
   }
 },
 {
@@ -480347,7 +480372,8 @@
     "seamark:light:range": "5",
     "seamark:light:sequence": "0.5+(3.5)",
     "seamark:name": "31715-2",
-    "seamark:type": "light_minor"
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/23-72(民).pdf"
   }
 },
 {
@@ -480363,7 +480389,8 @@
     "seamark:light:range": "5",
     "seamark:light:sequence": "0.5+(3.5)",
     "seamark:name": "31715-3",
-    "seamark:type": "light_minor"
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/23-72(民).pdf"
   }
 },
 {
@@ -539964,12 +539991,15 @@
   "lat": 22.5513333,
   "lon": 120.3168333,
   "tags": {
+    "ref": "31759",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
+    "seamark:light:height": "37.3",
     "seamark:light:period": "4",
     "seamark:light:range": "7.5",
     "seamark:light:reference": "P 4624.48",
     "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "N9",
     "seamark:type": "light_minor",
     "source": "https://navy.mnd.gov.tw/Files/Others/24-144(民).pdf"
   }
@@ -544957,18 +544987,20 @@
 {
   "type": "node",
   "id": 14106679486,
-  "lat": 22.5549817,
-  "lon": 120.3048334,
+  "lat": 22.5549722,
+  "lon": 120.3047778,
   "tags": {
     "ref": "31725",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
-    "seamark:light:height": "28",
+    "seamark:light:height": "28.1",
     "seamark:light:period": "4",
     "seamark:light:range": "5",
     "seamark:light:reference": "P 4624.35",
     "seamark:light:sequence": "0.5+(3.5)",
-    "seamark:type": "light_minor"
+    "seamark:name": "A2",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
   }
 },
 {
@@ -547633,6 +547665,153 @@
     "seamark:signal_station_warning:category": "storm",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14317256086,
+  "lat": 22.5546944,
+  "lon": 120.3050556,
+  "tags": {
+    "ref": "31727",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "26.6",
+    "seamark:light:period": "4",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "P 4624.3",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "A1",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 14317287039,
+  "lat": 22.5537500,
+  "lon": 120.3120278,
+  "tags": {
+    "ref": "31737",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "39.1",
+    "seamark:light:period": "4",
+    "seamark:light:range": "8.9",
+    "seamark:light:reference": "P 4623.75",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 14317287040,
+  "lat": 22.5535556,
+  "lon": 120.3108889,
+  "tags": {
+    "ref": "31735",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "38.6",
+    "seamark:light:period": "4",
+    "seamark:light:range": "8.9",
+    "seamark:light:reference": "P 4623.77",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 14317287041,
+  "lat": 22.5533889,
+  "lon": 120.3096944,
+  "tags": {
+    "ref": "31733",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "38.7",
+    "seamark:light:period": "4",
+    "seamark:light:range": "8.9",
+    "seamark:light:reference": "P 4623.81",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 14317287042,
+  "lat": 22.5531389,
+  "lon": 120.3085000,
+  "tags": {
+    "ref": "31731",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "38.6",
+    "seamark:light:period": "4",
+    "seamark:light:range": "8.9",
+    "seamark:light:reference": "P 4623.9",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 14317297179,
+  "lat": 22.5529167,
+  "lon": 120.3072500,
+  "tags": {
+    "ref": "31729",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "38.7",
+    "seamark:light:period": "4",
+    "seamark:light:range": "8.9",
+    "seamark:light:reference": "P 4624.1",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 14317427645,
+  "lat": 22.5515000,
+  "lon": 120.3176944,
+  "tags": {
+    "ref": "31769",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "37.3",
+    "seamark:light:period": "4",
+    "seamark:light:range": "8.9",
+    "seamark:light:reference": "P 4624.495",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "N11",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 14317427646,
+  "lat": 22.5514167,
+  "lon": 120.3172500,
+  "tags": {
+    "ref": "31761",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "37.3",
+    "seamark:light:period": "4",
+    "seamark:light:range": "8.9",
+    "seamark:light:reference": "P 4624.49",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "N10",
+    "seamark:type": "light_minor",
+    "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
   }
 },
 {
@@ -559664,6 +559843,7 @@
     "source": "US NGA Pub. 111. 2024-04-19.",
     "tourism": "attraction",
     "website": "https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/cape-baily-lighthouse",
+    "wheelchair": "no",
     "wikidata": "Q5034579"
   }
 },
