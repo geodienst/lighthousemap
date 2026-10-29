@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-27T04:55:54Z",
+    "timestamp_osm_base": "2026-10-29T05:39:03Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -13994,6 +13994,7 @@
     "height": "17",
     "man_made": "lighthouse",
     "name": "Boat Bluff Lighthouse",
+    "name:en": "Boat Bluff Lighthouse",
     "name:fr": "Phare de Boat Bluff",
     "operator": "Gerry and Lee LaRose",
     "seamark:light:1:character": "Oc",
@@ -143578,31 +143579,6 @@
 },
 {
   "type": "node",
-  "id": 1208639970,
-  "lat": 70.3661699,
-  "lon": 31.0485749,
-  "tags": {
-    "ref:kystverket": "970004",
-    "seamark:beacon_lateral:category": "port",
-    "seamark:beacon_lateral:colour": "red",
-    "seamark:beacon_lateral:system": "iala-a",
-    "seamark:beacon_lateral:vertical_length": "4.8",
-    "seamark:light:1:character": "Iso",
-    "seamark:light:1:colour": "red",
-    "seamark:light:1:height": "10.6",
-    "seamark:light:1:period": "4",
-    "seamark:light:1:range": "1",
-    "seamark:light:1:sequence": "1+(1)",
-    "seamark:light:2:category": "floodlight",
-    "seamark:light:2:character": "F",
-    "seamark:light:2:colour": "yellow",
-    "seamark:light:reference": "L 4223",
-    "seamark:name": "Svartnes, S molo",
-    "seamark:type": "beacon_lateral"
-  }
-},
-{
-  "type": "node",
   "id": 1208639975,
   "lat": 70.3678719,
   "lon": 31.0475297,
@@ -265087,14 +265063,13 @@
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
     "seamark:light:1:group": "3",
-    "seamark:light:1:height": "114",
-    "seamark:light:1:period": "30",
+    "seamark:light:1:height": "115",
+    "seamark:light:1:period": "15",
     "seamark:light:1:range": "20",
-    "seamark:light:1:sector_end": "319.0",
-    "seamark:light:1:sector_start": "62.0",
-    "seamark:light:1:sequence": "0.1+(4.9)",
-    "seamark:light:height": "114",
-    "seamark:light:reference": "E 4066",
+    "seamark:light:1:sector_end": "319",
+    "seamark:light:1:sector_start": "62",
+    "seamark:light:1:sequence": "1+(2)+1+(2)+1+(8)",
+    "seamark:light:reference": "N 4066",
     "seamark:name": "Akra Spathi",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 113. 2017"
@@ -547812,6 +547787,48 @@
     "seamark:name": "N10",
     "seamark:type": "light_minor",
     "source": "https://navy.mnd.gov.tw/Files/Others/21-41(民).pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 14324514601,
+  "lat": 42.1591716,
+  "lon": 41.6511840,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "7",
+    "seamark:light:period": "3",
+    "seamark:light:range": "1",
+    "seamark:light:reference": "N 5762.4",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 14324913933,
+  "lat": 17.2990793,
+  "lon": 73.1904894,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "4",
+    "seamark:light:1:height": "41",
+    "seamark:light:1:period": "20",
+    "seamark:light:1:range": "24",
+    "seamark:light:1:sector_end": "242.5",
+    "seamark:light:1:sector_start": "303.5",
+    "seamark:light:1:sequence": "0.2+(2.6),0.2+(2.6),0.2+(2.6),0.2+(11.4)",
+    "seamark:light:reference": "F 0578",
+    "seamark:name": "Jaigarh",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
   }
 },
 {
