@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-29T05:39:03Z",
+    "timestamp_osm_base": "2026-10-30T05:38:34Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -254309,9 +254309,10 @@
 {
   "type": "node",
   "id": 1377047656,
-  "lat": 44.3316278,
-  "lon": 15.2658229,
+  "lat": 44.3322109,
+  "lon": 15.2659845,
   "tags": {
+    "man_made": "beacon",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "8",
@@ -254345,9 +254346,10 @@
 {
   "type": "node",
   "id": 1377047687,
-  "lat": 44.3218822,
-  "lon": 15.2556855,
+  "lat": 44.3216785,
+  "lon": 15.2559918,
   "tags": {
+    "man_made": "beacon",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "red",
     "seamark:light:height": "6",
@@ -254363,8 +254365,8 @@
 {
   "type": "node",
   "id": 1377047700,
-  "lat": 44.3238207,
-  "lon": 15.2588202,
+  "lat": 44.3239125,
+  "lon": 15.2586372,
   "tags": {
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "green",
@@ -375457,6 +375459,27 @@
     "seamark:light:reference": "J 5236",
     "seamark:light:sequence": "0.6+(4.4)",
     "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 5133860791,
+  "lat": 44.3239239,
+  "lon": 15.2585665,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "green",
+    "seamark:light:1:height": "9",
+    "seamark:light:1:period": "3",
+    "seamark:light:1:range": "4",
+    "seamark:light:1:sector_end": "213",
+    "seamark:light:1:sector_start": "335",
+    "seamark:light:1:sequence": "0.3+(2.7)",
+    "seamark:light:reference": "E 3088",
+    "seamark:name": "Ljubacka Vrata",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 113. 2010-10-22."
   }
 },
 {
@@ -547827,6 +547850,81 @@
     "seamark:light:1:sequence": "0.2+(2.6),0.2+(2.6),0.2+(2.6),0.2+(11.4)",
     "seamark:light:reference": "F 0578",
     "seamark:name": "Jaigarh",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14330643255,
+  "lat": 17.5657108,
+  "lon": 73.1412922,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "104",
+    "seamark:light:period": "15",
+    "seamark:light:range": "21",
+    "seamark:light:reference": "F 0566",
+    "seamark:light:sequence": "0.4+(2.6),0.4+(2.6)0.4+(8.6)",
+    "seamark:name": "Tolkeshwar Point",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192229",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14330754374,
+  "lat": 17.5710837,
+  "lon": 73.1540202,
+  "tags": {
+    "seamark:beacon_special_purpose:category": "leading",
+    "seamark:beacon_special_purpose:shape": "post",
+    "seamark:information": "Shown Sep. 1 to Jun. 30",
+    "seamark:light:category": "front",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "9",
+    "seamark:light:period": "3",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "F 0570",
+    "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:name": "Fort Anjanwel, N. point Range, front",
+    "seamark:topmark:shape": "triangle, point up",
+    "seamark:type": "beacon_special_purpose",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14331139204,
+  "lat": 17.8087982,
+  "lon": 73.0893158,
+  "tags": {
+    "seamark:information": "Temporarily extinguished (2020)",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "red",
+    "seamark:light:1:height": "29",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "8",
+    "seamark:light:1:sector_end": "154",
+    "seamark:light:1:sector_start": "280",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "F 0564",
+    "seamark:name": "Harnai (Herni) Promontory",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:status": "extinguished",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
