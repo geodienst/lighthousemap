@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-30T05:38:34Z",
+    "timestamp_osm_base": "2026-10-31T05:30:15Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -225682,6 +225682,7 @@
     "seamark:light:3:sector_start": "342",
     "seamark:light:3:sequence": "6+(2)",
     "seamark:light:reference": "P 3532.2",
+    "seamark:signal_station_traffic:category": "port_entry_departure",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2009-11-12."
   }
@@ -346589,6 +346590,7 @@
   "lat": 53.8497815,
   "lon": 13.8110691,
   "tags": {
+    "description": "Ab vsl. 02.11.2026 werden der Rückbau und die Inbetriebnahme des Ersatzneubaus des Richtfeuers „Jahnkenort“ erfolgen. Während dieser Arbeiten ist damit zu rechnen, dass das Richtfeuer zeitweilig nicht zur Verfügung steht.",
     "seamark:beacon_special_purpose:category": "leading",
     "seamark:beacon_special_purpose:colour": "white",
     "seamark:beacon_special_purpose:shape": "pile",
@@ -346612,9 +346614,10 @@
 {
   "type": "node",
   "id": 1744849128,
-  "lat": 53.8509077,
-  "lon": 13.8122982,
+  "lat": 53.8509083,
+  "lon": 13.8123000,
   "tags": {
+    "description": "Ab vsl. 02.11.2026 werden der Rückbau und die Inbetriebnahme des Ersatzneubaus des Richtfeuers „Jahnkenort“ erfolgen. Während dieser Arbeiten ist damit zu rechnen, dass das Richtfeuer zeitweilig nicht zur Verfügung steht.",
     "seamark:beacon_special_purpose:category": "leading",
     "seamark:beacon_special_purpose:colour": "white",
     "seamark:beacon_special_purpose:shape": "pile",
@@ -547927,6 +547930,133 @@
     "seamark:status": "extinguished",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14332914670,
+  "lat": -8.2971201,
+  "lon": 124.4078435,
+  "tags": {
+    "description": "White tower",
+    "man_made": "beacon",
+    "name": "Tanjung Jalono",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "35",
+    "seamark:light:period": "7.0",
+    "seamark:light:range": "17",
+    "seamark:light:reference": "Q 1345",
+    "seamark:light:sequence": "1.5+(5.5)",
+    "seamark:name": "Tg. Jalono",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2023-07-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14332914671,
+  "lat": -8.2199563,
+  "lon": 124.5187209,
+  "tags": {
+    "description": "White metal framework tower",
+    "man_made": "beacon",
+    "name": "Pelabuhan Kalabahi-Alor",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "14",
+    "seamark:light:period": "3.0",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 1344",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:name": "Kalabahi landing pier",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2023-07-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14332914677,
+  "lat": -8.1185451,
+  "lon": 124.6183552,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "name": "Pulau Sika",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "22",
+    "seamark:light:period": "4.0",
+    "seamark:light:range": "11",
+    "seamark:light:reference": "Q 1348",
+    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:name": "Pulau Sika",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2023-07-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14332914679,
+  "lat": -8.4585504,
+  "lon": 124.4179567,
+  "tags": {
+    "description": "White tower",
+    "man_made": "lighthouse",
+    "name": "Tanjung Margeta",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "55",
+    "seamark:light:period": "7.5",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "Q 1346",
+    "seamark:light:sequence": "1.0+(6.5)",
+    "seamark:name": "Tanjung Margeta",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2023-07-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14332914681,
+  "lat": -8.3183159,
+  "lon": 125.1383187,
+  "tags": {
+    "description": "Lighthouse",
+    "man_made": "lighthouse",
+    "name": "Tanjung Laisumbu",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "60",
+    "seamark:light:period": "28.0",
+    "seamark:light:range": "29",
+    "seamark:light:reference": "Q 1347",
+    "seamark:light:sequence": "1.0+(6.0)+1.0+(20.0)",
+    "seamark:name": "Laisumbu",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2023-07-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14335252113,
+  "lat": -8.2310649,
+  "lon": 124.4946318,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "name": "Kalabahi Pertamina",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "16",
+    "seamark:light:period": "3.0",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "Q 1344.5",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:name": "Kalabahi SW",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2023-07-01"
   }
 },
 {
