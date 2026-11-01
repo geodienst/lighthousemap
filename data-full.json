@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-10-31T05:30:15Z",
+    "timestamp_osm_base": "2026-11-01T05:54:20Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -220456,7 +220456,7 @@
   "tags": {
     "image": "http://mayaki-sssr.spb.ru/upload/image/moneron24.jpg",
     "man_made": "lighthouse",
-    "name": "Монерон маяк",
+    "name": "Маяк Монерон",
     "name:es": "Faro de Moneron",
     "ref:admiralty": "M7794",
     "ref:nga": "112-16",
@@ -228847,6 +228847,49 @@
     "seamark:name": "Sangeang Island",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2009-11-12."
+  }
+},
+{
+  "type": "node",
+  "id": 1293785891,
+  "lat": -8.4743601,
+  "lon": 121.6188772,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tanjung Katerbileh",
+    "name:en": "Tanjung Katerbileh Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "132",
+    "seamark:light:period": "3.0",
+    "seamark:light:range": "27",
+    "seamark:light:reference": "Q 1332",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:name": "Tg. Karterbileh",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 1293786008,
+  "lat": -8.1502177,
+  "lon": 123.0224267,
+  "tags": {
+    "man_made": "beacon",
+    "name": "Rambu Suar Pulau Karang Sarbete",
+    "name:en": "Karang Sarbete Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "40",
+    "seamark:light:period": "5.0",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 1341.6",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Tanjung Mas",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -365681,6 +365724,29 @@
     "seamark:light:range": "5",
     "seamark:light:sequence": "0.5+(4.5)",
     "seamark:type": "light_major"
+  }
+},
+{
+  "type": "node",
+  "id": 2946915890,
+  "lat": -8.0543546,
+  "lon": 125.7355627,
+  "tags": {
+    "description": "White metal framework building",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Pulau Liran",
+    "name:en": "Liran Island Lighthouse",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "4",
+    "seamark:light:height": "85",
+    "seamark:light:period": "40.0",
+    "seamark:light:range": "23",
+    "seamark:light:reference": "Q 1372",
+    "seamark:light:sequence": "0.5+(6.5)+0.5+(6.5)+0.5+(6.5)+0.5+(18.5)",
+    "seamark:name": "Pulau Liran",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -547934,13 +548000,59 @@
 },
 {
   "type": "node",
+  "id": 14332914666,
+  "lat": -8.3622120,
+  "lon": 124.0968278,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "name": "Rambu Suar Pelabuhan Baranusa",
+    "name:en": "Baranusa Port Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "14",
+    "seamark:light:period": "2.0",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 1343.7",
+    "seamark:light:sequence": "0.8+(1.2)",
+    "seamark:name": "Blang Merang Bay",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14332914667,
+  "lat": -8.2239881,
+  "lon": 124.0264726,
+  "tags": {
+    "description": "White metal framework tower",
+    "man_made": "beacon",
+    "name": "Rambu Suar Pulau Lapan",
+    "name:en": "Pulau Lapan Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "34",
+    "seamark:light:period": "15.0",
+    "seamark:light:range": "10",
+    "seamark:light:reference": "Q 1343.5",
+    "seamark:light:sequence": "0.5+(2.5)+0.5+(11.5)",
+    "seamark:name": "Pulau Lapan",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
   "id": 14332914670,
   "lat": -8.2971201,
   "lon": 124.4078435,
   "tags": {
     "description": "White tower",
     "man_made": "beacon",
-    "name": "Tanjung Jalono",
+    "name": "Rambu Suar Tanjung Jalono",
+    "name:en": "Tanjung Jalono Beacon",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "35",
@@ -547950,7 +548062,7 @@
     "seamark:light:sequence": "1.5+(5.5)",
     "seamark:name": "Tg. Jalono",
     "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2023-07-01"
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -547961,7 +548073,8 @@
   "tags": {
     "description": "White metal framework tower",
     "man_made": "beacon",
-    "name": "Pelabuhan Kalabahi-Alor",
+    "name": "Rambu Suar Pelabuhan Kalabahi-Alor",
+    "name:en": "Kalabahi Port Beacon",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "14",
@@ -547971,7 +548084,7 @@
     "seamark:light:sequence": "0.5+(2.5)",
     "seamark:name": "Kalabahi landing pier",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2023-07-01"
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -547982,7 +548095,8 @@
   "tags": {
     "description": "White beacon",
     "man_made": "beacon",
-    "name": "Pulau Sika",
+    "name": "Rambu Suar Pulau Sika",
+    "name:en": "Sika Island Beacon",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "22",
@@ -547992,7 +548106,27 @@
     "seamark:light:sequence": "0.5+(3.5)",
     "seamark:name": "Pulau Sika",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2023-07-01"
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14332914678,
+  "lat": -8.4902706,
+  "lon": 124.2772794,
+  "tags": {
+    "man_made": "beacon",
+    "name": "Rambu Suar Pulau Tereweng",
+    "name:en": "Tereweng Island Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:period": "2.0",
+    "seamark:light:reference": "Q 1345.5",
+    "seamark:light:sequence": "1.0+(1.0)",
+    "seamark:name": "Pulau Tereweng",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "sphere",
+    "seamark:type": "light_minor"
   }
 },
 {
@@ -548003,7 +548137,8 @@
   "tags": {
     "description": "White tower",
     "man_made": "lighthouse",
-    "name": "Tanjung Margeta",
+    "name": "Menara Suar Tanjung Margeta",
+    "name:en": "Tanjung Margeta Lighthouse",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "55",
@@ -548013,7 +548148,7 @@
     "seamark:light:sequence": "1.0+(6.5)",
     "seamark:name": "Tanjung Margeta",
     "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2023-07-01"
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -548024,7 +548159,8 @@
   "tags": {
     "description": "Lighthouse",
     "man_made": "lighthouse",
-    "name": "Tanjung Laisumbu",
+    "name": "Menara Suar Tanjung Laisumbu",
+    "name:en": "Tanjung Laisumbu Lighthouse",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:group": "2",
@@ -548035,7 +548171,29 @@
     "seamark:light:sequence": "1.0+(6.0)+1.0+(20.0)",
     "seamark:name": "Laisumbu",
     "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2023-07-01"
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14332914684,
+  "lat": -8.1412856,
+  "lon": 124.9594090,
+  "tags": {
+    "description": "White metal framework tower",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tanjung Babi",
+    "name:en": "Tanjung Babi Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "26",
+    "seamark:light:period": "5.0",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "Q 1347.5",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Tg. Babi",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -548046,7 +548204,8 @@
   "tags": {
     "description": "White beacon",
     "man_made": "beacon",
-    "name": "Kalabahi Pertamina",
+    "name": "Rambu Suar Kalabahi Pertamina",
+    "name:en": "Kalabahi Pertamina Beacon",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
     "seamark:light:height": "16",
@@ -548056,7 +548215,209 @@
     "seamark:light:sequence": "0.5+(2.5)",
     "seamark:name": "Kalabahi SW",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2023-07-01"
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14335581973,
+  "lat": -7.9702348,
+  "lon": 126.4603712,
+  "tags": {
+    "man_made": "lighthouse",
+    "name": "Menara Suar Tanjung Tutuneden",
+    "name:en": "Tanjung Tutuneden Lighthouse",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "50",
+    "seamark:light:period": "10.0",
+    "seamark:light:range": "20",
+    "seamark:light:reference": "Q 1372",
+    "seamark:light:sequence": "1.0+(1.0)+1.0+(7.0)",
+    "seamark:name": "Tanjung Tutuneden",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14335581974,
+  "lat": -7.6561584,
+  "lon": 126.8089469,
+  "tags": {
+    "description": "White metal framework structure",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tanjung Tutunhatuloi",
+    "name:en": "Tanjung Tutunhatuloi Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "90",
+    "seamark:light:period": "7.0",
+    "seamark:light:range": "22",
+    "seamark:light:reference": "Q 1372.5",
+    "seamark:light:sequence": "0.5+(6.5)",
+    "seamark:name": "Tanjung Tutunhatoloi",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14336130245,
+  "lat": -8.2229786,
+  "lon": 123.6964479,
+  "tags": {
+    "description": "White metal framework tower",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tanjung Balaurin",
+    "name:en": "Tanjung Balaurin Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "52",
+    "seamark:light:period": "4.0",
+    "seamark:light:range": "18",
+    "seamark:light:reference": "Q 1343",
+    "seamark:light:sequence": "0.3+(3.7)",
+    "seamark:name": "Kawula",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "sphere",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14336130246,
+  "lat": -8.3031647,
+  "lon": 123.3450538,
+  "tags": {
+    "man_made": "beacon",
+    "name": "Rambu Suar Tanjung Tuak",
+    "name:en": "Tanjung Tuak Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "13",
+    "seamark:light:period": "4.0",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 1342.5",
+    "seamark:light:sequence": "0.3+(3.7)",
+    "seamark:name": "Tg. Tuak",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "sphere",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14336130251,
+  "lat": -8.3903937,
+  "lon": 123.1631455,
+  "tags": {
+    "description": "White metal structure",
+    "man_made": "beacon",
+    "name": "Rambu Suar Pelabuhan Waiwerang",
+    "name:en": "Waiwerang Port Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "3",
+    "seamark:light:height": "18",
+    "seamark:light:period": "15.0",
+    "seamark:light:range": "7",
+    "seamark:light:reference": "Q 1342",
+    "seamark:light:sequence": "0.5+(2.0)+0.5+(2.0)+0.5+(9.5)",
+    "seamark:name": "Waiwerang",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14336130252,
+  "lat": -8.3423642,
+  "lon": 122.9888286,
+  "tags": {
+    "description": "White octogonal tower",
+    "man_made": "beacon",
+    "name": "Rambu Suar Pelabuhan Larantuka",
+    "name:en": "Larantuka Port Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "24",
+    "seamark:light:period": "6.0",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 1340",
+    "seamark:light:sequence": "0.5+(5.5)",
+    "seamark:name": "Larantuka",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14336130258,
+  "lat": -8.3168350,
+  "lon": 123.0197589,
+  "tags": {
+    "description": "White metal framework structure",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tanjung Sarbete",
+    "name:en": "Tanjung Sarbete Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "34",
+    "seamark:light:period": "5.0",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 1341",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Larantuka",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14337463721,
+  "lat": -8.6320058,
+  "lon": 122.2242895,
+  "tags": {
+    "description": "White metal framework structure",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Maumere",
+    "name:en": "Maumere Lighthouse",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "110",
+    "seamark:light:period": "20.0",
+    "seamark:light:range": "25",
+    "seamark:light:reference": "Q 1335",
+    "seamark:light:sequence": "0.5+(19.5)",
+    "seamark:name": "Teluk Maumere",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14337463726,
+  "lat": -8.5163892,
+  "lon": 121.3279356,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "name": "Rambu Suar Pelabuhan Marapokot",
+    "name:en": "Marapokot Port Beacon",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "12",
+    "seamark:light:period": "3.0",
+    "seamark:light:range": "12",
+    "seamark:light:reference": "Q 1331.5",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:name": "Marapoko",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
