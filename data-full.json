@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-04T06:05:51Z",
+    "timestamp_osm_base": "2026-11-05T06:35:08Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -227823,6 +227823,29 @@
 },
 {
   "type": "node",
+  "id": 1293089321,
+  "lat": -8.0975672,
+  "lon": 114.4357134,
+  "tags": {
+    "description": "White metal beacon",
+    "man_made": "beacon",
+    "seamark:information": "Obscured beyond Pulau Tabuan",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "13",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "8",
+    "seamark:light:1:sector_end": "351",
+    "seamark:light:1:sector_start": "276",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1256",
+    "seamark:name": "Tanjung Pasir",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
   "id": 1293089379,
   "lat": -8.3967127,
   "lon": 114.5832686,
@@ -228952,19 +228975,24 @@
 {
   "type": "node",
   "id": 1293785514,
-  "lat": -8.5326213,
-  "lon": 115.5851450,
+  "lat": -8.5322245,
+  "lon": 115.5857086,
   "tags": {
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "65",
-    "seamark:light:period": "6",
-    "seamark:light:range": "18",
-    "seamark:light:reference": "K 1286",
-    "seamark:light:sequence": "0.5+(5.5)",
+    "description": "White metal framework tower",
+    "man_made": "beacon",
+    "name": "Rambu Suar Gilitepekong",
+    "name:en": "Gilitepekong beacon",
+    "seamark:information": "Structure partially obscured by vegetation",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "10",
+    "seamark:light:1:period": "6.0",
+    "seamark:light:1:range": "18",
+    "seamark:light:1:sequence": "0.5+(5.5)",
+    "seamark:light:reference": "Q 1286",
     "seamark:name": "Pulau Gilitepekong",
     "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -229020,41 +229048,54 @@
 {
   "type": "node",
   "id": 1293785524,
-  "lat": -8.5686603,
-  "lon": 116.0725020,
+  "lat": -8.5693874,
+  "lon": 116.0723381,
   "tags": {
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:group": "3",
-    "seamark:light:height": "32",
-    "seamark:light:period": "45",
-    "seamark:light:range": "15",
-    "seamark:light:reference": "K 1296",
-    "seamark:light:sequence": "1+(9)+1+(9)+1+(24)",
+    "description": "White metal framework structure",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Ampenan",
+    "name:en": "Ampenan lighthouse",
+    "seamark:light:!:colour": "white",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "30",
+    "seamark:light:1:period": "45.0",
+    "seamark:light:1:range": "25",
+    "seamark:light:1:sequence": "1.0+(9.0)+1.0+(9.0)+1.0+(24.0)",
+    "seamark:light:reference": "Q 1296",
     "seamark:name": "Ampenan",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "M",
+    "seamark:radar_transponder:range": "16",
     "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "short_name": "Menara Ampenan",
+    "source": "US NGA Pub. 112. 2026-09-01;survey",
+    "survey:date": "2013-12-10"
   }
 },
 {
   "type": "node",
   "id": 1293785525,
-  "lat": -8.3446315,
-  "lon": 116.0294519,
+  "lat": -8.3446917,
+  "lon": 116.0295491,
   "tags": {
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:group": "2",
-    "seamark:light:height": "43",
-    "seamark:light:period": "10",
-    "seamark:light:range": "19",
-    "seamark:light:reference": "K 1295",
-    "seamark:light:sequence": "1+(2)+1+(6)",
+    "description": "White metal framework tower",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Trewangan",
+    "name:en": "Trewangan lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "40",
+    "seamark:light:1:period": "10.0",
+    "seamark:light:1:range": "18",
+    "seamark:light:1:sequence": "1.0+(2.0)+1.0+(6.0)",
+    "seamark:light:reference": "Q 1295",
     "seamark:name": "Trewangan",
     "seamark:radar_transponder:category": "racon",
     "seamark:radar_transponder:group": "T",
     "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -229063,17 +229104,39 @@
   "lat": -8.4793772,
   "lon": 116.6746531,
   "tags": {
+    "description": "Green beacon",
     "seamark:beacon_lateral:category": "starboard",
     "seamark:beacon_lateral:colour": "green",
     "seamark:beacon_lateral:system": "iala-a",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "green",
-    "seamark:light:height": "5",
-    "seamark:light:period": "3",
-    "seamark:light:range": "5",
-    "seamark:light:reference": "K 1300.35",
-    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "green",
+    "seamark:light:1:height": "7",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "8",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1300.35",
+    "seamark:name": "Ujung Karang Labuhan Lombok",
     "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 1293785660,
+  "lat": -8.4844387,
+  "lon": 116.6699829,
+  "tags": {
+    "description": "White structure",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "14",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1300.1",
+    "seamark:name": "Teluk Lombok",
+    "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2009-11-12."
   }
 },
@@ -351314,8 +351377,8 @@
 {
   "type": "node",
   "id": 1838781045,
-  "lat": 47.7415556,
-  "lon": -54.0315000,
+  "lat": 47.7418327,
+  "lon": -54.0315567,
   "tags": {
     "man_made": "lighthouse",
     "name": "Bordeaux Island Light",
@@ -360224,6 +360287,31 @@
 },
 {
   "type": "node",
+  "id": 2391555887,
+  "lat": -8.3646396,
+  "lon": 116.0797061,
+  "tags": {
+    "description": "SPECIAL (IALA A) Beacon, unknown topmark",
+    "man_made": "beacon",
+    "name": "Rambu Suar Gili Air",
+    "name:en": "Gili Air beacon",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "yellow",
+    "seamark:light:1:height": "11",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:r:eference": "Q 1294.8",
+    "seamark:name": "Pulau Aer",
+    "seamark:topmark:colour": "yellow",
+    "seamark:topmark:shape": "x-shape",
+    "seamark:type": "beacon_special_purpose",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
   "id": 2393810474,
   "lat": 49.3911213,
   "lon": -1.0493203,
@@ -360698,6 +360786,29 @@
     "seamark:topmark:colour_pattern": "border",
     "seamark:topmark:shape": "triangle, point down",
     "seamark:type": "beacon_special_purpose"
+  }
+},
+{
+  "type": "node",
+  "id": 2420447675,
+  "lat": -8.5331945,
+  "lon": 115.5134266,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tanjung Sari",
+    "name:en": "Tanjung Sari beacon",
+    "seamark:beacon_special_purpose:colour": "white",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "45",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "15",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1287",
+    "seamark:name": "Tanjung Sari",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -361824,6 +361935,31 @@
     "source": "US NGA Pub. 113. 2020",
     "wikidata": "Q64435188",
     "wikipedia": "ru:Чаудинский маяк"
+  }
+},
+{
+  "type": "node",
+  "id": 2485905260,
+  "lat": -8.3427346,
+  "lon": 116.0537676,
+  "tags": {
+    "description": "Beacon at Gili Meno, not a lighthouse, just a large pole with lights",
+    "man_made": "beacon",
+    "name": "Rambu Suar Gili Meno",
+    "name:en": "Gili Meno beacon",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "yellow",
+    "seamark:light:1:height": "11",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:r:eference": "Q 1294.9",
+    "seamark:name": "Pulau Meno",
+    "seamark:topmark:colour": "yellow",
+    "seamark:topmark:shape": "x-shape",
+    "seamark:type": "beacon_special_purpose",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -367475,6 +367611,28 @@
     "seamark:name": "Kalvskjæret",
     "seamark:type": "light_minor",
     "seamark:vertical_length": "5.7"
+  }
+},
+{
+  "type": "node",
+  "id": 3076310932,
+  "lat": -8.2116168,
+  "lon": 116.3677794,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tg. Agar-agar",
+    "name:en": "Tg. Agar-agar beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "35",
+    "seamark:light:1:period": "5.5",
+    "seamark:light:1:range": "18",
+    "seamark:light:1:sequence": "0.5+(5.0)",
+    "seamark:light:reference": "Q 1294.5",
+    "seamark:name": "Tg Agaragar",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -424365,7 +424523,7 @@
   "lon": -73.5381691,
   "tags": {
     "man_made": "tower",
-    "name": "Light 3",
+    "name": "3",
     "seamark:daymark:colour": "green",
     "seamark:daymark:colour_pattern": "border",
     "seamark:daymark:shape": "square",
@@ -424378,6 +424536,7 @@
     "seamark:light:range": "4",
     "seamark:light:sequence": "00.3+(02.2)",
     "seamark:name": "3",
+    "seamark:type": "beacon_lateral",
     "tower:construction": "lattice",
     "tower:type": "navigation"
   }
@@ -424389,7 +424548,7 @@
   "lon": -73.5350970,
   "tags": {
     "man_made": "tower",
-    "name": "Light 4",
+    "name": "4",
     "seamark:daymark:colour": "red",
     "seamark:daymark:colour_pattern": "border",
     "seamark:daymark:shape": "triangle, point up",
@@ -424402,6 +424561,7 @@
     "seamark:light:range": "4",
     "seamark:light:sequence": "00.4+(03.6)",
     "seamark:name": "Stamford Harbor East Breakwater Light 4",
+    "seamark:type": "beacon_lateral",
     "tower:construction": "lattice",
     "tower:type": "navigation"
   }
@@ -497566,6 +497726,29 @@
 },
 {
   "type": "node",
+  "id": 12065667245,
+  "lat": -8.4006664,
+  "lon": 115.7092917,
+  "tags": {
+    "description": "White metal framework tower",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Gili Selang",
+    "name:en": "Gili Selang lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "40",
+    "seamark:light:1:period": "20.0",
+    "seamark:light:1:range": "18",
+    "seamark:light:1:sequence": "1.0+(2.0),1.0+(2.0),1.0+(13.0)",
+    "seamark:light:reference": "Q 1285",
+    "seamark:name": "Gili Selang",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
   "id": 12066795721,
   "lat": 45.4203043,
   "lon": 12.3624220,
@@ -516503,6 +516686,27 @@
     "seamark:name": "Huang Jiao",
     "seamark:type": "light_minor",
     "source": "China MSA Notice No. 688/2014"
+  }
+},
+{
+  "type": "node",
+  "id": 12635868245,
+  "lat": 29.8984167,
+  "lon": 122.1512500,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "53",
+    "seamark:light:period": "10",
+    "seamark:light:range": "15",
+    "seamark:light:reference": "P 3714.22",
+    "seamark:light:sequence": "0.5+(1)+0.5+(8)",
+    "seamark:name": "Yangxiaomao Dao",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "C",
+    "seamark:type": "light_minor",
+    "source": "China MSA Notice No. 1140/2018"
   }
 },
 {
@@ -549782,9 +549986,8 @@
     "description": "Green post",
     "man_made": "beacon",
     "name": "RS. Hijau No.5 Alur Benoa",
-    "seamark:beacon_lateral:category": "starboard",
-    "seamark:beacon_lateral:colour": "green",
-    "seamark:beacon_lateral:shape": "tower",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "green",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "green",
     "seamark:light:1:height": "6",
@@ -549795,7 +549998,7 @@
     "seamark:name": "Benoa Harbor No. 5",
     "seamark:topmark:colour": "green",
     "seamark:topmark:shape": "cone, point up",
-    "seamark:type": "beacon_lateral",
+    "seamark:type": "buoy_lateral",
     "source": "Bing"
   }
 },
@@ -549823,6 +550026,349 @@
     "seamark:topmark:shape": "cone, point up",
     "seamark:type": "beacon_lateral",
     "source": "Bing"
+  }
+},
+{
+  "type": "node",
+  "id": 14348423273,
+  "lat": -8.0620758,
+  "lon": 115.1839985,
+  "tags": {
+    "description": "White metal framework tower, black stripe",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tg.Bungkulan",
+    "name:en": "Tg.Bungkulan beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "33",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1284.2",
+    "seamark:name": "Tg. Bungkulan",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14348423275,
+  "lat": -8.1009629,
+  "lon": 115.0943626,
+  "tags": {
+    "description": "White metal framework tower, black stripe",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Buleleng",
+    "name:en": "Buleleng lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "25",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "13",
+    "seamark:light:1:sector_end": "227",
+    "seamark:light:1:sector_start": "71",
+    "seamark:light:1:sequence": "1.0+(2.0)",
+    "seamark:light:reference": "Q 1284",
+    "seamark:name": "Buleleng, E. of river entrance",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14348627596,
+  "lat": -8.1893571,
+  "lon": 114.8310201,
+  "tags": {
+    "description": "White metal framework structure",
+    "man_made": "beacon",
+    "name": "Rambu Suar Pelabuhan Celukanbawang",
+    "name:en": "Celukanbawang Port beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "32",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1283.7",
+    "seamark:name": "Celukanbawang Harbor",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14348627598,
+  "lat": -8.1868257,
+  "lon": 114.8410086,
+  "tags": {
+    "description": "Red beacon",
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "red",
+    "seamark:light:1:height": "10",
+    "seamark:light:1:period": "6.0",
+    "seamark:light:1:range": "8",
+    "seamark:light:1:sequence": "0.5+(5.5)",
+    "seamark:light:reference": "Q 1283",
+    "seamark:name": "Celukanbawang",
+    "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14348627599,
+  "lat": -8.1888088,
+  "lon": 114.8366808,
+  "tags": {
+    "description": "ISOLATED DANGER (IALA A) Beacon, topmark",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "6",
+    "seamark:light:1:period": "6.0",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sequence": "0.5+(1.0),0.5+(4.0)",
+    "seamark:light:reference": "Q 1283.5",
+    "seamark:name": "Beacon 1M",
+    "seamark:type": "beacon_isolated_danger",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14348675718,
+  "lat": -8.3967980,
+  "lon": 114.5821752,
+  "tags": {
+    "description": "White metal framework tower",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Pengambengan",
+    "name:en": "Pengambengan lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "43",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "18",
+    "seamark:light:1:sequence": "1.0+(4.0)",
+    "seamark:light:reference": "Q 1282",
+    "seamark:name": "Tanjung Pengambengan",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14350175179,
+  "lat": 41.1418688,
+  "lon": -73.1832371,
+  "tags": {
+    "man_made": "buoy",
+    "ref": "1",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:buoy_lateral:shape": "pillar",
+    "seamark:buoy_lateral:system": "iala-b",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "4",
+    "seamark:light:sequence": "00.4+(03.6)",
+    "seamark:name": "1",
+    "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14350175180,
+  "lat": 41.1417402,
+  "lon": -73.1817675,
+  "tags": {
+    "man_made": "buoy",
+    "ref": "2",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:buoy_lateral:shape": "pillar",
+    "seamark:buoy_lateral:system": "iala-b",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "2.5",
+    "seamark:light:sequence": "00.3+(02.2)",
+    "seamark:name": "2",
+    "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14350175182,
+  "lat": 41.1484131,
+  "lon": -73.1800795,
+  "tags": {
+    "man_made": "buoy",
+    "ref": "4",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:buoy_lateral:shape": "pillar",
+    "seamark:buoy_lateral:system": "iala-b",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "2.5",
+    "seamark:light:sequence": "00.3+(02.2)",
+    "seamark:name": "4",
+    "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14350175185,
+  "lat": 41.1548217,
+  "lon": -73.1767941,
+  "tags": {
+    "man_made": "tower",
+    "ref": "8",
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "lattice",
+    "seamark:beacon_lateral:system": "iala-b",
+    "seamark:daymark:colour": "red",
+    "seamark:daymark:colour_pattern": "border",
+    "seamark:daymark:shape": "triangle, point up",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:height": "6.4",
+    "seamark:light:period": "4",
+    "seamark:light:range": "4",
+    "seamark:light:sequence": "00.4+(03.6)",
+    "seamark:name": "8",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14350175186,
+  "lat": 41.1567177,
+  "lon": -73.1799356,
+  "tags": {
+    "man_made": "tower",
+    "ref": "7",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "lattice",
+    "seamark:beacon_lateral:system": "iala-b",
+    "seamark:daymark:colour": "green",
+    "seamark:daymark:colour_pattern": "border",
+    "seamark:daymark:shape": "square",
+    "seamark:light:character": "Q",
+    "seamark:light:colour": "green",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:height": "15.2",
+    "seamark:light:period": "1",
+    "seamark:light:range": "5",
+    "seamark:light:sequence": "00.3+(00.7)",
+    "seamark:name": "7",
+    "seamark:type": "beacon_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14350175188,
+  "lat": 41.1612869,
+  "lon": -73.1764716,
+  "tags": {
+    "man_made": "buoy",
+    "ref": "12",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:buoy_lateral:shape": "pillar",
+    "seamark:buoy_lateral:system": "iala-b",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "2.5",
+    "seamark:light:sequence": "00.3+(02.2)",
+    "seamark:name": "12",
+    "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14350175190,
+  "lat": 41.1666004,
+  "lon": -73.1762031,
+  "tags": {
+    "man_made": "buoy",
+    "ref": "13",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:buoy_lateral:shape": "pillar",
+    "seamark:buoy_lateral:system": "iala-b",
+    "seamark:light:character": "Q",
+    "seamark:light:colour": "green",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "1",
+    "seamark:light:sequence": "00.3+(00.7)",
+    "seamark:name": "13",
+    "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14350175196,
+  "lat": 41.1136325,
+  "lon": -73.1359446,
+  "tags": {
+    "man_made": "buoy",
+    "ref": "18",
+    "seamark:buoy_lateral:category": "starboard",
+    "seamark:buoy_lateral:colour": "red",
+    "seamark:buoy_lateral:shape": "pillar",
+    "seamark:buoy_lateral:system": "iala-b",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "4",
+    "seamark:light:sequence": "00.4+(03.6)",
+    "seamark:name": "18",
+    "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14350175198,
+  "lat": 41.0003752,
+  "lon": -73.3945453,
+  "tags": {
+    "man_made": "buoy",
+    "ref": "11B",
+    "seamark:buoy_lateral:category": "port",
+    "seamark:buoy_lateral:colour": "green",
+    "seamark:buoy_lateral:shape": "pillar",
+    "seamark:buoy_lateral:system": "iala-b",
+    "seamark:fog_signal:category": "gong",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:period": "4",
+    "seamark:light:sequence": "00.4+(03.6)",
+    "seamark:name": "11B",
+    "seamark:type": "buoy_lateral"
   }
 },
 {
@@ -569954,6 +570500,64 @@
 },
 {
   "type": "way",
+  "id": 716898544,
+  "nodes": [
+    6733378645,
+    6733378636,
+    6733378643,
+    6733378638,
+    6733378646,
+    6733378648,
+    6733378634,
+    6733378632,
+    6733378649,
+    9807347299,
+    6733378639,
+    6733378631,
+    6733378647,
+    6733378644,
+    6733378630,
+    6733378640,
+    6733378642,
+    6733378633,
+    6733378641,
+    6733378645
+  ],
+  "tags": {
+    "alt_name": "The Bug Light",
+    "building": "lighthouse",
+    "heritage": "2",
+    "heritage:operator": "nrhp",
+    "heritage:website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "historic": "lighthouse",
+    "man_made": "lighthouse",
+    "name": "Tongue Point Light",
+    "nrhp:criteria": "A;C",
+    "nrhp:inscription_date": "1990-05-29",
+    "old_name": "Bridgeport Breakwater Lighthouse",
+    "protection_title": "U.S. Coast Guard",
+    "ref:nrhp": "89001478",
+    "seamark:beacon_special_purpose:category": "warning",
+    "seamark:beacon_special_purpose:colour": "black",
+    "seamark:beacon_special_purpose:shape": "tower",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:exhibition": "night",
+    "seamark:light:group": "1",
+    "seamark:light:height": "9.4",
+    "seamark:light:period": "4",
+    "seamark:light:range": "5",
+    "seamark:light:sequence": "00.4+(03.6)",
+    "seamark:name": "Tongue Point Light",
+    "seamark:type": "beacon_special_purpose",
+    "source_ref": "https://catalog.archives.gov/id/132353084",
+    "start_date": "1984",
+    "wikidata": "Q7821157",
+    "wikipedia": "en:Tongue Point Light"
+  }
+},
+{
+  "type": "way",
   "id": 716913383,
   "nodes": [
     6733508519,
@@ -584937,6 +585541,120 @@
   "id": 2378594677,
   "lat": 41.1171428,
   "lon": -73.2220378
+},
+{
+  "type": "node",
+  "id": 6733378630,
+  "lat": 41.1666018,
+  "lon": -73.1775275
+},
+{
+  "type": "node",
+  "id": 6733378631,
+  "lat": 41.1666094,
+  "lon": -73.1775099
+},
+{
+  "type": "node",
+  "id": 6733378633,
+  "lat": 41.1665865,
+  "lon": -73.1775281
+},
+{
+  "type": "node",
+  "id": 6733378636,
+  "lat": 41.1665782,
+  "lon": -73.1775115
+},
+{
+  "type": "node",
+  "id": 6733378638,
+  "lat": 41.1665805,
+  "lon": -73.1774987
+},
+{
+  "type": "node",
+  "id": 6733378639,
+  "lat": 41.1666085,
+  "lon": -73.1775030
+},
+{
+  "type": "node",
+  "id": 6733378640,
+  "lat": 41.1665969,
+  "lon": -73.1775300
+},
+{
+  "type": "node",
+  "id": 6733378641,
+  "lat": 41.1665823,
+  "lon": -73.1775238
+},
+{
+  "type": "node",
+  "id": 6733378642,
+  "lat": 41.1665916,
+  "lon": -73.1775302
+},
+{
+  "type": "node",
+  "id": 6733378643,
+  "lat": 41.1665786,
+  "lon": -73.1775049
+},
+{
+  "type": "node",
+  "id": 6733378644,
+  "lat": 41.1666058,
+  "lon": -73.1775229
+},
+{
+  "type": "node",
+  "id": 6733378645,
+  "lat": 41.1665794,
+  "lon": -73.1775180
+},
+{
+  "type": "node",
+  "id": 6733378647,
+  "lat": 41.1666084,
+  "lon": -73.1775168
+},
+{
+  "type": "node",
+  "id": 6733378632,
+  "lat": 41.1665980,
+  "lon": -73.1774897
+},
+{
+  "type": "node",
+  "id": 6733378634,
+  "lat": 41.1665930,
+  "lon": -73.1774890
+},
+{
+  "type": "node",
+  "id": 6733378646,
+  "lat": 41.1665838,
+  "lon": -73.1774937
+},
+{
+  "type": "node",
+  "id": 6733378648,
+  "lat": 41.1665881,
+  "lon": -73.1774904
+},
+{
+  "type": "node",
+  "id": 6733378649,
+  "lat": 41.1666025,
+  "lon": -73.1774925
+},
+{
+  "type": "node",
+  "id": 9807347299,
+  "lat": 41.1666062,
+  "lon": -73.1774971
 },
 {
   "type": "node",
