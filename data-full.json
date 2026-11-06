@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-05T06:35:08Z",
+    "timestamp_osm_base": "2026-11-06T06:30:25Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -229100,6 +229100,26 @@
 },
 {
   "type": "node",
+  "id": 1293785560,
+  "lat": -8.9517145,
+  "lon": 116.3934091,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "95",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "1.0+(4.0)",
+    "seamark:light:reference": "Q 1299.3",
+    "seamark:name": "Tanjung Bungkulan",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
   "id": 1293785659,
   "lat": -8.4793772,
   "lon": 116.6746531,
@@ -376429,6 +376449,29 @@
     "seamark:name": "Mys Numeroniyem",
     "seamark:reference": "L6010",
     "seamark:type": "landmark"
+  }
+},
+{
+  "type": "node",
+  "id": 5194525269,
+  "lat": -8.4343157,
+  "lon": 116.7574081,
+  "tags": {
+    "description": "White metal beacon",
+    "height": "15",
+    "man_made": "beacon",
+    "name": "Rambu Suar Petagan",
+    "name:en": "Petagan beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "15",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1301",
+    "seamark:name": "Gili Petagan, SE. side of the coast reef",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
   }
 },
 {
@@ -550369,6 +550412,115 @@
     "seamark:light:sequence": "00.4+(03.6)",
     "seamark:name": "11B",
     "seamark:type": "buoy_lateral"
+  }
+},
+{
+  "type": "node",
+  "id": 14352061234,
+  "lat": -8.4995052,
+  "lon": 116.8187880,
+  "tags": {
+    "description": "Black beacon, red banded",
+    "man_made": "beacon",
+    "name": "Rambu Suar Pulau Ular",
+    "name:en": "Pulau Ular beacon",
+    "seamark:light:1:character": "Q",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "49",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(0.5)+0.5+(3.5)",
+    "seamark:light:reference": "Q 1305",
+    "seamark:name": "Pulau Ular",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14352061236,
+  "lat": -8.5156156,
+  "lon": 116.8310825,
+  "tags": {
+    "description": "Green beacon",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tanjung Tano",
+    "name:en": "Tanjung Tano beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "green",
+    "seamark:light:1:height": "14",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1306",
+    "seamark:name": "Tanjung Tano",
+    "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14352061249,
+  "lat": -8.7524127,
+  "lon": 115.8215707,
+  "tags": {
+    "description": "White metal framework structure",
+    "height": "6.7",
+    "man_made": "beacon",
+    "name": "Rambu Suar Tg. Batu Gendang",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "65",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1300",
+    "seamark:name": "Tanjung Pandanan, S.",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14352083523,
+  "lat": -8.7244489,
+  "lon": 116.0451739,
+  "tags": {
+    "description": "White beacon",
+    "height": "10",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "52",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1297",
+    "seamark:name": "Lembar, Labuan Tring Bay",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14352083524,
+  "lat": -8.7281859,
+  "lon": 116.0644152,
+  "tags": {
+    "description": "White metal structure",
+    "height": "13",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "64",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1298",
+    "seamark:name": "Lembar Harbor",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
   }
 },
 {
