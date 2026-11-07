@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-06T06:30:25Z",
+    "timestamp_osm_base": "2026-11-07T05:51:21Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -24087,6 +24087,7 @@
   "lat": 43.4732818,
   "lon": -3.7558530,
   "tags": {
+    "height": "38.7m",
     "man_made": "lighthouse",
     "name": "Faro de la Isla de Mouro",
     "seamark:light:character": "Fl",
@@ -258976,56 +258977,6 @@
     "seamark:light:sequence": "0.8+(2.2)",
     "seamark:name": "Rungsted",
     "seamark:type": "light_minor"
-  }
-},
-{
-  "type": "node",
-  "id": 1404478533,
-  "lat": 46.0187455,
-  "lon": 143.4139815,
-  "tags": {
-    "abandoned": "yes",
-    "abandoned:man_made": "lighthouse",
-    "height": "31",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Маяк_Анива.jpg",
-    "man_made": "lighthouse",
-    "name": "Маяк Анива",
-    "name:de": "Aniwa-Leuchtturm",
-    "name:en": "Aniva Lighthouse",
-    "name:es": "Faro de Aniva",
-    "name:fr": "Phare d'Aniva",
-    "name:ja": "中知床岬灯台",
-    "name:ru": "Маяк Анива",
-    "name:ru:word_stress": "Мая́к Ани́ва",
-    "old_name": "Маяк мыса Накасирэтоко",
-    "old_name:ja": "中知床岬灯台",
-    "ref:admiralty": "M7842",
-    "ref:arlhs": "ASR012",
-    "ref:nga": "112-168",
-    "seamark:landmark:category": "tower",
-    "seamark:landmark:construction": "concreted",
-    "seamark:landmark:function": "light_support",
-    "seamark:landmark:height": "31",
-    "seamark:light:1:character": "Fl",
-    "seamark:light:1:colour": "white",
-    "seamark:light:1:group": "2",
-    "seamark:light:1:height": "40",
-    "seamark:light:1:period": "24",
-    "seamark:light:1:range": "17",
-    "seamark:light:1:sector_end": "166",
-    "seamark:light:1:sector_start": "206",
-    "seamark:light:1:sequence": "1+(5)+1+(17)",
-    "seamark:name": "Mys Aniva",
-    "seamark:radar_transponder:category": "racon",
-    "seamark:radar_transponder:group": "AW",
-    "seamark:radar_transponder:period": "30",
-    "seamark:radar_transponder:range": "20",
-    "seamark:radar_transponder:sector_end": "340",
-    "seamark:radar_transponder:sector_start": "30",
-    "seamark:type": "landmark",
-    "start_date": "1939",
-    "wikidata": "Q3739749",
-    "wikipedia": "ru:Анива (маяк)"
   }
 },
 {
@@ -580385,6 +580336,76 @@
   }
 },
 {
+  "type": "way",
+  "id": 1576123776,
+  "nodes": [
+    14354634352,
+    14354634359,
+    14354634349,
+    14354634353,
+    14354634354,
+    14354634355,
+    14354634350,
+    14354634360,
+    14354634351,
+    14354634356,
+    14354634357,
+    14354634358,
+    14354634352
+  ],
+  "tags": {
+    "abandoned": "yes",
+    "architect": "三浦忍",
+    "building": "yes",
+    "building:levels": "9",
+    "building:material": "concrete",
+    "height": "31",
+    "historic": "building",
+    "historic:civilization": "japanese",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Маяк_Анива.jpg",
+    "man_made": "lighthouse",
+    "name": "Маяк Анива",
+    "name:de": "Aniwa-Leuchtturm",
+    "name:en": "Aniva Lighthouse",
+    "name:es": "Faro de Aniva",
+    "name:fr": "Phare d'Aniva",
+    "name:ja": "中知床岬灯台",
+    "name:ru": "Маяк Анива",
+    "name:ru:word_stress": "Мая́к Ани́ва",
+    "old_name": "Маяк мыса Накасирэтоко",
+    "old_name:ja": "中知床岬灯台",
+    "old_name:ru": "Маяк мыса Накасирэтоко",
+    "ref:admiralty": "M7842",
+    "ref:arlhs": "ASR012",
+    "ref:nga": "112-168",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:landmark:height": "31",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "40",
+    "seamark:light:1:period": "24",
+    "seamark:light:1:range": "17",
+    "seamark:light:1:sector_end": "166",
+    "seamark:light:1:sector_start": "206",
+    "seamark:light:1:sequence": "1+(5)+1+(17)",
+    "seamark:name": "Mys Aniva",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "AW",
+    "seamark:radar_transponder:period": "30",
+    "seamark:radar_transponder:range": "20",
+    "seamark:radar_transponder:sector_end": "340",
+    "seamark:radar_transponder:sector_start": "30",
+    "seamark:type": "landmark",
+    "start_date": "1939",
+    "tourism": "attraction",
+    "wikidata": "Q3739749",
+    "wikipedia": "ru:Анива (маяк)"
+  }
+},
+{
   "type": "node",
   "id": 2145540823,
   "lat": -17.4950408,
@@ -630183,6 +630204,78 @@
   "id": 6253366103,
   "lat": 44.7727647,
   "lon": 136.4489358
+},
+{
+  "type": "node",
+  "id": 14354634349,
+  "lat": 46.0188001,
+  "lon": 143.4139299
+},
+{
+  "type": "node",
+  "id": 14354634350,
+  "lat": 46.0187937,
+  "lon": 143.4140774
+},
+{
+  "type": "node",
+  "id": 14354634351,
+  "lat": 46.0187183,
+  "lon": 143.4140708
+},
+{
+  "type": "node",
+  "id": 14354634352,
+  "lat": 46.0187247,
+  "lon": 143.4139232
+},
+{
+  "type": "node",
+  "id": 14354634353,
+  "lat": 46.0188221,
+  "lon": 143.4139649
+},
+{
+  "type": "node",
+  "id": 14354634354,
+  "lat": 46.0188281,
+  "lon": 143.4140062
+},
+{
+  "type": "node",
+  "id": 14354634355,
+  "lat": 46.0188189,
+  "lon": 143.4140462
+},
+{
+  "type": "node",
+  "id": 14354634356,
+  "lat": 46.0186970,
+  "lon": 143.4140364
+},
+{
+  "type": "node",
+  "id": 14354634357,
+  "lat": 46.0186910,
+  "lon": 143.4139951
+},
+{
+  "type": "node",
+  "id": 14354634358,
+  "lat": 46.0187002,
+  "lon": 143.4139550
+},
+{
+  "type": "node",
+  "id": 14354634359,
+  "lat": 46.0187622,
+  "lon": 143.4139199
+},
+{
+  "type": "node",
+  "id": 14354634360,
+  "lat": 46.0187534,
+  "lon": 143.4140824
 },
 {
   "type": "node",
