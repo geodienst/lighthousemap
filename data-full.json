@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-07T05:51:21Z",
+    "timestamp_osm_base": "2026-11-08T05:54:00Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -145660,21 +145660,17 @@
     "ref:kystverket": "002108",
     "seamark:beacon_lateral:category": "port",
     "seamark:beacon_lateral:colour": "red",
-    "seamark:beacon_lateral:conspicuity": "conspicuous",
     "seamark:beacon_lateral:system": "iala-a",
-    "seamark:beacon_lateral:vertical_length": "5.5",
     "seamark:light:1:character": "Iso",
     "seamark:light:1:colour": "red",
     "seamark:light:1:height": "7.5",
-    "seamark:light:1:period": "4",
+    "seamark:light:1:period": "2",
     "seamark:light:1:range": "3.3",
     "seamark:light:1:sequence": "2+(2)",
     "seamark:light:2:category": "floodlight",
     "seamark:light:2:character": "F",
     "seamark:light:2:colour": "yellow",
     "seamark:name": "Kråkenebbet",
-    "seamark:retro_reflector:colour": "red",
-    "seamark:topmark:information": "08",
     "seamark:topmark:shape": "triangle, point up",
     "seamark:type": "beacon_lateral"
   }
@@ -229101,6 +229097,26 @@
 },
 {
   "type": "node",
+  "id": 1293785537,
+  "lat": -9.0002747,
+  "lon": 116.7300277,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "29",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1299.5",
+    "seamark:name": "Tanjung Mangkun",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
   "id": 1293785560,
   "lat": -8.9517145,
   "lon": 116.3934091,
@@ -229115,6 +229131,26 @@
     "seamark:light:1:sequence": "1.0+(4.0)",
     "seamark:light:reference": "Q 1299.3",
     "seamark:name": "Tanjung Bungkulan",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 1293785578,
+  "lat": -8.8975328,
+  "lon": 116.7319837,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "126",
+    "seamark:light:1:period": "7.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "1.0+(6.0)",
+    "seamark:light:reference": "Q 1299.56",
+    "seamark:name": "Tg. Maloh",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2026-09-01"
   }
@@ -229163,6 +229199,29 @@
 },
 {
   "type": "node",
+  "id": 1293785696,
+  "lat": -8.1335884,
+  "lon": 117.3876220,
+  "tags": {
+    "description": "White metal framework tower",
+    "height": "30",
+    "man_made": "beacon",
+    "name": "Menara Suar Pulau Medang",
+    "name:en": "Pulau Medang lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "50",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "19",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1304",
+    "seamark:name": "Pulau Medang",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
   "id": 1293785715,
   "lat": -8.3864381,
   "lon": 118.7025971,
@@ -229182,57 +229241,65 @@
 {
   "type": "node",
   "id": 1293785742,
-  "lat": -8.0838076,
-  "lon": 117.9227947,
+  "lat": -8.0820047,
+  "lon": 117.9248311,
   "tags": {
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "35",
-    "seamark:light:period": "6",
-    "seamark:light:range": "12",
-    "seamark:light:reference": "K 1308.4",
-    "seamark:light:sequence": "0.5+(5.5)",
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "35",
+    "seamark:light:1:period": "6.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(5.5)",
+    "seamark:light:reference": "Q 1308.4",
     "seamark:name": "Tg. Pakijongan",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
   "type": "node",
   "id": 1293785746,
-  "lat": -8.3302995,
-  "lon": 117.4755150,
+  "lat": -8.3326580,
+  "lon": 117.4775275,
   "tags": {
+    "description": "SPECIAL (IALA A) Beacon, unknown topmark",
+    "man_made": "beacon",
+    "note": "check position",
     "seamark:beacon_special_purpose:colour": "yellow",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "yellow",
-    "seamark:light:height": "11",
-    "seamark:light:period": "4",
-    "seamark:light:range": "6",
-    "seamark:light:reference": "K 1304.4",
-    "seamark:light:sequence": "0.5+(3.5)",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "yellow",
+    "seamark:light:1:height": "30",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1304.4",
     "seamark:name": "Tg. Kolo",
     "seamark:type": "beacon_special_purpose",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
   "type": "node",
   "id": 1293785752,
-  "lat": -8.3250000,
-  "lon": 117.5730000,
+  "lat": -8.3234512,
+  "lon": 117.5739371,
   "tags": {
+    "description": "SPECIAL Beacon, unknown topmark",
+    "man_made": "beacon",
+    "note": "check position",
     "seamark:beacon_special_purpose:colour": "yellow",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "yellow",
-    "seamark:light:height": "14",
-    "seamark:light:period": "3",
-    "seamark:light:range": "6",
-    "seamark:light:reference": "K 1304.6",
-    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "yellow",
+    "seamark:light:1:height": "14",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1304.6",
     "seamark:name": "Tg. Ai Lancong",
     "seamark:type": "beacon_special_purpose",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -550472,6 +550539,48 @@
     "seamark:name": "Lembar Harbor",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14356590584,
+  "lat": -8.4615861,
+  "lon": 117.3729389,
+  "tags": {
+    "description": "White metal framework tower",
+    "height": "8",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "12",
+    "seamark:light:1:period": "2.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "0.5+(1.5)",
+    "seamark:light:reference": "Q 1307.5",
+    "seamark:name": "Badas",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14356590599,
+  "lat": -7.8525702,
+  "lon": 117.2058536,
+  "tags": {
+    "description": "White metal framework tower",
+    "height": "15",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "17",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "15",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1303",
+    "seamark:name": "Gosong Sakunci",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
