@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-08T05:54:00Z",
+    "timestamp_osm_base": "2026-11-09T06:12:52Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -3570,10 +3570,6 @@
   "lat": 43.0731382,
   "lon": 131.8431093,
   "tags": {
-    "height": "12",
-    "man_made": "lighthouse",
-    "name": "Маяк Токаревского",
-    "name:ru": "Маяк Токаревского",
     "seamark:light:1:character": "LFl",
     "seamark:light:1:colour": "white",
     "seamark:light:1:height": "12",
@@ -3592,11 +3588,7 @@
     "seamark:light:sequence": "3+(4.5)",
     "seamark:name": "Tokarevskogo",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2009-11-12.",
-    "start_date": "1910",
-    "tourism": "attraction",
-    "wikidata": "Q110259647",
-    "wikipedia": "ru:Маяк Токаревского"
+    "source": "US NGA Pub. 112. 2009-11-12."
   }
 },
 {
@@ -229223,19 +229215,27 @@
 {
   "type": "node",
   "id": 1293785715,
-  "lat": -8.3864381,
-  "lon": 118.7025971,
+  "lat": -8.3885728,
+  "lon": 118.7022134,
   "tags": {
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "red",
-    "seamark:light:height": "15",
-    "seamark:light:period": "6",
-    "seamark:light:range": "4",
-    "seamark:light:reference": "K 1309",
-    "seamark:light:sequence": "0.6+(5.4)",
+    "description": "Red framework tower",
+    "height": "15",
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "red",
+    "seamark:light:1:height": "15",
+    "seamark:light:1:period": "6.0",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sequence": "0.6+(5.4)",
+    "seamark:light:reference": "Q 1309",
     "seamark:name": "Tanjung Lampasapi",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "seamark:radar_reflector": "yes",
+    "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -229305,19 +229305,67 @@
 {
   "type": "node",
   "id": 1293785789,
-  "lat": -8.1316750,
-  "lon": 119.0791801,
+  "lat": -8.1311666,
+  "lon": 119.0821999,
   "tags": {
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "21",
-    "seamark:light:period": "10",
-    "seamark:light:range": "22",
-    "seamark:light:reference": "K 1310.7",
-    "seamark:light:sequence": "0.9+(9.1)",
+    "description": "White structure",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "21",
+    "seamark:light:1:period": "10.0",
+    "seamark:light:1:range": "22",
+    "seamark:light:1:sequence": "0.9+(9.1)",
+    "seamark:light:reference": "Q 1310.7",
     "seamark:name": "Sangeang Island",
-    "seamark:type": "light_minor",
+    "seamark:type": "light_major",
     "source": "US NGA Pub. 112. 2009-11-12."
+  }
+},
+{
+  "type": "node",
+  "id": 1293785798,
+  "lat": -8.5554244,
+  "lon": 119.0225770,
+  "tags": {
+    "description": "White metal framework tower",
+    "height": "15",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "green",
+    "seamark:light:1:height": "60",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sector_end": "274",
+    "seamark:light:1:sector_start": "196",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1311",
+    "seamark:name": "Toronaganuri",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 1293785805,
+  "lat": -8.5564707,
+  "lon": 119.0417479,
+  "tags": {
+    "description": "Red beacon",
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "red",
+    "seamark:light:1:height": "14",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "1.0+(3.0)",
+    "seamark:light:reference": "Q 1311.2",
+    "seamark:name": "Nisa Sanai",
+    "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
   }
 },
 {
@@ -337021,7 +337069,7 @@
     "seamark:light:height": "78",
     "seamark:light:period": "15",
     "seamark:light:range": "12",
-    "seamark:light:reference": "E 4648",
+    "seamark:light:reference": "N 4648",
     "seamark:light:sequence": "1+(2)+1+(11)",
     "seamark:name": "Nisis Venetiko",
     "seamark:type": "light_minor",
@@ -532820,6 +532868,7 @@
   "lat": 42.8693318,
   "lon": 47.6963523,
   "tags": {
+    "height": "15",
     "man_made": "lighthouse",
     "name": "Turalinskiy",
     "seamark:information": "Un-watched light. Daymark-board. Black-White-Black.(horizontal stripes). Tower. Visually conspicuous. Trihedral tower.",
@@ -550581,6 +550630,205 @@
     "seamark:name": "Gosong Sakunci",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14357972746,
+  "lat": -7.4967511,
+  "lon": 117.1778211,
+  "tags": {
+    "description": "White beacon",
+    "height": "30",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Pulau Kapoposangbali",
+    "name:en": "Pulau Kapoposangbali lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "34",
+    "seamark:light:1:period": "10.0",
+    "seamark:light:1:range": "24",
+    "seamark:light:1:sequence": "1.0+(9.0)",
+    "seamark:light:reference": "Q 1322",
+    "seamark:name": "Pulau Kapoposangbali",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14357972748,
+  "lat": -7.0735039,
+  "lon": 118.6497909,
+  "tags": {
+    "description": "S. CARDINAL (IALA A) Tower, topmark",
+    "height": "12",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "13",
+    "seamark:light:1:period": "15.0",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sequence": "0.5+(1.0),0.5+(2.0),0.5+(10.5)",
+    "seamark:light:reference": "Q 1324.5",
+    "seamark:name": "Sarege",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14358004044,
+  "lat": -8.5731603,
+  "lon": 119.0210808,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "12",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1311.5",
+    "seamark:name": "Bajo",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14358004051,
+  "lat": -8.7477028,
+  "lon": 118.9710561,
+  "tags": {
+    "man_made": "beacon",
+    "name": "Menara Sura Toro Jampang",
+    "name:en": "Toro Jampang lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "95",
+    "seamark:light:1:period": "15.0",
+    "seamark:light:1:range": "22",
+    "seamark:light:1:sequence": "1.0+(3.0)+1.0+(10.0)",
+    "seamark:light:reference": "Q 1314",
+    "seamark:name": "Toro Jampang",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14358004101,
+  "lat": -8.4475346,
+  "lon": 118.7137980,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "33",
+    "seamark:light:1:period": "6.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(5.5)",
+    "seamark:light:reference": "Q 1310",
+    "seamark:name": "Bima",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;Bing"
+  }
+},
+{
+  "type": "node",
+  "id": 14358004102,
+  "lat": -8.3965737,
+  "lon": 118.6977661,
+  "tags": {
+    "description": "Green beacon",
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "green",
+    "seamark:light:1:height": "15",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1310.6",
+    "seamark:name": "N. Amoe",
+    "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14358004103,
+  "lat": -8.4101260,
+  "lon": 118.6980097,
+  "tags": {
+    "description": "Red beacon",
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "red",
+    "seamark:light:1:height": "12",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1310.4",
+    "seamark:name": "S. Amoe",
+    "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14358004104,
+  "lat": -8.4145787,
+  "lon": 118.6917811,
+  "tags": {
+    "description": "Green beacon",
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "starboard",
+    "seamark:beacon_lateral:colour": "green",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "green",
+    "seamark:light:1:height": "15",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1310.2",
+    "seamark:name": "Soembai",
+    "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14358004105,
+  "lat": -8.2436832,
+  "lon": 118.4941767,
+  "tags": {
+    "description": "White lighthouse",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "25",
+    "seamark:light:1:period": "10.0",
+    "seamark:light:1:range": "22",
+    "seamark:light:1:sequence": "0.9+(9.1)",
+    "seamark:light:reference": "Q 1308.5",
+    "seamark:name": "Batu Besar",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01;Esri"
   }
 },
 {
