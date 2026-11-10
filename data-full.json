@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-09T06:12:52Z",
+    "timestamp_osm_base": "2026-11-10T07:07:17Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -341973,9 +341973,10 @@
 {
   "type": "node",
   "id": 1581717862,
-  "lat": 34.2592229,
-  "lon": -6.6597562,
+  "lat": 34.2589489,
+  "lon": -6.6605982,
   "tags": {
+    "man_made": "lighthouse",
     "seamark:light:category": "upper",
     "seamark:light:character": "Oc",
     "seamark:light:colour": "green",
@@ -341986,7 +341987,8 @@
     "seamark:light:reference": "D 2540.1",
     "seamark:light:sequence": "4.5+(1.5)+1.5+(1.5)+1.5+(1.5)",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2011-10-20."
+    "source": "US NGA Pub. 113. 2011-10-20.",
+    "wikipedia": "fr:Phare de Mehdia"
   }
 },
 {
@@ -503374,6 +503376,52 @@
 },
 {
   "type": "node",
+  "id": 12345568449,
+  "lat": -7.3818891,
+  "lon": 121.0781443,
+  "tags": {
+    "man_made": "lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "64",
+    "seamark:light:1:period": "10.0",
+    "seamark:light:1:range": "20",
+    "seamark:light:1:sequence": "1.0+(1.0)+1.0+(1.0)+1.0+(5.0)",
+    "seamark:light:reference": "Q 1328",
+    "seamark:name": "Bone Rate Island",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 12353447524,
+  "lat": -6.1087372,
+  "lon": 120.4433189,
+  "tags": {
+    "description": "PORT (IALA A) Red beacon, red square daymark",
+    "man_made": "beacon",
+    "seamark:beacon_lateral:category": "port",
+    "seamark:beacon_lateral:colour": "red",
+    "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "red",
+    "seamark:light:1:height": "8",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1537.5",
+    "seamark:name": "Benteng",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "cylinder",
+    "seamark:type": "beacon_lateral",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
   "id": 12356887780,
   "lat": 33.7159046,
   "lon": -118.2780992,
@@ -503387,6 +503435,46 @@
     "seamark:light:sequence": "00.4+(03.6)",
     "seamark:reference": "USCG 3305",
     "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 12357343820,
+  "lat": -7.0790215,
+  "lon": 121.1204716,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "12",
+    "seamark:light:1:period": "2.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(1.5)",
+    "seamark:light:reference": "Q 1327.7",
+    "seamark:name": "Pulau Raja",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 12360610489,
+  "lat": -7.4203614,
+  "lon": 122.0829243,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "12",
+    "seamark:light:1:period": "2.0",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sequence": "0.5+(1.5)",
+    "seamark:light:reference": "Q 1328.7",
+    "seamark:name": "Pulau Kaunadi",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -550670,10 +550758,10 @@
     "seamark:light:1:height": "13",
     "seamark:light:1:period": "15.0",
     "seamark:light:1:range": "11",
-    "seamark:light:1:sequence": "0.5+(1.0),0.5+(2.0),0.5+(10.5)",
+    "seamark:light:1:sequence": "0.5+(1.0)+0.5+(2.0)+0.5+(10.5)",
     "seamark:light:reference": "Q 1324.5",
     "seamark:name": "Sarege",
-    "seamark:type": "light_major",
+    "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
@@ -550829,6 +550917,211 @@
     "seamark:name": "Batu Besar",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 112. 2026-09-01;Esri"
+  }
+},
+{
+  "type": "node",
+  "id": 14362439105,
+  "lat": -6.9070020,
+  "lon": 122.2208026,
+  "tags": {
+    "description": "White glass reinforced plastic(grp) fiberglass tower",
+    "height": "10",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "11",
+    "seamark:light:1:period": "2.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(1.5)",
+    "seamark:light:reference": "Q 1328.5",
+    "seamark:name": "Pulau Kakabia",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14362439125,
+  "lat": -7.1156522,
+  "lon": 121.4376548,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "12",
+    "seamark:light:1:period": "11.0",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sequence": "2.0+(9.0)",
+    "seamark:light:reference": "Q 1327.8",
+    "seamark:name": "Karang Sangi Sangiang",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14362439133,
+  "lat": -6.4078734,
+  "lon": 121.0963669,
+  "tags": {
+    "description": "White glass reinforced plastic(grp) fiberglass beacon",
+    "height": "10",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "16",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "15",
+    "seamark:light:1:sequence": "0.7+(4.3)",
+    "seamark:light:reference": "Q 1327.2",
+    "seamark:name": "Pulau Belangbelang",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14362439134,
+  "lat": -7.1352528,
+  "lon": 120.7669426,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "11",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1327.5",
+    "seamark:name": "Ujung Perumang",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14362439180,
+  "lat": -6.9174935,
+  "lon": 121.2865050,
+  "tags": {
+    "description": "SPECIAL (IALA A) Beacon, unknown topmark",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "yellow",
+    "seamark:light:1:height": "11",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1327.3",
+    "seamark:name": "Pulau Ampalasa",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14362439183,
+  "lat": -6.7792277,
+  "lon": 120.7912375,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "13",
+    "seamark:light:1:period": "30.0",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sequence": "1.0+(2.0),1.0+(26.0)",
+    "seamark:light:reference": "Q 1327",
+    "seamark:name": "Pulau Kayuadi",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14362439184,
+  "lat": -6.5195387,
+  "lon": 120.9513820,
+  "tags": {
+    "description": "SPECIAL (IALA A) Beacon, unknown topmark",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "yellow",
+    "seamark:light:1:height": "11",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1327.1",
+    "seamark:name": "Pulau Latondu Kecil",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14363875313,
+  "lat": -6.5534050,
+  "lon": 118.7947036,
+  "tags": {
+    "description": "White glass reinforced plastic(grp) fiberglass beacon",
+    "height": "10",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "16",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "15",
+    "seamark:light:1:sequence": "0.7+(4.3)",
+    "seamark:light:reference": "Q 1325.3",
+    "seamark:name": "Pulau Jailamu",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14363875314,
+  "lat": -6.6832690,
+  "lon": 118.2773566,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "32",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "17",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1325.5",
+    "seamark:name": "Pulau Longkoitang",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14363875315,
+  "lat": -6.8183496,
+  "lon": 119.1945383,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "32",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "17",
+    "seamark:light:1:sequence": "0.5+(1.0)+0.5+(3.0)",
+    "seamark:light:reference": "Q 1325",
+    "seamark:name": "Banawaja",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
