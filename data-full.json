@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-10T07:07:17Z",
+    "timestamp_osm_base": "2026-11-11T06:02:13Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -229413,6 +229413,27 @@
 },
 {
   "type": "node",
+  "id": 1293786143,
+  "lat": -10.0881490,
+  "lon": 123.5535075,
+  "tags": {
+    "description": "White glass reinforced plastic(grp) fiberglass tower",
+    "height": "20",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "13",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "K 1360.5",
+    "seamark:name": "Pulau Kera",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
   "id": 1293786341,
   "lat": -1.8205753,
   "lon": 126.4849977,
@@ -332397,6 +332418,28 @@
 },
 {
   "type": "node",
+  "id": 1579297047,
+  "lat": 36.5373333,
+  "lon": 36.0518333,
+  "tags": {
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "45",
+    "seamark:light:1:period": "10",
+    "seamark:light:1:range": "20",
+    "seamark:light:1:sector_end": "234",
+    "seamark:light:1:sector_start": "050",
+    "seamark:light:1:sequence": "1+(9)",
+    "seamark:light:reference": "N 5916",
+    "seamark:name": "İskenderun feneri",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "992711231",
+    "seamark:type": "light_minor",
+    "source": "https://www.shodb.gov.tr/shodb_esas/orj/02_OCAK_ENG_5804c.pdf"
+  }
+},
+{
+  "type": "node",
   "id": 1579297072,
   "lat": 36.6814011,
   "lon": 36.1964870,
@@ -421123,6 +421166,29 @@
     "seamark:name": "Moskenes havn",
     "seamark:type": "light_minor",
     "seamark:vertical_length": "4.5"
+  }
+},
+{
+  "type": "node",
+  "id": 5388475981,
+  "lat": 34.5368333,
+  "lon": 128.7330000,
+  "tags": {
+    "man_made": "lighthouse",
+    "ref": "2170",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "117",
+    "seamark:light:period": "10",
+    "seamark:light:range": "21",
+    "seamark:light:reference": "M 4334",
+    "seamark:light:sequence": "1+(9)",
+    "seamark:name": "Hongdo",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "Y",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "994401614",
+    "seamark:type": "light_major"
   }
 },
 {
@@ -545962,18 +546028,18 @@
     "seamark:landmark:construction": "masonry",
     "seamark:landmark:function": "light_support",
     "seamark:light:1:character": "Fl",
-    "seamark:light:1:colour": "green",
+    "seamark:light:1:colour": "white",
     "seamark:light:1:height": "35",
     "seamark:light:1:period": "10",
-    "seamark:light:1:range": "17",
+    "seamark:light:1:range": "18",
     "seamark:light:1:sector_end": "278",
     "seamark:light:1:sector_start": "271",
     "seamark:light:1:sequence": "0.29+(9.71)",
     "seamark:light:2:character": "Fl",
-    "seamark:light:2:colour": "green",
+    "seamark:light:2:colour": "white",
     "seamark:light:2:height": "35",
     "seamark:light:2:period": "10",
-    "seamark:light:2:range": "17",
+    "seamark:light:2:range": "18",
     "seamark:light:2:sector_end": "170",
     "seamark:light:2:sector_start": "285",
     "seamark:light:2:sequence": "0.29+(9.71)",
@@ -546507,6 +546573,25 @@
     "seamark:name": "Oyster Island",
     "seamark:type": "landmark",
     "source": "US NGA Pub. 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14111617565,
+  "lat": 39.9326944,
+  "lon": 119.6674444,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "14",
+    "seamark:light:period": "4",
+    "seamark:light:range": "7",
+    "seamark:light:reference": "P 3954.9",
+    "seamark:light:sequence": "0.5+(1)+0.5+(2)",
+    "seamark:name": "Haishiju Pier Head",
+    "seamark:type": "light_minor",
+    "source": "China MSA Notice No. 951/2026"
   }
 },
 {
@@ -551121,6 +551206,134 @@
     "seamark:light:reference": "Q 1325",
     "seamark:name": "Banawaja",
     "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14365975022,
+  "lat": -10.1932386,
+  "lon": 123.5297888,
+  "tags": {
+    "description": "Glass reinforced plastic(grp) fiberglass tower",
+    "height": "10",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "44",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "15",
+    "seamark:light:1:sequence": "1.0+(2.0)",
+    "seamark:light:reference": "Q 1365",
+    "seamark:name": "Tenau",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14365975025,
+  "lat": -10.1618726,
+  "lon": 123.5748565,
+  "tags": {
+    "description": "White metal framework tower?",
+    "height": "15",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Kupang",
+    "name:en": "Kupang Lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "29",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "15",
+    "seamark:light:1:sequence": "0.5+(4.5)",
+    "seamark:light:reference": "Q 1362",
+    "seamark:name": "Kupang, Fort Concordia",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14365975604,
+  "lat": -10.3549061,
+  "lon": 123.4569237,
+  "tags": {
+    "description": "White beacon",
+    "height": "10",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "20",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1365.5",
+    "seamark:name": "Tanjung Oisina",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14366049185,
+  "lat": -9.2566230,
+  "lon": 123.9931468,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "name": "Menara Suar Pulau Batek",
+    "name:en": "Pulau Batek lighthouse",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "100",
+    "seamark:light:1:period": "6.0",
+    "seamark:light:1:range": "20",
+    "seamark:light:1:sequence": "0.5+(5.5)",
+    "seamark:light:reference": "Q 1365.6",
+    "seamark:name": "Pulau Batek",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14366049207,
+  "lat": -9.0537149,
+  "lon": 124.6983797,
+  "tags": {
+    "description": "White metal framework tower",
+    "height": "16",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "20",
+    "seamark:light:1:period": "3.5",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "1.0+(2.5)",
+    "seamark:light:reference": "Q 1365.8",
+    "seamark:name": "Batu Putih",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14366049208,
+  "lat": -8.9981443,
+  "lon": 124.8627295,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "16",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1366",
+    "seamark:name": "Atapupu",
+    "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
