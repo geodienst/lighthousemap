@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-11T06:02:13Z",
+    "timestamp_osm_base": "2026-11-12T07:01:38Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -545026,9 +545026,14 @@
 {
   "type": "node",
   "id": 14096232393,
-  "lat": -10.7261449,
-  "lon": 123.0462578,
+  "lat": -10.7261541,
+  "lon": 123.0462498,
   "tags": {
+    "description": "Concrete tower",
+    "height": "45",
+    "man_made": "lighthouse",
+    "name": "Menara Suar Ba'a",
+    "name:en": "Ba'a lighthouse",
     "seamark:landmark:category": "tower",
     "seamark:landmark:colour": "white",
     "seamark:landmark:conspicuity": "conspicuous",
@@ -545038,11 +545043,11 @@
     "seamark:light:1:colour": "white",
     "seamark:light:1:group": "2",
     "seamark:light:1:height": "47",
-    "seamark:light:1:period": "10",
+    "seamark:light:1:period": "10.0",
     "seamark:light:1:range": "20",
     "seamark:light:1:sector_end": "211",
-    "seamark:light:1:sector_start": "090",
-    "seamark:light:1:sequence": "2+(2),2+(4)",
+    "seamark:light:1:sector_start": "90",
+    "seamark:light:1:sequence": "2.0+(2.0)+2.0+(4.0)",
     "seamark:light:reference": "Q 1356",
     "seamark:name": "Pulau Roti",
     "seamark:type": "landmark"
@@ -545054,15 +545059,18 @@
   "lat": -10.4318554,
   "lon": 123.3791735,
   "tags": {
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "23",
-    "seamark:light:period": "4",
-    "seamark:light:range": "14",
+    "description": "White beacon",
+    "height": "20",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "23",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "14",
+    "seamark:light:1:sequence": "0.5+(3.5)",
     "seamark:light:reference": "Q 1358",
-    "seamark:light:sequence": "0.5+(3.5)",
     "seamark:name": "Tanjung Pukuatu",
-    "seamark:type": "light_major"
+    "seamark:type": "light_minor"
   }
 },
 {
