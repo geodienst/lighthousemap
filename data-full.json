@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-12T07:01:38Z",
+    "timestamp_osm_base": "2026-11-13T06:30:58Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1326,6 +1326,7 @@
   "lon": -2.0613638,
   "tags": {
     "man_made": "lighthouse",
+    "name": "Aberdeen North Breakwater Lighthouse",
     "seamark:fog_signal:category": "bell",
     "seamark:fog_signal:group": "3",
     "seamark:fog_signal:period": "12",
@@ -154876,28 +154877,6 @@
 },
 {
   "type": "node",
-  "id": 1211582207,
-  "lat": 59.0391361,
-  "lon": 9.7304522,
-  "tags": {
-    "man_made": "beacon",
-    "name": "Bjørkøybåen",
-    "ref:kystverket": "045900",
-    "seamark:landmark:category": "column",
-    "seamark:landmark:conspicuity": "conspicuous",
-    "seamark:landmark:vertical_length": "16.5",
-    "seamark:light:character": "Iso",
-    "seamark:light:colour": "green",
-    "seamark:light:height": "10",
-    "seamark:light:period": "6",
-    "seamark:light:range": "3.7",
-    "seamark:light:sequence": "3+(3)",
-    "seamark:name": "Bjørkøybåen",
-    "seamark:type": "landmark"
-  }
-},
-{
-  "type": "node",
   "id": 1211582208,
   "lat": 59.0440150,
   "lon": 9.7441096,
@@ -222730,8 +222709,8 @@
 {
   "type": "node",
   "id": 1271039934,
-  "lat": 24.2953185,
-  "lon": 120.4920964,
+  "lat": 24.2997829,
+  "lon": 120.4864979,
   "tags": {
     "man_made": "lighthouse",
     "name": "北堤頭燈塔",
@@ -551346,6 +551325,39 @@
   }
 },
 {
+  "type": "node",
+  "id": 14370752602,
+  "lat": 18.2805618,
+  "lon": 72.9361963,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "64",
+    "seamark:light:1:period": "15",
+    "seamark:light:1:range": "16",
+    "seamark:light:1:sequence": "0.3+(2.2),0.3+(2.2),0.3+(9.7)",
+    "seamark:light:2:category": "subsidiary",
+    "seamark:light:2:character": "F",
+    "seamark:light:2:colour": "red",
+    "seamark:light:2:height": "54",
+    "seamark:light:2:range": "4",
+    "seamark:light:2:sector_end": "075",
+    "seamark:light:2:sector_start": "057",
+    "seamark:light:reference": "F 0562",
+    "seamark:name": "Nanwell Point",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192228",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -563309,39 +563321,6 @@
     "source": "US NGA Pub. 111. 2010-09-02.",
     "wikidata": "Q7122015",
     "wikipedia": "en:Pachena Point Light"
-  }
-},
-{
-  "type": "way",
-  "id": 329743940,
-  "nodes": [
-    3366714326,
-    3366714328,
-    3366714322,
-    3366714319,
-    3366714326
-  ],
-  "tags": {
-    "building": "lighthouse",
-    "ele": "60",
-    "man_made": "lighthouse",
-    "name": "Faro di punta Palascìa",
-    "seamark:information": "Reserve light range 11M.",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "60",
-    "seamark:light:period": "5",
-    "seamark:light:range": "15",
-    "seamark:light:reference": "E 2178",
-    "seamark:light:sequence": "0.5+(4.5)",
-    "seamark:name": "Capo d'Otranto",
-    "seamark:radio_station:category": "ais",
-    "seamark:radio_station:mmsi": "992471095",
-    "seamark:type": "light_major",
-    "source": "US NGA Pub. 113. 2010-10-22.",
-    "start_date": "1867",
-    "wikidata": "Q3995243",
-    "wikipedia": "it:Faro di Punta Palascia"
   }
 },
 {
@@ -578728,7 +578707,8 @@
     "seamark:light:sequence": "0.2+(4.8)+0.2+(14.8)",
     "seamark:name": "Cape Canaveral",
     "seamark:type": "light_major",
-    "wikidata": "Q5034639"
+    "wikidata": "Q5034639",
+    "wikipedia": "en:Cape Canaveral Light"
   }
 },
 {
@@ -581104,6 +581084,82 @@
     "source": "Commissioners of Irish Lights",
     "wikidata": "Q28333608",
     "wikimedia_commons": "Category:Muglins Lighthouse"
+  }
+},
+{
+  "type": "way",
+  "id": 1555342257,
+  "nodes": [
+    14152524414,
+    14369885829,
+    14369885821,
+    14369885826,
+    14152524415,
+    14369885838,
+    14369885831,
+    14369885835,
+    14152524416,
+    14369885833,
+    14369885817,
+    14152524417,
+    14369885834,
+    14369885828,
+    14369885818,
+    14152524406,
+    14369885812,
+    14369885837,
+    14152524407,
+    14369885815,
+    14369885816,
+    14152524410,
+    14369885827,
+    14369885811,
+    14369885823,
+    14152524411,
+    14369885820,
+    14369885832,
+    14369885808,
+    14152524412,
+    14369885819,
+    14369885810,
+    14369885807,
+    14152524413,
+    14369885824,
+    14369885836,
+    14369885813,
+    14152524408,
+    14369885822,
+    14369885806,
+    14369885809,
+    14152524409,
+    14369885814,
+    14369885830,
+    14369885825,
+    14152524414
+  ],
+  "tags": {
+    "building:colour": "white",
+    "building:part": "yes",
+    "ele": "60",
+    "height": "32",
+    "man_made": "lighthouse",
+    "name": "Faro di punta Palascìa",
+    "roof:shape": "dome",
+    "seamark:information": "Reserve light range 11M.",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "60",
+    "seamark:light:period": "5",
+    "seamark:light:reference": "E 2178",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Capo d'Otranto",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "992471095",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 113. 2010-10-22.",
+    "start_date": "1867",
+    "wikidata": "Q3995243",
+    "wikipedia": "it:Faro di Punta Palascia"
   }
 },
 {
@@ -617632,27 +617688,273 @@
 },
 {
   "type": "node",
-  "id": 3366714319,
-  "lat": 40.1073513,
-  "lon": 18.5199320
+  "id": 14152524406,
+  "lat": 40.1074374,
+  "lon": 18.5199219
 },
 {
   "type": "node",
-  "id": 3366714322,
-  "lat": 40.1073709,
-  "lon": 18.5200804
+  "id": 14152524407,
+  "lat": 40.1074486,
+  "lon": 18.5199239
 },
 {
   "type": "node",
-  "id": 3366714326,
-  "lat": 40.1075198,
-  "lon": 18.5198939
+  "id": 14152524408,
+  "lat": 40.1074426,
+  "lon": 18.5199778
 },
 {
   "type": "node",
-  "id": 3366714328,
-  "lat": 40.1075394,
-  "lon": 18.5200423
+  "id": 14152524409,
+  "lat": 40.1074314,
+  "lon": 18.5199756
+},
+{
+  "type": "node",
+  "id": 14152524410,
+  "lat": 40.1074573,
+  "lon": 18.5199330
+},
+{
+  "type": "node",
+  "id": 14152524411,
+  "lat": 40.1074615,
+  "lon": 18.5199466
+},
+{
+  "type": "node",
+  "id": 14152524412,
+  "lat": 40.1074598,
+  "lon": 18.5199610
+},
+{
+  "type": "node",
+  "id": 14152524413,
+  "lat": 40.1074528,
+  "lon": 18.5199725
+},
+{
+  "type": "node",
+  "id": 14152524414,
+  "lat": 40.1074228,
+  "lon": 18.5199666
+},
+{
+  "type": "node",
+  "id": 14152524415,
+  "lat": 40.1074187,
+  "lon": 18.5199531
+},
+{
+  "type": "node",
+  "id": 14152524416,
+  "lat": 40.1074202,
+  "lon": 18.5199388
+},
+{
+  "type": "node",
+  "id": 14152524417,
+  "lat": 40.1074272,
+  "lon": 18.5199273
+},
+{
+  "type": "node",
+  "id": 14369885806,
+  "lat": 40.1074369,
+  "lon": 18.5199777
+},
+{
+  "type": "node",
+  "id": 14369885807,
+  "lat": 40.1074550,
+  "lon": 18.5199701
+},
+{
+  "type": "node",
+  "id": 14369885808,
+  "lat": 40.1074608,
+  "lon": 18.5199574
+},
+{
+  "type": "node",
+  "id": 14369885809,
+  "lat": 40.1074341,
+  "lon": 18.5199769
+},
+{
+  "type": "node",
+  "id": 14369885810,
+  "lat": 40.1074564,
+  "lon": 18.5199681
+},
+{
+  "type": "node",
+  "id": 14369885811,
+  "lat": 40.1074602,
+  "lon": 18.5199399
+},
+{
+  "type": "node",
+  "id": 14369885812,
+  "lat": 40.1074408,
+  "lon": 18.5199217
+},
+{
+  "type": "node",
+  "id": 14369885813,
+  "lat": 40.1074457,
+  "lon": 18.5199770
+},
+{
+  "type": "node",
+  "id": 14369885814,
+  "lat": 40.1074287,
+  "lon": 18.5199737
+},
+{
+  "type": "node",
+  "id": 14369885815,
+  "lat": 40.1074513,
+  "lon": 18.5199257
+},
+{
+  "type": "node",
+  "id": 14369885816,
+  "lat": 40.1074534,
+  "lon": 18.5199277
+},
+{
+  "type": "node",
+  "id": 14369885817,
+  "lat": 40.1074248,
+  "lon": 18.5199299
+},
+{
+  "type": "node",
+  "id": 14369885818,
+  "lat": 40.1074339,
+  "lon": 18.5199228
+},
+{
+  "type": "node",
+  "id": 14369885819,
+  "lat": 40.1074583,
+  "lon": 18.5199649
+},
+{
+  "type": "node",
+  "id": 14369885820,
+  "lat": 40.1074616,
+  "lon": 18.5199500
+},
+{
+  "type": "node",
+  "id": 14369885821,
+  "lat": 40.1074198,
+  "lon": 18.5199595
+},
+{
+  "type": "node",
+  "id": 14369885822,
+  "lat": 40.1074406,
+  "lon": 18.5199780
+},
+{
+  "type": "node",
+  "id": 14369885823,
+  "lat": 40.1074610,
+  "lon": 18.5199430
+},
+{
+  "type": "node",
+  "id": 14369885824,
+  "lat": 40.1074505,
+  "lon": 18.5199744
+},
+{
+  "type": "node",
+  "id": 14369885825,
+  "lat": 40.1074245,
+  "lon": 18.5199693
+},
+{
+  "type": "node",
+  "id": 14369885826,
+  "lat": 40.1074191,
+  "lon": 18.5199562
+},
+{
+  "type": "node",
+  "id": 14369885827,
+  "lat": 40.1074590,
+  "lon": 18.5199364
+},
+{
+  "type": "node",
+  "id": 14369885828,
+  "lat": 40.1074313,
+  "lon": 18.5199241
+},
+{
+  "type": "node",
+  "id": 14369885829,
+  "lat": 40.1074211,
+  "lon": 18.5199631
+},
+{
+  "type": "node",
+  "id": 14369885830,
+  "lat": 40.1074272,
+  "lon": 18.5199724
+},
+{
+  "type": "node",
+  "id": 14369885831,
+  "lat": 40.1074188,
+  "lon": 18.5199452
+},
+{
+  "type": "node",
+  "id": 14369885832,
+  "lat": 40.1074613,
+  "lon": 18.5199547
+},
+{
+  "type": "node",
+  "id": 14369885833,
+  "lat": 40.1074220,
+  "lon": 18.5199344
+},
+{
+  "type": "node",
+  "id": 14369885834,
+  "lat": 40.1074295,
+  "lon": 18.5199253
+},
+{
+  "type": "node",
+  "id": 14369885835,
+  "lat": 40.1074191,
+  "lon": 18.5199431
+},
+{
+  "type": "node",
+  "id": 14369885836,
+  "lat": 40.1074485,
+  "lon": 18.5199757
+},
+{
+  "type": "node",
+  "id": 14369885837,
+  "lat": 40.1074441,
+  "lon": 18.5199221
+},
+{
+  "type": "node",
+  "id": 14369885838,
+  "lat": 40.1074186,
+  "lon": 18.5199481
 },
 {
   "type": "node",
