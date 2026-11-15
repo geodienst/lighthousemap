@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-14T06:09:51Z",
+    "timestamp_osm_base": "2026-11-15T06:17:33Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -368515,7 +368515,7 @@
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 116. 2021",
     "wikidata": "Q50378803",
-    "wikipedia": "de:Leuchtturm Irbenstraße"
+    "wikipedia": "lv:Irbes bāka"
   }
 },
 {
@@ -551406,6 +551406,7 @@
   "lat": 18.5969251,
   "lon": 72.8485245,
   "tags": {
+    "seamark:information": "Temporarily extinguished (2025)",
     "seamark:landmark:category": "tower",
     "seamark:landmark:colour": "white",
     "seamark:landmark:construction": "masonry",
@@ -551418,6 +551419,34 @@
     "seamark:light:reference": "F 0557.6",
     "seamark:light:sequence": "0.3+(2.7)",
     "seamark:name": "Chaul Kadu Reefs",
+    "seamark:status": "extinguished",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14378036683,
+  "lat": 18.5383060,
+  "lon": 72.9059275,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "33",
+    "seamark:light:period": "3",
+    "seamark:light:range": "13",
+    "seamark:light:reference": "F 0558",
+    "seamark:light:sequence": "1+(2)",
+    "seamark:name": "Chaul",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "O",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192227",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
   }
