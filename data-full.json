@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-15T06:17:33Z",
+    "timestamp_osm_base": "2026-11-16T06:17:17Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -371295,40 +371295,6 @@
 },
 {
   "type": "node",
-  "id": 3978768955,
-  "lat": 54.0985581,
-  "lon": -10.0605093,
-  "tags": {
-    "man_made": "lighthouse",
-    "name": "Blacksod Lighthouse",
-    "seamark:light:1:character": "Fl",
-    "seamark:light:1:colour": "red",
-    "seamark:light:1:group": "2",
-    "seamark:light:1:height": "13",
-    "seamark:light:1:period": "7.5",
-    "seamark:light:1:range": "9",
-    "seamark:light:1:sector_end": "210",
-    "seamark:light:1:sector_start": "189",
-    "seamark:light:1:sequence": "0.5+(1),0.5+(5.5)",
-    "seamark:light:2:character": "Fl",
-    "seamark:light:2:colour": "white",
-    "seamark:light:2:group": "2",
-    "seamark:light:2:height": "13",
-    "seamark:light:2:period": "7.5",
-    "seamark:light:2:range": "12",
-    "seamark:light:2:sector_end": "18",
-    "seamark:light:2:sector_start": "210",
-    "seamark:light:2:sequence": "0.5+(1),0.5+(5.5)",
-    "seamark:light:reference": "A 6272",
-    "seamark:name": "Blacksod",
-    "seamark:type": "light_minor",
-    "source": "Commissioners of Irish Lights",
-    "wikidata": "Q3778643",
-    "wikipedia": "en:Blacksod Lighthouse"
-  }
-},
-{
-  "type": "node",
   "id": 3997522208,
   "lat": 18.0664637,
   "lon": 83.6375476,
@@ -551449,6 +551415,101 @@
     "seamark:radio_station:mmsi": "004192227",
     "seamark:type": "landmark",
     "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14381713674,
+  "lat": 18.7032878,
+  "lon": 72.8133745,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "red",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "47",
+    "seamark:light:1:period": "10",
+    "seamark:light:1:range": "22",
+    "seamark:light:1:sector_end": "001",
+    "seamark:light:1:sector_start": "198",
+    "seamark:light:1:sequence": "0.3+(2.6),0.3+(6.8)",
+    "seamark:light:2:character": "Fl",
+    "seamark:light:2:colour": "white",
+    "seamark:light:2:group": "2",
+    "seamark:light:2:height": "47",
+    "seamark:light:2:period": "10",
+    "seamark:light:2:range": "25",
+    "seamark:light:2:sector_end": "198",
+    "seamark:light:2:sector_start": "001",
+    "seamark:light:2:sequence": "0.3+(2.6),0.3+(6.8)",
+    "seamark:light:reference": "F 0556",
+    "seamark:name": "Khanderi Island",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14382555365,
+  "lat": 1.6236095,
+  "lon": 127.9931409,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "13",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "1.0+(2.0)",
+    "seamark:light:reference": "F 2110.5",
+    "seamark:name": "Kupakupa",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14382555366,
+  "lat": 1.1043594,
+  "lon": 127.7901753,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "14",
+    "seamark:light:1:period": "7.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "1.0+(1.0)+1.0+(4.0)",
+    "seamark:light:reference": "F 2109",
+    "seamark:name": "Tg. Loleo",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14382555367,
+  "lat": 1.6633003,
+  "lon": 127.4815538,
+  "tags": {
+    "description": "White metal framework structure",
+    "height": "30",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "93",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "18",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "F 2110.3",
+    "seamark:name": "Sidanga",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
