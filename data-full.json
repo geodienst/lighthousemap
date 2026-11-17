@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-16T06:17:17Z",
+    "timestamp_osm_base": "2026-11-17T08:04:01Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -1631,36 +1631,6 @@
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 114. 2011-05-26.",
     "wikidata": "Q28803324"
-  }
-},
-{
-  "type": "node",
-  "id": 245650406,
-  "lat": 18.7034099,
-  "lon": 72.8147382,
-  "tags": {
-    "seamark:light:1:character": "Fl",
-    "seamark:light:1:colour": "red",
-    "seamark:light:1:group": "2",
-    "seamark:light:1:height": "47",
-    "seamark:light:1:period": "10",
-    "seamark:light:1:range": "22",
-    "seamark:light:1:sector_end": "1",
-    "seamark:light:1:sector_start": "336",
-    "seamark:light:1:sequence": "0.3+(2.6),0.3+(6.8)",
-    "seamark:light:2:character": "Fl",
-    "seamark:light:2:colour": "white",
-    "seamark:light:2:group": "2",
-    "seamark:light:2:height": "47",
-    "seamark:light:2:period": "10",
-    "seamark:light:2:range": "25",
-    "seamark:light:2:sector_end": "201",
-    "seamark:light:2:sector_start": "1",
-    "seamark:light:2:sequence": "0.3+(2.6),0.3+(6.8)",
-    "seamark:light:reference": "F 0556",
-    "seamark:name": "Khanderi Island",
-    "seamark:type": "light_major",
-    "source": "AND;US NGA Pub. 112. 2009-11-12."
   }
 },
 {
@@ -278147,6 +278117,23 @@
 },
 {
   "type": "node",
+  "id": 1534625614,
+  "lat": 54.3992500,
+  "lon": 18.7093333,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "yellow",
+    "seamark:light:height": "9",
+    "seamark:light:period": "3",
+    "seamark:light:range": "3",
+    "seamark:light:reference": "C 3081.33",
+    "seamark:light:sequence": "1+(2)",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 116. 2011-07-07."
+  }
+},
+{
+  "type": "node",
   "id": 1534631261,
   "lat": 54.4105500,
   "lon": 18.6631167,
@@ -313611,7 +313598,7 @@
     "seamark:light:range": "5",
     "seamark:light:reference": "D 1914",
     "seamark:light:sequence": "0.5+(1.5)+0.5+(1.5)+0.5+(4.5)",
-    "seamark:name": "Panjon",
+    "seamark:name": "Panxón",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 113. 2011-10-20."
   }
@@ -314031,7 +314018,7 @@
     "seamark:light:range": "5",
     "seamark:light:reference": "D 1907",
     "seamark:light:sequence": "0.4+(3.6)",
-    "seamark:name": "Las Serralleiras",
+    "seamark:name": "As Serralleiras",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 113. 2011-10-20."
   }
@@ -332634,6 +332621,30 @@
 },
 {
   "type": "node",
+  "id": 1579297218,
+  "lat": 36.8648192,
+  "lon": 35.9453711,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "yellow",
+    "seamark:light:group": "4",
+    "seamark:light:height": "10",
+    "seamark:light:period": "10",
+    "seamark:light:range": "3",
+    "seamark:light:reference": "N 5912",
+    "seamark:light:sequence": "0.5+(1)+0.5+(1)+0.5+(1)+0.5+(5)",
+    "seamark:name": "Sonmez Cimento",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:topmark:colour": "yellow",
+    "seamark:topmark:shape": "x-shape",
+    "seamark:type": "beacon_special_purpose",
+    "source": "https://msi.nga.mil/Publications/NGALOL"
+  }
+},
+{
+  "type": "node",
   "id": 1579297219,
   "lat": 36.8325995,
   "lon": 35.8903909,
@@ -337441,6 +337452,27 @@
 },
 {
   "type": "node",
+  "id": 1579319221,
+  "lat": 38.7654985,
+  "lon": 26.9193561,
+  "tags": {
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "yellow",
+    "seamark:light:group": "3",
+    "seamark:light:height": "9",
+    "seamark:light:period": "10",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "N 4616.92",
+    "seamark:light:sequence": "1+(1)+1+(1)+1+(5)",
+    "seamark:topmark:colour": "yellow",
+    "seamark:topmark:shape": "x-shape",
+    "seamark:type": "beacon_special_purpose",
+    "source": "US NGA Pub. 113. 2011-10-20."
+  }
+},
+{
+  "type": "node",
   "id": 1579319241,
   "lat": 38.8243167,
   "lon": 26.8942833,
@@ -338292,7 +338324,7 @@
     "seamark:light:group": "2",
     "seamark:light:height": "10",
     "seamark:light:period": "5",
-    "seamark:light:range": "10",
+    "seamark:light:range": "5",
     "seamark:light:reference": "N 5818.5",
     "seamark:light:sequence": "0.3+(0.9)+0.3+(3.5)",
     "seamark:radio_station:category": "ais",
@@ -427528,13 +427560,16 @@
 {
   "type": "node",
   "id": 5907269877,
-  "lat": 18.9142490,
-  "lon": 72.8358820,
+  "lat": 18.9142553,
+  "lon": 72.8358717,
   "tags": {
-    "name": "Dolphin Rock",
     "seamark:construction": "masonry",
+    "seamark:information": "Temporarily extinguished (2014)",
     "seamark:landmark:category": "tower",
-    "seamark:landmark:colour": "white",
+    "seamark:landmark:colour": "grey;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
     "seamark:landmark:height": "11",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
@@ -427563,7 +427598,11 @@
     "seamark:light:3:sector_end": "236",
     "seamark:light:3:sector_start": "147",
     "seamark:light:3:sequence": "00.50+(01.00)+00.50+(01.00)+00.50+(01.00)+00.50+(15.00)",
+    "seamark:light:reference": "F 0520",
+    "seamark:name": "Dolphin Rock",
+    "seamark:status": "extinguished",
     "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026",
     "wikipedia": "en:Dolphin Lighthouse"
   }
 },
@@ -430245,6 +430284,38 @@
     "seamark:type": "buoy_safe_water",
     "source": "NOAA Electronic Navigation Chart US5ME1AD",
     "source:position": "USCG List of Lights, vol. 1 (2023, corr. through week 42)"
+  }
+},
+{
+  "type": "node",
+  "id": 6367292430,
+  "lat": 36.9991436,
+  "lon": 27.2560228,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:height": "20",
+    "seamark:light:period": "5",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "N 4711.91",
+    "seamark:light:sequence": "1+(4)",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 6367292431,
+  "lat": 36.9982814,
+  "lon": 27.2549897,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "red",
+    "seamark:light:height": "20",
+    "seamark:light:period": "5",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "N 4711.9",
+    "seamark:light:sequence": "1+(4)",
+    "seamark:type": "light_minor"
   }
 },
 {
@@ -479531,24 +479602,6 @@
 },
 {
   "type": "node",
-  "id": 10588587708,
-  "lat": 36.6766836,
-  "lon": 36.1980837,
-  "tags": {
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "green",
-    "seamark:light:group": "3",
-    "seamark:light:height": "10",
-    "seamark:light:period": "6",
-    "seamark:light:range": "3",
-    "seamark:light:reference": "N 5914.69",
-    "seamark:light:sequence": "0.4+(1)+0.4+(1)+0.4+(2.8)",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 113. 2011-10-20."
-  }
-},
-{
-  "type": "node",
   "id": 10598249503,
   "lat": 59.0097564,
   "lon": 10.3591942,
@@ -509445,21 +509498,22 @@
 {
   "type": "node",
   "id": 12587572005,
-  "lat": 18.8896853,
-  "lon": 72.8325373,
+  "lat": 18.8897183,
+  "lon": 72.8325397,
   "tags": {
     "seamark:conspicuity": "conspicuous",
+    "seamark:information": "Temporarily extinguished (2014)",
     "seamark:landmark:category": "tower",
     "seamark:landmark:colour": "red;yellow",
     "seamark:landmark:colour_pattern": "squared",
-    "seamark:landmark:elevation": "8",
-    "seamark:landmark:height": "20",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "red",
     "seamark:light:1:group": "2",
     "seamark:light:1:height": "20",
     "seamark:light:1:period": "6",
-    "seamark:light:1:range": "13",
+    "seamark:light:1:range": "7",
     "seamark:light:1:sector_end": "69",
     "seamark:light:1:sector_start": "31",
     "seamark:light:1:sequence": "00.30+(01.40)+00.30+(04.00)",
@@ -509468,7 +509522,7 @@
     "seamark:light:2:group": "2",
     "seamark:light:2:height": "20",
     "seamark:light:2:period": "6",
-    "seamark:light:2:range": "13",
+    "seamark:light:2:range": "7",
     "seamark:light:2:sector_end": "15",
     "seamark:light:2:sector_start": "209",
     "seamark:light:2:sequence": "00.30+(01.40)+00.30+(04.00)",
@@ -509490,9 +509544,32 @@
     "seamark:light:4:sector_end": "209",
     "seamark:light:4:sector_start": "186",
     "seamark:light:4:sequence": "00.30+(01.40)+00.30+(04.00)",
+    "seamark:light:reference": "F 0516",
     "seamark:name": "Sunk Rock",
+    "seamark:status": "extinguished",
     "seamark:type": "landmark",
-    "wikipedia": "en:Sunk Rock Lighthouse"
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 12587572007,
+  "lat": 18.8343646,
+  "lon": 72.8966582,
+  "tags": {
+    "seamark:beacon_special_purpose:category": "warning",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:beacon_special_purpose:shape": "lattice",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "26",
+    "seamark:light:period": "5",
+    "seamark:light:range": "7",
+    "seamark:light:reference": "F 0515",
+    "seamark:light:sequence": "0.5+(4.5)",
+    "seamark:name": "Gull Island",
+    "seamark:type": "beacon_special_purpose",
+    "source": "US NGA Pub 112. 2026"
   }
 },
 {
@@ -551513,6 +551590,61 @@
   }
 },
 {
+  "type": "node",
+  "id": 14385066032,
+  "lat": 37.1079284,
+  "lon": 27.2923274,
+  "tags": {
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "green",
+    "seamark:light:group": "2",
+    "seamark:light:height": "8",
+    "seamark:light:period": "8",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "N 4665.15",
+    "seamark:light:sequence": "1+(1)+1+(5)",
+    "seamark:type": "light_minor"
+  }
+},
+{
+  "type": "node",
+  "id": 14385082116,
+  "lat": 36.8995033,
+  "lon": 35.9844982,
+  "tags": {
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "yellow",
+    "seamark:light:height": "10",
+    "seamark:light:period": "5",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "N 5912.5",
+    "seamark:light:sequence": "1+(4)",
+    "seamark:topmark:colour": "yellow",
+    "seamark:topmark:shape": "x-shape",
+    "seamark:type": "beacon_special_purpose"
+  }
+},
+{
+  "type": "node",
+  "id": 14385082117,
+  "lat": 36.9001747,
+  "lon": 35.9763372,
+  "tags": {
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "yellow",
+    "seamark:light:height": "10",
+    "seamark:light:period": "3",
+    "seamark:light:range": "5",
+    "seamark:light:reference": "N 5912.4",
+    "seamark:light:sequence": "0.5+(2.5)",
+    "seamark:topmark:colour": "yellow",
+    "seamark:topmark:shape": "x-shape",
+    "seamark:type": "beacon_special_purpose"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -560011,7 +560143,7 @@
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 116. 2011-07-07.",
     "wikidata": "Q12327375",
-    "wikipedia": "de:Leuchtturm Miķeļtornis"
+    "wikipedia": "lv:Miķeļbāka"
   }
 },
 {
@@ -560455,7 +560587,7 @@
     "seamark:type": "light_major",
     "source": "US NGA Pub. 116. 2011-07-07.",
     "wikidata": "Q50378806",
-    "wikipedia": "de:Leuchtturm Engure"
+    "wikipedia": "lv:Engures bāka"
   }
 },
 {
@@ -567338,7 +567470,7 @@
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 116. 2011-07-07.",
     "wikidata": "Q50378817",
-    "wikipedia": "de:Leuchtturm Lācis"
+    "wikipedia": "lv:Lāču bāka"
   }
 },
 {
@@ -574732,7 +574864,7 @@
     "heritage:operator": "vkpai",
     "heritage:operator:wikidata": "Q20566223",
     "man_made": "lighthouse",
-    "name": "Ovīšu bāka",
+    "name": "Ovišu bāka",
     "ref:LV:addr": "102803696",
     "ref:vkpai": "8568",
     "seamark:light:1:character": "LFl",
@@ -574747,7 +574879,7 @@
     "seamark:name": "Ovisi",
     "seamark:type": "light_major",
     "wikidata": "Q16348532",
-    "wikipedia": "de:Leuchtturm Ovīši"
+    "wikipedia": "lv:Ovišu bāka"
   }
 },
 {
@@ -575545,7 +575677,7 @@
     "start_date": "1884",
     "website": "http://www.kolkasrags.lv/",
     "wikidata": "Q8254782",
-    "wikipedia": "de:Leuchtturm Kap Kolka"
+    "wikipedia": "lv:Kolkas bāka"
   }
 },
 {
@@ -576339,7 +576471,7 @@
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 116. 2011-07-07.",
     "wikidata": "Q50378818",
-    "wikipedia": "de:Leuchtturm Vitrupe"
+    "wikipedia": "lv:Grīntāla bāka"
   }
 },
 {
@@ -576376,7 +576508,7 @@
     "seamark:type": "light_major",
     "source": "US NGA Pub. 116. 2021",
     "wikidata": "Q50378807",
-    "wikipedia": "de:Leuchtturm Buļļuciems"
+    "wikipedia": "lv:Buļļuciema bāka"
   }
 },
 {
@@ -576508,7 +576640,7 @@
     "seamark:type": "light_major",
     "source": "US NGA Pub. 116. 2021",
     "wikidata": "Q50378805",
-    "wikipedia": "de:Leuchtturm Sīkrags"
+    "wikipedia": "lv:Sīkragciema bāka"
   }
 },
 {
