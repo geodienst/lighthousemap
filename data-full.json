@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-20T07:02:16Z",
+    "timestamp_osm_base": "2026-11-21T06:56:36Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -226888,6 +226888,7 @@
   "lon": 98.5979103,
   "tags": {
     "man_made": "lighthouse",
+    "name": "ประภาคารระนอง",
     "name:en": "Royal Andaman Ranong Historical Cruise",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
@@ -227915,25 +227916,6 @@
     "seamark:topmark:shape": "cylinder",
     "seamark:type": "beacon_lateral",
     "source": "US NGA Pub. 112. 2026-09-01"
-  }
-},
-{
-  "type": "node",
-  "id": 1293784248,
-  "lat": 1.6718155,
-  "lon": 125.0628566,
-  "tags": {
-    "seamark:information": "The lighted aids of Indonesia are unreliable and may be extinguished, off station, missing or showing improper characteristics.",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "10",
-    "seamark:light:period": "3",
-    "seamark:light:range": "11",
-    "seamark:light:reference": "F 2071",
-    "seamark:light:sequence": "0.5+(2.5)",
-    "seamark:name": "Likupang",
-    "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2009-11-12."
   }
 },
 {
@@ -356592,6 +356574,7 @@
   "lat": -47.9139522,
   "lon": -65.7190929,
   "tags": {
+    "height": "22",
     "man_made": "lighthouse",
     "name": "Faro Isla Pingüino",
     "seamark:light:character": "Fl",
@@ -443283,7 +443266,7 @@
   "type": "node",
   "id": 8480324126,
   "lat": -39.8698149,
-  "lon": -73.4025526,
+  "lon": -73.4025597,
   "tags": {
     "description": "El Faro Morro Niebla, también conocido como Faro Niebla y Faro Fuerte Niebla es un faro perteneciente a la red de faros de Chile. Se ubica en dependencias del Fuerte Niebla, en la Región de Los Ríos. Sobre la puerta del faro aparece el numeral 1900, año e",
     "height": "7",
@@ -549555,6 +549538,27 @@
 },
 {
   "type": "node",
+  "id": 14337841424,
+  "lat": 1.6941559,
+  "lon": 125.0131897,
+  "tags": {
+    "man_made": "beacon",
+    "name": "Likupang",
+    "seamark:information": "The lighted aids of Indonesia are unreliable and may be extinguished, off station, missing or showing improper characteristics.",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "10",
+    "seamark:light:1:period": "3",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "F 2071",
+    "seamark:name": "Likupang",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2009-11-12."
+  }
+},
+{
+  "type": "node",
   "id": 14338148770,
   "lat": 1.3905354,
   "lon": 125.1595722,
@@ -552187,6 +552191,89 @@
     "seamark:name": "Makassar, Quay, S. end",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14399846093,
+  "lat": 19.2783980,
+  "lon": 72.7807804,
+  "tags": {
+    "note": "Sequence from DGLL data sheet which differs from NGA's LOL.",
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "53",
+    "seamark:light:period": "15",
+    "seamark:light:range": "24",
+    "seamark:light:reference": "F 0499",
+    "seamark:light:sequence": "0.25+(3.50),0.25+(11.00)",
+    "seamark:name": "Utan",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192226",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:type": "signal_station_warning",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14400377602,
+  "lat": 19.4575513,
+  "lon": 72.7466426,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "diagonal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "red",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "48",
+    "seamark:light:1:period": "15",
+    "seamark:light:1:range": "25",
+    "seamark:light:1:sector_end": "091",
+    "seamark:light:1:sector_start": "048",
+    "seamark:light:1:sequence": "0.5+(1),0.5+(1),0.5+(11.5)",
+    "seamark:light:2:character": "Fl",
+    "seamark:light:2:colour": "white",
+    "seamark:light:2:group": "3",
+    "seamark:light:2:height": "48",
+    "seamark:light:2:period": "15",
+    "seamark:light:2:range": "25",
+    "seamark:light:2:sector_end": "098",
+    "seamark:light:2:sector_start": "091",
+    "seamark:light:2:sequence": "0.5+(1),0.5+(1),0.5+(11.5)",
+    "seamark:light:3:character": "Fl",
+    "seamark:light:3:colour": "white",
+    "seamark:light:3:group": "3",
+    "seamark:light:3:height": "48",
+    "seamark:light:3:period": "15",
+    "seamark:light:3:range": "25",
+    "seamark:light:3:sector_end": "114",
+    "seamark:light:3:sector_start": "100",
+    "seamark:light:3:sequence": "0.5+(1),0.5+(1),0.5+(11.5)",
+    "seamark:light:4:character": "Fl",
+    "seamark:light:4:colour": "white",
+    "seamark:light:4:group": "3",
+    "seamark:light:4:height": "48",
+    "seamark:light:4:period": "15",
+    "seamark:light:4:range": "25",
+    "seamark:light:4:sector_end": "048",
+    "seamark:light:4:sector_start": "130",
+    "seamark:light:4:sequence": "0.5+(1),0.5+(1),0.5+(11.5)",
+    "seamark:light:reference": "F 0494",
+    "seamark:name": "Arnala",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
   }
 },
 {
