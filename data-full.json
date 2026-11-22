@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-21T06:56:36Z",
+    "timestamp_osm_base": "2026-11-22T06:36:04Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -552277,6 +552277,32 @@
   }
 },
 {
+  "type": "node",
+  "id": 14401634803,
+  "lat": 19.5976503,
+  "lon": 72.7258451,
+  "tags": {
+    "man_made": "beacon",
+    "seamark:landmark:category": "mast",
+    "seamark:landmark:colour": "white",
+    "seamark:landmark:construction": "metal",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "13",
+    "seamark:light:1:period": "5",
+    "seamark:light:1:range": "3",
+    "seamark:light:1:sector_end": "152",
+    "seamark:light:1:sector_start": "058",
+    "seamark:light:1:sequence": "0.3+(4.7)",
+    "seamark:light:reference": "F 0493",
+    "seamark:name": "Kelve (Kelwa) Mahim",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:type": "signal_station_warning",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
   "type": "way",
   "id": 26887425,
   "nodes": [
@@ -566865,6 +566891,7 @@
   ],
   "tags": {
     "building": "yes",
+    "height": "49",
     "man_made": "lighthouse",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white",
