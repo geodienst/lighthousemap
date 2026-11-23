@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-22T06:36:04Z",
+    "timestamp_osm_base": "2026-11-23T07:25:27Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -26354,7 +26354,7 @@
     "seamark:type": "light_minor",
     "tourism": "attraction",
     "wikidata": "Q7260540",
-    "wikipedia": "en:Punta Higuero Light"
+    "wikipedia": "en:Punta Higüero Light"
   }
 },
 {
@@ -227687,6 +227687,28 @@
 },
 {
   "type": "node",
+  "id": 1293088985,
+  "lat": -7.1625106,
+  "lon": 112.7674464,
+  "tags": {
+    "description": "White beacon",
+    "height": "20",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "23",
+    "seamark:light:1:period": "12.0",
+    "seamark:light:1:range": "10",
+    "seamark:light:1:sequence": "0.4+(1.6)+0.4+(1.6)+0.4+(7.6)",
+    "seamark:light:reference": "Q 1170",
+    "seamark:name": "Kessek",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
   "id": 1293089064,
   "lat": -7.6942387,
   "lon": 113.9345327,
@@ -227808,19 +227830,48 @@
 {
   "type": "node",
   "id": 1293089290,
-  "lat": -8.0372561,
-  "lon": 114.4621035,
+  "lat": -8.0372959,
+  "lon": 114.4621142,
   "tags": {
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:height": "17",
-    "seamark:light:period": "5",
-    "seamark:light:range": "11",
-    "seamark:light:reference": "K 1249",
-    "seamark:light:sequence": "1+(4)",
+    "description": "White metal framework tower",
+    "man_made": "beacon",
+    "ref:dsi": "4010",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "17",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "11",
+    "seamark:light:1:sequence": "1.0+(4.0)",
+    "seamark:light:reference": "Q 1249",
     "seamark:name": "Pulau Tabuan",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "source": "US NGA Pub. 112. 2026-09-01;KM 148 2021 Penetapan Alur-Pelayaran Tanjung Wangi"
+  }
+},
+{
+  "type": "node",
+  "id": 1293089302,
+  "lat": -8.0697555,
+  "lon": 114.4255508,
+  "tags": {
+    "description": "White metal framework tower, white triangle, point up daymark",
+    "height": "13",
+    "man_made": "beacon",
+    "name": "Mercusuar Bangsring",
+    "ref:dsi": "4020",
+    "seamark:light:1:category": "lower",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "15",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "9",
+    "seamark:light:1:sector_end": "33",
+    "seamark:light:1:sector_start": "215",
+    "seamark:light:1:sequence": "1.0+(3.0)",
+    "seamark:light:reference": "Q 1250",
+    "seamark:name": "Tanjung Bansering Range, front",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;KM 148 2021 Penetapan Alur-Pelayaran Tanjung Wangi"
   }
 },
 {
@@ -227831,6 +227882,7 @@
   "tags": {
     "description": "White metal beacon",
     "man_made": "beacon",
+    "ref:dsi": "4070",
     "seamark:information": "Obscured beyond Pulau Tabuan",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
@@ -227843,7 +227895,7 @@
     "seamark:light:reference": "Q 1256",
     "seamark:name": "Tanjung Pasir",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2026-09-01"
+    "source": "US NGA Pub. 112. 2026-09-01;KM 148 2021 Penetapan Alur-Pelayaran Tanjung Wangi"
   }
 },
 {
@@ -227862,6 +227914,29 @@
     "seamark:light:reference": "K 1282",
     "seamark:light:sequence": "1+(4)",
     "seamark:name": "Tanjung Pengambengan"
+  }
+},
+{
+  "type": "node",
+  "id": 1293089390,
+  "lat": -8.4593729,
+  "lon": 114.3988411,
+  "tags": {
+    "description": "White beacon",
+    "height": "10",
+    "man_made": "beacon",
+    "ref:dsi": "4065",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "19",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.6+(2.4)",
+    "seamark:light:reference": "Q 1261",
+    "seamark:name": "Tanjung Sembulungan",
+    "seamark:radar_reflector": "yes",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;KM 148 2021 Penetapan Alur-Pelayaran Tanjung Wangi"
   }
 },
 {
@@ -371506,7 +371581,8 @@
     "seamark:light:1:sector_start": "61",
     "seamark:light:1:sequence": "01.3+(08.7)+01.3+(08.7)+01.3+(18.7)",
     "seamark:type": "light_major",
-    "wikidata": "Q5351643"
+    "wikidata": "Q5351643",
+    "wikipedia": "en:Faro del Castillo San Felipe del Morro"
   }
 },
 {
@@ -441813,6 +441889,8 @@
   "lat": 1.7069646,
   "lon": 124.7459707,
   "tags": {
+    "description": "White tower",
+    "height": "40",
     "man_made": "lighthouse",
     "name": "Manterawu",
     "seamark:light:1:character": "Fl",
@@ -520498,6 +520576,8 @@
     "seamark:light:period": "3",
     "seamark:light:range": "4",
     "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:topmark:colour": "green",
+    "seamark:topmark:shape": "cone, point up",
     "seamark:type": "buoy_lateral"
   }
 },
@@ -520536,6 +520616,8 @@
     "seamark:light:period": "3",
     "seamark:light:range": "4",
     "seamark:light:sequence": "0.3+(2.7)",
+    "seamark:topmark:colour": "red",
+    "seamark:topmark:shape": "cylinder",
     "seamark:type": "buoy_lateral"
   }
 },
@@ -549518,6 +549600,7 @@
   "lon": 125.0974471,
   "tags": {
     "description": "White metal framework tower",
+    "height": "20",
     "man_made": "lighthouse",
     "name": "Talise",
     "seamark:light:1:character": "Fl",
@@ -550554,6 +550637,7 @@
     "man_made": "lighthouse",
     "name": "Menara Suar Pengambengan",
     "name:en": "Pengambengan lighthouse",
+    "ref:dsi": "4080",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
     "seamark:light:1:height": "43",
@@ -550563,7 +550647,7 @@
     "seamark:light:reference": "Q 1282",
     "seamark:name": "Tanjung Pengambengan",
     "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2026-09-01"
+    "source": "US NGA Pub. 112. 2026-09-01;KM 148 2021 Penetapan Alur-Pelayaran Tanjung Wangi"
   }
 },
 {
@@ -552300,6 +552384,52 @@
     "seamark:signal_station_warning:category": "storm",
     "seamark:type": "signal_station_warning",
     "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14408440301,
+  "lat": -8.0644795,
+  "lon": 114.4260511,
+  "tags": {
+    "description": "White metal framework tower, white triangle, point down daymark",
+    "height": "20",
+    "man_made": "beacon",
+    "ref:dsi": "4030",
+    "seamark:light:1:category": "upper",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "28",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "9",
+    "seamark:light:1:sector_end": "11",
+    "seamark:light:1:sector_start": "1",
+    "seamark:light:1:sequence": "1.0+(3.0)",
+    "seamark:light:reference": "Q 1250.1",
+    "seamark:name": "Tanjung Bansering Range, rear",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01;KM 148 2021 Penetapan Alur-Pelayaran Tanjung Wangi"
+  }
+},
+{
+  "type": "node",
+  "id": 14408440306,
+  "lat": -8.0928078,
+  "lon": 114.5262308,
+  "tags": {
+    "description": "SPECIAL (IALA A) Beacon, unknown topmark",
+    "man_made": "beacon",
+    "ref:dsi": "4070.5",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "yellow",
+    "seamark:light:1:height": "15",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "6",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:reference": "Q 1282.5",
+    "seamark:name": "Pulau Menjangan",
+    "seamark:type": "beacon_special_purpose",
+    "source": "US NGA Pub. 112. 2026-09-01;KM 148 2021 Penetapan Alur-Pelayaran Tanjung Wangi"
   }
 },
 {
@@ -566861,7 +566991,9 @@
     "seamark:type": "beacon_special_purpose",
     "source_ref": "https://catalog.archives.gov/id/93207306",
     "start_date": "1867",
-    "website": "https://www.tybeelighthouse.org"
+    "website": "https://www.tybeelighthouse.org",
+    "wikidata": "Q7859692",
+    "wikipedia": "en:Tybee Island Light"
   }
 },
 {
@@ -578016,7 +578148,8 @@
     "seamark:type": "light_major",
     "source_ref": "https://catalog.archives.gov/id/77847849",
     "start_date": "1870",
-    "wikidata": "Q1034264"
+    "wikidata": "Q1034264",
+    "wikipedia": "en:Cape Blanco Light"
   }
 },
 {
@@ -580674,6 +580807,8 @@
   ],
   "tags": {
     "building": "yes",
+    "description": "White metal framework tower",
+    "height": "12",
     "man_made": "lighthouse",
     "name": "Mercusuar Gunung Wenang",
     "name:en": "Gunung Wenang Lighthouse",
@@ -580901,7 +581036,9 @@
     "seamark:light:period": "4",
     "seamark:light:sequence": "00.4+(03.6)",
     "seamark:name": "Clover Island",
-    "seamark:type": "light_major"
+    "seamark:type": "light_major",
+    "wikidata": "Q43213811",
+    "wikipedia": "en:Clover Island Light"
   }
 },
 {
