@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-23T07:25:27Z",
+    "timestamp_osm_base": "2026-11-25T08:20:51Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -26113,8 +26113,8 @@
 {
   "type": "node",
   "id": 896638055,
-  "lat": 49.3912747,
-  "lon": -63.5939486,
+  "lat": 49.3912932,
+  "lon": -63.5942830,
   "tags": {
     "fixme": "could be a beacon with a light",
     "man_made": "lighthouse",
@@ -49570,10 +49570,10 @@
     "seamark:information": "Shown 15 July to 1 June. Floodlit.",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "green",
-    "seamark:light:height": "10",
+    "seamark:light:height": "9",
     "seamark:light:period": "3",
     "seamark:light:range": "6",
-    "seamark:light:reference": "L 4397",
+    "seamark:light:reference": "L 4399",
     "seamark:light:sequence": "0.7+(2.3)",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 115. 2010-09-09."
@@ -227591,42 +227591,47 @@
 },
 {
   "type": "node",
-  "id": 1293088859,
-  "lat": -7.0332548,
-  "lon": 112.6839348,
+  "id": 1293088848,
+  "lat": -6.9883300,
+  "lon": 112.7000000,
   "tags": {
+    "description": "White square concrete tower, red banded, platform",
+    "height": "14",
+    "man_made": "beacon",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "white",
-    "seamark:light:1:height": "14",
-    "seamark:light:1:period": "3",
-    "seamark:light:1:range": "7",
-    "seamark:light:1:sector_end": "204",
-    "seamark:light:1:sector_start": "194",
-    "seamark:light:1:sequence": "0.3+(2.7)",
-    "seamark:light:reference": "K 1158.1",
-    "seamark:name": "Tandjung Piring",
+    "seamark:light:1:height": "11",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "8",
+    "seamark:light:1:sequence": "0.5+(2.5)",
+    "seamark:light:category": "front",
+    "seamark:light:reference": "Q 1158",
+    "seamark:name": "Mapia",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
   "type": "node",
-  "id": 1293088863,
-  "lat": -7.0533803,
-  "lon": 112.6789627,
+  "id": 1293088859,
+  "lat": -7.0327314,
+  "lon": 112.6844839,
   "tags": {
-    "seamark:light:category": "upper",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "white",
-    "seamark:light:group": "2",
-    "seamark:light:height": "53",
-    "seamark:light:period": "10",
-    "seamark:light:range": "19",
-    "seamark:light:reference": "K 1158.2",
-    "seamark:light:sequence": "1+(1)+1+(7)",
-    "seamark:name": "Sembilangan",
-    "seamark:type": "light_major",
-    "source": "US NGA Pub. 112. 2009-11-12."
+    "description": "White metal framework tower",
+    "height": "14",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "14",
+    "seamark:light:1:period": "3.0",
+    "seamark:light:1:range": "7",
+    "seamark:light:1:sector_end": "204",
+    "seamark:light:1:sector_start": "194",
+    "seamark:light:1:sequence": "0.3+(2.7)",
+    "seamark:light:reference": "Q 1158.1",
+    "seamark:name": "Tandjung Piring",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -227650,25 +227655,6 @@
 },
 {
   "type": "node",
-  "id": 1293088892,
-  "lat": -7.1117341,
-  "lon": 112.6533851,
-  "tags": {
-    "seamark:beacon_special_purpose:colour": "yellow",
-    "seamark:light:character": "Fl",
-    "seamark:light:colour": "yellow",
-    "seamark:light:group": "4",
-    "seamark:light:height": "6",
-    "seamark:light:period": "15",
-    "seamark:light:range": "7",
-    "seamark:light:reference": "K 1158.51",
-    "seamark:light:sequence": "0.3+(0.7)+0.3+(0.7)+0.3+(0.7)+0.4+(11.6)",
-    "seamark:type": "beacon_special_purpose",
-    "source": "US NGA Pub. 112. 2009-11-12."
-  }
-},
-{
-  "type": "node",
   "id": 1293088896,
   "lat": -7.1322247,
   "lon": 112.6547077,
@@ -227683,6 +227669,28 @@
     "seamark:name": "Tepen",
     "seamark:type": "light_minor",
     "source": "US NGA Pub. 112. 2009-11-12."
+  }
+},
+{
+  "type": "node",
+  "id": 1293088914,
+  "lat": -7.1551677,
+  "lon": 112.6852119,
+  "tags": {
+    "description": "SPECIAL (IALA A) Beacon, unknown topmark",
+    "man_made": "beacon",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "yellow",
+    "seamark:light:1:height": "13",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "5",
+    "seamark:light:1:sequence": "1.0+(3.0)",
+    "seamark:light:reference": "Q 1160",
+    "seamark:name": "Tanjungan",
+    "seamark:radar_reflector": "yes",
+    "seamark:type": "beacon_special_purpose",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -227889,8 +227897,8 @@
     "seamark:light:1:height": "13",
     "seamark:light:1:period": "5.0",
     "seamark:light:1:range": "8",
-    "seamark:light:1:sector_end": "351",
-    "seamark:light:1:sector_start": "276",
+    "seamark:light:1:sector_end": "276",
+    "seamark:light:1:sector_start": "351",
     "seamark:light:1:sequence": "0.5+(4.5)",
     "seamark:light:reference": "Q 1256",
     "seamark:name": "Tanjung Pasir",
@@ -228005,6 +228013,7 @@
     "seamark:beacon_lateral:category": "starboard",
     "seamark:beacon_lateral:colour": "green",
     "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "green",
     "seamark:light:1:height": "15",
@@ -228014,7 +228023,7 @@
     "seamark:light:reference": "F 2077",
     "seamark:name": "Tg. Batuangus",
     "seamark:type": "beacon_lateral",
-    "source": "US NGA Pub. 112. 2026-09-01"
+    "source": "US NGA Pub. 112. 2026-09-01;KP 467 Tahun 2015"
   }
 },
 {
@@ -228025,10 +228034,11 @@
   "tags": {
     "description": "Red and white beacon",
     "man_made": "beacon",
-    "name": "Pulau Sarena Kecil",
+    "name": "Pulau Sarena",
     "seamark:beacon_lateral:category": "channel_right",
     "seamark:beacon_lateral:colour": "red",
     "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "red",
     "seamark:light:1:height": "18",
@@ -228040,7 +228050,7 @@
     "seamark:topmark:colour": "red",
     "seamark:topmark:shape": "cylinder",
     "seamark:type": "beacon_lateral",
-    "source": "US NGA Pub. 112. 2026-09-01"
+    "source": "US NGA Pub. 112. 2026-09-01;KP 467 Tahun 2015"
   }
 },
 {
@@ -228084,7 +228094,7 @@
     "seamark:light:reference": "F 2079",
     "seamark:name": "Tg. Labuan Compenie",
     "seamark:type": "light_minor",
-    "source": "US NGA Pub. 112. 2026-09-01"
+    "source": "US NGA Pub. 112. 2026-09-01;KP 467 Tahun 2015"
   }
 },
 {
@@ -345141,7 +345151,6 @@
   "lon": -59.2226601,
   "tags": {
     "name": "Pg218-B(2+1)C/8",
-    "place": "locality",
     "seamark:beacon_lateral:category": "preferred_channel_starboard",
     "seamark:beacon_lateral:colour": "green;red;green",
     "seamark:beacon_lateral:colour_pattern": "horizontal",
@@ -345167,7 +345176,6 @@
   "lon": -59.2097070,
   "tags": {
     "name": "Tal212.5-B(4)C/",
-    "place": "locality",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white;green",
     "seamark:light:group": "4",
@@ -345186,7 +345194,6 @@
   "lon": -59.2059097,
   "tags": {
     "name": "Tal211.5-B(4)C/",
-    "place": "locality",
     "seamark:light:character": "Fl",
     "seamark:light:colour": "white;green",
     "seamark:light:group": "4",
@@ -549652,6 +549659,7 @@
     "seamark:beacon_lateral:category": "starboard",
     "seamark:beacon_lateral:colour": "green",
     "seamark:beacon_lateral:shape": "tower",
+    "seamark:beacon_lateral:system": "iala-a",
     "seamark:information": "The lighted aids of Indonesia are unreliable and may be extinguished, off station, missing or showing improper characteristics.",
     "seamark:light:1:character": "Fl",
     "seamark:light:1:colour": "green",
@@ -549667,7 +549675,7 @@
     "seamark:topmark:colour": "green",
     "seamark:topmark:shape": "cone, point up",
     "seamark:type": "beacon_lateral",
-    "source": "US NGA Pub. 112. 2026-09-01"
+    "source": "US NGA Pub. 112. 2026-09-01;KP 467 Tahun 2015"
   }
 },
 {
@@ -552430,6 +552438,139 @@
     "seamark:name": "Pulau Menjangan",
     "seamark:type": "beacon_special_purpose",
     "source": "US NGA Pub. 112. 2026-09-01;KM 148 2021 Penetapan Alur-Pelayaran Tanjung Wangi"
+  }
+},
+{
+  "type": "node",
+  "id": 14409374772,
+  "lat": -7.1951435,
+  "lon": 112.7394393,
+  "tags": {
+    "description": "Red beacon",
+    "height": "6",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "red",
+    "seamark:light:1:height": "9",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "4",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1183.1",
+    "seamark:name": "Naval Harbor, Madura Wharf",
+    "seamark:type": "light_minor",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14409374773,
+  "lat": -7.3613645,
+  "lon": 113.1705834,
+  "tags": {
+    "description": "ISOLATED DANGER (IALA A) Beacon, topmark.",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "12",
+    "seamark:light:1:period": "12.0",
+    "seamark:light:1:range": "12",
+    "seamark:light:1:sequence": "0.5+(1.0)+0.5+(10.0)",
+    "seamark:light:reference": "Q 1197",
+    "seamark:name": "Karang Manila",
+    "seamark:type": "beacon_isolated_danger",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14409374774,
+  "lat": -7.4096212,
+  "lon": 113.0713019,
+  "tags": {
+    "description": "ISOLATED DANGER (IALA A) Beacon, topmark.",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "2",
+    "seamark:light:1:height": "16",
+    "seamark:light:1:period": "10.0",
+    "seamark:light:1:range": "9",
+    "seamark:light:1:sequence": "0.5+(2.5)+0.5+(6.5)",
+    "seamark:light:reference": "Q 1198",
+    "seamark:name": "Sirumpa Rock"
+  }
+},
+{
+  "type": "node",
+  "id": 14409374790,
+  "lat": -7.1392872,
+  "lon": 112.6539591,
+  "tags": {
+    "description": "SPECIAL (IALA A) Beacon, unknown topmark",
+    "man_made": "beacon",
+    "seamark:beacon_special_purpose:colour": "yellow",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "yellow",
+    "seamark:light:1:height": "7",
+    "seamark:light:1:period": "5.0",
+    "seamark:light:1:range": "5",
+    "seamark:light:1:sequence": "1.0+(4.0)",
+    "seamark:light:reference": "Q 1159",
+    "seamark:name": "Pojok",
+    "seamark:type": "beacon_special_purpose",
+    "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14410092193,
+  "lat": 19.8460645,
+  "lon": 72.6572240,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "black;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:construction": "masonry",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:group": "3",
+    "seamark:light:1:height": "25",
+    "seamark:light:1:period": "30",
+    "seamark:light:1:range": "23",
+    "seamark:light:1:sequence": "0.4+(5.6),0.4+(5.6),0.4+(17.6)",
+    "seamark:light:2:character": "F",
+    "seamark:light:2:colour": "red",
+    "seamark:light:2:height": "10",
+    "seamark:light:2:range": "9",
+    "seamark:light:reference": "F 0491.5",
+    "seamark:name": "Tarapur",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192225",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
+  }
+},
+{
+  "type": "node",
+  "id": 14410938274,
+  "lat": -6.8473038,
+  "lon": 112.5489498,
+  "tags": {
+    "description": "White beacon",
+    "man_made": "beacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "33",
+    "seamark:light:1:period": "6.0",
+    "seamark:light:1:range": "16",
+    "seamark:light:1:sequence": "0.4+(5.6)",
+    "seamark:light:reference": "Q 1157",
+    "seamark:name": "Ujung Pangkah",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -567169,6 +567310,53 @@
 },
 {
   "type": "way",
+  "id": 464849491,
+  "nodes": [
+    4599154219,
+    4599154220,
+    4599154221,
+    4599154222,
+    4599154223,
+    4968864750,
+    4599154224,
+    4599154225,
+    4599154226,
+    4599154227,
+    4599154228,
+    4599154210,
+    4599154213,
+    4599154214,
+    4599154215,
+    4599154216,
+    4599154217,
+    4599154211,
+    4599154212,
+    4599154219
+  ],
+  "tags": {
+    "building": "yes",
+    "description": "This lighthouse was built by Dutch colonial. White concrete tower",
+    "man_made": "lighthouse",
+    "name": "Sembilangan",
+    "seamark:light:category": "upper",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:group": "2",
+    "seamark:light:height": "53",
+    "seamark:light:period": "10.0",
+    "seamark:light:range": "19",
+    "seamark:light:reference": "Q 1158.2",
+    "seamark:light:sequence": "1.0+(1.0)+1.0+(7.0)",
+    "seamark:name": "Sembilangan",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "M",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01",
+    "start_date": "1882"
+  }
+},
+{
+  "type": "way",
   "id": 469394522,
   "nodes": [
     4637219130,
@@ -577066,6 +577254,38 @@
     "seamark:light:sequence": "0.4+(1.8)+0.4+(1.8)+0.4+(1.8)+0.4+(6.3)+0.4+(6.3)",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 113. 2011-10-20."
+  }
+},
+{
+  "type": "way",
+  "id": 1028112026,
+  "nodes": [
+    9476421428,
+    9476421429,
+    9476421430,
+    9476421431,
+    9476421428
+  ],
+  "tags": {
+    "building": "yes",
+    "description": "White metal framework tower",
+    "height": "40",
+    "man_made": "lighthouse",
+    "name": "Mercusuar Karang Jamuang",
+    "seamark:information": "Radiobeacon",
+    "seamark:light:1:character": "Fl",
+    "seamark:light:1:colour": "white",
+    "seamark:light:1:height": "41",
+    "seamark:light:1:period": "4.0",
+    "seamark:light:1:range": "19",
+    "seamark:light:1:sequence": "0.5+(3.5)",
+    "seamark:light:reference": "Q 1162",
+    "seamark:name": "Karang Djamuang",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "K",
+    "seamark:radar_transponder:range": "12",
+    "seamark:type": "light_major",
+    "source": "US NGA Pub. 112. 2026-09-01"
   }
 },
 {
@@ -614017,6 +614237,144 @@
   "id": 7899397992,
   "lat": -27.0318138,
   "lon": 153.4658530
+},
+{
+  "type": "node",
+  "id": 4599154210,
+  "lat": -7.0602063,
+  "lon": 112.6746411
+},
+{
+  "type": "node",
+  "id": 4599154211,
+  "lat": -7.0602813,
+  "lon": 112.6746713
+},
+{
+  "type": "node",
+  "id": 4599154212,
+  "lat": -7.0602818,
+  "lon": 112.6746873
+},
+{
+  "type": "node",
+  "id": 4599154213,
+  "lat": -7.0602206,
+  "lon": 112.6746342
+},
+{
+  "type": "node",
+  "id": 4599154214,
+  "lat": -7.0602364,
+  "lon": 112.6746323
+},
+{
+  "type": "node",
+  "id": 4599154215,
+  "lat": -7.0602519,
+  "lon": 112.6746357
+},
+{
+  "type": "node",
+  "id": 4599154216,
+  "lat": -7.0602655,
+  "lon": 112.6746440
+},
+{
+  "type": "node",
+  "id": 4599154217,
+  "lat": -7.0602756,
+  "lon": 112.6746563
+},
+{
+  "type": "node",
+  "id": 4599154219,
+  "lat": -7.0602771,
+  "lon": 112.6747025
+},
+{
+  "type": "node",
+  "id": 4599154220,
+  "lat": -7.0602678,
+  "lon": 112.6747155
+},
+{
+  "type": "node",
+  "id": 4599154221,
+  "lat": -7.0602548,
+  "lon": 112.6747247
+},
+{
+  "type": "node",
+  "id": 4599154222,
+  "lat": -7.0602396,
+  "lon": 112.6747291
+},
+{
+  "type": "node",
+  "id": 4599154223,
+  "lat": -7.0602237,
+  "lon": 112.6747283
+},
+{
+  "type": "node",
+  "id": 4599154224,
+  "lat": -7.0601969,
+  "lon": 112.6747120
+},
+{
+  "type": "node",
+  "id": 4599154225,
+  "lat": -7.0601889,
+  "lon": 112.6746981
+},
+{
+  "type": "node",
+  "id": 4599154226,
+  "lat": -7.0601858,
+  "lon": 112.6746825
+},
+{
+  "type": "node",
+  "id": 4599154227,
+  "lat": -7.0601879,
+  "lon": 112.6746666
+},
+{
+  "type": "node",
+  "id": 4599154228,
+  "lat": -7.0601950,
+  "lon": 112.6746523
+},
+{
+  "type": "node",
+  "id": 4968864750,
+  "lat": -7.0602090,
+  "lon": 112.6747224
+},
+{
+  "type": "node",
+  "id": 9476421428,
+  "lat": -6.9268087,
+  "lon": 112.7269324
+},
+{
+  "type": "node",
+  "id": 9476421429,
+  "lat": -6.9269157,
+  "lon": 112.7269751
+},
+{
+  "type": "node",
+  "id": 9476421430,
+  "lat": -6.9268737,
+  "lon": 112.7270818
+},
+{
+  "type": "node",
+  "id": 9476421431,
+  "lat": -6.9267667,
+  "lon": 112.7270391
 },
 {
   "type": "node",
