@@ -2,7 +2,7 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-25T08:20:51Z",
+    "timestamp_osm_base": "2026-11-26T08:05:39Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -16566,6 +16566,7 @@
     "seamark:name": "Mersey Bluff",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 111. 2010-09-02.",
+    "website": "https://tas360.au/atlas/lighthouses/mersey-bluff-lighthouse",
     "wikidata": "Q28375271"
   }
 },
@@ -552571,6 +552572,35 @@
     "seamark:name": "Ujung Pangkah",
     "seamark:type": "light_major",
     "source": "US NGA Pub. 112. 2026-09-01"
+  }
+},
+{
+  "type": "node",
+  "id": 14417648272,
+  "lat": 20.1959087,
+  "lon": 72.7476196,
+  "tags": {
+    "seamark:landmark:category": "tower",
+    "seamark:landmark:colour": "red;white",
+    "seamark:landmark:colour_pattern": "horizontal",
+    "seamark:landmark:conspicuity": "conspicuous",
+    "seamark:landmark:construction": "concreted",
+    "seamark:landmark:function": "light_support",
+    "seamark:light:character": "Fl",
+    "seamark:light:colour": "white",
+    "seamark:light:height": "35",
+    "seamark:light:period": "15",
+    "seamark:light:range": "19",
+    "seamark:light:reference": "F 0489",
+    "seamark:light:sequence": "1.3+(13.7)",
+    "seamark:name": "Umbargaon",
+    "seamark:radar_transponder:category": "racon",
+    "seamark:radar_transponder:group": "M",
+    "seamark:radio_station:category": "ais",
+    "seamark:radio_station:mmsi": "004192224",
+    "seamark:signal_station_warning:category": "storm",
+    "seamark:type": "landmark",
+    "source": "US NGA Pub 112. 2026"
   }
 },
 {
